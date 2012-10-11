@@ -51,6 +51,17 @@ namespace JQueryUI
             child.GmNT_Itemcodes = "2101012120,21121255021";
             child.GmCJ = 23.1141M;
             child.GmCJ_itemcodes = "2101121220,211121255021";
+            child.state = "closed";
+
+            item.children.Add(child);
+            itemlist.Add(item);
+
+            context.Response.Write(JsonConvert.SerializeObject(itemlist));
+        }
+
+        public void GetChildrenData(HttpContext context)
+        {
+            List<ItemCenterQuery> itemlist = new List<ItemCenterQuery>();
 
             ItemCenterQuery childSecond = new ItemCenterQuery();
             childSecond.CCode = "210321";
@@ -62,19 +73,7 @@ namespace JQueryUI
             childSecond.GmCJ = 23.1141M;
             childSecond.GmCJ_itemcodes = "2101121220,211121255021";
 
-            child.children.Add(childSecond);
-
-            item.children.Add(child);
-            itemlist.Add(item);
-
-            context.Response.Write(JsonConvert.SerializeObject(itemlist));
-        }
-
-        public void GetTreeData(HttpContext context)
-        {
-            List<ItemCenterQuery> itemlist = new List<ItemCenterQuery>();
-
-            ItemCenterQuery item = new ItemCenterQuery();
+            itemlist.Add(childSecond);
 
             context.Response.Write(JsonConvert.SerializeObject(itemlist));
         }

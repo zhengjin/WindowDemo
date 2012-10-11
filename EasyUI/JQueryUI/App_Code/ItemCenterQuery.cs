@@ -53,5 +53,7 @@ namespace JQueryUI.App_Code
         /// 子数据
         /// </summary>
         public List<ItemCenterQuery> children { get; set; }
+
+        public string state { set; get; }
     }
 }

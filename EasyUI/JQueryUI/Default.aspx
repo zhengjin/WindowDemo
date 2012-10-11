@@ -38,10 +38,22 @@
                     { field: 'GmCJ', title: '拆旧复垦', width: 220 },
 					{ field: 'GmNT', title: '标准农田', width: 150 }
 				]],
-                onBeforeLoad: function (row, param) {
-//                    if (row) {
-//                        $(this).treegrid('options').url = 'json.ashx?Method=GetTreeData&Condition=' + row.id;
-//                    }
+                onBeforeExpand: function (node) {
+                    if (node.children.length == 0) {
+                        var json;
+                        var sd;
+                        $.post("json.ashx", { Method: 'GetChildrenData' },
+                                    function (data) {
+                                        sd = $('#test').treegrid('append', {
+                                            parent: node.CCode,  // 节点有一个'id'值,定义是通过'idField'属性
+                                            data: eval("(" + data + ")")
+                                        });
+                                    }
+                              );
+                    }
+                    else {
+                        
+                    }
                 },
                 onContextMenu: function (e, row) {
                     e.preventDefault();
