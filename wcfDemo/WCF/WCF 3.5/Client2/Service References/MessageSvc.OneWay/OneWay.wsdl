@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="OneWay" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:12345/Message/OneWay/?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOneWay_WithoutOneWay_InputMessage">
+    <wsdl:part name="parameters" element="tns:WithoutOneWay" />
+  </wsdl:message>
+  <wsdl:message name="IOneWay_WithoutOneWay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WithoutOneWayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOneWay_WithOneWay_InputMessage">
+    <wsdl:part name="parameters" element="tns:WithOneWay" />
+  </wsdl:message>
+  <wsdl:portType name="IOneWay">
+    <wsdl:operation name="WithoutOneWay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOneWay/WithoutOneWay" message="tns:IOneWay_WithoutOneWay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOneWay/WithoutOneWayResponse" message="tns:IOneWay_WithoutOneWay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WithOneWay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOneWay/WithOneWay" message="tns:IOneWay_WithOneWay_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOneWay" type="tns:IOneWay">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WithoutOneWay">
+      <soap:operation soapAction="http://tempuri.org/IOneWay/WithoutOneWay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WithOneWay">
+      <soap:operation soapAction="http://tempuri.org/IOneWay/WithOneWay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OneWay">
+    <wsdl:port name="BasicHttpBinding_IOneWay" binding="tns:BasicHttpBinding_IOneWay">
+      <soap:address location="http://localhost:12345/Message/OneWay/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

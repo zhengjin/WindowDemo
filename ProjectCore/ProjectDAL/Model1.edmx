@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MWDatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MWDatabaseModelStoreContainer">
+          <EntitySet Name="tblMenu_Permission_Role" EntityType="MWDatabaseModel.Store.tblMenu_Permission_Role" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMenuRight" EntityType="MWDatabaseModel.Store.tblMenuRight" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblRole" EntityType="MWDatabaseModel.Store.tblRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblRole_User" EntityType="MWDatabaseModel.Store.tblRole_User" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblUser" EntityType="MWDatabaseModel.Store.tblUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="View_Menu_Permission_Role" EntityType="MWDatabaseModel.Store.View_Menu_Permission_Role" store:Type="Views" store:Schema="dbo" store:Name="View_Menu_Permission_Role">
+            <DefiningQuery>SELECT 
+      [View_Menu_Permission_Role].[RoleID] AS [RoleID], 
+      [View_Menu_Permission_Role].[MenuID] AS [MenuID], 
+      [View_Menu_Permission_Role].[Seq] AS [Seq], 
+      [View_Menu_Permission_Role].[MenuName] AS [MenuName], 
+      [View_Menu_Permission_Role].[ParentNode] AS [ParentNode], 
+      [View_Menu_Permission_Role].[Action] AS [Action], 
+      [View_Menu_Permission_Role].[Control] AS [Control], 
+      [View_Menu_Permission_Role].[Desc] AS [Desc], 
+      [View_Menu_Permission_Role].[Icon1] AS [Icon1], 
+      [View_Menu_Permission_Role].[Icon2] AS [Icon2], 
+      [View_Menu_Permission_Role].[TreeCode] AS [TreeCode], 
+      [View_Menu_Permission_Role].[NodeLevel] AS [NodeLevel], 
+      [View_Menu_Permission_Role].[IsLeaves] AS [IsLeaves], 
+      [View_Menu_Permission_Role].[URL] AS [URL], 
+      [View_Menu_Permission_Role].[IsAJAXPage] AS [IsAJAXPage], 
+      [View_Menu_Permission_Role].[GroupBy] AS [GroupBy]
+      FROM [dbo].[View_Menu_Permission_Role] AS [View_Menu_Permission_Role]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_Role" EntityType="MWDatabaseModel.Store.View_Role" store:Type="Views" store:Schema="dbo" store:Name="View_Role">
+            <DefiningQuery>SELECT 
+      [View_Role].[RoleID] AS [RoleID], 
+      [View_Role].[RoleName] AS [RoleName], 
+      [View_Role].[RoleCode] AS [RoleCode], 
+      [View_Role].[State] AS [State], 
+      [View_Role].[Desc] AS [Desc], 
+      [View_Role].[LastModifiedByID] AS [LastModifiedByID], 
+      [View_Role].[CreatedByID] AS [CreatedByID], 
+      [View_Role].[CreatedDate] AS [CreatedDate], 
+      [View_Role].[LastModifiedDate] AS [LastModifiedDate], 
+      [View_Role].[OwnerID] AS [OwnerID], 
+      [View_Role].[IsDeleted] AS [IsDeleted], 
+      [View_Role].[SystemModstamp] AS [SystemModstamp]
+      FROM [dbo].[View_Role] AS [View_Role]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_RoleAndUser" EntityType="MWDatabaseModel.Store.View_RoleAndUser" store:Type="Views" store:Schema="dbo" store:Name="View_RoleAndUser">
+            <DefiningQuery>SELECT 
+      [View_RoleAndUser].[UserID] AS [UserID], 
+      [View_RoleAndUser].[RoleID] AS [RoleID], 
+      [View_RoleAndUser].[State] AS [State], 
+      [View_RoleAndUser].[IsDeleted] AS [IsDeleted]
+      FROM [dbo].[View_RoleAndUser] AS [View_RoleAndUser]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_User" EntityType="MWDatabaseModel.Store.View_User" store:Type="Views" store:Schema="dbo" store:Name="View_User">
+            <DefiningQuery>SELECT 
+      [View_User].[RoleName] AS [RoleName], 
+      [View_User].[RoleID] AS [RoleID], 
+      [View_User].[UserID] AS [UserID], 
+      [View_User].[UserName] AS [UserName], 
+      [View_User].[LoginName] AS [LoginName], 
+      [View_User].[LoginPwd] AS [LoginPwd], 
+      [View_User].[Avatar] AS [Avatar], 
+      [View_User].[UserCode] AS [UserCode], 
+      [View_User].[State] AS [State], 
+      [View_User].[Email] AS [Email], 
+      [View_User].[Desc] AS [Desc], 
+      [View_User].[Language] AS [Language], 
+      [View_User].[StyleSheet] AS [StyleSheet], 
+      [View_User].[CreatedByID] AS [CreatedByID], 
+      [View_User].[LastModifiedByID] AS [LastModifiedByID], 
+      [View_User].[CreatedDate] AS [CreatedDate], 
+      [View_User].[LastModifiedDate] AS [LastModifiedDate], 
+      [View_User].[OwnerID] AS [OwnerID], 
+      [View_User].[IsDeleted] AS [IsDeleted], 
+      [View_User].[SystemModstamp] AS [SystemModstamp], 
+      [View_User].[SendEmail] AS [SendEmail]
+      FROM [dbo].[View_User] AS [View_User]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_TBLMENU__REFERENCE_TBLMENUR" Association="MWDatabaseModel.Store.FK_TBLMENU__REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblMenu_Permission_Role" EntitySet="tblMenu_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMenu_Permission_Role_tblRole" Association="MWDatabaseModel.Store.FK_tblMenu_Permission_Role_tblRole">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblMenu_Permission_Role" EntitySet="tblMenu_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLMENUR_REFERENCE_TBLMENUR" Association="MWDatabaseModel.Store.FK_TBLMENUR_REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblMenuRight1" EntitySet="tblMenuRight" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblRole_User_tblRole" Association="MWDatabaseModel.Store.FK_tblRole_User_tblRole">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblRole_User" EntitySet="tblRole_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblRole_User_tblUser" Association="MWDatabaseModel.Store.FK_tblRole_User_tblUser">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblRole_User" EntitySet="tblRole_User" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tblMenu_Permission_Role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleID" Type="uniqueidentifier" />
+          <Property Name="MenuID" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="tblMenuRight">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Name="MenuID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Seq" Type="numeric" Precision="10" />
+          <Property Name="MenuName" Type="varchar" MaxLength="255" />
+          <Property Name="ParentNode" Type="uniqueidentifier" />
+          <Property Name="Action" Type="varchar" MaxLength="255" />
+          <Property Name="Control" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="Icon1" Type="varchar" MaxLength="255" />
+          <Property Name="Icon2" Type="varchar" MaxLength="255" />
+          <Property Name="TreeCode" Type="varchar" MaxLength="255" />
+          <Property Name="NodeLevel" Type="varchar" MaxLength="255" />
+          <Property Name="IsLeaves" Type="numeric" Precision="1" />
+          <Property Name="URL" Type="varchar" MaxLength="255" />
+          <Property Name="IsAJAXPage" Type="bit" />
+          <Property Name="GroupBy" Type="numeric" Precision="4" />
+        </EntityType>
+        <EntityType Name="tblRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="255" />
+          <Property Name="RoleCode" Type="varchar" MaxLength="255" />
+          <Property Name="State" Type="numeric" Precision="10" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+          <Property Name="OwnerID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="SystemModstamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblRole_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" />
+          <Property Name="RoleID" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="255" />
+          <Property Name="LoginName" Type="varchar" MaxLength="255" />
+          <Property Name="LoginPwd" Type="varchar" MaxLength="255" />
+          <Property Name="Avatar" Type="image" />
+          <Property Name="UserCode" Type="varchar" MaxLength="255" />
+          <Property Name="State" Type="bit" />
+          <Property Name="Email" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="Language" Type="varchar" MaxLength="50" />
+          <Property Name="StyleSheet" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+          <Property Name="SendEmail" Type="bit" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“MWDatabase.dbo.View_Menu_Permission_Role”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_Menu_Permission_Role">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Name="RoleID" Type="uniqueidentifier" />
+          <Property Name="MenuID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Seq" Type="numeric" Precision="10" />
+          <Property Name="MenuName" Type="varchar" MaxLength="255" />
+          <Property Name="ParentNode" Type="uniqueidentifier" />
+          <Property Name="Action" Type="varchar" MaxLength="255" />
+          <Property Name="Control" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="Icon1" Type="varchar" MaxLength="255" />
+          <Property Name="Icon2" Type="varchar" MaxLength="255" />
+          <Property Name="TreeCode" Type="varchar" MaxLength="255" />
+          <Property Name="NodeLevel" Type="varchar" MaxLength="255" />
+          <Property Name="IsLeaves" Type="numeric" Precision="1" />
+          <Property Name="URL" Type="varchar" MaxLength="255" />
+          <Property Name="IsAJAXPage" Type="bit" />
+          <Property Name="GroupBy" Type="numeric" Precision="4" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“MWDatabase.dbo.View_Role”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_Role">
+          <Key>
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="LastModifiedByID" />
+            <PropertyRef Name="CreatedByID" />
+            <PropertyRef Name="CreatedDate" />
+            <PropertyRef Name="LastModifiedDate" />
+            <PropertyRef Name="OwnerID" />
+            <PropertyRef Name="IsDeleted" />
+            <PropertyRef Name="SystemModstamp" />
+          </Key>
+          <Property Name="RoleID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="255" />
+          <Property Name="RoleCode" Type="varchar" MaxLength="255" />
+          <Property Name="State" Type="varchar" MaxLength="8" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="LastModifiedDate" Type="datetime" Nullable="false" />
+          <Property Name="OwnerID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="SystemModstamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“MWDatabase.dbo.View_RoleAndUser”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_RoleAndUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="IsDeleted" />
+          </Key>
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="State" Type="numeric" Precision="10" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“MWDatabase.dbo.View_User”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_User">
+          <Key>
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="RoleName" Type="varchar" MaxLength="255" />
+          <Property Name="RoleID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="255" />
+          <Property Name="LoginName" Type="varchar" MaxLength="255" />
+          <Property Name="LoginPwd" Type="varchar" MaxLength="255" />
+          <Property Name="Avatar" Type="image" />
+          <Property Name="UserCode" Type="varchar" MaxLength="255" />
+          <Property Name="State" Type="varchar" MaxLength="8" />
+          <Property Name="Email" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="Language" Type="varchar" MaxLength="50" />
+          <Property Name="StyleSheet" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+          <Property Name="SendEmail" Type="bit" />
+        </EntityType>
+        <Association Name="FK_TBLMENU__REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="MWDatabaseModel.Store.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblMenu_Permission_Role" Type="MWDatabaseModel.Store.tblMenu_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuID" />
+            </Principal>
+            <Dependent Role="tblMenu_Permission_Role">
+              <PropertyRef Name="MenuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMenu_Permission_Role_tblRole">
+          <End Role="tblRole" Type="MWDatabaseModel.Store.tblRole" Multiplicity="0..1" />
+          <End Role="tblMenu_Permission_Role" Type="MWDatabaseModel.Store.tblMenu_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblMenu_Permission_Role">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLMENUR_REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="MWDatabaseModel.Store.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblMenuRight1" Type="MWDatabaseModel.Store.tblMenuRight" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuID" />
+            </Principal>
+            <Dependent Role="tblMenuRight1">
+              <PropertyRef Name="ParentNode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblRole_User_tblRole">
+          <End Role="tblRole" Type="MWDatabaseModel.Store.tblRole" Multiplicity="0..1" />
+          <End Role="tblRole_User" Type="MWDatabaseModel.Store.tblRole_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblRole_User">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblRole_User_tblUser">
+          <End Role="tblUser" Type="MWDatabaseModel.Store.tblUser" Multiplicity="0..1" />
+          <End Role="tblRole_User" Type="MWDatabaseModel.Store.tblRole_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblRole_User">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MWDatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MWDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblMenu_Permission_Role" EntityType="MWDatabaseModel.tblMenu_Permission_Role" />
+          <EntitySet Name="tblMenuRight" EntityType="MWDatabaseModel.tblMenuRight" />
+          <EntitySet Name="tblRole" EntityType="MWDatabaseModel.tblRole" />
+          <EntitySet Name="tblRole_User" EntityType="MWDatabaseModel.tblRole_User" />
+          <EntitySet Name="tblUser" EntityType="MWDatabaseModel.tblUser" />
+          <AssociationSet Name="FK_TBLMENU__REFERENCE_TBLMENUR" Association="MWDatabaseModel.FK_TBLMENU__REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblMenu_Permission_Role" EntitySet="tblMenu_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMenu_Permission_Role_tblRole" Association="MWDatabaseModel.FK_tblMenu_Permission_Role_tblRole">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblMenu_Permission_Role" EntitySet="tblMenu_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLMENUR_REFERENCE_TBLMENUR" Association="MWDatabaseModel.FK_TBLMENUR_REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblMenuRight1" EntitySet="tblMenuRight" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblRole_User_tblRole" Association="MWDatabaseModel.FK_tblRole_User_tblRole">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblRole_User" EntitySet="tblRole_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblRole_User_tblUser" Association="MWDatabaseModel.FK_tblRole_User_tblUser">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblRole_User" EntitySet="tblRole_User" />
+          </AssociationSet>
+          <EntitySet Name="View_RoleAndUser" EntityType="MWDatabaseModel.View_RoleAndUser" />
+          <EntitySet Name="View_Menu_Permission_Role" EntityType="MWDatabaseModel.View_Menu_Permission_Role" />
+          <EntitySet Name="View_Role" EntityType="MWDatabaseModel.View_Role" />
+          <EntitySet Name="View_User" EntityType="MWDatabaseModel.View_User" />
+        </EntityContainer>
+        <EntityType Name="tblMenu_Permission_Role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="RoleID" Type="Guid" />
+          <Property Name="MenuID" Type="Guid" />
+          <NavigationProperty Name="tblMenuRight" Relationship="MWDatabaseModel.FK_TBLMENU__REFERENCE_TBLMENUR" FromRole="tblMenu_Permission_Role" ToRole="tblMenuRight" />
+          <NavigationProperty Name="tblRole" Relationship="MWDatabaseModel.FK_tblMenu_Permission_Role_tblRole" FromRole="tblMenu_Permission_Role" ToRole="tblRole" />
+        </EntityType>
+        <EntityType Name="tblMenuRight">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Name="MenuID" Type="Guid" Nullable="false" />
+          <Property Name="Seq" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="MenuName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ParentNode" Type="Guid" />
+          <Property Name="Action" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Control" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Icon1" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Icon2" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="TreeCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="NodeLevel" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="IsLeaves" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="URL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="IsAJAXPage" Type="Boolean" />
+          <Property Name="GroupBy" Type="Decimal" Precision="4" Scale="0" />
+          <NavigationProperty Name="tblMenu_Permission_Role" Relationship="MWDatabaseModel.FK_TBLMENU__REFERENCE_TBLMENUR" FromRole="tblMenuRight" ToRole="tblMenu_Permission_Role" />
+          <NavigationProperty Name="tblMenuRight1" Relationship="MWDatabaseModel.FK_TBLMENUR_REFERENCE_TBLMENUR" FromRole="tblMenuRight" ToRole="tblMenuRight1" />
+          <NavigationProperty Name="tblMenuRight2" Relationship="MWDatabaseModel.FK_TBLMENUR_REFERENCE_TBLMENUR" FromRole="tblMenuRight1" ToRole="tblMenuRight" />
+        </EntityType>
+        <EntityType Name="tblRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="RoleCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" Nullable="false" />
+          <Property Name="LastModifiedByID" Type="Guid" Nullable="false" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" />
+          <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" />
+          <Property Name="OwnerID" Type="Guid" Nullable="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="SystemModstamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="tblMenu_Permission_Role" Relationship="MWDatabaseModel.FK_tblMenu_Permission_Role_tblRole" FromRole="tblRole" ToRole="tblMenu_Permission_Role" />
+          <NavigationProperty Name="tblRole_User" Relationship="MWDatabaseModel.FK_tblRole_User_tblRole" FromRole="tblRole" ToRole="tblRole_User" />
+        </EntityType>
+        <EntityType Name="tblRole_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="UserID" Type="Guid" />
+          <Property Name="RoleID" Type="Guid" />
+          <NavigationProperty Name="tblRole" Relationship="MWDatabaseModel.FK_tblRole_User_tblRole" FromRole="tblRole_User" ToRole="tblRole" />
+          <NavigationProperty Name="tblUser" Relationship="MWDatabaseModel.FK_tblRole_User_tblUser" FromRole="tblRole_User" ToRole="tblUser" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LoginName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LoginPwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Avatar" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="UserCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="Boolean" />
+          <Property Name="Email" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Language" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StyleSheet" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <Property Name="SendEmail" Type="Boolean" />
+          <NavigationProperty Name="tblRole_User" Relationship="MWDatabaseModel.FK_tblRole_User_tblUser" FromRole="tblUser" ToRole="tblRole_User" />
+        </EntityType>
+        <Association Name="FK_TBLMENU__REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="MWDatabaseModel.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblMenu_Permission_Role" Type="MWDatabaseModel.tblMenu_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuID" />
+            </Principal>
+            <Dependent Role="tblMenu_Permission_Role">
+              <PropertyRef Name="MenuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMenu_Permission_Role_tblRole">
+          <End Role="tblRole" Type="MWDatabaseModel.tblRole" Multiplicity="0..1" />
+          <End Role="tblMenu_Permission_Role" Type="MWDatabaseModel.tblMenu_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblMenu_Permission_Role">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLMENUR_REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="MWDatabaseModel.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblMenuRight1" Type="MWDatabaseModel.tblMenuRight" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuID" />
+            </Principal>
+            <Dependent Role="tblMenuRight1">
+              <PropertyRef Name="ParentNode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblRole_User_tblRole">
+          <End Role="tblRole" Type="MWDatabaseModel.tblRole" Multiplicity="0..1" />
+          <End Role="tblRole_User" Type="MWDatabaseModel.tblRole_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblRole_User">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblRole_User_tblUser">
+          <End Role="tblUser" Type="MWDatabaseModel.tblUser" Multiplicity="0..1" />
+          <End Role="tblRole_User" Type="MWDatabaseModel.tblRole_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblRole_User">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="View_RoleAndUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="IsDeleted" />
+          </Key>
+          <Property Type="Guid" Name="UserID" Nullable="false" />
+          <Property Type="Guid" Name="RoleID" Nullable="false" />
+          <Property Type="Decimal" Name="State" Precision="10" Scale="0" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+        </EntityType>
+        <EntityType Name="View_Menu_Permission_Role">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Type="Guid" Name="RoleID" />
+          <Property Type="Guid" Name="MenuID" Nullable="false" />
+          <Property Type="Decimal" Name="Seq" Precision="10" Scale="0" />
+          <Property Type="String" Name="MenuName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="ParentNode" />
+          <Property Type="String" Name="Action" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Control" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Desc" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Icon1" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Icon2" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TreeCode" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="NodeLevel" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Decimal" Name="IsLeaves" Precision="1" Scale="0" />
+          <Property Type="String" Name="URL" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsAJAXPage" />
+          <Property Type="Decimal" Name="GroupBy" Precision="4" Scale="0" />
+        </EntityType>
+        <EntityType Name="View_Role">
+          <Key>
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="LastModifiedByID" />
+            <PropertyRef Name="CreatedByID" />
+            <PropertyRef Name="CreatedDate" />
+            <PropertyRef Name="LastModifiedDate" />
+            <PropertyRef Name="OwnerID" />
+            <PropertyRef Name="IsDeleted" />
+            <PropertyRef Name="SystemModstamp" />
+          </Key>
+          <Property Type="Guid" Name="RoleID" Nullable="false" />
+          <Property Type="String" Name="RoleName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RoleCode" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="State" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Desc" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="LastModifiedByID" Nullable="false" />
+          <Property Type="Guid" Name="CreatedByID" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="LastModifiedDate" Nullable="false" />
+          <Property Type="Guid" Name="OwnerID" Nullable="false" />
+          <Property Type="Boolean" Name="IsDeleted" Nullable="false" />
+          <Property Type="DateTime" Name="SystemModstamp" Nullable="false" />
+        </EntityType>
+        <EntityType Name="View_User">
+          <Key>
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Type="String" Name="RoleName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="RoleID" Nullable="false" />
+          <Property Type="Guid" Name="UserID" Nullable="false" />
+          <Property Type="String" Name="UserName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LoginName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LoginPwd" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="Binary" Name="Avatar" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="UserCode" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="State" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Email" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Desc" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Language" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="StyleSheet" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="CreatedByID" />
+          <Property Type="Guid" Name="LastModifiedByID" />
+          <Property Type="DateTime" Name="CreatedDate" />
+          <Property Type="DateTime" Name="LastModifiedDate" />
+          <Property Type="Guid" Name="OwnerID" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <Property Type="DateTime" Name="SystemModstamp" />
+          <Property Type="Boolean" Name="SendEmail" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MWDatabaseModelStoreContainer" CdmEntityContainer="MWDatabaseEntities">
+          <EntitySetMapping Name="tblMenu_Permission_Role"><EntityTypeMapping TypeName="MWDatabaseModel.tblMenu_Permission_Role"><MappingFragment StoreEntitySet="tblMenu_Permission_Role">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+            <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblMenuRight"><EntityTypeMapping TypeName="MWDatabaseModel.tblMenuRight"><MappingFragment StoreEntitySet="tblMenuRight">
+            <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+            <ScalarProperty Name="Seq" ColumnName="Seq" />
+            <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+            <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+            <ScalarProperty Name="Action" ColumnName="Action" />
+            <ScalarProperty Name="Control" ColumnName="Control" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="Icon1" ColumnName="Icon1" />
+            <ScalarProperty Name="Icon2" ColumnName="Icon2" />
+            <ScalarProperty Name="TreeCode" ColumnName="TreeCode" />
+            <ScalarProperty Name="NodeLevel" ColumnName="NodeLevel" />
+            <ScalarProperty Name="IsLeaves" ColumnName="IsLeaves" />
+            <ScalarProperty Name="URL" ColumnName="URL" />
+            <ScalarProperty Name="IsAJAXPage" ColumnName="IsAJAXPage" />
+            <ScalarProperty Name="GroupBy" ColumnName="GroupBy" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblRole"><EntityTypeMapping TypeName="MWDatabaseModel.tblRole"><MappingFragment StoreEntitySet="tblRole">
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+            <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+            <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblRole_User"><EntityTypeMapping TypeName="MWDatabaseModel.tblRole_User"><MappingFragment StoreEntitySet="tblRole_User">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblUser"><EntityTypeMapping TypeName="MWDatabaseModel.tblUser"><MappingFragment StoreEntitySet="tblUser">
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+            <ScalarProperty Name="LoginPwd" ColumnName="LoginPwd" />
+            <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+            <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="Language" ColumnName="Language" />
+            <ScalarProperty Name="StyleSheet" ColumnName="StyleSheet" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+            <ScalarProperty Name="SendEmail" ColumnName="SendEmail" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_RoleAndUser">
+            <EntityTypeMapping TypeName="MWDatabaseModel.View_RoleAndUser">
+              <MappingFragment StoreEntitySet="View_RoleAndUser">
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_Menu_Permission_Role">
+            <EntityTypeMapping TypeName="MWDatabaseModel.View_Menu_Permission_Role">
+              <MappingFragment StoreEntitySet="View_Menu_Permission_Role">
+                <ScalarProperty Name="GroupBy" ColumnName="GroupBy" />
+                <ScalarProperty Name="IsAJAXPage" ColumnName="IsAJAXPage" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+                <ScalarProperty Name="IsLeaves" ColumnName="IsLeaves" />
+                <ScalarProperty Name="NodeLevel" ColumnName="NodeLevel" />
+                <ScalarProperty Name="TreeCode" ColumnName="TreeCode" />
+                <ScalarProperty Name="Icon2" ColumnName="Icon2" />
+                <ScalarProperty Name="Icon1" ColumnName="Icon1" />
+                <ScalarProperty Name="Desc" ColumnName="Desc" />
+                <ScalarProperty Name="Control" ColumnName="Control" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+                <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+                <ScalarProperty Name="Seq" ColumnName="Seq" />
+                <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_Role">
+            <EntityTypeMapping TypeName="MWDatabaseModel.View_Role">
+              <MappingFragment StoreEntitySet="View_Role">
+                <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+                <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+                <ScalarProperty Name="Desc" ColumnName="Desc" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_User">
+            <EntityTypeMapping TypeName="MWDatabaseModel.View_User">
+              <MappingFragment StoreEntitySet="View_User">
+                <ScalarProperty Name="SendEmail" ColumnName="SendEmail" />
+                <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+                <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+                <ScalarProperty Name="StyleSheet" ColumnName="StyleSheet" />
+                <ScalarProperty Name="Language" ColumnName="Language" />
+                <ScalarProperty Name="Desc" ColumnName="Desc" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+                <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+                <ScalarProperty Name="LoginPwd" ColumnName="LoginPwd" />
+                <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="MWDatabaseModel.tblMenu_Permission_Role" Width="1.5" PointX="3" PointY="2.25" Height="1.9700325520833335" IsExpanded="true" />
+        <EntityTypeShape EntityType="MWDatabaseModel.tblMenuRight" Width="1.5" PointX="0.75" PointY="1" Height="4.45328857421875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MWDatabaseModel.tblRole" Width="1.5" PointX="0.75" PointY="6.375" Height="3.6892097981770844" IsExpanded="true" />
+        <EntityTypeShape EntityType="MWDatabaseModel.tblRole_User" Width="1.5" PointX="3" PointY="7.25" Height="1.9700325520833344" IsExpanded="true" />
+        <EntityTypeShape EntityType="MWDatabaseModel.tblUser" Width="1.5" PointX="0.75" PointY="11.875" Height="4.8353279622395835" IsExpanded="true" />
+        <AssociationConnector Association="MWDatabaseModel.FK_TBLMENU__REFERENCE_TBLMENUR" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="3.2350162760416667" />
+          <ConnectorPoint PointX="3" PointY="3.2350162760416667" />
+        </AssociationConnector>
+        <AssociationConnector Association="MWDatabaseModel.FK_tblMenu_Permission_Role_tblRole" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="6.375" />
+          <ConnectorPoint PointX="2.625" PointY="6" />
+          <ConnectorPoint PointX="2.625" PointY="3.7587764140625" />
+          <ConnectorPoint PointX="3" PointY="3.7587764140625" />
+        </AssociationConnector>
+        <AssociationConnector Association="MWDatabaseModel.FK_TBLMENUR_REFERENCE_TBLMENUR" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.2819230769230767" PointY="5.45328857421875" />
+          <ConnectorPoint PointX="1.2819230769230767" PointY="5.70328857421875" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="5.70328857421875" />
+          <ConnectorPoint PointX="1.7284615384615383" PointY="5.45328857421875" />
+        </AssociationConnector>
+        <AssociationConnector Association="MWDatabaseModel.FK_tblRole_User_tblRole" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.2350162760416676" />
+          <ConnectorPoint PointX="3" PointY="8.2350162760416676" />
+        </AssociationConnector>
+        <AssociationConnector Association="MWDatabaseModel.FK_tblRole_User_tblUser" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="14.292663981119791" />
+          <ConnectorPoint PointX="3.75" PointY="14.292663981119791" />
+          <ConnectorPoint PointX="3.75" PointY="9.2200325520833353" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="MWDatabaseModel.View_RoleAndUser" Width="1.5" PointX="5.375" PointY="0.75" Height="1.7790128580729165" />
+        <EntityTypeShape EntityType="MWDatabaseModel.View_Menu_Permission_Role" Width="1.5" PointX="5.375" PointY="3.75" Height="4.0712491861979174" />
+        <EntityTypeShape EntityType="MWDatabaseModel.View_Role" Width="1.5" PointX="7.375" PointY="0.75" Height="3.3071704101562496" />
+        <EntityTypeShape EntityType="MWDatabaseModel.View_User" Width="1.5" PointX="7.375" PointY="5.75" Height="5.0263476562500031" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

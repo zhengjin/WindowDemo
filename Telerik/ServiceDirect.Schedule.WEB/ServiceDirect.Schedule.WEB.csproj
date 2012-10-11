@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D04D628-A30B-4200-BFEC-746A65020872}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceDirect.Schedule.WEB</RootNamespace>
+    <AssemblyName>ServiceDirect.Schedule.WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Telerik.Web.UI, Version=2010.3.1317.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\ErrorLog.txt" />
+    <Content Include="App_Themes\Default\Button.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Button\ButtonSprites.gif" />
+    <Content Include="App_Themes\Default\Button\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Button\ToggleSprite.gif" />
+    <Content Include="App_Themes\Default\Calendar.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Calendar\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Calendar\sprite.gif" />
+    <Content Include="App_Themes\Default\ColorPicker.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\ColorPicker\ColorPickerSprites.png" />
+    <Content Include="App_Themes\Default\ColorPicker\rcpVerticalSprites.png" />
+    <Content Include="App_Themes\Default\ColorPicker\rcpVerticalSpritesIE6.png" />
+    <Content Include="App_Themes\Default\ColorPicker\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\ComboBox.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\ComboBox\rcbSprite.png" />
+    <Content Include="App_Themes\Default\ComboBox\rcbSpriteIE6.png" />
+    <Content Include="App_Themes\Default\ComboBox\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Dock.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Dock\CommandSprite.gif" />
+    <Content Include="App_Themes\Default\Dock\HorizontalSprite.gif" />
+    <Content Include="App_Themes\Default\Dock\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Dock\VerticalSprite.gif" />
+    <Content Include="App_Themes\Default\Editor.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Editor\CommandSpritesLight.png" />
+    <Content Include="App_Themes\Default\Editor\CommandSpritesLightIE6.gif" />
+    <Content Include="App_Themes\Default\Editor\CommonIcons.gif" />
+    <Content Include="App_Themes\Default\Editor\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Editor\ToolbarSprites.gif" />
+    <Content Include="App_Themes\Default\Editor\ToolbarVerticalSprites.gif" />
+    <Content Include="App_Themes\Default\Filter.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Filter\rfLast-rtl.gif" />
+    <Content Include="App_Themes\Default\Filter\rfLast.gif" />
+    <Content Include="App_Themes\Default\Filter\rfLine-rtl.gif" />
+    <Content Include="App_Themes\Default\Filter\rfLine.gif" />
+    <Content Include="App_Themes\Default\Filter\rfMiddle-rtl.gif" />
+    <Content Include="App_Themes\Default\Filter\rfMiddle.gif" />
+    <Content Include="App_Themes\Default\Filter\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Filter\sprite.gif" />
+    <Content Include="App_Themes\Default\FormDecorator.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\FormDecorator\ButtonSprites.gif" />
+    <Content Include="App_Themes\Default\FormDecorator\CheckBoxSprites.gif" />
+    <Content Include="App_Themes\Default\FormDecorator\ComboSprites.gif" />
+    <Content Include="App_Themes\Default\FormDecorator\FieldsetBgr.png" />
+    <Content Include="App_Themes\Default\FormDecorator\RadioButtonSprites.gif" />
+    <Content Include="App_Themes\Default\FormDecorator\RadioButtonSprites.png" />
+    <Content Include="App_Themes\Default\FormDecorator\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Grid.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Grid\ButtonSprites.gif" />
+    <Content Include="App_Themes\Default\Grid\contextMenu.gif" />
+    <Content Include="App_Themes\Default\Grid\export.gif" />
+    <Content Include="App_Themes\Default\Grid\loading_small.gif" />
+    <Content Include="App_Themes\Default\Grid\rgDrag.gif" />
+    <Content Include="App_Themes\Default\Grid\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Grid\sprite.gif" />
+    <Content Include="App_Themes\Default\Input.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Input\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Input\sprite.gif" />
+    <Content Include="App_Themes\Default\ListBox.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\ListBox\rlbButtonHover.png" />
+    <Content Include="App_Themes\Default\ListBox\rlbButtonHoverIE6.png" />
+    <Content Include="App_Themes\Default\ListBox\rlbButtonNormal.png" />
+    <Content Include="App_Themes\Default\ListBox\rlbButtonNormalIE6.png" />
+    <Content Include="App_Themes\Default\ListBox\rlbDropClue.png" />
+    <Content Include="App_Themes\Default\ListBox\rlbHeaderFooter.png" />
+    <Content Include="App_Themes\Default\ListBox\rlbSprite.png" />
+    <Content Include="App_Themes\Default\ListBox\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\ListView.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\ListView\CheckBoxSprites.gif" />
+    <Content Include="App_Themes\Default\ListView\drag.gif" />
+    <Content Include="App_Themes\Default\ListView\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\ListView\sprite.gif" />
+    <Content Include="App_Themes\Default\Menu.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Menu\rmRoundedLeft.png" />
+    <Content Include="App_Themes\Default\Menu\rmRoundedLeft_rtl.png" />
+    <Content Include="App_Themes\Default\Menu\rmRoundedRight.png" />
+    <Content Include="App_Themes\Default\Menu\rmRoundedRight_rtl.png" />
+    <Content Include="App_Themes\Default\Menu\rmSprite.png" />
+    <Content Include="App_Themes\Default\Menu\rmVSprite.png" />
+    <Content Include="App_Themes\Default\Menu\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\PanelBar.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\PanelBar\Expandable.png" />
+    <Content Include="App_Themes\Default\PanelBar\RootItemBg.png" />
+    <Content Include="App_Themes\Default\PanelBar\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\PanelBar\SubItemStates.png" />
+    <Content Include="App_Themes\Default\Rating.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Rating\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Rating\Sprite.gif" />
+    <Content Include="App_Themes\Default\Rating\Sprite.png" />
+    <Content Include="App_Themes\Default\Rotator.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Rotator\loading_small.gif" />
+    <Content Include="App_Themes\Default\Rotator\RotatorButtons.gif" />
+    <Content Include="App_Themes\Default\Rotator\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Scheduler.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Scheduler\rsAppointmentBg.png" />
+    <Content Include="App_Themes\Default\Scheduler\rsInlineEditHSprite.png" />
+    <Content Include="App_Themes\Default\Scheduler\rsInlineEditVSprite.png" />
+    <Content Include="App_Themes\Default\Scheduler\rsModalBg.png" />
+    <Content Include="App_Themes\Default\Scheduler\rsModalBgIE6.png" />
+    <Content Include="App_Themes\Default\Scheduler\rsModalTitleBg.png" />
+    <Content Include="App_Themes\Default\Scheduler\rsSprites.png" />
+    <Content Include="App_Themes\Default\Scheduler\rsVerticalHeaderBg.png" />
+    <Content Include="App_Themes\Default\Scheduler\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Scheduler\sprite.gif" />
+    <Content Include="App_Themes\Default\SiteMap.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\SiteMap\rsmHover.png" />
+    <Content Include="App_Themes\Default\SiteMap\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Slider.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Slider\DragHandle.gif" />
+    <Content Include="App_Themes\Default\Slider\DragHandleDown.gif" />
+    <Content Include="App_Themes\Default\Slider\DragVerticalHandle.gif" />
+    <Content Include="App_Themes\Default\Slider\DragVerticalHandleRight.gif" />
+    <Content Include="App_Themes\Default\Slider\Handles.gif" />
+    <Content Include="App_Themes\Default\Slider\HandlesVertical.gif" />
+    <Content Include="App_Themes\Default\Slider\ItemHorizontalBgr.gif" />
+    <Content Include="App_Themes\Default\Slider\ItemVerticalBgr.gif" />
+    <Content Include="App_Themes\Default\Slider\LargeChangeHorizontal.gif" />
+    <Content Include="App_Themes\Default\Slider\LargeChangeMiddleHorizontal.gif" />
+    <Content Include="App_Themes\Default\Slider\LargelChangeCenterVertical.gif" />
+    <Content Include="App_Themes\Default\Slider\LargelChangeVertical.gif" />
+    <Content Include="App_Themes\Default\Slider\SelectedRegionHorizontalBgr.gif" />
+    <Content Include="App_Themes\Default\Slider\SelectedRegionVerticalBgr.gif" />
+    <Content Include="App_Themes\Default\Slider\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Slider\SmallChangeCenterVertical.gif" />
+    <Content Include="App_Themes\Default\Slider\SmallChangeHorizontal.gif" />
+    <Content Include="App_Themes\Default\Slider\SmallChangeMiddleHorizontal.gif" />
+    <Content Include="App_Themes\Default\Slider\SmallChangeVertical.gif" />
+    <Content Include="App_Themes\Default\Slider\TrackBgr.gif" />
+    <Content Include="App_Themes\Default\Slider\TrackVerticalBgr.gif" />
+    <Content Include="App_Themes\Default\Splitter.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Splitter\ExpandCollapseBarsCommands.gif" />
+    <Content Include="App_Themes\Default\Splitter\ResizeBarHorizontalSprites.gif" />
+    <Content Include="App_Themes\Default\Splitter\ResizeBarVerticalSprites.gif" />
+    <Content Include="App_Themes\Default\Splitter\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Splitter\slideTitleContainerBgr.gif" />
+    <Content Include="App_Themes\Default\TabStrip.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\TabStrip\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\TabStrip\TabStripStates.png" />
+    <Content Include="App_Themes\Default\TabStrip\TabStripStates_rtl.png" />
+    <Content Include="App_Themes\Default\TabStrip\TabStripVStates.png" />
+    <Content Include="App_Themes\Default\TagCloud.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\TagCloud\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\ToolBar.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\ToolBar\rtbActiveBg.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbClickedBg.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbClickedDropArrows.gif" />
+    <Content Include="App_Themes\Default\ToolBar\rtbClickedDropArrows.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbClickedUpArrows.gif" />
+    <Content Include="App_Themes\Default\ToolBar\rtbClickedUpArrows.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbControlBg.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbDropArrows.gif" />
+    <Content Include="App_Themes\Default\ToolBar\rtbDropArrows.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbDropDownBg.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbDropDownHover.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbHoverBg.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbRoundedLeft.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbRoundedLeft_rtl.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbRoundedRight.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbRoundedRight_rtl.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbUpArrows.gif" />
+    <Content Include="App_Themes\Default\ToolBar\rtbUpArrows.png" />
+    <Content Include="App_Themes\Default\ToolBar\rtbVerticalControlBg.png" />
+    <Content Include="App_Themes\Default\ToolBar\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\ToolTip.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\ToolTip\Callouts.gif" />
+    <Content Include="App_Themes\Default\ToolTip\loading.gif" />
+    <Content Include="App_Themes\Default\ToolTip\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\ToolTip\ToolTipSprites.png" />
+    <Content Include="App_Themes\Default\ToolTip\ToolTipVerticalSprites.png" />
+    <Content Include="App_Themes\Default\TreeView.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\TreeView\BottomLine.png" />
+    <Content Include="App_Themes\Default\TreeView\BottomLine_rtl.png" />
+    <Content Include="App_Themes\Default\TreeView\FirstNodeSpan.png" />
+    <Content Include="App_Themes\Default\TreeView\FirstNodeSpan_rtl.png" />
+    <Content Include="App_Themes\Default\TreeView\ItemHoveredBg.png" />
+    <Content Include="App_Themes\Default\TreeView\ItemSelectedBg.png" />
+    <Content Include="App_Themes\Default\TreeView\LoadingIcon.gif" />
+    <Content Include="App_Themes\Default\TreeView\MiddleLine.png" />
+    <Content Include="App_Themes\Default\TreeView\MiddleLine_rtl.png" />
+    <Content Include="App_Themes\Default\TreeView\NodeSpan.png" />
+    <Content Include="App_Themes\Default\TreeView\NodeSpan_rtl.png" />
+    <Content Include="App_Themes\Default\TreeView\PlusMinus.png" />
+    <Content Include="App_Themes\Default\TreeView\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\TreeView\SingleLine.png" />
+    <Content Include="App_Themes\Default\TreeView\SingleLine_rtl.png" />
+    <Content Include="App_Themes\Default\TreeView\TopLine.png" />
+    <Content Include="App_Themes\Default\TreeView\TopLine_rtl.png" />
+    <Content Include="App_Themes\Default\TreeView\TriState.png" />
+    <Content Include="App_Themes\Default\Upload.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Upload\AsyncProgress.png" />
+    <Content Include="App_Themes\Default\Upload\ruProgress.gif" />
+    <Content Include="App_Themes\Default\Upload\ruSprite.png" />
+    <Content Include="App_Themes\Default\Upload\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Upload\sprite.gif" />
+    <Content Include="App_Themes\Default\Window.ServiceDirect.css" />
+    <Content Include="App_Themes\Default\Window\CommandButtonSprites.gif" />
+    <Content Include="App_Themes\Default\Window\loading.gif" />
+    <Content Include="App_Themes\Default\Window\loading_small.gif" />
+    <Content Include="App_Themes\Default\Window\ServiceDirect.gif" />
+    <Content Include="App_Themes\Default\Window\WindowHorizontalSprites.gif" />
+    <Content Include="App_Themes\Default\Window\WindowHorizontalSprites.png" />
+    <Content Include="App_Themes\Default\Window\WindowVerticalSprites.gif" />
+    <Content Include="App_Themes\Default\Window\WindowVerticalSprites.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="Image\arrow.png" />
+    <Content Include="Image\button_a.jpg" />
+    <Content Include="Image\button_h.jpg" />
+    <Content Include="Image\button_setting.jpg" />
+    <Content Include="Image\Disable.png" />
+    <Content Include="Image\Enable.png" />
+    <Content Include="Image\logo.png" />
+    <Content Include="Image\new.jpg" />
+    <Content Include="Image\right.png" />
+    <Content Include="Image\task_headerbg.jpg" />
+    <Content Include="Image\top_bg.jpg" />
+    <Content Include="Image\wrapper_bg.jpg" />
+    <Content Include="LoginForm.aspx" />
+    <Content Include="Schedule Billing\ScheduleLogForm.aspx" />
+    <Content Include="Schedule Billing\TaskDetailFormView.aspx" />
+    <Content Include="Styles\images\button.png" />
+    <Content Include="Styles\images\formbg.png" />
+    <Content Include="Styles\images\line.jpg" />
+    <Content Include="Styles\images\loginbg.jpg" />
+    <Content Include="Styles\images\logo.png" />
+    <Content Include="TelerikWebForm.aspx" />
+    <Content Include="WebException\DefaultRedirectErrorPage.aspx" />
+    <Content Include="WebException\GenericErrorPage.aspx" />
+    <Content Include="WebException\Http404ErrorPage.aspx" />
+    <Content Include="WebException\HttpErrorPage.aspx" />
+    <Content Include="Image\button.jpg" />
+    <Content Include="Image\error.png" />
+    <Content Include="Image\form_bottom.jpg" />
+    <Content Include="Image\form_top.png" />
+    <Content Include="Image\title_bg.png" />
+    <Content Include="NoPermissionForm.aspx" />
+    <Content Include="Schedule Setting\AddModuelForm.aspx" />
+    <Content Include="Schedule Setting\BackupSettingForm.aspx" />
+    <Content Include="Schedule Billing\BillingForm.aspx" />
+    <Content Include="Schedule Setting\EmailSettingForm.aspx" />
+    <Content Include="Schedule Billing\ScheduleTasksForm.aspx" />
+    <Content Include="Schedule Billing\TaskDetailForm.aspx" />
+    <Content Include="Schedule Setting\ModuelIDForm.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\main.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\WebResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.aspx.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginForm.aspx.designer.cs">
+      <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule Billing\ScheduleLogForm.aspx.cs">
+      <DependentUpon>ScheduleLogForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Billing\ScheduleLogForm.aspx.designer.cs">
+      <DependentUpon>ScheduleLogForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule Billing\TaskDetailFormView.aspx.cs">
+      <DependentUpon>TaskDetailFormView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Billing\TaskDetailFormView.aspx.designer.cs">
+      <DependentUpon>TaskDetailFormView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\VersionInfo.cs" />
+    <Compile Include="TelerikWebForm.aspx.cs">
+      <DependentUpon>TelerikWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TelerikWebForm.aspx.designer.cs">
+      <DependentUpon>TelerikWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebException\DefaultRedirectErrorPage.aspx.cs">
+      <DependentUpon>DefaultRedirectErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebException\DefaultRedirectErrorPage.aspx.designer.cs">
+      <DependentUpon>DefaultRedirectErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebException\ExceptionUtility.cs" />
+    <Compile Include="WebException\GenericErrorPage.aspx.cs">
+      <DependentUpon>GenericErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebException\GenericErrorPage.aspx.designer.cs">
+      <DependentUpon>GenericErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebException\Http404ErrorPage.aspx.cs">
+      <DependentUpon>Http404ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebException\Http404ErrorPage.aspx.designer.cs">
+      <DependentUpon>Http404ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebException\HttpErrorPage.aspx.cs">
+      <DependentUpon>HttpErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebException\HttpErrorPage.aspx.designer.cs">
+      <DependentUpon>HttpErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="NoPermissionForm.aspx.cs">
+      <DependentUpon>NoPermissionForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NoPermissionForm.aspx.designer.cs">
+      <DependentUpon>NoPermissionForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schedule Setting\AddModuelForm.aspx.cs">
+      <DependentUpon>AddModuelForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Setting\AddModuelForm.aspx.designer.cs">
+      <DependentUpon>AddModuelForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule Setting\BackupSettingForm.aspx.cs">
+      <DependentUpon>BackupSettingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Setting\BackupSettingForm.aspx.designer.cs">
+      <DependentUpon>BackupSettingForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule Billing\BillingForm.aspx.cs">
+      <DependentUpon>BillingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Billing\BillingForm.aspx.designer.cs">
+      <DependentUpon>BillingForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule Setting\EmailSettingForm.aspx.cs">
+      <DependentUpon>EmailSettingForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Setting\EmailSettingForm.aspx.designer.cs">
+      <DependentUpon>EmailSettingForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule Billing\ScheduleTasksForm.aspx.cs">
+      <DependentUpon>ScheduleTasksForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Billing\ScheduleTasksForm.aspx.designer.cs">
+      <DependentUpon>ScheduleTasksForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule Billing\TaskDetailForm.aspx.cs">
+      <DependentUpon>TaskDetailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Billing\TaskDetailForm.aspx.designer.cs">
+      <DependentUpon>TaskDetailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule Setting\ModuelIDForm.aspx.cs">
+      <DependentUpon>ModuelIDForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedule Setting\ModuelIDForm.aspx.designer.cs">
+      <DependentUpon>ModuelIDForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceDirect.Membership.DAL\ServiceDirect.Membership.DAL.csproj">
+      <Project>{EB826410-C8B2-4589-AFBC-7B6FEDC8D46E}</Project>
+      <Name>ServiceDirect.Membership.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDirect.Membership\ServiceDirect.Membership.csproj">
+      <Project>{E3733531-65F4-47D1-9666-09BABCB29795}</Project>
+      <Name>ServiceDirect.Membership</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDirect.Schedule.Billing.BLL\ServiceDirect.Schedule.Billing.BLL.csproj">
+      <Project>{068FEDA2-7EF9-4F2A-9813-0ED2E7A84186}</Project>
+      <Name>ServiceDirect.Schedule.Billing.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDirect.Schedule.Billing.JOB\ServiceDirect.Schedule.Billing.JOB.csproj">
+      <Project>{96BE781B-5119-4193-9E83-C8B1F1D1DFF6}</Project>
+      <Name>ServiceDirect.Schedule.Billing.JOB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceDirect.Schedule.DAL\ServiceDirect.Schedule.DAL.csproj">
+      <Project>{5EE9E9B3-338E-4EEE-A713-A9D376629498}</Project>
+      <Name>ServiceDirect.Schedule.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\WebResource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>WebResource.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddInManager.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="App_Data\RadSpell\de-DE.tdf" />
+    <None Include="App_Data\RadSpell\en-US.tdf" />
+    <None Include="App_Data\RadSpell\fr-FR.tdf" />
+    <Content Include="App_Themes\Default\Default.skin" />
+    <None Include="Properties\VersionInfo.cs.tmpl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7551</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>subwcrev "$(ProjectDir)." "$(ProjectDir)\Properties\VersionInfo.cs.tmpl" "$(ProjectDir)\Properties\VersionInfo.cs"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

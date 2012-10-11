@@ -1,0 +1,77 @@
+div.RadSlider_PBS .rslTrack
+{
+	border: none;
+}
+
+div.RadSlider_PBS .rslHorizontal a.rslHandle
+{
+	width: 30px;
+	height: 30px;
+	line-height:30px;
+	background-image: url(images/ball.png);
+	_background-image: url(images/Handles.gif);
+}
+
+div.RadSlider_PBS .rslHorizontal a.rslDraghandle
+{
+	background-image: url(images/DragHandle.png);
+	_background-image: url(images/DragHandle.gif);
+}
+
+div.RadSlider_PBS .rslHorizontal .rslTrack
+{
+	height: 22px;
+	line-height: 22px;
+	background: url(images/TrackBgr.gif) repeat-x;
+	top:0;
+	left:32px;
+}
+
+div.RadSlider_PBS .rslHorizontal .rslSelectedregion
+{
+	background: url(images/bgImg.png) left top repeat-x;
+	position:absolute;
+	margin-top:3px;
+	height: 16px;
+	line-height: 16px;
+}
+
+/* styles from the base stylesheet of RadSlider */
+div.RadSlider_PBS .rslHorizontal .rslDecrease
+{
+	background-position: 0 0;
+}
+
+div.RadSlider_PBS .rslHorizontal .rslDecrease:hover
+{
+	background-position: -36px 0;
+}
+
+div.RadSlider_PBS .rslHorizontal .rslIncrease
+{
+	background-position: -106px 0;
+}
+
+div.RadSlider_PBS .rslHorizontal .rslIncrease:hover
+{
+	background-position: -70px 0;
+}
+
+div.RadSlider_PBS .rslHorizontal a.rslDraghandle
+{
+	width: 16px;
+	height: 16px;
+	margin-top: 3px;
+	background-position: 0 0;
+}
+
+div.RadSlider_PBS .rslHorizontal a.rslDraghandle:hover
+{
+	background-position: -17px 0;
+}
+
+div.RadSlider_PBS .rslHorizontal a.rslDraghandle:focus,
+div.RadSlider_PBS .rslHorizontal a.rslDraghandle:active
+{
+	background-position: -34px 0;
+}

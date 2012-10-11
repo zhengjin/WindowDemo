@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="36582e7e-4bfe-4547-b666-09c0b526124c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:12345/Binding/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="6a8d7563-0942-4e2c-b8ad-17a3f7ca7491" SourceId="1" SourceUrl="http://localhost:12345/Binding/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="13b06be6-5f1c-4870-a9e8-682e5215fa5d" SourceId="1" SourceUrl="http://localhost:12345/Binding/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="8972f504-b1ba-4e59-81ab-bdf6dbc3cf12" SourceId="1" SourceUrl="http://localhost:12345/Binding/?xsd=xsd0" />
+    <MetadataFile FileName="Hello.wsdl" MetadataType="Wsdl" ID="4b39374e-8523-471b-9b89-34c551f92cfc" SourceId="1" SourceUrl="http://localhost:12345/Binding/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

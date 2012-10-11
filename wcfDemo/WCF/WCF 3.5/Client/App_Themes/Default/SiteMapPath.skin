@@ -1,0 +1,6 @@
+﻿<asp:SiteMapPath runat="server" PathSeparator=" > ">
+    <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+    <CurrentNodeStyle ForeColor="#333333" />
+    <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+    <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />
+</asp:SiteMapPath>

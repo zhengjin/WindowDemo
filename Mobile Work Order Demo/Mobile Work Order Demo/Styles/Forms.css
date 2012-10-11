@@ -1,0 +1,1377 @@
+fieldset
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.tForm .tFormFieldsList
+{
+    margin: 0;
+    list-style-type: none;
+}
+.tForm .tFormFieldsList li
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+.tForm .tFormButton
+{
+    margin-top: 0;
+    padding: 17px 0 0 120px;
+}
+.tForm .tFormFieldsList .tFormStaticData
+{
+    padding-bottom: 10px;
+    line-height: normal;
+}
+.tForm .tFormFieldsList li.tFormCheckbox
+{
+    width: 350px;
+    padding-left: 120px;
+    padding-top: 10px;
+}
+
+.tForm .tFormFieldsList ul.tFormCheckbox
+{
+    margin-top: 0;
+}
+
+/* radio buttons */
+.tForm .tFormFieldsList .tFormCheckbox
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.tForm .tFormFieldsList .tFormCheckbox label,
+.tForm .tFormFieldsList label.labelCheckbox /*labels for checkbox */
+{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.8;
+    position: relative;
+    top: -1px;
+}
+.tForm .tFormFieldsList ul.tFormCheckbox
+{
+    margin-top: 0;
+}
+.tForm .tFormFieldsList .tFormCheckbox li
+{
+    display: inline;
+    float: none;
+    clear: none;
+    padding-left: 0;
+    background: none;
+}
+.tForm .tFormFieldsList .tFormCheckbox li input
+{
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+.tForm .tFormFieldsList label.radioLabel
+{
+    font-weight: normal;
+    line-height: 1.8;
+}
+
+.tLongerLabels .fRadioErrorMessage strong
+{
+    margin: -15px 0 0;
+    padding-left: 374px !important;
+}
+
+.tForm .tVerticalList div .tFormCheckbox li
+{
+	clear: both;
+	float: left;
+}
+.tVerticalList div
+{
+	float: left;
+	width: 300px;
+}
+
+.tVerticalList label 
+{
+	
+}
+/* end of radio buttons */
+
+
+.tSubsctiptions
+{
+	margin: 9px 0 0 122px;
+	
+}
+
+.tForm .tFormCheckbox.tSubsctiptions input
+{
+	vertical-align: middle;
+	margin: 2px 0px 5px 0px;
+	display: inline;
+}
+
+.tForm .tFormCheckbox.tSubsctiptions label
+{
+	display: inline-block;
+	margin: 4px 0 3px 3px;
+	padding: 0px;
+}
+
+.tForm .tFormFieldsList li.tFormCheckbox.tPublic 
+{
+	display: inline-block;
+	margin: 4px 0;
+}
+	
+.tForm .tFormFieldsList .tFormCheckbox li
+{
+    display: inline;
+    float: none;
+    clear: none;
+    padding-left: 6px;
+    background: none;
+}
+.tForm .tFormFieldsList .tFormCheckbox li input
+{
+    vertical-align: middle;
+}
+.tForm label
+{
+    display: block;
+    width: 110px;
+    padding: 9px 10px 0 0;
+    float: left;
+    text-align: right;
+    line-height: 1;
+}
+.tForm .fTitle label
+{
+    font-size: 18px;
+}
+.forumsPostForm .fTitle
+{
+    position: relative;
+}
+.forumsPostForm .fTitle label
+{
+    position: absolute;
+    left: 15px;
+    top: 4px;
+    float: none;
+    width: auto;
+    text-align: left;
+    color: #999;
+    font-style: italic;
+    font-weight: normal;
+}
+.tForm .tFormCheckbox label
+{
+    padding-top: 0;
+    padding-left: 5px;
+    display: inline;
+    float: none;
+    width: auto;
+}
+.tForm .tFormStaticData label
+{
+    padding-top: 0;
+    line-height: normal;
+}
+.tForm select
+{
+    width: 347px;
+    font-size: 1.1em;
+}
+.tForm textarea
+{
+    padding: 4px 5px 2px 5px;
+    width: 335px;
+    height: 200px;
+    border: 1px solid #afd1ff;
+    font-size: 1.1em;
+    font-family: arial,sans-serif;
+}
+.tForm input.txt
+{
+    padding: 4px 5px 2px 5px;
+    width: 335px;
+    height: 20px;
+    border: 1px solid #afd1ff;
+    font-size: 1.1em;
+}
+
+.tFormAddDeveloper .fError input.txt, .tForm .fError input.txt
+{
+    border-color: #ff6702;
+    display: block;
+}
+.tForm .fTitle input.txt
+{
+    font-size: 18px;
+    height: 26px;
+}
+.tForm select
+{
+    margin-top: 8px;
+    font-size: 12px;
+    width: 248px;
+}
+.tForm .txtWrapper
+{
+    display: block;
+    padding: 0 6px 6px;
+    float: left;
+    background-color: #e2eeff;
+}
+
+.tForm .fFirstInGroup .txtWrapper
+{
+    padding-top: 6px;
+}
+.tForm .fFirstInGroup label 
+{
+    padding-top: 15px;
+}
+.tForm .fEditor
+{
+    padding-top: 6px;
+    width: 770px;
+}
+
+.tFormAddDeveloper .fFieldErrorMsg strong,
+.tForm .fFieldErrorMsg strong,
+.tFormTicket .fError span strong
+{
+    display: block;
+    padding: 5px 8px 9px;
+    font-weight: normal;
+    color: #f60;
+    width:331px;
+    line-height: 1.5;
+}
+.tForm .tFormCheckboxErrorMsg strong
+{
+    margin-left: 126px;
+}
+
+.tForm .fError span 
+{
+    color: #FF6600 !important;
+}
+.tForm .tFormNote .fFieldErrorMsg strong
+{
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+/* Style for forms with longer labels */
+fieldset.tLongerLabels label
+{
+    width: 350px;
+}
+fieldset.tLongerLabels span label
+{
+    width: 110px;
+}
+fieldset.tLongerLabels .tFormButton {
+    margin-top: 0;
+    padding: 17px 0 0 360px;
+}
+fieldset.tLongerLabels span.tInfo 
+{
+    margin: 0 0 0 10px;
+}
+
+
+
+/* .tForm .tFormButton a.fSubmitBtn */
+.tFormButton a.fSubmitBtn:link, .tFormButton a.fSubmitBtn:visited, .tFormButton a.fSubmitBtn:hover, .tFormButton a.fSubmitBtn:active
+{
+    display: block;
+    border: 0;
+    padding: 3px 0 0 28px;
+    background: transparent url('/CSS/Forms/buttons.gif') no-repeat 0 0;
+    width: 63px;
+    height: 24px;
+    color: #fff;
+    font-size: 1em;
+    outline: 0;
+}
+.tFormButton a.fSubmitBtn:hover
+{
+    background-position: -200px 0;
+}
+.tFormButton a.fFakeSubmitBtn
+{
+    display: block;
+    border: 0;
+    padding: 3px 0 0 28px;
+    background: transparent url('/CSS/Forms/buttons.gif') no-repeat 0 0;
+    width: 63px;
+    height: 24px;
+    color: #fff;
+    font-size: 1em;
+    outline: 0;
+}
+/* .tForm .tFormButton a.fSubmitBtn:hover */
+.tFormButton a.fSubmitBtn:hover
+{
+    color: #fff;
+    text-decoration: none;
+}
+.maSupportTicketDetails .tFormButton a.fSubmitBtn
+{
+    background-position: 0 -300px;
+}
+.maSupportTicketDetails .tFormButton a.fSubmitBtn:hover
+{
+    background-position: -200px -300px;
+}
+/* .tForm .tFormButton input.fSubmitBtn */
+.tFormButton input.fSubmitBtn
+{
+    border: 0;
+    padding: 0 0 3px 0;
+    background: transparent url('/CSS/Forms/buttons.gif') no-repeat 0 0;
+    width: 91px;
+    height: 27px;
+    color: #fff;
+    font-size: 12px;
+    outline: 0;
+    font-family: Arial, Sans-Serif;
+}
+.tFormButton input.fSubmitBtnLonger
+{
+	width: 106px;
+}
+.tFormButton input.fFakeSubmitBtn
+{
+    border: 0;
+    padding: 0 0 3px 0;
+    background: transparent url('/CSS/Forms/buttons.gif') no-repeat 0 0;
+    width: 91px;
+    height: 27px;
+    color: #fff;
+    font-size: 1em;
+    outline: 0;
+    cursor: default;
+}
+.tFormButton input.fSubmitBtn:hover
+{
+    background-position: -200px 0;
+}
+.tForm input.fAttachBtn
+{
+    border: 0;
+    padding: 0 0 3px 0;
+    background: transparent url('/CSS/Forms/btnAttach.gif') no-repeat 0 50%;
+    width: 91px;
+    height: 27px;
+    color: #666;
+    font-size: 1em;
+    outline: 0;
+}
+.tFormButton input.fSubmitBtnLong, .tFormButton input.fFakeSubmitBtnLong {
+    background-position: 0 -149px;
+    width: 148px;
+}
+
+.tFormButton input.fSubmitBtnLong:hover
+{
+    background-position: -200px -149px;
+}
+
+
+.tForm .tFormNote
+{
+    margin: 0 0 0 120px;
+    padding: 0 7px 10px 15px;
+    width: 337px;
+    background-color: #E2EEFF;
+    line-height: 1.2;
+    clear: both;
+}
+
+.tForm #attachImageForm .tFormNote
+{
+    margin: 0 !important;
+    padding: 5px 0 10px 0;    
+}
+
+.tForm .tFormNoteAtachment {
+    margin: 0;
+    padding:7px 0 10px;
+    width: 300px;
+    background-color: #E2EEFF;
+    color:#666;
+    line-height: 1.2;
+    clear: both;
+}
+
+.tForm #attachImageForm label  {
+    padding-bottom:5px;
+    text-align:left; 
+}
+.tForm .tFormNote .fUploadRestrictions
+{       
+    color: #666;
+}
+.tForm .tOptionalField
+{
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: .9em;
+}
+/* Rate Ticket Asnwer Buttons */
+.maSupportTicketRateForm .tFormButton
+{
+    float: left;
+    padding: 7px 0 0 15px;
+}
+.maSupportTicketRateForm .tFormButton .maRate
+{
+    margin-top: -7px;
+}
+.maSupportTicketRateForm .tFormButton .maRate:hover
+{
+    background-position: -250px 0;
+}
+/* Send and mark as resolved submit button */
+.tForm .tFormButton .maSendAndCloseBtn
+{
+    margin-left: 20px;
+    width: 190px;
+    background: transparent url('/CSS/Forms/secondaryButtons.gif') no-repeat 0 -100px;
+    color: #666;
+    font-size: 11px;
+}
+.tForm .tFormButton .maSendAndCloseBtn:hover
+{
+    background-position: -250px -100px;
+}
+/* Change password form */
+.maChangePasswordForm, .maEnterPasswordForm
+{
+    margin-top: 20px;
+}
+.maChangePasswordForm .tFormButton input.fSubmitBtn
+{
+    background: transparent url('/CSS/Forms/buttons.gif') no-repeat 0 -150px;
+    width: 148px;
+    height: 27px;
+    padding: 0 0 2px;
+}
+.maChangePasswordForm .tFormButton input.fSubmitBtn:hover
+{
+    background-position: -200px -150px;
+}
+/* Your Profile Form */
+.maProfileForm .tFormFieldsList
+{
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.maProfileForm .maProfileFormAvatar
+{
+    padding-top: 15px;
+}
+.maProfileForm .maProfileFormAvatar a
+{
+    display: block;
+    padding-left: 120px;
+    font-size: .9em;
+}
+.maProfileForm .maProfileFormAvatar .fFieldErrorMsg
+{
+    padding-left: 120px;
+}
+.tRTF .maProfileForm h2
+{
+    padding-top: 7px;
+}
+/* MVP Picture */
+.maProfileForm #attachImageExpandLink
+{
+    margin-top: 10px;
+    margin-left: 120px;
+}
+.maProfileForm #selectedImage .maProfileFormAvatar strong
+{
+    padding: 1px 3px;
+    font-weight: normal;
+    line-height: normal;
+}
+.maProfileForm #selectedImage label
+{
+    padding-top: 15px;
+}
+/* Change Avatar Form */
+.maSelectedAvatar {
+    background: #ededed;
+    padding: 17px;    
+    float: left;
+    width: 884px;
+}
+*+html .maSelectedAvatar {
+    margin-top: 17px;
+}
+.maSelectedAvatar .imgWrap {
+    float: left; 
+    width: 102px; 
+    min-height: 90px;
+}
+.maChangeAvatarForm
+{
+    margin-left: 119px;
+}
+.maChangeAvatarForm .tFormNote
+{
+    margin-left: 0;
+}
+.maChangeAvatarForm h2
+{
+    margin: 1.2em 0 15px;
+}
+.maChangeAvatarForm h2 em
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: .6em;
+    color: #777;
+}
+.defaultAvatarImage {
+    position: absolute; 
+    top:4px; 
+    left: 275px; 
+    display: none;
+}
+.maChangeAvatarForm .fSelectAvailableAvatar
+{
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 0;
+}
+.maChangeAvatarForm .fSelectAvailableAvatar li
+{
+    padding: 0 20px 0 0;
+    background: none;
+    float: left;
+    text-align: center;
+}
+.maChangeAvatarForm .fSelectAvailableAvatar li label
+{
+    display: block;
+    margin-bottom: 5px;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    line-height: 80px;
+    border: 1px solid #f7f7f7;
+    float: none;
+    text-align: center;
+    padding: 0;
+}
+.maChangeAvatarForm .fSelectAvailableAvatar li label img
+{
+    vertical-align: bottom;
+}
+.maChangeAvatarForm .tFormButton
+{
+    padding-left: 0;
+    padding-bottom: 14px;
+    clear: both;
+}
+/* Login Form */
+.maLoginForm .tFormFieldsList
+{
+    margin-top: 20px;
+}
+.maClientRegistration .tFormFieldsList
+{
+    margin-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.maLoginForm label
+{
+    width: 60px;
+}
+.maLoginForm .tFormFieldsList li.tFormCheckbox, .maLoginForm .tFormButton
+{
+    padding-left: 70px;
+}
+
+.loghelp
+{
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+/* Forgotton Password */
+.maForgottonPasswordForm .tFormFieldsList
+{
+    margin-top: 20px;
+}
+.maForgottonPasswordForm label
+{
+    width: 30px;
+}
+.maForgottonPasswordForm .tFormButton
+{
+    padding-left: 40px;
+}
+
+/* Add developers form */
+.maAddDevelopersForm
+{
+    margin-top: 10px;
+}
+.maAddDevelopersForm label
+{
+    width: 60px;
+}
+.maAddDevelopersForm .tFormButton
+{
+    padding-left: 70px;
+    line-height: 23px;
+}
+.maAddDevelopersForm .tFormButton a.fSubmitBtn
+{
+    float: left;
+    width: 42px;
+    line-height: 1.3;
+    margin-right: 5px;
+    background-position: 0 -450px;
+}
+.maAddDevelopersForm .tFormButton a.fSubmitBtn:hover
+{
+    background-position: -200px -450px;
+}
+/* Send Support Ticket and forum post */
+.maSendSupportTicket .tFormFieldsList
+{
+    margin-top: 20px;
+}
+.maSendSupportTicket div.tFormFieldsList 
+{
+    padding: 0 0 0 3px;
+    margin: 0;
+}
+.tForm .tFormFieldsList .maSendSupportTicketText
+{
+    padding: 17px 0;
+}
+.maSendSupportTicket .tFormFieldsList .maSendSupportFile #attachImageExpandLink
+{
+    margin: 0 0 0 120px;
+}
+.maSendSupportTicket .tFormFieldsList input.fAttachBtn
+{
+    margin: 10px 0 0 10px;
+}
+.maSendSupportTicket .tFormButton
+{
+    margin-top: 17px;
+    border-top: 1px solid #ccc;
+}
+.tFormFieldsList .maSendSupportTicketText label
+{
+    padding-top: 46px;
+}
+.reAjaxspell_wrapper label {
+    padding-top:0 !important;
+    white-space: nowrap;
+}
+
+/* */
+
+#attachImageForm {
+    width:auto;
+    background: #E2EEFF;
+    padding: 0 17px;
+    width:320px;
+}
+
+.maSendSupportFile #attachImageForm {
+    margin-left: 120px;
+}
+
+.maSendSupportFile .attachImageFormForms {
+    margin-left: 0!important;
+}
+/* Combobox */
+div.RadComboBox
+{
+    display: block !important;
+}
+.RadComboBox table
+{
+    background-color: #fff;
+    border: 1px solid #AFD1FF !important;
+}
+.fError .RadComboBox table
+{
+    border-color: #ff6702 !important;
+}
+.RadComboBox .rcbArrowCell
+{
+    padding: 1px;
+}
+.RadComboBox .rcbArrowCell a
+{
+    width: 24px !important;
+    height: 24px !important;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: transparent url('/CSS/Forms/btnComboboxSelect.gif') no-repeat 0 0;
+    margin:1px 1px 1px 0;
+}
+.RadComboBox .rcbInputCell
+{
+    width: 206px !important;
+}
+.RadComboBox .rcbInputCell input
+{
+    border: 0;
+    font-size: 1.1em;
+    height: 18px;
+    padding: 4px 5px 2px !important;
+    width: 308px !important;
+    cursor: default;
+}
+
+.radComboMajorVersion .rcbInputCell input
+{
+    width: 228px !important;       
+}
+
+.scBillingInfoColumn .RadComboBox .rcbInputCell {
+    width: 162px !important;
+}
+
+.scBillingInfoColumn .RadComboBox .rcbInputCell input {
+    width: 208px !important;
+}
+
+.sclTypeOfCard .rcbInputCell {
+    width: 160px !important;
+}
+.sclTypeOfCard .rcbInputCell input {
+    width: 210px !important;
+}
+
+.rcbSlide .rcbWidth
+{
+    max-height: 200px !important;
+    overflow: auto;
+    position: relative;
+}
+.RadComboBoxDropDown_Default
+{
+    z-index: 900000000;
+    position: relative;
+}
+.RadComboBoxDropDown_Default
+{
+    background-color: #fff;
+    border: 1px solid #626262;
+}
+.RadComboBoxDropDown_Default .rcbItem, .RadComboBoxDropDown_Default .rcbHovered, .RadComboBoxDropDown_Default .rcbDisabled, .RadComboBoxDropDown_Default .rcbLoading
+{
+    padding: 4px 20px 4px 4px;
+    cursor: default;
+}
+.RadComboBoxDropDown_Default .rcbHovered
+{
+    background-color: #dedede;
+}
+/* Date/Time input */
+.tDateInput input.riTextBox 
+{
+    height: 20px;
+    border: 1px solid #AFD1FF !important;    
+    padding: 4px 5px 2px 6px !important;
+    width: 90% !important;
+}
+
+
+/* Forums Reply Thread */
+.forumsPostForm .tFormFieldsList
+{
+    margin-top: 20px;
+}
+.forumsPostForm .tFormFieldsList .maSendSupportFile label
+{
+    text-align: left;
+}
+.forumsPostForm .tFormFieldsList .fEditor
+{
+    width: 890px;
+}
+.forumsPostForm .tFormFieldsList li.tFormCheckbox
+{
+    padding: 0 0 17px;
+}
+.forumsPostForm .tFormButton
+{
+    padding-left: 0;
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.forumsPostForm .tFormButton input
+{
+    margin-right: 30px;
+}
+.forumsPostForm .tFormFieldsList .maSendSupportFile
+{
+    padding-bottom: 20px;
+}
+.forumsPostForm .tFormFieldsList .maSendSupportFile #attachImageExpandLink
+{
+    margin-left: 0;
+}
+.forumsPostForm .tFormFieldsList .tFormNote
+{
+    margin-left: 0;
+    padding: 7px 0 10px 0;
+}
+.forumsPostForm .tFormFieldsList #selectedImage label
+{
+    padding-top: 5px;
+}
+/* Attachments in forms, hide, show, fade ... */
+.tFormFieldsList .maSendSupportAttachedFileList
+{
+    float: left;
+    margin: 0 0 10px;
+    padding-left: 120px;
+}
+.forumsPostForm .tFormFieldsList .maSendSupportAttachedFileList
+{
+    padding-left: 0;
+}
+.tFormFieldsList .maSendSupportAttachedFileList li
+{
+    padding-left: 17px;
+}
+.tFormFieldsList .maSendSupportAttachedFileList li em
+{
+    display: none;
+}
+
+/* radupload */
+.RadUpload .uploadAnother {
+    display:none;
+}
+
+/* rad editor in forum post form*/
+
+.reToolbar li {
+    background: none !important;
+    width:auto !important;
+    clear:none !important;
+}
+
+/* Spell Check */
+.fEditor .rade_ajaxspell_wrapper
+{
+    border-color: #afd1ff !important;
+    background-color: #afd1ff !important;
+}
+.tForm .radeditor .rade_ajaxspell_wrapper td
+{
+    padding: 0 10px;
+    background-color: transparent !important;
+    height: 42px;
+    vertical-align: middle;
+}
+.tFormFieldsList .maSendSupportTicketText .fEditor .rade_ajaxspell_wrapper label
+{
+    width: auto;
+    padding-top: 0;
+}
+.fEditor .rade_ajaxspell_wrapper button
+{
+    white-space: nowrap;
+}
+/* Window */
+.radwindow_Default2006
+{
+}
+div.radwindow_Default2006 table .titlerow td
+{
+    background-color: #363636 !important;
+    background-image: none !importnant;
+    padding-left: 20px;
+}
+div.radwindow_Default2006 table .titlebarcontrols td
+{
+    padding-top: 11px !important;
+    padding-bottom: 11px !important;
+}
+div.radwindow td.titlebar div.topresize
+{
+    display: none !important;
+}
+div.radwindow_Default2006 table td.topleft, div.radwindow_Default2006 table td.topright
+{
+    background-color: #363636 !important;
+    background-image: none !important;
+    border: 0 !important;
+}
+div.radwindow_Default2006 .titlebar table.titlebarcontrols em
+{
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+div.radwindow table.titlebarcontrols ul.controlbuttons
+{
+    display: none;
+}
+div.radwindow_Default2006 table td.bodyleft, div.radwindow_Default2006 table td.bodyright
+{
+    background-color: #363636 !important;
+    border-left: 0 !important;
+    width: 4px;
+}
+div.radwindow_Default2006 table td.footerleft, div.radwindow_Default2006 table td.footercenter, div.radwindow_Default2006 table td.footerright
+{
+    background-color: #363636 !important;
+    border: 0 !important;
+    line-height: 4px;
+}
+div.radwindow_Default2006 table.titlebarcontrols a.windowicon
+{
+    margin: 4px 0 0 10px !important;
+}
+
+/* Purchase Check Order*/
+.purchaseCheckOrder .tFormFieldsList
+{
+    margin-top: 10px;
+}
+.purchaseCheckOrder .tFormFieldsList input.txt
+{
+    width: 180px;
+}
+.purchaseCheckOrder .purchaseCaptchaCode label
+{
+    float: none;
+    width: 300px;
+    text-align: left;
+    font-size: 14px;
+}
+.purchaseCheckOrder .purchaseCaptchaCode .txtWrapper
+{
+    margin: 10px 0;
+}
+.purchaseCheckOrder li.purchaseCaptchaCode
+{
+    padding-left: 120px;
+    width: auto !important;
+    margin-top: 10px;
+}
+.purchaseCheckOrder li.purchaseCaptchaCode img
+{
+    display: block;
+    clear: both;
+}
+html body .radInput_Default .radEnabledCss_Default, html body .radInput_Default .radEmptyMessageCss_Default, html body .radInput_Default .radHoverCss_Default, html body .radInput_Default .radFocusedCss_Default, html body .radInput_Default .radReadOnlyCss_Default, html body .radInput_Default .radDisabledCss_Default, html body .radInput_Default .radNegativeCss_Default, html body .radInput_Default .radInvalidCss_Default
+{
+    border: 1px solid #AFD1FF !important;
+    height: 20px !important;
+}
+/* MS MVP Registration */
+.tMSMVPRegistration
+{
+    padding-top: 29px;
+}
+.tMSMVPRegistration label
+{
+    width: 160px;
+}
+.tMSMVPRegistration .tFormNote
+{
+    margin-left: 170px;
+}
+.tMSMVPRegistration .tFormButton
+{
+    padding-left: 170px;
+}
+
+.maFreeCodeForm input.fSubmitBtn
+{
+    background-position: 0 -150px;
+    width: 150px;
+}
+
+.maFreeCodeForm input.fSubmitBtn:hover
+{
+    background-position: -200px -150px;
+    width: 150px;
+}
+
+.tForm .txtWrapper
+{
+    background-color: #E2EEFF;
+    display: block;
+    float: left;
+    padding: 0 6px 6px;
+}
+
+
+/* spamProtector */
+li.spamProtector input
+{
+    border: 1px solid #AFD1FF;
+    font-size: 1.1em;
+    height: 20px;
+    padding: 4px 5px 2px;
+    width: 335px;
+}
+
+li.spamProtector img
+{
+    margin-left: 121px;
+}
+
+li.spamProtector label
+{
+    padding-top: 0;
+}
+
+li.spamProtector span.commentsValidator span
+{
+    padding-left: 121px;
+    color: #f00 !important;
+}
+/* EndOf spamProtector */
+
+
+/* Link Attach */
+
+.ruLinkAttach li .ruFakeInput
+{
+    display: none;
+}
+
+.tRTF ul.ruInputs li {
+    padding-left: 0;
+    background: none;
+}
+
+.ruLinkAttach .ruInputs li {
+    background: #fff !important;
+}
+
+.ruLinkAttach li .ruBrowse
+{    
+    background: url('/CSS/Forms/plus.gif') no-repeat 0px 7px !important;
+    text-indent: 0px !important;
+    font-size: 12px !important;
+    font-family: arial,sans-serif;
+    padding-left: 10px;
+    color: #476bb3;
+    width: 200px;
+    height: 20px;
+    border: 0;
+    text-align: left;
+    outline: 0;
+    font-size: 1px;
+    vertical-align: middle;
+}
+
+*+html .ruLinkAttach li .ruBrowse
+{    
+    background: url('/CSS/Forms/plus.gif') no-repeat 0px 5px !important; 
+    padding-left: 12px;   
+}
+
+.radwindow_Default2006 {
+    z-index: 9001 !important;
+}
+
+/*twitter and email form - new prodcut*/
+.tForm .cuLaunchForm .txtWrapper
+{
+    padding: 0 !important;
+}
+
+.tForm .cuLaunchForm label
+{
+    font-weight: bold;
+    width: auto;
+    float: none;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.tForm .cuLaunchForm li
+{
+    width: 208px !important;
+    clear: none !important;
+}
+
+.tForm .cuLaunchForm li.txt
+{
+    width: auto !important;
+    clear: none !important;
+}
+.tForm .cuLaunchForm li.txt label
+{
+    padding: 40px 0 0 0 !important;
+    text-align: center;
+    width: 28px;
+}
+
+.tForm .cuLaunchForm .txtWrapper, .tForm .cuLaunchForm span.txtWrapper
+{
+    background-color: transparent;
+}
+.tForm .cuLaunchForm input.txt 
+{
+    border:1px solid #000;
+    width: 196px;
+}
+.tForm .cuLaunchForm .fTwitter input.txt 
+{
+    width: 102px;
+    margin-left: 3px;
+}
+.fTwitterText
+{
+    display: inline-block;
+    height: 23px;
+    font-size: 12px;
+    font-style: normal;
+}
+.cuRegister
+ {
+     position:relative;
+ }
+.tRTFProducts .cuRegister p.tFormButton
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 0;
+}
+.tFormInputText
+{
+    font-weight: bold;
+}
+/*preffered language checkbox fix*/
+.tForm .tFormFieldsList .fPrefLang ul.tFormCheckbox 
+{
+	margin-top: 9px
+}
+
+label.tFormTxt
+{
+    color:#737D80;
+    float:left;
+    padding-top: 4px;
+    width: 117px;
+    display:inline-block;
+    clear:both;
+    font-size:11px;
+    font-weight:bold;
+    line-height:1;
+    padding: 4px 10px 2px 0;
+}
+
+/* Grey form */
+
+h2.tRegistrationAndLoginHeader {
+    font-size: 18px; 
+    font-weight: normal;
+    padding: 14px 0;
+    margin-left:10px;
+}
+
+.tFormGrey li.txtPassword, .tFormGrey h2, .tFormGrey li.checkbox label.txtSubscriptions {
+    display: none !important;
+}
+
+.tFormGrey {
+    width: 300px;
+    font-size: 12px;
+    margin-left:10px;
+}
+
+.tFormGrey .tFormFieldsList {
+    list-style-type:none;
+}
+
+.tFormGrey .tFormFieldsList li {
+    clear:both;
+    float:left;
+    margin:0;
+    padding:0;
+    width:100%;
+    padding-bottom: 7px;
+}
+
+.tFormGrey .tFormFieldsList li label {
+    display: block;
+}
+
+.tFormGrey .tFormFieldsList li.checkbox label {
+    display: inline-block; 
+    line-height: 15px;
+    padding-left:3px;
+}
+
+.tFormGrey .tSubsctiptions {
+    margin: 4px 0 4px 2px;
+}
+
+.tFormGrey input.txt {
+    border:1px solid #AFD1FF;
+    font-size:1.1em;
+    height:20px;
+    padding:4px 5px 2px;
+    width:272px;
+}
+
+.tFormGrey .RadComboBox {
+    width: 283px !important;
+}
+
+.tFormGrey .RadComboBox .rcbInputCell input {
+    width:243px !important;
+}
+
+.tFormGrey .fFieldErrorMsg strong {
+    color:#FF6600;
+    display:block;
+    font-weight:normal;
+    line-height:1.5;
+    padding:5px 8px 9px;
+    width:331px;
+}
+
+.tFormGrey .fError input.txt {
+    border-color:#FF6702;
+}
+/*bring a friend form- should be removed after page expire*/
+.social-button, .twitter-share-button
+{
+    float: left;
+    margin: 0;
+    padding: 10px 17px 0 0;
+}
+.social-button
+{
+    padding-top: 11px;
+}
+
+/*autosuggest tooltip*/
+.asTooltipBox
+{
+    display: none;  
+    padding: 0 0 0 21px;  
+}
+.asTooltipBoxShow
+{
+    display: block;    
+}
+#page-wrap div {
+    padding-bottom: 10px;
+    line-height: 1.4;
+}
+/*end tooltips*/
+
+/* Subscriptions checkbox */
+.tForm .tHasTooltips .tSubscriptionsCheckbox 
+{
+    padding-bottom: 20px;
+}
+.tForm .tFormFieldsList .tFormCheckbox .tSubscriptionsCheckbox li,
+.tFormGrey li.checkbox .tSubscriptionsCheckbox li {
+    display: block; 
+    position:relative; 
+    padding: 0 0 10px;    
+}
+.tForm .tFormFieldsList .tFormCheckbox .tSubscriptionsCheckbox li input,
+.tFormGrey li.checkbox .tSubscriptionsCheckbox li input {
+    position: absolute; 
+    left:0; 
+    top: 1px;     
+}
+*+html .tForm .tFormFieldsList .tFormCheckbox .tSubscriptionsCheckbox li input,
+*+html .tFormGrey li.checkbox .tSubscriptionsCheckbox li input {
+    top: -2px;
+}
+.tForm .tFormFieldsList .tFormCheckbox .tSubscriptionsCheckbox li label,
+.tFormGrey li.checkbox .tSubscriptionsCheckbox li label {
+    padding:0 0 0 24px; 
+    display:inline; 
+    text-align:left;
+    line-height: 1.2;
+}
+
+
+
+.fAgreement label {
+    display: inline;
+    float: none;
+    padding: 3px 0 0 5px;
+    width: auto;
+}
+.fAgreement .tFormButton
+{
+    padding-left: 0;
+}
+
+
+
+.tFormNumbered h2 span {
+    background: url("/CSS/Forms/blueDot.gif") no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+}
+
+
+
+.tFormNumbered .tFormCheck {
+    border: 0 none;
+    padding-left: 17px;
+    position: relative;
+    top: 8px;
+}
+
+
+
+.tRoundBox {
+    padding: 0 17px;
+}
+
+
+
+.tFormTicket 
+{
+    float: left;    
+    clear: both;
+    width: 99%;
+}
+
+.tForm .tFormFieldsList li.tHasTooltips 
+{
+    width: 700px;
+}

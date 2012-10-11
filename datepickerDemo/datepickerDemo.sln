@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datepickerDemo", "datepickerDemo\datepickerDemo.csproj", "{47BD3942-3428-45F8-8F1C-E904DA2538F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHSoft.FieldProtect.Business", "HHSoft.FieldProtect.Business\HHSoft.FieldProtect.Business.csproj", "{6D076E45-7ADE-4245-ABF0-23D4BCF918B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHSoft.FieldProtect.DataAccess", "HHSoft.FieldProtect.DataAccess\HHSoft.FieldProtect.DataAccess.csproj", "{F3DD5FE7-0ADB-403C-9EF4-AA79232B9D45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHSoft.FieldProtect.DataEntity", "HHSoft.FieldProtect.DataEntity\HHSoft.FieldProtect.DataEntity.csproj", "{CC6AF85E-009D-4A01-B95A-1C7787A69B86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHSoft.FieldProtect.FrameWork", "HHSoft.FieldProtect.FrameWork\HHSoft.FieldProtect.FrameWork.csproj", "{C82C33DB-7F10-4492-B377-7DFB6502784E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HHSoft.FieldProtect.WorkFlow", "HHSoft.FieldProtect.WorkFlow\HHSoft.FieldProtect.WorkFlow.csproj", "{7AC71D7A-B89A-49D4-A619-DBBDEDB3F370}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccProjectUniqueName0 = HHSoft.FieldProtect.Business\\HHSoft.FieldProtect.Business.csproj
+		SccProjectName0 = \u0022$/耕地保护系统/HHSoft.FieldProtect1.0/HHSoft.FieldProtect.Business\u0022,\u0020DJKAAAAA
+		SccLocalPath0 = HHSoft.FieldProtect.Business
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName1 = HHSoft.FieldProtect.DataAccess\\HHSoft.FieldProtect.DataAccess.csproj
+		SccProjectName1 = \u0022$/耕地保护系统/HHSoft.FieldProtect1.0/HHSoft.FieldProtect.DataAccess\u0022,\u0020WNKAAAAA
+		SccLocalPath1 = HHSoft.FieldProtect.DataAccess
+		SccProvider1 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName2 = HHSoft.FieldProtect.DataEntity\\HHSoft.FieldProtect.DataEntity.csproj
+		SccProjectName2 = \u0022$/耕地保护系统/HHSoft.FieldProtect1.0/HHSoft.FieldProtect.DataEntity\u0022,\u0020ROKAAAAA
+		SccLocalPath2 = HHSoft.FieldProtect.DataEntity
+		SccProvider2 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName3 = HHSoft.FieldProtect.FrameWork\\HHSoft.FieldProtect.FrameWork.csproj
+		SccProjectName3 = \u0022$/耕地保护系统/HHSoft.FieldProtect1.0/HHSoft.FieldProtect.FrameWork\u0022,\u0020SSKAAAAA
+		SccLocalPath3 = HHSoft.FieldProtect.FrameWork
+		SccProvider3 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectUniqueName4 = HHSoft.FieldProtect.WorkFlow\\HHSoft.FieldProtect.WorkFlow.csproj
+		SccProjectName4 = \u0022$/耕地保护系统/HHSoft.FieldProtect1.0/HHSoft.FieldProtect.WorkFlow\u0022,\u0020KDNAAAAA
+		SccLocalPath4 = HHSoft.FieldProtect.WorkFlow
+		SccProvider4 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47BD3942-3428-45F8-8F1C-E904DA2538F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47BD3942-3428-45F8-8F1C-E904DA2538F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47BD3942-3428-45F8-8F1C-E904DA2538F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47BD3942-3428-45F8-8F1C-E904DA2538F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D076E45-7ADE-4245-ABF0-23D4BCF918B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D076E45-7ADE-4245-ABF0-23D4BCF918B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D076E45-7ADE-4245-ABF0-23D4BCF918B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D076E45-7ADE-4245-ABF0-23D4BCF918B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3DD5FE7-0ADB-403C-9EF4-AA79232B9D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3DD5FE7-0ADB-403C-9EF4-AA79232B9D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3DD5FE7-0ADB-403C-9EF4-AA79232B9D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3DD5FE7-0ADB-403C-9EF4-AA79232B9D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC6AF85E-009D-4A01-B95A-1C7787A69B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC6AF85E-009D-4A01-B95A-1C7787A69B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC6AF85E-009D-4A01-B95A-1C7787A69B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC6AF85E-009D-4A01-B95A-1C7787A69B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82C33DB-7F10-4492-B377-7DFB6502784E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82C33DB-7F10-4492-B377-7DFB6502784E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82C33DB-7F10-4492-B377-7DFB6502784E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82C33DB-7F10-4492-B377-7DFB6502784E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AC71D7A-B89A-49D4-A619-DBBDEDB3F370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC71D7A-B89A-49D4-A619-DBBDEDB3F370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC71D7A-B89A-49D4-A619-DBBDEDB3F370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC71D7A-B89A-49D4-A619-DBBDEDB3F370}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

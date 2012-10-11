@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c7e75313-78e3-404b-a9ab-3a7dbcc8bdee" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3502/ServiceHost/ConcurrencyLock/Hello.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Hello.xsd" MetadataType="Schema" ID="352e9a25-1999-43e9-a21d-3301a1146772" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/ConcurrencyLock/Hello.svc?xsd=xsd2" />
+    <MetadataFile FileName="Hello1.xsd" MetadataType="Schema" ID="ceb521b0-ab37-45c7-8ebb-473296028777" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/ConcurrencyLock/Hello.svc?xsd=xsd1" />
+    <MetadataFile FileName="Hello2.xsd" MetadataType="Schema" ID="b9be6ac7-fc94-4521-b8d0-91de9159337c" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/ConcurrencyLock/Hello.svc?xsd=xsd0" />
+    <MetadataFile FileName="Hello.wsdl" MetadataType="Wsdl" ID="3881e765-9ea6-47dd-9a50-884f2e65c3d8" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/ConcurrencyLock/Hello.svc?wsdl" />
+    <MetadataFile FileName="Hello.disco" MetadataType="Disco" ID="ebe9f7d7-1843-48eb-a78c-54931c0b3cc0" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/ConcurrencyLock/Hello.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

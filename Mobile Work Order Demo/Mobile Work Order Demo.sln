@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobile Work Order Demo", "Mobile Work Order Demo\Mobile Work Order Demo.csproj", "{F04F9A7D-30D2-466A-82D8-0F38C4C8594E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{16432572-8215-4D13-98E5-5B02903CA025}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F04F9A7D-30D2-466A-82D8-0F38C4C8594E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F04F9A7D-30D2-466A-82D8-0F38C4C8594E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F04F9A7D-30D2-466A-82D8-0F38C4C8594E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F04F9A7D-30D2-466A-82D8-0F38C4C8594E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16432572-8215-4D13-98E5-5B02903CA025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16432572-8215-4D13-98E5-5B02903CA025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16432572-8215-4D13-98E5-5B02903CA025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16432572-8215-4D13-98E5-5B02903CA025}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

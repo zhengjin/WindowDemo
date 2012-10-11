@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CustomerDirect.OnlinePayment.Manager.SiteMaster" %>
+
+<%@ Register TagPrefix="qsf" TagName="SkinsControl" Src="~/WebControl/SkinsControl.ascx" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <telerik:RadStyleSheetManager id="rssmSDPro" runat="server" >
+        <StyleSheets>
+            <telerik:StyleSheetReference IsCommonCss="False" Path="~/Styles/Site.css" />
+        </StyleSheets>
+    </telerik:RadStyleSheetManager>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="BODY">
+    <form id="Form1" runat="server">
+    <%--皮肤控制--%>
+    <qsf:SkinsControl runat="server" ID="skinControl" />
+
+    <div>
+        <div id="content" class="center">
+            <!--LOG In -->
+            <div id="LogCss" style="width: 250px; height: 0px; position: relative; left: 730px;
+                top: 5px;" class="style2">
+                <table width="100%">
+                    <tr>
+                        <td align="right">
+                            <asp:Label ID="lbl_Welcome" runat="server" Text="Label"></asp:Label>&nbsp;<asp:LinkButton
+                                ID="lbtnLogout" runat="server" OnClick="lbtnLogout_Click" Font-Strikeout="False"> | Logout</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!--LOG In -->
+            <div class="bottom">
+                <div class="box_outer">
+                    <!--横向菜单-->
+                    <div>
+                        <!--LOGO-->
+                        <div style="background-color: #000000; height: 80px;padding-left: 15px;">
+                            <br />
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/w_logo.png" />
+                            <br />
+                        </div>
+                          
+                        <telerik:RadMenu ID="RadMenuMain" runat="server" Skin="Black" Width="986px" 
+                            Style="z-index:1;">
+                        </telerik:RadMenu>
+                       
+                    </div>
+                    <!--横向菜单-->
+                    <div class="test">
+                        &nbsp;
+                        <br />
+                        &nbsp;&nbsp;<span class="style3">Home</span>
+                        <br />
+                        &nbsp;
+                        <!--中间白色DIV-->
+                        <%--Needed for JavaScript IntelliSense in VS2010--%>
+                        <table width="950" style="height: 200px; margin:auto">
+                            <tr>
+                                <td>
+                                    <div style="margin: 0 4px; background: #FFFFFF; height: 1px; overflow: hidden;">
+                                    </div>
+                                    <div style="margin: 0 2px; border: 1px solid #FFFFFF; border-width: 0 2px; background: #FFFFFF;
+                                        height: 1px; overflow: hidden;">
+                                    </div>
+                                    <div style="margin: 0 1px; border: 1px solid #FFFFFF; border-width: 0 1px; background: #FFFFFF;
+                                        height: 1px; overflow: hidden;">
+                                    </div>
+                                    <div style="margin: 0 1px; border: 1px solid #FFFFFF; border-width: 0 1px; background: #FFFFFF;
+                                        height: 1px; overflow: hidden;">
+                                    </div>
+                                    <div style="background: #FFFFFF; border: 1px solid #FFFFFF; border-width: 0 1px;">
+                                        <br/><div style="margin-left:20px; ">
+                                            <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Arial" Font-Size="Small">
+                                            </asp:SiteMapPath>
+                                        </div>
+                                        <br />
+                                        <telerik:RadSiteMapDataSource runat="server" ID="RadSiteMapDataSource1" ShowStartingNode="false"
+                                            SiteMapFile="Web.sitemap" />
+                                        <div style="background: #FFF; margin: 0 3px; font-size: 11px; font-family: Verdana;
+                                            color: #333; padding: 5px 30px; overflow: hidden;">
+                                            <%--For VS2008 replace RadScriptManager with ScriptManager--%>
+                                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </div>
+                                    </div>
+                                    <div style="margin: 0 1px; border: 1px solid #FFFFFF; border-width: 0 1px; background: #FFFFFF;
+                                        height: 1px; overflow: hidden;">
+                                    </div>
+                                    <div style="margin: 0 1px; border: 1px solid #FFFFFF; border-width: 0 2px; background: #FFFFFF;
+                                        height: 1px; overflow: hidden;">
+                                    </div>
+                                    <div style="margin: 0 2px; border: 1px solid #FFFFFF; border-width: 0 2px; background: #FFFFFF;
+                                        height: 1px; overflow: hidden;">
+                                    </div>
+                                    <div style="margin: 0 4px; background: #FFFFFF; height: 1px; overflow: hidden;">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--中间白色DIV-->
+                    </div>
+                    <%--Needed for JavaScript IntelliSense in VS2010--%>
+                    <div style="background: Black" class="style4">
+                        <table width="100%" style="background-color:#CCCCCC;height:80px">
+                            <tr>
+                                <td align="left" class="style5">
+                                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/logo_bottom.png" Width="150px"
+                                        Height="35px" />
+                                    <strong><span class="qsfFooter">
+                                        <br />
+                                        Able software.Inc,30 Corporate Park, Suite 104 Irvine, CA 92606
+                                        <br />
+                                        Copyright @ 2011 Able Software, Inc. . All Rights Reserved
+                                        </span></strong>
+                                </td>
+                                <td align="right" valign="top">
+                                    <strong><a href="http://www.able-soft.com/" class="qsfFooter">www.able-soft.com</a>
+                                    </strong>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

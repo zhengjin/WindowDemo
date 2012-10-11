@@ -1,0 +1,22 @@
+<ROOT>
+  <tblCustomer CustomerID="1" AcctNum="1" PremiseID="P1" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010010001" AcctNum="1010010001" PremiseID="P1010010001" TotalDue="128.0000" />
+  <tblCustomer CustomerID="1010030000" AcctNum="1400001001" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010030001" AcctNum="1010030001" PremiseID="P1010030000" TotalDue="-10.0000" />
+  <tblCustomer CustomerID="1010050005" AcctNum="1010050005" PremiseID="P1010050005" TotalDue="105.4100" />
+  <tblCustomer CustomerID="1010055008" AcctNum="1010055008" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010055009" AcctNum="1010055009" PremiseID="P1010055008" TotalDue="-336.5500" />
+  <tblCustomer CustomerID="1010070000" AcctNum="1010070000" PremiseID="P1010070000" TotalDue="434.6400" />
+  <tblCustomer CustomerID="1010080000" AcctNum="1010080000" PremiseID="P1010080000" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010090002" AcctNum="1010090002" PremiseID="P1010090002" TotalDue="211.8100" />
+  <tblCustomer CustomerID="1010100001" AcctNum="1010100001" PremiseID="P1010100001" TotalDue="205.8600" />
+  <tblCustomer CustomerID="1010110002" AcctNum="1010110002" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010110003" AcctNum="1010110003" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010112001" AcctNum="1010112001" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010112002" AcctNum="1010112002" TotalDue="33.1900" />
+  <tblCustomer CustomerID="1010112003" AcctNum="1010112003" PremiseID="P1010112001" TotalDue="1077.5000" />
+  <tblCustomer CustomerID="1010115001" AcctNum="1010115001" PremiseID="P1010115001" TotalDue="93.3300" />
+  <tblCustomer CustomerID="1010120001" AcctNum="1010120001" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010120002" AcctNum="1010120002" TotalDue="0.0000" />
+  <tblCustomer CustomerID="1010120003" AcctNum="1010120003" TotalDue="0.0000" />
+</ROOT>

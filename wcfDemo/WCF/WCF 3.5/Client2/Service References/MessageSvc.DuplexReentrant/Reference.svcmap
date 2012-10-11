@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="30317a7f-d9ba-4b38-b566-f81789db482c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:12345/Message/DuplexReentrant" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DuplexReentrant.xsd" MetadataType="Schema" ID="f40c0373-ed75-4a34-a764-f21419148048" SourceId="1" SourceUrl="http://localhost:12345/Message/DuplexReentrant?xsd=xsd0" />
+    <MetadataFile FileName="DuplexReentrant.disco" MetadataType="Disco" ID="114b5d8d-aae6-4f57-87a0-820f861541b4" SourceId="1" SourceUrl="http://localhost:12345/Message/DuplexReentrant?disco" />
+    <MetadataFile FileName="DuplexReentrant1.xsd" MetadataType="Schema" ID="d8669529-bba7-4ab1-8b78-650e8d900532" SourceId="1" SourceUrl="http://localhost:12345/Message/DuplexReentrant?xsd=xsd1" />
+    <MetadataFile FileName="DuplexReentrant.wsdl" MetadataType="Wsdl" ID="3c3837be-508a-4cef-82e7-f6af84a90131" SourceId="1" SourceUrl="http://localhost:12345/Message/DuplexReentrant?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

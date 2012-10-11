@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+    <siteMapNode url="" title="化零为整WCF">
+        <siteMapNode url="~/Sample/Hello.aspx" title="不能免俗，我也从Hello开始" />
+        <siteMapNode url="~/Contract/PersonManager.aspx" title="契约Contract(ServiceContract、OperationContract、DataContract、ServiceKnownType和DataMember)" />
+        <siteMapNode url="~/Binding/Sample.aspx" title="绑定Binding(basicHttpBinding和netTcpBinding)" />
+        <siteMapNode url="~/Exception/Hello.aspx" title="异常处理(Exception、FaultException、FaultException＜T＞、IErrorHandler)" />
+        <siteMapNode url="~/Hosting/Hello.aspx" title="宿主Hosting(服务宿主在WindowsService)" />
+        <siteMapNode url="~/Message/OneWay.aspx" title="消息处理(异步调用OneWay)" />
+        <siteMapNode url="~/Message/Duplex.aspx" title="消息处理(双向通讯Duplex)" />
+        <siteMapNode url="~/Message/Mtom.aspx" title="消息处理(使用消息传输优化机制 - MTOM)" />
+        <siteMapNode url="~/Message/Streamed.aspx" title="消息处理(使用流数据传输文件)" />
+        <siteMapNode url="~/InstanceMode/Hello.aspx" title="实例模型(InstanceContextMode)" />
+        <siteMapNode url="~/SessionManagement/Hello.aspx" title="会话状态(Session)" />
+        <siteMapNode url="http://localhost:3502/ServiceHost/Serialization/Sample.aspx" title="序列化(DataContractSerializer, XmlSerializer, DataContractJsonSerializer, SoapFormatter, BinaryFormatter)" />
+        <siteMapNode url="~/Message/DuplexReentrant.aspx" title="并发和限流(Concurrent和Throttle)" />
+        <siteMapNode url="~/ConcurrencyLock/Hello.aspx" title="并发控制(锁)(Mutex, Semaphore, Monitor, Lock, ThreadPool, Interlocked, ReaderWriterLock)" />
+        <siteMapNode url="~/Transaction/Sample.aspx" title="事务(Transaction)" />
+        <siteMapNode url="~/Message/Reliable.aspx" title="可靠性消息(ReliableMessaging)" />
+        <siteMapNode url="~/Message/MSMQ.aspx" title="消息队列(MSMQ - MicroSoft Message Queue)" />
+        <siteMapNode url="~/Security/Hello.aspx" title="安全(Security)" />
+        <siteMapNode url="~/Web/REST.aspx" title="WCF创建REST" />
+        <siteMapNode url="http://localhost:4645/AJAXDemo/Demo.aspx" title="AJAX调用WCF" />
+    </siteMapNode>
+</siteMap>

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/service_direct_project/!svn/ver/679/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing
+END
+BillingForm.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/svn/service_direct_project/!svn/ver/532/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/BillingForm.aspx.designer.cs
+END
+TaskDetailFormView.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 231
+/svn/service_direct_project/!svn/ver/623/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/TaskDetailFormView.aspx.designer.cs
+END
+BillingForm.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/service_direct_project/!svn/ver/679/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/BillingForm.aspx.cs
+END
+TaskDetailFormView.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/svn/service_direct_project/!svn/ver/623/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/TaskDetailFormView.aspx.cs
+END
+TaskDetailForm.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 215
+/svn/service_direct_project/!svn/ver/661/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/TaskDetailForm.aspx
+END
+TaskDetailForm.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 227
+/svn/service_direct_project/!svn/ver/625/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/TaskDetailForm.aspx.designer.cs
+END
+TaskDetailForm.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/service_direct_project/!svn/ver/843/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/TaskDetailForm.aspx.cs
+END
+ScheduleLogForm.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 216
+/svn/service_direct_project/!svn/ver/654/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/ScheduleLogForm.aspx
+END
+ScheduleLogForm.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 228
+/svn/service_direct_project/!svn/ver/543/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/ScheduleLogForm.aspx.designer.cs
+END
+ScheduleLogForm.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/service_direct_project/!svn/ver/634/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/ScheduleLogForm.aspx.cs
+END
+ScheduleTasksForm.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 218
+/svn/service_direct_project/!svn/ver/659/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/ScheduleTasksForm.aspx
+END
+ScheduleTasksForm.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 230
+/svn/service_direct_project/!svn/ver/598/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/ScheduleTasksForm.aspx.designer.cs
+END
+ScheduleTasksForm.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 221
+/svn/service_direct_project/!svn/ver/633/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/ScheduleTasksForm.aspx.cs
+END
+BillingForm.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/svn/service_direct_project/!svn/ver/660/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/BillingForm.aspx
+END
+TaskDetailFormView.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/svn/service_direct_project/!svn/ver/657/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Schedule%20Billing/TaskDetailFormView.aspx
+END

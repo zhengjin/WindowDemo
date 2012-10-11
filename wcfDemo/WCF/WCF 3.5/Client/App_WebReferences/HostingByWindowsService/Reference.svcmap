@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bd9c06db-faf5-48c1-a69a-3ecdd35ecc11" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:11233/ServiceHostByWindowsService/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="b18d6631-21bb-4621-94a7-b794be435699" SourceId="1" SourceUrl="http://localhost:11233/ServiceHostByWindowsService/?disco" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="45a67455-d737-478d-8562-ae79a171897a" SourceId="1" SourceUrl="http://localhost:11233/ServiceHostByWindowsService/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="1a8db509-5555-40a9-a8af-3573e1ae361e" SourceId="1" SourceUrl="http://localhost:11233/ServiceHostByWindowsService/?xsd=xsd1" />
+    <MetadataFile FileName="Hello.wsdl" MetadataType="Wsdl" ID="e0f68264-1d05-492d-bd52-6697c968736e" SourceId="1" SourceUrl="http://localhost:11233/ServiceHostByWindowsService/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC6AF85E-009D-4A01-B95A-1C7787A69B86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HHSoft.FieldProtect.DataEntity</RootNamespace>
+    <AssemblyName>HHSoft.FieldProtect.DataEntity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\HHSoft.FieldProtect.DataEntity.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GBArcGis.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HHSoft.FieldProtect.WebSite\Library\GBArcGis.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="HHSoft.Gt.Geometry, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HHSoft.FieldProtect.WebSite\Library\HHSoft.Gt.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseConfig.cs" />
+    <Compile Include="Chart\Column.cs" />
+    <Compile Include="Chart\Pie.cs" />
+    <Compile Include="CustomAttribute\QueryAttribute.cs" />
+    <Compile Include="Sync\SyncDataLog.cs" />
+    <Compile Include="Sync\SysConfig.cs" />
+    <Compile Include="CustomAttribute\EnumValueColumnAttribute.cs" />
+    <Compile Include="CustomAttribute\FileNameUrlAttribute.cs" />
+    <Compile Include="CustomAttribute\IsDbColumnAttribute.cs" />
+    <Compile Include="CustomAttribute\PkAttribute.cs" />
+    <Compile Include="CustomAttribute\ViewInDataViewAttribute.cs" />
+    <Compile Include="CustomInterface\IHasFile.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="GisData\Gis_Data.cs" />
+    <Compile Include="GisData\Gis_Dk.cs" />
+    <Compile Include="GisData\Gis_Dltb.cs" />
+    <Compile Include="GisData\Gis_Jzd.cs" />
+    <Compile Include="GisData\Gis_Jzqy.cs" />
+    <Compile Include="GisData\Gis_Xzdw.cs" />
+    <Compile Include="ItemManage\Item_Menu.cs" />
+    <Compile Include="ItemManage\Xm_Dkxx.cs" />
+    <Compile Include="ItemManage\Xm_Gcxx.cs" />
+    <Compile Include="ItemManage\Xm_Gdxx.cs" />
+    <Compile Include="ItemManage\Xm_GhsjYsxx.cs" />
+    <Compile Include="ItemManage\Xm_Jsxx.cs" />
+    <Compile Include="ItemManage\Xm_Jzd.cs" />
+    <Compile Include="ItemManage\Xm_Ky_Jbxx.cs" />
+    <Compile Include="ItemManage\Xm_Query.cs" />
+    <Compile Include="ItemManage\Xm_Sb_Jbxx.cs" />
+    <Compile Include="ItemManage\Xm_Ss_Bgxx.cs" />
+    <Compile Include="ItemManage\Xm_Ss_Gcjl_Jlht.cs" />
+    <Compile Include="ItemManage\Xm_Ss_Gcjl_Jlry.cs" />
+    <Compile Include="ItemManage\Xm_Ss_Jdgz_Xmbb.cs" />
+    <Compile Include="ItemManage\Xm_Ss_Zjbf.cs" />
+    <Compile Include="ItemManage\Xm_Ss_Ztb_Sght.cs" />
+    <Compile Include="ItemManage\Xm_Ss_Ztb_Jbxx.cs" />
+    <Compile Include="ItemManage\Xm_Ss_Ztb_Zbqk.cs" />
+    <Compile Include="ItemManage\Xm_Xmdw.cs" />
+    <Compile Include="ItemManage\Xm_Xmxx.cs" />
+    <Compile Include="ItemManage\Xm_Xmzj.cs" />
+    <Compile Include="ItemManage\Item_File.cs" />
+    <Compile Include="ItemManage\Xm_Ysxx.cs" />
+    <Compile Include="PersonalManage\CenterQuery.cs" />
+    <Compile Include="PersonalManage\ItemQuery.cs" />
+    <Compile Include="PersonalManage\XTXX.cs" />
+    <Compile Include="PersonalManage\XTXXJS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SysManage\Company.cs" />
+    <Compile Include="SysManage\ContractNo.cs" />
+    <Compile Include="Sync\DbConfig.cs" />
+    <Compile Include="SysManage\Department.cs" />
+    <Compile Include="Sync\FtpConfig.cs" />
+    <Compile Include="SysManage\Function.cs" />
+    <Compile Include="SysManage\ItemListColumn.cs" />
+    <Compile Include="SysManage\LoginUser.cs" />
+    <Compile Include="SysManage\Role.cs" />
+    <Compile Include="Sync\SyncConfigLocal.cs" />
+    <Compile Include="Sync\SyncConfig.cs" />
+    <Compile Include="Sync\SyncConfigTarget.cs" />
+    <Compile Include="SysManage\TreeViewNode.cs" />
+    <Compile Include="SysManage\Users.cs" />
+    <Compile Include="SysManage\XM_XZF.cs" />
+    <Compile Include="WorkFlow\WfFile.cs" />
+    <Compile Include="WorkFlow\Wfinstance.cs" />
+    <Compile Include="WorkFlow\WfItem.cs" />
+    <Compile Include="WorkFlow\WfNode.cs" />
+    <Compile Include="WorkFlow\WfReturn.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HHSoft.FieldProtect.FrameWork\HHSoft.FieldProtect.FrameWork.csproj">
+      <Project>{C82C33DB-7F10-4492-B377-7DFB6502784E}</Project>
+      <Name>HHSoft.FieldProtect.FrameWork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\耕地保护系统\webSit" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="09/24/2012 14:50:03" />
+    <file relUrl="Scripts/modules/canvas-tools.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Scripts/modules/exporting.src.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="bin/HighchartDemo.pdb" publishTime="09/24/2012 14:50:02" />
+    <file relUrl="Scripts/themes/skies.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Scripts/highcharts.src.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Scripts/adapters/prototype-adapter.src.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Styles/Site.css" publishTime="09/24/2012 14:44:36" />
+    <file relUrl="Scripts/modules/exporting.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Scripts/adapters/mootools-adapter.src.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Scripts/themes/dark-green.js" publishTime="08/31/2012 11:26:44" />
+    <file relUrl="Scripts/modules/data.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="bin/HighchartDemo.dll" publishTime="09/24/2012 14:50:02" />
+    <file relUrl="Scripts/highcharts-more.js" publishTime="08/31/2012 11:26:16" />
+    <file relUrl="Scripts/themes/dark-blue.js" publishTime="08/31/2012 11:26:44" />
+    <file relUrl="Scripts/highcharts.js" publishTime="08/31/2012 11:26:04" />
+    <file relUrl="Scripts/themes/grid.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Scripts/adapters/prototype-adapter.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Global.asax" publishTime="09/24/2012 14:44:36" />
+    <file relUrl="Scripts/adapters/mootools-adapter.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Scripts/modules/canvas-tools.src.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Scripts/themes/gray.js" publishTime="08/31/2012 11:26:38" />
+    <file relUrl="Default.aspx" publishTime="09/24/2012 14:49:02" />
+    <file relUrl="Scripts/modules/data.src.js" publishTime="08/31/2012 11:26:44" />
+  </publishProfile>
+</publishData>

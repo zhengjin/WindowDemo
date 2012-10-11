@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <targets>
+    <target name="fileLoger" xsi:type="File" fileName="${basedir}/App_Data/${shortdate}.txt"
+          layout="${time} | ${level} | ${stacktrace} | ${message}" archiveEvery="Month"/>
+
+    <target xsi:type="Database"
+      connectionString="data source=192.0.0.206;initial catalog=MWDatabase;integrated security=False;User ID=sa;Password=sqlserver;"
+      dbProvider="System.Data.SqlClient"
+      keepConnection="true"
+      useTransactions="true"
+      name="Database"
+      commandText="INSERT INTO [tblActionLog]
+                      ([ActionLogID]
+                      ,[TimeStamp]
+                      ,[Level]
+                      ,[Message]
+                      ,[Logger]
+                      ,[Exception]
+                      ,[StackTrace])
+                VALUES
+                      (NEWID(),
+                      @TimeStamp,
+                      @Level,
+                      @Message,
+                      @Logger,
+                      @Exception,
+                      @StackTrace)">
+
+      <parameter name="@TimeStamp" layout="${longdate}"/>
+      <parameter name="@Logger" layout="${logger}"/>
+      <parameter name="@Message" layout="${message}"/>
+      <parameter name="@Level" layout="${level}"/>
+      <parameter name="@Exception" layout="${exception:format=Message,StackTrace}"/>
+      <parameter name="@StackTrace" layout="${stacktrace}"/>
+    </target>
+  </targets>
+
+  <rules>
+    <logger name="ServiceDirect.MobileWorkOrder.BLL.UserBLL" final="true" writeTo="fileLoger"/>
+    <logger name ="*" writeTo ="Database"/>
+  </rules>
+</nlog>

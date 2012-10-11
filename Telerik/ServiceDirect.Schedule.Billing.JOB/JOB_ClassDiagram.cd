@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ServiceDirect.Schedule.Billing.JOB.UTPCommand">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAGBIiAACQQAQCAAABYAACAABABAAAADARAIQE=</HashCode>
+      <FileName>UTPCommand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ServiceDirect.Schedule.Billing.JOB.UTPCommandBuilder">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAIAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UTPCommandBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ServiceDirect.Schedule.Billing.JOB.ActionType" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UTPCommand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ServiceDirect.Schedule.Billing.JOB.BillingShadowCopies" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UTPCommand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ServiceDirect.Schedule.Billing.JOB.CalcUsageBeforeBillingRegister" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UTPCommand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ServiceDirect.Schedule.Billing.JOB.Trace" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UTPCommand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ServiceDirect.Schedule.Billing.JOB.TraceType" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>UTPCommand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

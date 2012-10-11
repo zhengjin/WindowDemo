@@ -1,0 +1,371 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB2528DD-64A0-4D30-844C-FE9EA420A296}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JBoxDemo</RootNamespace>
+    <AssemblyName>JBoxDemo</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="jbox-v2.3\ajax.html" />
+    <Content Include="jbox-v2.3\iframe.html" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\demo.js" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\down.png" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\highlight\AUTHORS.en.txt" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\highlight\export.html" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\highlight\highlight.js" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\highlight\highlight.pack.js" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\highlight\languages\javascript.js" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\highlight\readme.eng.txt" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\highlight\styles\magula.css" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\highlight\test.html" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\jBox.png" />
+    <Content Include="jbox-v2.3\jbox-demo-depends\jBox2.png" />
+    <Content Include="jbox-v2.3\jbox-demo.html" />
+    <Content Include="jbox-v2.3\jbox-demo2.html" />
+    <Content Include="jbox-v2.3\jBox\i18n\jquery.jBox-zh-CN.js" />
+    <Content Include="jbox-v2.3\jBox\jquery-1.4.2.min.js" />
+    <Content Include="jbox-v2.3\jBox\jquery.jBox-2.3.min.js" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Blue\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Gray\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Green\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Pink\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Purple\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins2\Yellow\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins2\样式说明%28以Green皮肤为例%29.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Blue\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Brown\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Default\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GrayCool\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Gray\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Green\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\GreyBlue\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Purple\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\Red\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBlue\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareBrown\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareGreen\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\SharePurple\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-button1.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-button2.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-close1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-close2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-content-loading.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-icons-ie6.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-icons.png" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-loading1.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-loading2.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-loading3.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\images\jbox-title-icon.gif" />
+    <Content Include="jbox-v2.3\jBox\Skins\ShareRed\jbox.css" />
+    <Content Include="jbox-v2.3\jBox\Skins\样式说明%28以Default皮肤为例%29.css" />
+    <Content Include="jbox-v2.3\jBox\update.txt" />
+    <Content Include="JboxForm.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JboxForm.aspx.cs">
+      <DependentUpon>JboxForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JboxForm.aspx.designer.cs">
+      <DependentUpon>JboxForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jbox-v2.3\jbox-demo-depends\highlight\LICENSE" />
+    <None Include="jbox-v2.3\jBox\LGPL-LICENSE" />
+    <None Include="jbox-v2.3\jBox\MIT-LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1472</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

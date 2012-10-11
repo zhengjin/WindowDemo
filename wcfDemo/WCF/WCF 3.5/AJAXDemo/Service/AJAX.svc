@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCF.ServiceLib.Web.AJAX" Factory="System.ServiceModel.Activation.WebScriptServiceHostFactory" %>

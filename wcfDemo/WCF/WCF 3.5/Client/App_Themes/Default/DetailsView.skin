@@ -1,0 +1,11 @@
+﻿<asp:DetailsView runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Width="100%">
+    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+    <CommandRowStyle BackColor="#E2DED6" Font-Bold="True" />
+    <EditRowStyle BackColor="#999999" />
+    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+    <FieldHeaderStyle BackColor="#E9ECF1" Font-Bold="True" HorizontalAlign="Right" VerticalAlign="Top"
+        Width="10%" Wrap="False" />
+    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+</asp:DetailsView>

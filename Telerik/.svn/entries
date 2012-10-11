@@ -1,0 +1,80 @@
+10
+
+dir
+704
+http://192.0.0.216/svn/service_direct_project/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk
+http://192.0.0.216/svn/service_direct_project
+
+
+
+2011-03-28T05:19:30.528375Z
+701
+lyang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6554813a-1621-5840-92bd-3ffdadaf8990
+
+ServiceDirect.Schedule.sln
+file
+
+
+
+
+2011-03-23T05:39:52.298135Z
+dc1987677e2a86293773733cc57793fc
+2011-02-15T23:50:22.602375Z
+107
+ycui
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3822
+
+ServiceDirect.Schedule.WEB
+dir
+
+ServiceDirect.Membership.DAL
+dir
+
+ServiceDirect.Membership
+dir
+
+ServiceDirect.Schedule.DAL
+dir
+
+ServiceDirect.Schedule.Billing.BLL
+dir
+
+ServiceDirect.Schedule.Billing.JOB
+dir
+

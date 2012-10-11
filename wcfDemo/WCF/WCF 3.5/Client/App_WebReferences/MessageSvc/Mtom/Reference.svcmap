@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f666b3be-5053-4026-a70d-3c3b81043df9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3502/ServiceHost/Message/Mtom.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Mtom.wsdl" MetadataType="Wsdl" ID="674e4a73-cd65-4c08-9c42-13b9296b1ac5" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Message/Mtom.svc?wsdl" />
+    <MetadataFile FileName="Mtom.xsd" MetadataType="Schema" ID="395ffe64-8f9b-4e19-b2e5-f66c9b06fc2c" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Message/Mtom.svc?xsd=xsd1" />
+    <MetadataFile FileName="Mtom1.xsd" MetadataType="Schema" ID="d39108d4-f052-4cb9-9f4a-53f7ffb74b53" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Message/Mtom.svc?xsd=xsd0" />
+    <MetadataFile FileName="Mtom.disco" MetadataType="Disco" ID="fd564f99-c66a-46c3-80c4-29ddb32d6793" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Message/Mtom.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,66 @@
+﻿#header
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+#wrap
+{
+    width: 100%;
+    height: auto;
+}
+#column1
+{
+    width: 200px;
+    /*height: 88%;*/
+    left: 1em;
+    position: absolute;
+    overflow: auto;
+    height: 100%;
+}
+#column1 table td 
+{
+    width: auto;
+}
+#column2
+{
+    margin-left: 250px;
+    margin-right: 1em;
+}
+/*站点的头*/
+#header
+{
+    border-top: 3px solid #B3B3FD;
+    border-bottom: 1px dotted #B3B3FD;
+    height: 3em;
+    margin-bottom : 1em;
+}
+#header .title
+{
+    font: 190% normal;
+    color: #0303AB;
+    background-color: transparent;
+    float: left;
+    font-weight: bold;
+    margin-right: 2em;
+    margin-top: 0.3em;
+    margin-left: .8em;
+}
+#header .breadcrumb
+{
+    font: 90% normal;
+    color: #000000;
+    background-color: transparent;
+    float: right;
+    margin-right: 2em;
+    margin-top: 0.8em;
+    font-weight: bold;
+}
+
+
+body, table, tr, td
+{
+    margin: 0;
+    font-size: 12px;
+}

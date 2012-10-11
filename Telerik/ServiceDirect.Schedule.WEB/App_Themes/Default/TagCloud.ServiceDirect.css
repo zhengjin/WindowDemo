@@ -1,0 +1,21 @@
+.RadTagCloud_ServiceDirect
+{
+	border: 1px dotted #6b8dc2;
+}
+.RadTagCloud_ServiceDirect .rtcTagList .rtcTagItem
+{
+	color: #6b8dc2;
+}
+.RadTagCloud_ServiceDirect .rtcTagList .rtcTagItem:hover
+{
+	color: #3fa7d2;
+}
+.RadTagCloud_ServiceDirect .rtcTagList .rtcTagItem a
+{
+	color: #000;
+}
+.RadTagCloud_ServiceDirect .rtcTagList .rtcTagItem a:hover
+{
+	color: #25507b;
+	background: #e7f1ff;
+}

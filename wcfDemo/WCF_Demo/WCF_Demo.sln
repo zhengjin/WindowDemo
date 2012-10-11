@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{00000000-0000-0000-0000-000000000000}") = "WCF_Demo", "WCF_Demo\WCF_Demo.csproj", "{53EDD9C1-54D3-4B93-BE57-BE8712C2EC55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTPWCFDataService", "UTPWCFDataService\UTPWCFDataService.csproj", "{CB4960E6-FDB9-43CA-AE5A-CDA25337ADAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53EDD9C1-54D3-4B93-BE57-BE8712C2EC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53EDD9C1-54D3-4B93-BE57-BE8712C2EC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53EDD9C1-54D3-4B93-BE57-BE8712C2EC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53EDD9C1-54D3-4B93-BE57-BE8712C2EC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB4960E6-FDB9-43CA-AE5A-CDA25337ADAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB4960E6-FDB9-43CA-AE5A-CDA25337ADAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB4960E6-FDB9-43CA-AE5A-CDA25337ADAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB4960E6-FDB9-43CA-AE5A-CDA25337ADAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

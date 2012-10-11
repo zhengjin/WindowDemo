@@ -1,0 +1,418 @@
+/* RadFormDecorator for ASP.NET Web20 Skin */
+
+/* CSS class for styling the decoration zone or the <html /> tag of the page */
+.RadForm_ServiceDirect.rfdZone
+{    
+}
+
+/* Decorate scrollbars */
+.RadForm_ServiceDirect.rfdScrollBars
+{
+	scrollbar-3dlight-color: #959695; 
+	scrollbar-arrow-color: #3e3e3e;
+	scrollbar-base-color: #f5f5f5; 
+	scrollbar-darkshadow-color: #e7f1fa; 
+	scrollbar-face-color: #e7f1fa;
+	scrollbar-highlight-color: #e7f1fa; 
+	scrollbar-shadow-color: #6787bb;
+	scrollbar-track-color: #fff;
+}
+
+/* Decorate <input type="button | submit | reset" /> and <button type="button | submit | reset" /> - look if there is a secondary .rfdButton class applied to the root element */
+.RadForm_ServiceDirect.rfdButton a.rfdSkinnedButton,
+.RadForm_ServiceDirect.rfdButton input[type="button"].rfdDecorated,
+.RadForm_ServiceDirect.rfdButton input[type="reset"].rfdDecorated,
+.RadForm_ServiceDirect.rfdButton input[type="submit"].rfdDecorated,
+.RadForm_ServiceDirect.rfdButton .rfdSkinnedButton button
+{
+	background-image: url('FormDecorator/ButtonSprites.gif');
+	color: #fff;
+}
+
+*html .RadForm_ServiceDirect a.rfdSkinnedButton,
+*html .RadForm_ServiceDirect .rfdSkinnedButton button,
+*html .RadForm_ServiceDirect .rfdSkinnedButton input.rfdDecorated,
+.RadForm_ServiceDirect.rfdButton a.rfdSkinnedButton,
+.RadForm_ServiceDirect.rfdButton a.rfdSkinnedButton *
+{
+	background-image: url('FormDecorator/ButtonSprites.gif');
+	color: #fff;
+}
+
+.RadForm_ServiceDirect.rfdButton .rfdSkinnedButton:hover *
+{
+    color: #0f1d48;
+}
+
+/* OPERA width fix - do not remove (and check if it is still necessary) */
+@media screen and (min-width:1px)  
+{
+	/* 
+       the hack below fixes a strange behavior under Opera - 
+       input and button have a different CSS display when in anchor tag 
+    */
+	.RadForm_ServiceDirect.rfdButton a.rfdSkinnedButton input
+	{
+	    display: block;
+	    float: left;
+	}
+}
+
+/* Decorate <h4|5|6 /> */
+.RadForm_ServiceDirect.rfdHeading h4
+{
+	color: #45709b;	
+	border-bottom: solid 1px #6788be;
+}
+
+.RadForm_ServiceDirect.rfdHeading h5
+{
+	color: #000;	
+	border-bottom: solid 1px #6788be;	
+}
+
+.RadForm_ServiceDirect.rfdHeading h6
+{
+	color: #000;	
+}
+
+/* Decorate <label /> */
+.RadForm_ServiceDirect.rfdLabel label
+{	
+	 color: #000;
+}
+
+/* Decorate <input type="checkbox" /> */
+.RadForm_ServiceDirect .rfdCheckboxUnchecked
+{
+	background: transparent url('FormDecorator/CheckBoxSprites.gif') no-repeat 0 0;
+}
+
+.RadForm_ServiceDirect .rfdCheckboxUnchecked:hover
+{
+	background: transparent url('FormDecorator/CheckBoxSprites.gif') no-repeat 0 -200px;
+}
+
+.RadForm_ServiceDirect .rfdCheckboxChecked
+{
+	background: transparent url('FormDecorator/CheckBoxSprites.gif') no-repeat 0 -420px;
+}
+
+.RadForm_ServiceDirect .rfdCheckboxChecked:hover
+{
+	background: transparent url('FormDecorator/CheckBoxSprites.gif') no-repeat 0 -640px;
+}
+
+.RadForm_ServiceDirect .rfdInputDisabled.rfdCheckboxUnchecked,
+.RadForm_ServiceDirect .rfdInputDisabled.rfdCheckboxUnchecked:hover
+{
+	background: transparent url('FormDecorator/CheckBoxSprites.gif') no-repeat 0 -860px;
+}
+
+.RadForm_ServiceDirect .rfdInputDisabled.rfdCheckboxChecked,
+.RadForm_ServiceDirect .rfdInputDisabled.rfdCheckboxChecked:hover
+{
+	background: transparent url('FormDecorator/CheckBoxSprites.gif') no-repeat 0 -1080px;
+}
+
+/* Decorate <input type="radio" /> */
+.RadForm_ServiceDirect .rfdRadioUnchecked
+{
+	background: transparent url('FormDecorator/RadioButtonSprites.png') no-repeat 1px 0;
+}
+
+.RadForm_ServiceDirect .rfdRadioUnchecked:hover
+{
+	background: transparent url('FormDecorator/RadioButtonSprites.png') no-repeat 1px -220px;
+}
+
+.RadForm_ServiceDirect .rfdRadioChecked
+{
+	background: transparent url('FormDecorator/RadioButtonSprites.png') no-repeat 1px -440px;
+}
+
+.RadForm_ServiceDirect .rfdRadioChecked:hover
+{
+	background: transparent url('FormDecorator/RadioButtonSprites.png') no-repeat 1px -640px;
+}
+
+.RadForm_ServiceDirect .rfdInputDisabled.rfdRadioUnchecked,
+.RadForm_ServiceDirect .rfdInputDisabled.rfdRadioUnchecked:hover
+{
+	background: transparent url('FormDecorator/RadioButtonSprites.png') no-repeat 1px -860px;
+}
+
+.RadForm_ServiceDirect .rfdInputDisabled.rfdRadioChecked,
+.RadForm_ServiceDirect .rfdInputDisabled.rfdRadioChecked:hover
+{
+	background: transparent url('FormDecorator/RadioButtonSprites.png') no-repeat 1px -1080px;
+}
+
+/* IE6 - we set .gif")%> image instead of .png")%> due to the lack RGBA support */
+.RadForm_ServiceDirect .rfdRadioUnchecked,
+.RadForm_ServiceDirect .rfdInputDisabled.rfdRadioUnchecked:hover,
+.RadForm_ServiceDirect .rfdRadioUnchecked:hover,
+.RadForm_ServiceDirect .rfdRadioChecked,
+.RadForm_ServiceDirect .rfdInputDisabled.rfdRadioChecked:hover,
+.RadForm_ServiceDirect .rfdRadioChecked:hover
+{
+    _background-image: url('FormDecorator/RadioButtonSprites.gif'); /* IE6 hack */
+}
+
+/* <fieldset /> and <legend /> */
+
+.RadForm_ServiceDirect.rfdFieldset table.rfdRoundedWrapper_fieldset legend,
+.RadForm_ServiceDirect fieldset.rfdFieldset legend
+{
+	color: #6788be;
+}
+
+.RadForm_ServiceDirect table.rfdRoundedWrapper:hover div.rfdRoundedInner
+{
+    background-color: #fff;
+    border-color: #6788be !important;
+}
+
+/* this selector styles the hover of the side bars of the rounded elements */
+.RadForm_ServiceDirect table.rfdRoundedWrapper:hover .rfdRoundedOuter
+{	
+	background-color: #6788be !important;
+}
+
+/* Decorate <input type="text | password" /> and <textarea /> */
+/* For all browsers except IE6 we are using attribute selectors - single or double */
+.RadForm_ServiceDirect.rfdTextbox input[type="text"],
+.RadForm_ServiceDirect.rfdTextbox input[type="password"],
+.RadForm_ServiceDirect.rfdTextarea textarea,
+.RadForm_ServiceDirect.rfdTextarea textarea[disabled]:hover,
+.RadForm_ServiceDirect.rfdTextbox input[disabled][type="text"]:hover,
+.RadForm_ServiceDirect.rfdTextbox input[disabled][type="password"]:hover
+{
+    border: solid 1px #6788be;
+    background-color: #fff;
+}
+
+.RadForm_ServiceDirect.rfdTextbox .rfdDecorated:hover,
+.RadForm_ServiceDirect.rfdTextbox .rfdDecorated:hover,
+.RadForm_ServiceDirect.rfdTextarea textarea:hover
+{
+    border: solid 1px #6788be;
+}
+
+/* Decorate <fieldset /> */
+.RadForm_ServiceDirect.rfdFieldset fieldset
+{	
+	border: solid 1px #6788be;
+	background-image: url('FormDecorator/FieldsetBgr.png'); /* having a background image on a fieldset is not okay with IE */	
+}
+
+/* Decorate <fieldset /> and <legend /> */
+.RadForm_ServiceDirect.rfdFieldset table.rfdRoundedWrapper_fieldset legend,
+.RadForm_ServiceDirect.rfdFieldset fieldset.rfdFieldset legend
+{
+	color: #6788be;
+}
+
+.RadForm_ServiceDirect.rfdFieldset table.rfdRoundedWrapper_fieldset fieldset,
+.RadForm_ServiceDirect.rfdFieldset fieldset.rfdFieldset
+{	
+	border: solid 1px #6788be;
+	background-image: url('FormDecorator/FieldsetBgr.png'); /* having a background image on a fieldset is not okay with IE */	
+}
+
+/* Because of a glitch in IE the following 2 CSS classes must be declared separately for correct parsing of the textarea class in IE6*/
+.RadForm_ServiceDirect table.rfdRoundedWrapper input,
+.RadForm_ServiceDirect table.rfdRoundedWrapper textarea,
+.RadForm_ServiceDirect input.rfdInput, 
+.RadForm_ServiceDirect textarea.rfdTextarea
+{
+	border: solid 1px #6788be;
+	background: #fff;	
+	color: #000;
+}
+
+.RadForm_ServiceDirect textarea.rfdTextarea,
+.RadForm_ServiceDirect table.rfdRoundedWrapper textarea
+{
+    overflow: auto;
+}
+
+/* <select /> */
+.rfdSelect_ServiceDirect,
+.rfdSelect_ServiceDirect:hover,
+.rfdSelect_ServiceDirect .rfdSelectOuter,
+.rfdSelect_ServiceDirect:hover .rfdSelectOuter,
+.rfdSelect_ServiceDirect .rfdSelectArrow span,
+.rfdSelectBox_ServiceDirect .rfdSelect_selected,
+.rfdSelectBox_ServiceDirect li:hover,
+.rfdSelect_ServiceDirect.rfdSelectDisabled:hover,
+.rfdRtl .rfdSelect_ServiceDirect,
+.rfdRtl .rfdSelect_ServiceDirect:hover,
+.rfdRtl .rfdSelect_ServiceDirect .rfdSelectOuter,
+.rfdRtl .rfdSelect_ServiceDirect .rfdSelectOuter:hover
+{
+    background-image: url('FormDecorator/ComboSprites.gif');
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.rfdSelect_ServiceDirect .rfdSelectOuter,
+.rfdSelect_ServiceDirect.rfdSelectDisabled:hover .rfdSelectOuter
+{
+    color: #000;
+}
+
+/* dropdown settings */
+.rfdSelectBox_ServiceDirect
+{
+    background: #fff;
+    border: solid 1px #6788be;
+    color: #000;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.rfdSelectBox_ServiceDirect li
+{
+    padding: 0 0 0 3px;
+    background-image: none !important;
+}
+
+.rfdSelectBox_ServiceDirect .rfdSelect_selected,
+.rfdSelectBox_ServiceDirect li:hover
+{
+    color: #000;
+    background-color: #e7f1ff;
+}
+
+.rfdSelectBox_ServiceDirect .rfdSelectBox_optgroup_label:hover
+{
+    background: none;
+    color: #000;
+}
+
+/* IE6 disabled state fix - this should not be added to the base stylesheet, but at the bottom of the skin file */
+* html .RadForm_ServiceDirect.rfdButton a.rfdInputDisabled:hover
+{
+	_background-position: 0 0;
+}
+
+* html .RadForm_ServiceDirect.rfdButton a.rfdInputDisabled:hover *
+{
+	_background-position: right -21px;
+	_color: #000;
+}
+
+.RadForm_ServiceDirect.rfdTextbox input.rfdIE6TextBox,
+.RadForm_ServiceDirect.rfdTextbox textarea.rfdIE6TextBox
+{
+    _border: solid 1px #6788be;
+    _background-color: #fff;
+}
+
+/* the styling of radiobuttons and checkboxes in Safari and Chrome is already fully achieved with CSS */
+@media screen and (-webkit-min-device-pixel-ratio: 0)
+{
+    /* checkboxes */
+    .rfdCheckbox input[type="checkbox"],
+    .rfdCheckbox input[type="checkbox"][disabled]:hover
+    {
+        background-image: url('FormDecorator/CheckBoxSprites.gif');
+    }
+    
+    /* radio buttons */
+    .rfdRadio input[type="radio"],
+    .rfdRadio input[type="radio"][disabled="disabled"]:hover
+    {
+        background-image: url('FormDecorator/RadioButtonSprites.png');
+    }
+}
+
+/* ----------------------------------------------- Skin-specific Scrollbar Settings for WebKit ----------------------------------------------- */
+
+/* the scrollbar face color */
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar,
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-thumb:vertical,
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-thumb:horizontal
+{
+    background-color: #e7f1fa;
+}
+
+/* scrollbar track background color */
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-track-piece,
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-corner
+{
+    background-color: #fff;
+}
+
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-button:vertical:decrement, 
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-button:vertical:increment, 
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-button:horizontal:decrement, 
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-button:horizontal:increment, 
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-thumb:vertical, 
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-thumb:horizontal
+{
+    border-color: #959695 #6787bb #6787bb #959695;
+}
+
+/* increment / decrement button settings */
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-button:vertical:decrement, 
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-button:vertical:increment, 
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-button:horizontal:decrement, 
+.RadForm.rfdScrollBars.RadForm_ServiceDirect ::-webkit-scrollbar-button:horizontal:increment
+{
+    background-image: url('FormDecorator/ButtonSprites.gif');
+    background-color: #e7f1fa;
+}
+
+/*GridView, FormView, DetailsView*/
+.RadForm_ServiceDirect.rfdGrids .rfdTable
+{
+    border:1px solid #6788be;
+    background:#fff;
+    color:#000;
+    font:12px "segoe ui",arial,sans-serif;
+}
+
+.RadForm_ServiceDirect.rfdGrids .rfdTable th
+{
+    border-bottom:1px solid #3f5f94;
+    border-left:1px solid #5171a7;
+    background:#7b95c6;
+    color:#fff;
+}
+
+.RadForm_ServiceDirect.rfdGrids .rfdTable a
+{
+    color:#0f3789;
+}
+
+/* Validation Summary Control and Login Control  */
+
+.RadForm_ServiceDirect .rfdValidationSummaryControl,
+.RadForm_ServiceDirect .rfdLoginControl
+{
+	background-color: #fff;
+	border: 1px solid #6788be;
+}
+
+.RadForm_ServiceDirect a.rfdLoginControl
+{
+	color: #324d92;
+}
+
+.RadForm_ServiceDirect a.rfdLoginControl:active
+{
+	color: #010615;
+}
+
+.RadForm_ServiceDirect a.rfdLoginControl:hover
+{
+	color: #0f3789;
+}
+
+.RadForm_ServiceDirect a.rfdLoginControl:visited
+{
+	color: #222;
+}

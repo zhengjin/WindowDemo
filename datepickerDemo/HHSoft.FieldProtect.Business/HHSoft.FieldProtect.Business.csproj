@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D076E45-7ADE-4245-ABF0-23D4BCF918B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HHSoft.FieldProtect.Business</RootNamespace>
+    <AssemblyName>HHSoft.FieldProtect.Business</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GBArcGis.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HHSoft.FieldProtect.WebSite\Library\GBArcGis.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="HHSoft.Gt.Geometry, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HHSoft.FieldProtect.WebSite\Library\HHSoft.Gt.Geometry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Owc11, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HHSoft.FieldProtect.WebSite\Library\Microsoft.Office.Interop.Owc11.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HHSoft.FieldProtect.WebSite\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chart\Chart.cs" />
+    <Compile Include="Common\CommonManage.cs" />
+    <Compile Include="Common\DataTableOperation.cs" />
+    <Compile Include="Common\ItemListOperation.cs" />
+    <Compile Include="Common\LogOperation.cs" />
+    <Compile Include="Common\SqlBuilder.cs" />
+    <Compile Include="Common\TreeViewOperation.cs" />
+    <Compile Include="Common\UserOperation.cs" />
+    <Compile Include="ItemManage\BusiItemManage.cs" />
+    <Compile Include="ItemManage\BusiItemManage_GD.cs" />
+    <Compile Include="ItemManage\BusiItemManage_GHYS.cs" />
+    <Compile Include="ItemManage\BusiItemManage_Gis.cs" />
+    <Compile Include="ItemManage\BusiItemManage_JG.cs" />
+    <Compile Include="ItemManage\BusiItemManage_JS.cs" />
+    <Compile Include="ItemManage\BusiItemManage_KY.cs" />
+    <Compile Include="ItemManage\BusiItemManage_SB.cs" />
+    <Compile Include="ItemManage\BusiItemManage_SS.cs" />
+    <Compile Include="ItemManage\BusiItemManage_YS.cs" />
+    <Compile Include="ItemManage\BusiItemQuery.cs" />
+    <Compile Include="ItemMonitor\BusiItemMoitor_XMXX.cs" />
+    <Compile Include="PersonalManage\MessageManage.cs" />
+    <Compile Include="PersonalManage\PersonalCenterQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sync\SyncConfigManage.cs" />
+    <Compile Include="Sync\SyncDataSystemInfo.cs" />
+    <Compile Include="Sync\SyncDataWorkflow.cs" />
+    <Compile Include="Sync\SyncDataItem.cs" />
+    <Compile Include="Sync\SyncDataMessage.cs" />
+    <Compile Include="Sync\SyncManage.cs" />
+    <Compile Include="Sync\SyncData.cs" />
+    <Compile Include="SysManage\BusiCompanyService.cs" />
+    <Compile Include="SysManage\BusiDepartMent.cs" />
+    <Compile Include="SysManage\BusiNACharge.cs" />
+    <Compile Include="SysManage\BusiRoleService.cs" />
+    <Compile Include="SysManage\BusiLoginService.cs" />
+    <Compile Include="SysManage\BusiUserService.cs" />
+    <Compile Include="SysManage\BusiWorkFlowService.cs" />
+    <Compile Include="Template\GridViewItemCodeTemplate.cs" />
+    <Compile Include="Workflow\WorkflowCyValidation.cs" />
+    <Compile Include="Workflow\WorkflowGdValidation.cs" />
+    <Compile Include="Workflow\WorkflowGhvalidation.cs" />
+    <Compile Include="Workflow\WorkflowJgValidation.cs" />
+    <Compile Include="Workflow\WorkflowJsValidation.cs" />
+    <Compile Include="Workflow\WorkflowKyvalidation.cs" />
+    <Compile Include="Workflow\WorkflowSbValidation.cs" />
+    <Compile Include="Workflow\WorkflowSsValidation.cs" />
+    <Compile Include="Workflow\WorkflowValidation.cs" />
+    <Compile Include="Workflow\WorkflowYsTzvalidation.cs" />
+    <Compile Include="Workflow\WorkflowZyValidation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HHSoft.FieldProtect.DataAccess\HHSoft.FieldProtect.DataAccess.csproj">
+      <Project>{F3DD5FE7-0ADB-403C-9EF4-AA79232B9D45}</Project>
+      <Name>HHSoft.FieldProtect.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HHSoft.FieldProtect.DataEntity\HHSoft.FieldProtect.DataEntity.csproj">
+      <Project>{CC6AF85E-009D-4A01-B95A-1C7787A69B86}</Project>
+      <Name>HHSoft.FieldProtect.DataEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HHSoft.FieldProtect.FrameWork\HHSoft.FieldProtect.FrameWork.csproj">
+      <Project>{C82C33DB-7F10-4492-B377-7DFB6502784E}</Project>
+      <Name>HHSoft.FieldProtect.FrameWork</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{00000205-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSComctlLib">
+      <Guid>{831FDD16-0C5C-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

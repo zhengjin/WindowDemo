@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CustomerID" type="xs:string" minOccurs="0" />
+                <xs:element name="AcctNum" type="xs:string" minOccurs="0" />
+                <xs:element name="PremiseID" type="xs:string" minOccurs="0" />
+                <xs:element name="TotalDue" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <CustomerID>10100</CustomerID>
+        <AcctNum>10100</AcctNum>
+        <PremiseID>P101</PremiseID>
+        <TotalDue>6775.0800</TotalDue>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <CustomerID>10200</CustomerID>
+        <AcctNum>10200</AcctNum>
+        <PremiseID>P102</PremiseID>
+        <TotalDue>20802.7900</TotalDue>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <CustomerID>10300</CustomerID>
+        <AcctNum>10300</AcctNum>
+        <PremiseID>P103</PremiseID>
+        <TotalDue>20834.9400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <CustomerID>10400</CustomerID>
+        <AcctNum>10400</AcctNum>
+        <PremiseID>P104</PremiseID>
+        <TotalDue>21153.0400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <CustomerID>10500</CustomerID>
+        <AcctNum>10500</AcctNum>
+        <PremiseID>P105</PremiseID>
+        <TotalDue>20831.9400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <CustomerID>10600</CustomerID>
+        <AcctNum>10600</AcctNum>
+        <PremiseID>P106</PremiseID>
+        <TotalDue>20012.8400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <CustomerID>10700</CustomerID>
+        <AcctNum>10700</AcctNum>
+        <PremiseID>P107</PremiseID>
+        <TotalDue>20006.2400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <CustomerID>10800</CustomerID>
+        <AcctNum>10800</AcctNum>
+        <PremiseID>P108</PremiseID>
+        <TotalDue>19995.2400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <CustomerID>10900</CustomerID>
+        <AcctNum>10900</AcctNum>
+        <PremiseID>P109</PremiseID>
+        <TotalDue>19995.2400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <CustomerID>11000</CustomerID>
+        <AcctNum>11000</AcctNum>
+        <PremiseID>P110</PremiseID>
+        <TotalDue>0.0000</TotalDue>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <CustomerID>11100</CustomerID>
+        <AcctNum>11100</AcctNum>
+        <PremiseID>P111</PremiseID>
+        <TotalDue>4864.3800</TotalDue>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <CustomerID>11200</CustomerID>
+        <AcctNum>11200</AcctNum>
+        <PremiseID>P112</PremiseID>
+        <TotalDue>6334.5900</TotalDue>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <CustomerID>11300</CustomerID>
+        <AcctNum>11300</AcctNum>
+        <PremiseID>P113</PremiseID>
+        <TotalDue>4854.7300</TotalDue>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <CustomerID>11400</CustomerID>
+        <AcctNum>11400</AcctNum>
+        <PremiseID>P114</PremiseID>
+        <TotalDue>3374.9100</TotalDue>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <CustomerID>11500</CustomerID>
+        <AcctNum>11500</AcctNum>
+        <PremiseID>P115</PremiseID>
+        <TotalDue>1895.0400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <CustomerID>11600</CustomerID>
+        <AcctNum>11600</AcctNum>
+        <PremiseID>P116</PremiseID>
+        <TotalDue>1895.0400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <CustomerID>11700</CustomerID>
+        <AcctNum>11700</AcctNum>
+        <PremiseID>P117</PremiseID>
+        <TotalDue>1895.0400</TotalDue>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <CustomerID>11800</CustomerID>
+        <AcctNum>11800</AcctNum>
+        <PremiseID>P118</PremiseID>
+        <TotalDue>1534.7900</TotalDue>
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <CustomerID>11900</CustomerID>
+        <AcctNum>11900</AcctNum>
+        <PremiseID>P119</PremiseID>
+        <TotalDue>1534.7900</TotalDue>
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <CustomerID>12000</CustomerID>
+        <AcctNum>12000</AcctNum>
+        <PremiseID>P120</PremiseID>
+        <TotalDue>1534.7900</TotalDue>
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

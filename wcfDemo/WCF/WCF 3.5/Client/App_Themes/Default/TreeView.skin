@@ -1,0 +1,8 @@
+﻿<asp:TreeView runat="server" ImageSet="Arrows">
+    <ParentNodeStyle Font-Bold="False" />
+    <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+    <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px"
+        VerticalPadding="0px" />
+    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px"
+        NodeSpacing="0px" VerticalPadding="0px" />
+</asp:TreeView>

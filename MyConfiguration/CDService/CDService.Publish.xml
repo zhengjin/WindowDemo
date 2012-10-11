@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\vsTemp" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="CDService" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/CD.MyCommon.pdb" publishTime="08/15/2011 10:58:14" />
+    <file relUrl="bin/CD.CDService.dll" publishTime="08/15/2011 11:13:31" />
+    <file relUrl="CustomerTracking.asmx" publishTime="08/04/2011 22:19:45" />
+    <file relUrl="bin/CD.MyCommon.dll" publishTime="08/15/2011 10:58:14" />
+    <file relUrl="MerchantService.asmx" publishTime="08/10/2011 18:58:00" />
+    <file relUrl="AccountService.asmx" publishTime="08/10/2011 18:28:37" />
+    <file relUrl="Web.config" publishTime="08/15/2011 11:22:59" />
+    <file relUrl="ConsumerService.asmx" publishTime="08/10/2011 18:25:05" />
+    <file relUrl="bin/CD.CDService.pdb" publishTime="08/15/2011 11:13:30" />
+    <file relUrl="CommodityService.asmx" publishTime="08/10/2011 18:27:27" />
+    <file relUrl="PaymentService.asmx" publishTime="08/10/2011 18:29:46" />
+  </publishProfile>
+</publishData>

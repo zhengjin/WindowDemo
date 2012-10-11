@@ -1,0 +1,13 @@
+/* RadRating for ASP.NET AJAX Web20 Skin */
+
+.RadRating_ServiceDirect a,
+.RadRating_ServiceDirect a span
+{
+	background-image: url('Rating/Sprite.png');
+}
+
+* html .RadRating_ServiceDirect a,
+* html .RadRating_ServiceDirect a span
+{
+	background-image: url('Rating/Sprite.gif');
+}

@@ -1,0 +1,176 @@
+/* RadSplitter for ASP.NET AJAX - Web20 Skin */
+
+/* Borders */
+.RadSplitter_ServiceDirect,
+.RadSplitter_ServiceDirect .rspPaneTabContainer,
+
+/* Vertical RadSplitter items */
+.RadSplitter_ServiceDirect .rspPane, 
+.RadSplitter_ServiceDirect .rspResizeBar,
+.RadSplitter_ServiceDirect .rspSlideContainerResize,
+
+/* Horizontal RadSplitter items */
+.RadSplitter_ServiceDirect .rspPaneHorizontal,
+.RadSplitter_ServiceDirect .rspResizeBarHorizontal,
+.RadSplitter_ServiceDirect .rspSlideContainerResizeHorizontal
+{
+	border-color:#cedef4;
+}
+
+/* RadSplitBar/RadSlidingPane resize elements */
+.RadSplitter_ServiceDirect .rspResizeBar,
+.RadSplitter_ServiceDirect .rspSlideContainerResize
+{
+	background:#e3eeff url('Splitter/ResizeBarVerticalSprites.gif') repeat-y 0 0;
+    border-right-color:#839fce;
+}
+
+.RadSplitter_ServiceDirect .rspResizeBarOver,
+.RadSplitter_ServiceDirect .rspSlideContainerResizeOver
+{
+    background-position:-4px 0;
+}
+
+.RadSplitter_ServiceDirect .rspResizeBarHorizontal,
+.RadSplitter_ServiceDirect .rspSlideContainerResizeHorizontal
+{
+	background:#e3eeff url('Splitter/ResizeBarHorizontalSprites.gif') repeat-x 0 0;
+    border-bottom-color:#839fce;
+}
+
+.RadSplitter_ServiceDirect .rspResizeBarOverHorizontal,
+.RadSplitter_ServiceDirect .rspSlideContainerResizeOverHorizontal
+{
+    background-position:0 -4px;
+}
+
+/* RadSlidingPane tab */
+.RadSplitter_ServiceDirect .rspPaneTabContainer,
+/* RadSlidingPane buttons */
+.RadSplitter_ServiceDirect .rspSlideHeaderDockIcon,
+.RadSplitter_ServiceDirect .rspSlideHeaderUndockIcon,
+.RadSplitter_ServiceDirect .rspSlideHeaderCollapseIcon,
+/* RadSplitBar buttons */
+.RadSplitter_ServiceDirect .rspCollapseBarExpand,
+.RadSplitter_ServiceDirect .rspCollapseBarCollapse,
+
+.RadSplitter_ServiceDirect .rspCollapseBarHorizontalExpand,
+.RadSplitter_ServiceDirect .rspCollapseBarHorizontalCollapse
+{
+    background-image:url('Splitter/ExpandCollapseBarsCommands.gif');
+    background-repeat:no-repeat;
+}
+
+/* RadSlidingPane tab */
+.RadSplitter_ServiceDirect .rspPaneTabContainer
+{
+    background-position:-81px 0;
+    background-repeat:repeat-y;
+    background-color:#90afd7;
+}
+
+/* RadSplitBar buttons */
+.RadSplitter_ServiceDirect .rspCollapseBarCollapse
+{	
+	background-position:0 0;
+}
+.RadSplitter_ServiceDirect .rspCollapseBarCollapseOver
+{
+    background-position:-192px 0;
+}
+
+.RadSplitter_ServiceDirect .rspCollapseBarExpand
+{	
+	background-position:-4px 0;
+}
+.RadSplitter_ServiceDirect .rspCollapseBarExpandOver
+{
+    background-position:-196px 0;
+}
+
+.RadSplitter_ServiceDirect .rspCollapseBarHorizontalExpand
+{
+    background-position:-8px -4px;
+}
+.RadSplitter_ServiceDirect .rspCollapseBarHorizontalExpandOver
+{
+    background-position:-8px -12px;
+}
+
+.RadSplitter_ServiceDirect .rspCollapseBarHorizontalCollapse
+{
+    background-position:-8px 0;
+}
+.RadSplitter_ServiceDirect .rspCollapseBarHorizontalCollapseOver
+{
+    background-position:-8px -8px;
+}
+
+/* RadSlidingPane buttons */
+.RadSplitter_ServiceDirect .rspSlideHeaderUndockIcon
+{
+	background-position:-50px 0;
+}
+
+.RadSplitter_ServiceDirect .rspSlideHeaderDockIcon
+{
+	background-position:-35px 0;
+}
+
+.RadSplitter_ServiceDirect .rspSlideHeaderCollapseIcon
+{
+	background-position:-65px 0;
+}
+
+/* RadSlidingPane header */
+.RadSplitter_ServiceDirect .rspSlideHeader, 
+/* RadSlidingPane title */
+.RadSplitter_ServiceDirect .rspSlideTitleContainer,
+/* RadSlidingPane tab, SlideDirection=Top/Bottom */
+.RadSplitter_ServiceDirect .rspBottom .rspPaneTabContainer,
+.RadSplitter_ServiceDirect .rspTop .rspPaneTabContainer
+{
+	background-image:url('Splitter/slideTitleContainerBgr.gif');
+	background-repeat:repeat-x;
+}
+
+.RadSplitter_ServiceDirect .rspBottom .rspPaneTabContainer,
+.RadSplitter_ServiceDirect .rspTop .rspPaneTabContainer
+{
+    background-position:0 -1px;
+}
+
+.RadSplitter_ServiceDirect .rspTabsContainer .rspPaneTabContainerDocked
+{
+    background:#fff none;
+}
+
+/* RadSlidingPane header elements */
+.RadSplitter_ServiceDirect .rspSlideTitleContainer,
+.RadSplitter_ServiceDirect .rspSlideHeaderIconWrapper
+{
+	border-bottom:solid 1px #cedef4;
+}
+
+/* RadSlidingPane title text */
+.RadSplitter_ServiceDirect .rspSlideTitle,
+/* RadSlidingPane tab text */
+.RadSplitter_ServiceDirect .rspPaneTabText
+{
+	font:normal 10px "Segoe UI", Arial, Sans-serif;
+	color:#fff;
+}
+.RadSplitter_ServiceDirect .rspSlideTitle
+{	
+	font-size:12px;
+}
+.RadSplitter_ServiceDirect .rspPaneTabContainerDocked .rspPaneTabText
+{
+    color:#4e75b3;
+}
+
+/* RadSlidingPane content - this element should not be transparent as it shows above content in adjacent RadPanes */
+.RadSplitter_ServiceDirect .rspSlideContent
+{
+	background-color:#fff;
+}

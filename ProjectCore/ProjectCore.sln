@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectCore", "ProjectCore\ProjectCore.csproj", "{482C327B-9979-4847-969D-98F4505D51C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectDAL", "ProjectDAL\ProjectDAL.csproj", "{C3A4D4A2-C621-4CFF-BF05-782FD147D652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerDirect.OnlinePayment.Manager", "CustomerDirect.OnlinePayment.Manager\CustomerDirect.OnlinePayment.Manager.csproj", "{785BE6AC-3761-47D6-8AD4-E3BA1421633C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{482C327B-9979-4847-969D-98F4505D51C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482C327B-9979-4847-969D-98F4505D51C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482C327B-9979-4847-969D-98F4505D51C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482C327B-9979-4847-969D-98F4505D51C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3A4D4A2-C621-4CFF-BF05-782FD147D652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3A4D4A2-C621-4CFF-BF05-782FD147D652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3A4D4A2-C621-4CFF-BF05-782FD147D652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3A4D4A2-C621-4CFF-BF05-782FD147D652}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785BE6AC-3761-47D6-8AD4-E3BA1421633C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785BE6AC-3761-47D6-8AD4-E3BA1421633C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785BE6AC-3761-47D6-8AD4-E3BA1421633C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785BE6AC-3761-47D6-8AD4-E3BA1421633C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

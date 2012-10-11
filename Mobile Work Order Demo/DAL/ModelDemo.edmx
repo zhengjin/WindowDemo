@@ -1,0 +1,2957 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UnicornDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="UnicornDBModelStoreContainer">
+          <EntitySet Name="d_DicInfo" EntityType="UnicornDBModel.Store.d_DicInfo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="d_DicType" EntityType="UnicornDBModel.Store.d_DicType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblAction_Permission_Role" EntityType="UnicornDBModel.Store.tblAction_Permission_Role" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblActionRight" EntityType="UnicornDBModel.Store.tblActionRight" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblDataOperate_Permission_Mask" EntityType="UnicornDBModel.Store.tblDataOperate_Permission_Mask" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblDataOperateRight" EntityType="UnicornDBModel.Store.tblDataOperateRight" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMaterial" EntityType="UnicornDBModel.Store.tblMaterial" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMaterialCategory" EntityType="UnicornDBModel.Store.tblMaterialCategory" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMenu_Permission_Role" EntityType="UnicornDBModel.Store.tblMenu_Permission_Role" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblMenuRight" EntityType="UnicornDBModel.Store.tblMenuRight" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblOperateLog" EntityType="UnicornDBModel.Store.tblOperateLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblRole" EntityType="UnicornDBModel.Store.tblRole" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblRole_User" EntityType="UnicornDBModel.Store.tblRole_User" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblRoleFastTrack" EntityType="UnicornDBModel.Store.tblRoleFastTrack" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblSetOfBook" EntityType="UnicornDBModel.Store.tblSetOfBook" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblStock" EntityType="UnicornDBModel.Store.tblStock" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblStockCheck" EntityType="UnicornDBModel.Store.tblStockCheck" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblStockInSheet" EntityType="UnicornDBModel.Store.tblStockInSheet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblStockInSheetDetail" EntityType="UnicornDBModel.Store.tblStockInSheetDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblStockOutSheet" EntityType="UnicornDBModel.Store.tblStockOutSheet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblStockOutSheetDetail" EntityType="UnicornDBModel.Store.tblStockOutSheetDetail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblSuppliers" EntityType="UnicornDBModel.Store.tblSuppliers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblSysLoginLog" EntityType="UnicornDBModel.Store.tblSysLoginLog" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblSystemConfig" EntityType="UnicornDBModel.Store.tblSystemConfig" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblUser" EntityType="UnicornDBModel.Store.tblUser" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblUserFavorites" EntityType="UnicornDBModel.Store.tblUserFavorites" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblVisitMask" EntityType="UnicornDBModel.Store.tblVisitMask" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblWarehouse" EntityType="UnicornDBModel.Store.tblWarehouse" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="View_Detail_List" EntityType="UnicornDBModel.Store.View_Detail_List" store:Type="Views" store:Schema="dbo" store:Name="View_Detail_List">
+            <DefiningQuery>SELECT 
+      [View_Detail_List].[MaterialName] AS [MaterialName], 
+      [View_Detail_List].[Remark] AS [Remark], 
+      [View_Detail_List].[Consuming] AS [Consuming], 
+      [View_Detail_List].[ContractAmount] AS [ContractAmount], 
+      [View_Detail_List].[StockInAmount] AS [StockInAmount], 
+      [View_Detail_List].[PricenonTax] AS [PricenonTax], 
+      [View_Detail_List].[PriceTax] AS [PriceTax], 
+      [View_Detail_List].[Planprice] AS [Planprice], 
+      [View_Detail_List].[MaterialID] AS [MaterialID], 
+      [View_Detail_List].[SuppliersID] AS [SuppliersID], 
+      [View_Detail_List].[StockInID] AS [StockInID], 
+      [View_Detail_List].[StockInDetailID] AS [StockInDetailID], 
+      [View_Detail_List].[SuppliersName] AS [SuppliersName], 
+      [View_Detail_List].[IsDeleted] AS [IsDeleted]
+      FROM [dbo].[View_Detail_List] AS [View_Detail_List]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_Detail_List_OUt" EntityType="UnicornDBModel.Store.View_Detail_List_OUt" store:Type="Views" store:Schema="dbo" store:Name="View_Detail_List_OUt">
+            <DefiningQuery>SELECT 
+      [View_Detail_List_OUt].[MaterialName] AS [MaterialName], 
+      [View_Detail_List_OUt].[Remark] AS [Remark], 
+      [View_Detail_List_OUt].[StockOutDetailID] AS [StockOutDetailID], 
+      [View_Detail_List_OUt].[StockOutID] AS [StockOutID], 
+      [View_Detail_List_OUt].[MaterialID] AS [MaterialID], 
+      [View_Detail_List_OUt].[PlanPrice] AS [PlanPrice], 
+      [View_Detail_List_OUt].[SalePrice] AS [SalePrice], 
+      [View_Detail_List_OUt].[StockOutNumber] AS [StockOutNumber], 
+      [View_Detail_List_OUt].[IsDeleted] AS [IsDeleted]
+      FROM [dbo].[View_Detail_List_OUt] AS [View_Detail_List_OUt]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_Menu_Permission_Role" EntityType="UnicornDBModel.Store.View_Menu_Permission_Role" store:Type="Views" store:Schema="dbo" store:Name="View_Menu_Permission_Role">
+            <DefiningQuery>SELECT 
+      [View_Menu_Permission_Role].[RoleID] AS [RoleID], 
+      [View_Menu_Permission_Role].[MenuPermissionID] AS [MenuPermissionID], 
+      [View_Menu_Permission_Role].[Action] AS [Action], 
+      [View_Menu_Permission_Role].[Control] AS [Control], 
+      [View_Menu_Permission_Role].[Desc] AS [Desc], 
+      [View_Menu_Permission_Role].[Icon1] AS [Icon1], 
+      [View_Menu_Permission_Role].[Icon2] AS [Icon2], 
+      [View_Menu_Permission_Role].[MenuName] AS [MenuName], 
+      [View_Menu_Permission_Role].[ParentNode] AS [ParentNode], 
+      [View_Menu_Permission_Role].[TreeCode] AS [TreeCode], 
+      [View_Menu_Permission_Role].[NodeLevel] AS [NodeLevel], 
+      [View_Menu_Permission_Role].[IsLeaves] AS [IsLeaves], 
+      [View_Menu_Permission_Role].[URL] AS [URL], 
+      [View_Menu_Permission_Role].[IsAJAXPage] AS [IsAJAXPage], 
+      [View_Menu_Permission_Role].[Sort] AS [Sort], 
+      [View_Menu_Permission_Role].[CreateDt] AS [CreateDt], 
+      [View_Menu_Permission_Role].[IsDeleted] AS [IsDeleted], 
+      [View_Menu_Permission_Role].[Version] AS [Version], 
+      [View_Menu_Permission_Role].[IsRoot] AS [IsRoot], 
+      [View_Menu_Permission_Role].[isfast] AS [isfast]
+      FROM [dbo].[View_Menu_Permission_Role] AS [View_Menu_Permission_Role]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockInSheet_Accounting_Dic" EntityType="UnicornDBModel.Store.View_tblStockInSheet_Accounting_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockInSheet_Accounting_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockInSheet_Accounting_Dic].[DicID] AS [DicID], 
+      [View_tblStockInSheet_Accounting_Dic].[DicName] AS [DicName], 
+      [View_tblStockInSheet_Accounting_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockInSheet_Accounting_Dic] AS [View_tblStockInSheet_Accounting_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockInSheet_Agent_Dic" EntityType="UnicornDBModel.Store.View_tblStockInSheet_Agent_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockInSheet_Agent_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockInSheet_Agent_Dic].[DicID] AS [DicID], 
+      [View_tblStockInSheet_Agent_Dic].[DicName] AS [DicName], 
+      [View_tblStockInSheet_Agent_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockInSheet_Agent_Dic] AS [View_tblStockInSheet_Agent_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockInSheet_BusinessType_Dic" EntityType="UnicornDBModel.Store.View_tblStockInSheet_BusinessType_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockInSheet_BusinessType_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockInSheet_BusinessType_Dic].[DicID] AS [DicID], 
+      [View_tblStockInSheet_BusinessType_Dic].[DicName] AS [DicName], 
+      [View_tblStockInSheet_BusinessType_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockInSheet_BusinessType_Dic] AS [View_tblStockInSheet_BusinessType_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockInSheet_Custodian_Dic" EntityType="UnicornDBModel.Store.View_tblStockInSheet_Custodian_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockInSheet_Custodian_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockInSheet_Custodian_Dic].[DicID] AS [DicID], 
+      [View_tblStockInSheet_Custodian_Dic].[DicName] AS [DicName], 
+      [View_tblStockInSheet_Custodian_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockInSheet_Custodian_Dic] AS [View_tblStockInSheet_Custodian_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockInSheet_Peopleofaccount_Dic" EntityType="UnicornDBModel.Store.View_tblStockInSheet_Peopleofaccount_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockInSheet_Peopleofaccount_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockInSheet_Peopleofaccount_Dic].[DicID] AS [DicID], 
+      [View_tblStockInSheet_Peopleofaccount_Dic].[DicName] AS [DicName], 
+      [View_tblStockInSheet_Peopleofaccount_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockInSheet_Peopleofaccount_Dic] AS [View_tblStockInSheet_Peopleofaccount_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockInSheet_Procurementtype_Dic" EntityType="UnicornDBModel.Store.View_tblStockInSheet_Procurementtype_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockInSheet_Procurementtype_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockInSheet_Procurementtype_Dic].[DicID] AS [DicID], 
+      [View_tblStockInSheet_Procurementtype_Dic].[DicName] AS [DicName], 
+      [View_tblStockInSheet_Procurementtype_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockInSheet_Procurementtype_Dic] AS [View_tblStockInSheet_Procurementtype_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockInSheet_StockInStyle_Dic" EntityType="UnicornDBModel.Store.View_tblStockInSheet_StockInStyle_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockInSheet_StockInStyle_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockInSheet_StockInStyle_Dic].[DicID] AS [DicID], 
+      [View_tblStockInSheet_StockInStyle_Dic].[DicName] AS [DicName], 
+      [View_tblStockInSheet_StockInStyle_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockInSheet_StockInStyle_Dic] AS [View_tblStockInSheet_StockInStyle_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockOutSheet_Agent_Dic" EntityType="UnicornDBModel.Store.View_tblStockOutSheet_Agent_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockOutSheet_Agent_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockOutSheet_Agent_Dic].[DicID] AS [DicID], 
+      [View_tblStockOutSheet_Agent_Dic].[DicName] AS [DicName], 
+      [View_tblStockOutSheet_Agent_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockOutSheet_Agent_Dic] AS [View_tblStockOutSheet_Agent_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockOutSheet_Deliveryman_Dic" EntityType="UnicornDBModel.Store.View_tblStockOutSheet_Deliveryman_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockOutSheet_Deliveryman_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockOutSheet_Deliveryman_Dic].[DicID] AS [DicID], 
+      [View_tblStockOutSheet_Deliveryman_Dic].[DicName] AS [DicName], 
+      [View_tblStockOutSheet_Deliveryman_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockOutSheet_Deliveryman_Dic] AS [View_tblStockOutSheet_Deliveryman_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblStockOutSheet_StockOutType_Dic" EntityType="UnicornDBModel.Store.View_tblStockOutSheet_StockOutType_Dic" store:Type="Views" store:Schema="dbo" store:Name="View_tblStockOutSheet_StockOutType_Dic">
+            <DefiningQuery>SELECT 
+      [View_tblStockOutSheet_StockOutType_Dic].[DicID] AS [DicID], 
+      [View_tblStockOutSheet_StockOutType_Dic].[DicName] AS [DicName], 
+      [View_tblStockOutSheet_StockOutType_Dic].[DicDode] AS [DicDode]
+      FROM [dbo].[View_tblStockOutSheet_StockOutType_Dic] AS [View_tblStockOutSheet_StockOutType_Dic]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="View_tblUser" EntityType="UnicornDBModel.Store.View_tblUser" store:Type="Views" store:Schema="dbo" store:Name="View_tblUser">
+            <DefiningQuery>SELECT 
+      [View_tblUser].[UserID] AS [UserID], 
+      [View_tblUser].[UserName] AS [UserName], 
+      [View_tblUser].[LoginName] AS [LoginName], 
+      [View_tblUser].[LoginPwd] AS [LoginPwd], 
+      [View_tblUser].[UserCode] AS [UserCode], 
+      [View_tblUser].[State] AS [State], 
+      [View_tblUser].[Email] AS [Email], 
+      [View_tblUser].[Desc] AS [Desc], 
+      [View_tblUser].[Language] AS [Language], 
+      [View_tblUser].[StyleSheet] AS [StyleSheet], 
+      [View_tblUser].[CreateDt] AS [CreateDt], 
+      [View_tblUser].[IsDeleted] AS [IsDeleted], 
+      [View_tblUser].[Version] AS [Version]
+      FROM [dbo].[View_tblUser] AS [View_tblUser]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_D_DICINF_REFERENCE_D_DICTYP" Association="UnicornDBModel.Store.FK_D_DICINF_REFERENCE_D_DICTYP">
+            <End Role="d_DicType" EntitySet="d_DicType" />
+            <End Role="d_DicInfo" EntitySet="d_DicInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLACTIO_REFERENCE_TBLACTIO" Association="UnicornDBModel.Store.FK_TBLACTIO_REFERENCE_TBLACTIO">
+            <End Role="tblActionRight" EntitySet="tblActionRight" />
+            <End Role="tblAction_Permission_Role" EntitySet="tblAction_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLACTIO_REFERENCE_TBLMENUR" Association="UnicornDBModel.Store.FK_TBLACTIO_REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblActionRight" EntitySet="tblActionRight" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLACTIO_REFERENCE_TBLROLE" Association="UnicornDBModel.Store.FK_TBLACTIO_REFERENCE_TBLROLE">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblAction_Permission_Role" EntitySet="tblAction_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLACTIO_REFERENCE_TBLVISIT" Association="UnicornDBModel.Store.FK_TBLACTIO_REFERENCE_TBLVISIT">
+            <End Role="tblVisitMask" EntitySet="tblVisitMask" />
+            <End Role="tblAction_Permission_Role" EntitySet="tblAction_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLDATAO_REFERENCE_TBLDATAO" Association="UnicornDBModel.Store.FK_TBLDATAO_REFERENCE_TBLDATAO">
+            <End Role="tblDataOperateRight" EntitySet="tblDataOperateRight" />
+            <End Role="tblDataOperate_Permission_Mask" EntitySet="tblDataOperate_Permission_Mask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLDATAO_REFERENCE_TBLVISIT" Association="UnicornDBModel.Store.FK_TBLDATAO_REFERENCE_TBLVISIT">
+            <End Role="tblVisitMask" EntitySet="tblVisitMask" />
+            <End Role="tblDataOperate_Permission_Mask" EntitySet="tblDataOperate_Permission_Mask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMaterial_tblMaterialCategory" Association="UnicornDBModel.Store.FK_tblMaterial_tblMaterialCategory">
+            <End Role="tblMaterialCategory" EntitySet="tblMaterialCategory" />
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLMENU__REFERENCE_TBLMENUR" Association="UnicornDBModel.Store.FK_TBLMENU__REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblMenu_Permission_Role" EntitySet="tblMenu_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLMENU__REFERENCE_TBLROLE" Association="UnicornDBModel.Store.FK_TBLMENU__REFERENCE_TBLROLE">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblMenu_Permission_Role" EntitySet="tblMenu_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLOPERA_REFERENCE_TBLUSER" Association="UnicornDBModel.Store.FK_TBLOPERA_REFERENCE_TBLUSER">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblOperateLog" EntitySet="tblOperateLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLROLE__REFERENCE_TBLROLE" Association="UnicornDBModel.Store.FK_TBLROLE__REFERENCE_TBLROLE">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblRole_User" EntitySet="tblRole_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLROLE__REFERENCE_TBLUSER" Association="UnicornDBModel.Store.FK_TBLROLE__REFERENCE_TBLUSER">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblRole_User" EntitySet="tblRole_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLROLEF_REFERENCE_TBLMENUR" Association="UnicornDBModel.Store.FK_TBLROLEF_REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblRoleFastTrack" EntitySet="tblRoleFastTrack" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLROLEF_REFERENCE_TBLROLE" Association="UnicornDBModel.Store.FK_TBLROLEF_REFERENCE_TBLROLE">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblRoleFastTrack" EntitySet="tblRoleFastTrack" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblSetOfBook_tblWarehouse" Association="UnicornDBModel.Store.FK_tblSetOfBook_tblWarehouse">
+            <End Role="tblWarehouse" EntitySet="tblWarehouse" />
+            <End Role="tblSetOfBook" EntitySet="tblSetOfBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStock_tblMaterial" Association="UnicornDBModel.Store.FK_tblStock_tblMaterial">
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+            <End Role="tblStock" EntitySet="tblStock" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockCheck_tblMaterial" Association="UnicornDBModel.Store.FK_tblStockCheck_tblMaterial">
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+            <End Role="tblStockCheck" EntitySet="tblStockCheck" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockCheck_tblSetOfBook" Association="UnicornDBModel.Store.FK_tblStockCheck_tblSetOfBook">
+            <End Role="tblSetOfBook" EntitySet="tblSetOfBook" />
+            <End Role="tblStockCheck" EntitySet="tblStockCheck" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockInSheetDetail_tblMaterial" Association="UnicornDBModel.Store.FK_tblStockInSheetDetail_tblMaterial">
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+            <End Role="tblStockInSheetDetail" EntitySet="tblStockInSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockInSheetDetail_tblStockInSheet" Association="UnicornDBModel.Store.FK_tblStockInSheetDetail_tblStockInSheet">
+            <End Role="tblStockInSheet" EntitySet="tblStockInSheet" />
+            <End Role="tblStockInSheetDetail" EntitySet="tblStockInSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockInSheetDetail_tblSuppliers" Association="UnicornDBModel.Store.FK_tblStockInSheetDetail_tblSuppliers">
+            <End Role="tblSuppliers" EntitySet="tblSuppliers" />
+            <End Role="tblStockInSheetDetail" EntitySet="tblStockInSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockOutSheetDetail_tblMaterial" Association="UnicornDBModel.Store.FK_tblStockOutSheetDetail_tblMaterial">
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+            <End Role="tblStockOutSheetDetail" EntitySet="tblStockOutSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockOutSheetDetail_tblStockOutSheet" Association="UnicornDBModel.Store.FK_tblStockOutSheetDetail_tblStockOutSheet">
+            <End Role="tblStockOutSheet" EntitySet="tblStockOutSheet" />
+            <End Role="tblStockOutSheetDetail" EntitySet="tblStockOutSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLSYSLO_REFERENCE_TBLUSER" Association="UnicornDBModel.Store.FK_TBLSYSLO_REFERENCE_TBLUSER">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblSysLoginLog" EntitySet="tblSysLoginLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLUSERF_REFERENCE_TBLMENUR" Association="UnicornDBModel.Store.FK_TBLUSERF_REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblUserFavorites" EntitySet="tblUserFavorites" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLUSERF_REFERENCE_TBLUSER" Association="UnicornDBModel.Store.FK_TBLUSERF_REFERENCE_TBLUSER">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblUserFavorites" EntitySet="tblUserFavorites" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="d_DicInfo">
+          <Key>
+            <PropertyRef Name="DicID" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicTypeID" Type="uniqueidentifier" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicIndex" Type="int" />
+          <Property Name="DicRe" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="d_DicType">
+          <Key>
+            <PropertyRef Name="DicTypeID" />
+          </Key>
+          <Property Name="DicTypeID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TypeName" Type="varchar" MaxLength="50" />
+          <Property Name="ZT" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblAction_Permission_Role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ActionPermissionID" Type="varchar" MaxLength="20" />
+          <Property Name="RoleID" Type="uniqueidentifier" />
+          <Property Name="VisitMaskID" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tblActionRight">
+          <Key>
+            <PropertyRef Name="ActionPermissionID" />
+          </Key>
+          <Property Name="ActionPermissionID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="MenuPermissionID" Type="varchar" MaxLength="20" />
+          <Property Name="Action" Type="varchar" MaxLength="255" />
+          <Property Name="Control" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+        </EntityType>
+        <EntityType Name="tblDataOperate_Permission_Mask">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DataOperateRightID" Type="varchar" MaxLength="20" />
+          <Property Name="VisitMaskID" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tblDataOperateRight">
+          <Key>
+            <PropertyRef Name="DataOperateRightID" />
+          </Key>
+          <Property Name="DataOperateRightID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="DataOperateRightName" Type="varchar" MaxLength="255" />
+          <Property Name="DataOperateRightCode" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+        </EntityType>
+        <EntityType Name="tblMaterial">
+          <Key>
+            <PropertyRef Name="MaterialID" />
+          </Key>
+          <Property Name="MaterialID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CategoryID" Type="uniqueidentifier" />
+          <Property Name="MaterialName" Type="varchar" MaxLength="60" />
+          <Property Name="Technicalparameters" Type="varchar" MaxLength="60" />
+          <Property Name="Specification" Type="varchar" MaxLength="80" />
+          <Property Name="Amount" Type="int" />
+          <Property Name="Material" Type="varchar" MaxLength="60" />
+          <Property Name="ReserveProperty" Type="varchar" MaxLength="60" />
+          <Property Name="Spareparts" Type="bit" />
+          <Property Name="Unitprice" Type="money" />
+          <Property Name="Limit" Type="int" />
+          <Property Name="LowerLimit" Type="int" />
+          <Property Name="Increaserate" Type="float" />
+          <Property Name="UseFlag" Type="bit" />
+          <Property Name="SelectFlag" Type="bit" />
+          <Property Name="Manufacturer" Type="varchar" MaxLength="60" />
+          <Property Name="Remark" Type="varchar" MaxLength="120" />
+        </EntityType>
+        <EntityType Name="tblMaterialCategory">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CategoryName" Type="varchar" MaxLength="100" />
+          <Property Name="ParentNode" Type="uniqueidentifier" />
+          <Property Name="NodeLevel" Type="smallint" />
+          <Property Name="CategoryCode" Type="varchar" MaxLength="100" />
+          <Property Name="Remark" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblMenu_Permission_Role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MenuPermissionID" Type="varchar" MaxLength="20" />
+          <Property Name="RoleID" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="tblMenuRight">
+          <Key>
+            <PropertyRef Name="MenuPermissionID" />
+          </Key>
+          <Property Name="MenuPermissionID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Action" Type="varchar" MaxLength="255" />
+          <Property Name="Control" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="Icon1" Type="varchar" MaxLength="255" />
+          <Property Name="Icon2" Type="varchar" MaxLength="255" />
+          <Property Name="MenuName" Type="varchar" MaxLength="255" />
+          <Property Name="ParentNode" Type="varchar" MaxLength="20" />
+          <Property Name="TreeCode" Type="varchar" MaxLength="255" />
+          <Property Name="NodeLevel" Type="varchar" MaxLength="255" />
+          <Property Name="IsLeaves" Type="numeric" Precision="1" />
+          <Property Name="URL" Type="varchar" MaxLength="255" />
+          <Property Name="IsAJAXPage" Type="numeric" Precision="1" />
+          <Property Name="Sort" Type="numeric" Precision="10" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+          <Property Name="IsRoot" Type="numeric" Precision="1" />
+          <Property Name="isfast" Type="numeric" Precision="1" />
+        </EntityType>
+        <EntityType Name="tblOperateLog">
+          <Key>
+            <PropertyRef Name="OperateLogID" />
+          </Key>
+          <Property Name="OperateLogID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Action" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="Control" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="OperateDesc" Type="varchar" Nullable="false" MaxLength="500" />
+          <Property Name="CreateDt" Type="datetime" Nullable="false" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+        </EntityType>
+        <EntityType Name="tblRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="255" />
+          <Property Name="RoleCode" Type="varchar" MaxLength="255" />
+          <Property Name="State" Type="numeric" Precision="10" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+        </EntityType>
+        <EntityType Name="tblRole_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" />
+          <Property Name="RoleID" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="tblRoleFastTrack">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="RoleID" Type="uniqueidentifier" />
+          <Property Name="MenuPermissionID" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tblSetOfBook">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="WarehouseID" Type="uniqueidentifier" />
+          <Property Name="BookName" Type="varchar" MaxLength="80" />
+          <Property Name="ModifyState" Type="bit" />
+          <Property Name="InitDate" Type="datetime" />
+          <Property Name="State" Type="bit" />
+          <Property Name="CloseBookDate" Type="datetime" />
+          <Property Name="Remark" Type="varchar" MaxLength="120" />
+        </EntityType>
+        <EntityType Name="tblStock">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MaterialID" Type="uniqueidentifier" />
+          <Property Name="Positions" Type="varchar" MaxLength="40" />
+          <Property Name="StockPrice" Type="money" />
+          <Property Name="StockAmount" Type="int" />
+          <Property Name="BorrowAmount" Type="int" />
+          <Property Name="StockInTotal" Type="bigint" />
+          <Property Name="StockOutTotal" Type="bigint" />
+          <Property Name="Purchaseprice" Type="money" />
+          <Property Name="Purchasediscount" Type="float" />
+          <Property Name="ProcurementUnit" Type="money" />
+          <Property Name="Inventorydate" Type="datetime" />
+          <Property Name="Settlementmonth" Type="datetime" />
+          <Property Name="SettlementDate" Type="datetime" />
+          <Property Name="Remark" Type="varchar" MaxLength="120" />
+        </EntityType>
+        <EntityType Name="tblStockCheck">
+          <Key>
+            <PropertyRef Name="StockCheckID" />
+          </Key>
+          <Property Name="StockCheckID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MaterialID" Type="uniqueidentifier" />
+          <Property Name="BookID" Type="uniqueidentifier" />
+          <Property Name="StockCheckDt" Type="datetime" />
+          <Property Name="SignDt" Type="datetime" />
+          <Property Name="Reviewers" Type="uniqueidentifier" />
+          <Property Name="Agent" Type="uniqueidentifier" />
+          <Property Name="Remark" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tblStockInSheet">
+          <Key>
+            <PropertyRef Name="StockInID" />
+          </Key>
+          <Property Name="StockInID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="StockInCode" Type="varchar" MaxLength="20" />
+          <Property Name="StockInSource" Type="uniqueidentifier" />
+          <Property Name="Agent" Type="uniqueidentifier" />
+          <Property Name="Custodian" Type="uniqueidentifier" />
+          <Property Name="StockInDt" Type="datetime" />
+          <Property Name="Accounting" Type="uniqueidentifier" />
+          <Property Name="TengaccountDt" Type="datetime" />
+          <Property Name="QCPeople" Type="uniqueidentifier" />
+          <Property Name="QCDt" Type="datetime" />
+          <Property Name="StockInStyle" Type="uniqueidentifier" />
+          <Property Name="Reviewers" Type="uniqueidentifier" />
+          <Property Name="IsPrint" Type="bit" />
+          <Property Name="Invoicenumber" Type="varchar" MaxLength="40" />
+          <Property Name="SlottingNo." Type="varchar" MaxLength="30" />
+          <Property Name="Entryperson" Type="uniqueidentifier" />
+          <Property Name="TotalTax" Type="money" />
+          <Property Name="Totalnon-tax" Type="money" />
+          <Property Name="BusinessType" Type="uniqueidentifier" />
+          <Property Name="Procurementtype" Type="uniqueidentifier" />
+          <Property Name="StockInType" Type="uniqueidentifier" />
+          <Property Name="Peopleofaccount" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="tblStockInSheetDetail">
+          <Key>
+            <PropertyRef Name="StockInDetailID" />
+          </Key>
+          <Property Name="StockInDetailID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="StockInID" Type="uniqueidentifier" />
+          <Property Name="SuppliersID" Type="uniqueidentifier" />
+          <Property Name="MaterialID" Type="uniqueidentifier" />
+          <Property Name="Planprice" Type="money" />
+          <Property Name="PriceTax" Type="money" />
+          <Property Name="PricenonTax" Type="money" />
+          <Property Name="StockInAmount" Type="int" />
+          <Property Name="ContractAmount" Type="int" />
+          <Property Name="Consuming" Type="int" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+        </EntityType>
+        <EntityType Name="tblStockOutSheet">
+          <Key>
+            <PropertyRef Name="StockOutID" />
+          </Key>
+          <Property Name="StockOutID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="StockOutCode" Type="varchar" MaxLength="20" />
+          <Property Name="StockOutDt" Type="datetime" />
+          <Property Name="StockOutType" Type="uniqueidentifier" />
+          <Property Name="Agent" Type="uniqueidentifier" />
+          <Property Name="Deliveryman" Type="uniqueidentifier" />
+          <Property Name="PostDt" Type="datetime" />
+          <Property Name="IsPrint" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblStockOutSheetDetail">
+          <Key>
+            <PropertyRef Name="StockOutDetailID" />
+          </Key>
+          <Property Name="StockOutDetailID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="StockOutID" Type="uniqueidentifier" />
+          <Property Name="MaterialID" Type="uniqueidentifier" />
+          <Property Name="PlanPrice" Type="char" MaxLength="10" />
+          <Property Name="SalePrice" Type="char" MaxLength="10" />
+          <Property Name="StockOutNumber" Type="char" MaxLength="10" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+        </EntityType>
+        <EntityType Name="tblSuppliers">
+          <Key>
+            <PropertyRef Name="SuppliersID" />
+          </Key>
+          <Property Name="SuppliersID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SuppliersName" Type="varchar" MaxLength="120" />
+          <Property Name="Contact" Type="varchar" MaxLength="120" />
+          <Property Name="Tel" Type="varchar" MaxLength="30" />
+          <Property Name="Address" Type="varchar" MaxLength="250" />
+          <Property Name="ZipCode" Type="varchar" MaxLength="15" />
+          <Property Name="Remark" Type="varchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="tblSysLoginLog">
+          <Key>
+            <PropertyRef Name="LoginLogID" />
+          </Key>
+          <Property Name="LoginLogID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserID" Type="uniqueidentifier" />
+          <Property Name="InTime" Type="datetime" />
+          <Property Name="OnlineLength" Type="datetime" />
+          <Property Name="OutTime" Type="datetime" />
+          <Property Name="LoginIP" Type="varchar" MaxLength="15" />
+          <Property Name="BrowerType" Type="varchar" MaxLength="50" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+        </EntityType>
+        <EntityType Name="tblSystemConfig">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SName" Type="varchar" MaxLength="50" />
+          <Property Name="DbVersion" Type="varchar" MaxLength="80" />
+          <Property Name="DateConfig" Type="datetime" />
+          <Property Name="ServerEmail" Type="varchar" MaxLength="50" />
+          <Property Name="IsEmailRule" Type="bit" />
+          <Property Name="IsLogin" Type="bit" />
+          <Property Name="IsUpdateEmail" Type="bit" />
+          <Property Name="UploadSaveType" Type="bit" />
+          <Property Name="IPManageSwitch" Type="bit" />
+          <Property Name="UploadFileSize" Type="numeric" />
+          <Property Name="OverTimeSwitch" Type="bit" />
+          <Property Name="TimeFormat" Type="varchar" MaxLength="50" />
+          <Property Name="IndexBack" Type="numeric" />
+          <Property Name="AllTextSwitch" Type="bit" />
+          <Property Name="IndexMin" Type="numeric" />
+          <Property Name="TextIndexSign" Type="varchar" MaxLength="50" />
+          <Property Name="IndexPurview" Type="varchar" MaxLength="50" />
+          <Property Name="SysStorage" Type="numeric" />
+          <Property Name="UserStorage" Type="numeric" />
+          <Property Name="ErrorLogRule" Type="varchar" MaxLength="50" />
+          <Property Name="ErrorLogDate" Type="varchar" MaxLength="50" />
+          <Property Name="SysLanguage" Type="varchar" MaxLength="50" />
+          <Property Name="SysStyle" Type="varchar" MaxLength="50" />
+          <Property Name="SysLogo" Type="varchar" MaxLength="50" />
+          <Property Name="UserChangeLang" Type="bit" />
+          <Property Name="UserChangeStyle" Type="bit" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="255" />
+          <Property Name="LoginName" Type="varchar" MaxLength="255" />
+          <Property Name="LoginPwd" Type="varchar" MaxLength="255" />
+          <Property Name="UserCode" Type="varchar" MaxLength="255" />
+          <Property Name="State" Type="numeric" Precision="10" />
+          <Property Name="Email" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="Language" Type="varchar" MaxLength="50" />
+          <Property Name="StyleSheet" Type="varchar" MaxLength="50" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+        </EntityType>
+        <EntityType Name="tblUserFavorites">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="UserID" Type="uniqueidentifier" />
+          <Property Name="MenuPermissionID" Type="varchar" MaxLength="20" />
+          <Property Name="ID" Type="numeric" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="tblVisitMask">
+          <Key>
+            <PropertyRef Name="VisitMaskID" />
+          </Key>
+          <Property Name="VisitMaskID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="VisitMaskName" Type="varchar" MaxLength="255" />
+          <Property Name="VisitCode" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="1" />
+        </EntityType>
+        <EntityType Name="tblWarehouse">
+          <Key>
+            <PropertyRef Name="WarehouseID" />
+          </Key>
+          <Property Name="WarehouseID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="WarehouseName" Type="varchar" MaxLength="80" />
+          <Property Name="Address" Type="varchar" MaxLength="120" />
+          <Property Name="Custodian" Type="uniqueidentifier" />
+          <Property Name="State" Type="bit" />
+          <Property Name="Remark" Type="varchar" MaxLength="120" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_Detail_List”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_Detail_List">
+          <Key>
+            <PropertyRef Name="StockInDetailID" />
+          </Key>
+          <Property Name="MaterialName" Type="varchar" MaxLength="60" />
+          <Property Name="Remark" Type="varchar" MaxLength="120" />
+          <Property Name="Consuming" Type="int" />
+          <Property Name="ContractAmount" Type="int" />
+          <Property Name="StockInAmount" Type="int" />
+          <Property Name="PricenonTax" Type="money" />
+          <Property Name="PriceTax" Type="money" />
+          <Property Name="Planprice" Type="money" />
+          <Property Name="MaterialID" Type="uniqueidentifier" />
+          <Property Name="SuppliersID" Type="uniqueidentifier" />
+          <Property Name="StockInID" Type="uniqueidentifier" />
+          <Property Name="StockInDetailID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SuppliersName" Type="varchar" MaxLength="120" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_Detail_List_OUt”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_Detail_List_OUt">
+          <Key>
+            <PropertyRef Name="StockOutDetailID" />
+          </Key>
+          <Property Name="MaterialName" Type="varchar" MaxLength="60" />
+          <Property Name="Remark" Type="varchar" MaxLength="120" />
+          <Property Name="StockOutDetailID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="StockOutID" Type="uniqueidentifier" />
+          <Property Name="MaterialID" Type="uniqueidentifier" />
+          <Property Name="PlanPrice" Type="char" MaxLength="10" />
+          <Property Name="SalePrice" Type="char" MaxLength="10" />
+          <Property Name="StockOutNumber" Type="char" MaxLength="10" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_Menu_Permission_Role”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_Menu_Permission_Role">
+          <Key>
+            <PropertyRef Name="MenuPermissionID" />
+          </Key>
+          <Property Name="RoleID" Type="uniqueidentifier" />
+          <Property Name="MenuPermissionID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="Action" Type="varchar" MaxLength="255" />
+          <Property Name="Control" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="Icon1" Type="varchar" MaxLength="255" />
+          <Property Name="Icon2" Type="varchar" MaxLength="255" />
+          <Property Name="MenuName" Type="varchar" MaxLength="255" />
+          <Property Name="ParentNode" Type="varchar" MaxLength="20" />
+          <Property Name="TreeCode" Type="varchar" MaxLength="255" />
+          <Property Name="NodeLevel" Type="varchar" MaxLength="255" />
+          <Property Name="IsLeaves" Type="numeric" Precision="1" />
+          <Property Name="URL" Type="varchar" MaxLength="255" />
+          <Property Name="IsAJAXPage" Type="numeric" Precision="1" />
+          <Property Name="Sort" Type="numeric" Precision="10" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+          <Property Name="IsRoot" Type="numeric" Precision="1" />
+          <Property Name="isfast" Type="numeric" Precision="1" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockInSheet_Accounting_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockInSheet_Accounting_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockInSheet_Agent_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockInSheet_Agent_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockInSheet_BusinessType_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockInSheet_BusinessType_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockInSheet_Custodian_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockInSheet_Custodian_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockInSheet_Peopleofaccount_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockInSheet_Peopleofaccount_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockInSheet_Procurementtype_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockInSheet_Procurementtype_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockInSheet_StockInStyle_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockInSheet_StockInStyle_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockOutSheet_Agent_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockOutSheet_Agent_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockOutSheet_Deliveryman_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockOutSheet_Deliveryman_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblStockOutSheet_StockOutType_Dic”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblStockOutSheet_StockOutType_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="DicName" Type="varchar" MaxLength="50" />
+          <Property Name="DicDode" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UnicornDB.dbo.View_tblUser”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_tblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="255" />
+          <Property Name="LoginName" Type="varchar" MaxLength="255" />
+          <Property Name="LoginPwd" Type="varchar" MaxLength="255" />
+          <Property Name="UserCode" Type="varchar" MaxLength="255" />
+          <Property Name="State" Type="numeric" Precision="10" />
+          <Property Name="Email" Type="varchar" MaxLength="255" />
+          <Property Name="Desc" Type="varchar" MaxLength="255" />
+          <Property Name="Language" Type="varchar" MaxLength="50" />
+          <Property Name="StyleSheet" Type="varchar" MaxLength="50" />
+          <Property Name="CreateDt" Type="datetime" />
+          <Property Name="IsDeleted" Type="numeric" Precision="1" />
+          <Property Name="Version" Type="numeric" Precision="10" />
+        </EntityType>
+        <Association Name="FK_D_DICINF_REFERENCE_D_DICTYP">
+          <End Role="d_DicType" Type="UnicornDBModel.Store.d_DicType" Multiplicity="0..1" />
+          <End Role="d_DicInfo" Type="UnicornDBModel.Store.d_DicInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="d_DicType">
+              <PropertyRef Name="DicTypeID" />
+            </Principal>
+            <Dependent Role="d_DicInfo">
+              <PropertyRef Name="DicTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLACTIO_REFERENCE_TBLACTIO">
+          <End Role="tblActionRight" Type="UnicornDBModel.Store.tblActionRight" Multiplicity="0..1" />
+          <End Role="tblAction_Permission_Role" Type="UnicornDBModel.Store.tblAction_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblActionRight">
+              <PropertyRef Name="ActionPermissionID" />
+            </Principal>
+            <Dependent Role="tblAction_Permission_Role">
+              <PropertyRef Name="ActionPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLACTIO_REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="UnicornDBModel.Store.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblActionRight" Type="UnicornDBModel.Store.tblActionRight" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Principal>
+            <Dependent Role="tblActionRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLACTIO_REFERENCE_TBLROLE">
+          <End Role="tblRole" Type="UnicornDBModel.Store.tblRole" Multiplicity="0..1" />
+          <End Role="tblAction_Permission_Role" Type="UnicornDBModel.Store.tblAction_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblAction_Permission_Role">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLACTIO_REFERENCE_TBLVISIT">
+          <End Role="tblVisitMask" Type="UnicornDBModel.Store.tblVisitMask" Multiplicity="0..1" />
+          <End Role="tblAction_Permission_Role" Type="UnicornDBModel.Store.tblAction_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblVisitMask">
+              <PropertyRef Name="VisitMaskID" />
+            </Principal>
+            <Dependent Role="tblAction_Permission_Role">
+              <PropertyRef Name="VisitMaskID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLDATAO_REFERENCE_TBLDATAO">
+          <End Role="tblDataOperateRight" Type="UnicornDBModel.Store.tblDataOperateRight" Multiplicity="0..1" />
+          <End Role="tblDataOperate_Permission_Mask" Type="UnicornDBModel.Store.tblDataOperate_Permission_Mask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDataOperateRight">
+              <PropertyRef Name="DataOperateRightID" />
+            </Principal>
+            <Dependent Role="tblDataOperate_Permission_Mask">
+              <PropertyRef Name="DataOperateRightID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLDATAO_REFERENCE_TBLVISIT">
+          <End Role="tblVisitMask" Type="UnicornDBModel.Store.tblVisitMask" Multiplicity="0..1" />
+          <End Role="tblDataOperate_Permission_Mask" Type="UnicornDBModel.Store.tblDataOperate_Permission_Mask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblVisitMask">
+              <PropertyRef Name="VisitMaskID" />
+            </Principal>
+            <Dependent Role="tblDataOperate_Permission_Mask">
+              <PropertyRef Name="VisitMaskID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMaterial_tblMaterialCategory">
+          <End Role="tblMaterialCategory" Type="UnicornDBModel.Store.tblMaterialCategory" Multiplicity="0..1" />
+          <End Role="tblMaterial" Type="UnicornDBModel.Store.tblMaterial" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterialCategory">
+              <PropertyRef Name="CategoryID" />
+            </Principal>
+            <Dependent Role="tblMaterial">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLMENU__REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="UnicornDBModel.Store.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblMenu_Permission_Role" Type="UnicornDBModel.Store.tblMenu_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Principal>
+            <Dependent Role="tblMenu_Permission_Role">
+              <PropertyRef Name="MenuPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLMENU__REFERENCE_TBLROLE">
+          <End Role="tblRole" Type="UnicornDBModel.Store.tblRole" Multiplicity="0..1" />
+          <End Role="tblMenu_Permission_Role" Type="UnicornDBModel.Store.tblMenu_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblMenu_Permission_Role">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLOPERA_REFERENCE_TBLUSER">
+          <End Role="tblUser" Type="UnicornDBModel.Store.tblUser" Multiplicity="1" />
+          <End Role="tblOperateLog" Type="UnicornDBModel.Store.tblOperateLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblOperateLog">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLROLE__REFERENCE_TBLROLE">
+          <End Role="tblRole" Type="UnicornDBModel.Store.tblRole" Multiplicity="0..1" />
+          <End Role="tblRole_User" Type="UnicornDBModel.Store.tblRole_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblRole_User">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLROLE__REFERENCE_TBLUSER">
+          <End Role="tblUser" Type="UnicornDBModel.Store.tblUser" Multiplicity="0..1" />
+          <End Role="tblRole_User" Type="UnicornDBModel.Store.tblRole_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblRole_User">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLROLEF_REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="UnicornDBModel.Store.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblRoleFastTrack" Type="UnicornDBModel.Store.tblRoleFastTrack" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Principal>
+            <Dependent Role="tblRoleFastTrack">
+              <PropertyRef Name="MenuPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLROLEF_REFERENCE_TBLROLE">
+          <End Role="tblRole" Type="UnicornDBModel.Store.tblRole" Multiplicity="0..1" />
+          <End Role="tblRoleFastTrack" Type="UnicornDBModel.Store.tblRoleFastTrack" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblRoleFastTrack">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblSetOfBook_tblWarehouse">
+          <End Role="tblWarehouse" Type="UnicornDBModel.Store.tblWarehouse" Multiplicity="0..1" />
+          <End Role="tblSetOfBook" Type="UnicornDBModel.Store.tblSetOfBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblWarehouse">
+              <PropertyRef Name="WarehouseID" />
+            </Principal>
+            <Dependent Role="tblSetOfBook">
+              <PropertyRef Name="WarehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStock_tblMaterial">
+          <End Role="tblMaterial" Type="UnicornDBModel.Store.tblMaterial" Multiplicity="0..1" />
+          <End Role="tblStock" Type="UnicornDBModel.Store.tblStock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterial">
+              <PropertyRef Name="MaterialID" />
+            </Principal>
+            <Dependent Role="tblStock">
+              <PropertyRef Name="MaterialID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockCheck_tblMaterial">
+          <End Role="tblMaterial" Type="UnicornDBModel.Store.tblMaterial" Multiplicity="0..1" />
+          <End Role="tblStockCheck" Type="UnicornDBModel.Store.tblStockCheck" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterial">
+              <PropertyRef Name="MaterialID" />
+            </Principal>
+            <Dependent Role="tblStockCheck">
+              <PropertyRef Name="MaterialID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockCheck_tblSetOfBook">
+          <End Role="tblSetOfBook" Type="UnicornDBModel.Store.tblSetOfBook" Multiplicity="0..1" />
+          <End Role="tblStockCheck" Type="UnicornDBModel.Store.tblStockCheck" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSetOfBook">
+              <PropertyRef Name="BookID" />
+            </Principal>
+            <Dependent Role="tblStockCheck">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockInSheetDetail_tblMaterial">
+          <End Role="tblMaterial" Type="UnicornDBModel.Store.tblMaterial" Multiplicity="0..1" />
+          <End Role="tblStockInSheetDetail" Type="UnicornDBModel.Store.tblStockInSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterial">
+              <PropertyRef Name="MaterialID" />
+            </Principal>
+            <Dependent Role="tblStockInSheetDetail">
+              <PropertyRef Name="MaterialID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockInSheetDetail_tblStockInSheet">
+          <End Role="tblStockInSheet" Type="UnicornDBModel.Store.tblStockInSheet" Multiplicity="0..1" />
+          <End Role="tblStockInSheetDetail" Type="UnicornDBModel.Store.tblStockInSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblStockInSheet">
+              <PropertyRef Name="StockInID" />
+            </Principal>
+            <Dependent Role="tblStockInSheetDetail">
+              <PropertyRef Name="StockInID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockInSheetDetail_tblSuppliers">
+          <End Role="tblSuppliers" Type="UnicornDBModel.Store.tblSuppliers" Multiplicity="0..1" />
+          <End Role="tblStockInSheetDetail" Type="UnicornDBModel.Store.tblStockInSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSuppliers">
+              <PropertyRef Name="SuppliersID" />
+            </Principal>
+            <Dependent Role="tblStockInSheetDetail">
+              <PropertyRef Name="SuppliersID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockOutSheetDetail_tblMaterial">
+          <End Role="tblMaterial" Type="UnicornDBModel.Store.tblMaterial" Multiplicity="0..1" />
+          <End Role="tblStockOutSheetDetail" Type="UnicornDBModel.Store.tblStockOutSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterial">
+              <PropertyRef Name="MaterialID" />
+            </Principal>
+            <Dependent Role="tblStockOutSheetDetail">
+              <PropertyRef Name="MaterialID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockOutSheetDetail_tblStockOutSheet">
+          <End Role="tblStockOutSheet" Type="UnicornDBModel.Store.tblStockOutSheet" Multiplicity="0..1" />
+          <End Role="tblStockOutSheetDetail" Type="UnicornDBModel.Store.tblStockOutSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblStockOutSheet">
+              <PropertyRef Name="StockOutID" />
+            </Principal>
+            <Dependent Role="tblStockOutSheetDetail">
+              <PropertyRef Name="StockOutID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLSYSLO_REFERENCE_TBLUSER">
+          <End Role="tblUser" Type="UnicornDBModel.Store.tblUser" Multiplicity="0..1" />
+          <End Role="tblSysLoginLog" Type="UnicornDBModel.Store.tblSysLoginLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblSysLoginLog">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLUSERF_REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="UnicornDBModel.Store.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblUserFavorites" Type="UnicornDBModel.Store.tblUserFavorites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Principal>
+            <Dependent Role="tblUserFavorites">
+              <PropertyRef Name="MenuPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLUSERF_REFERENCE_TBLUSER">
+          <End Role="tblUser" Type="UnicornDBModel.Store.tblUser" Multiplicity="0..1" />
+          <End Role="tblUserFavorites" Type="UnicornDBModel.Store.tblUserFavorites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblUserFavorites">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UnicornDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="UnicornDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="d_DicInfo" EntityType="UnicornDBModel.d_DicInfo" />
+          <EntitySet Name="d_DicType" EntityType="UnicornDBModel.d_DicType" />
+          <EntitySet Name="tblAction_Permission_Role" EntityType="UnicornDBModel.tblAction_Permission_Role" />
+          <EntitySet Name="tblActionRight" EntityType="UnicornDBModel.tblActionRight" />
+          <EntitySet Name="tblDataOperate_Permission_Mask" EntityType="UnicornDBModel.tblDataOperate_Permission_Mask" />
+          <EntitySet Name="tblDataOperateRight" EntityType="UnicornDBModel.tblDataOperateRight" />
+          <EntitySet Name="tblMaterial" EntityType="UnicornDBModel.tblMaterial" />
+          <EntitySet Name="tblMaterialCategory" EntityType="UnicornDBModel.tblMaterialCategory" />
+          <EntitySet Name="tblMenu_Permission_Role" EntityType="UnicornDBModel.tblMenu_Permission_Role" />
+          <EntitySet Name="tblMenuRight" EntityType="UnicornDBModel.tblMenuRight" />
+          <EntitySet Name="tblOperateLog" EntityType="UnicornDBModel.tblOperateLog" />
+          <EntitySet Name="tblRole" EntityType="UnicornDBModel.tblRole" />
+          <EntitySet Name="tblRole_User" EntityType="UnicornDBModel.tblRole_User" />
+          <EntitySet Name="tblRoleFastTrack" EntityType="UnicornDBModel.tblRoleFastTrack" />
+          <EntitySet Name="tblSetOfBook" EntityType="UnicornDBModel.tblSetOfBook" />
+          <EntitySet Name="tblStock" EntityType="UnicornDBModel.tblStock" />
+          <EntitySet Name="tblStockCheck" EntityType="UnicornDBModel.tblStockCheck" />
+          <EntitySet Name="tblStockInSheet" EntityType="UnicornDBModel.tblStockInSheet" />
+          <EntitySet Name="tblStockInSheetDetail" EntityType="UnicornDBModel.tblStockInSheetDetail" />
+          <EntitySet Name="tblStockOutSheet" EntityType="UnicornDBModel.tblStockOutSheet" />
+          <EntitySet Name="tblStockOutSheetDetail" EntityType="UnicornDBModel.tblStockOutSheetDetail" />
+          <EntitySet Name="tblSuppliers" EntityType="UnicornDBModel.tblSuppliers" />
+          <EntitySet Name="tblSysLoginLog" EntityType="UnicornDBModel.tblSysLoginLog" />
+          <EntitySet Name="tblSystemConfig" EntityType="UnicornDBModel.tblSystemConfig" />
+          <EntitySet Name="tblUser" EntityType="UnicornDBModel.tblUser" />
+          <EntitySet Name="tblUserFavorites" EntityType="UnicornDBModel.tblUserFavorites" />
+          <EntitySet Name="tblVisitMask" EntityType="UnicornDBModel.tblVisitMask" />
+          <EntitySet Name="tblWarehouse" EntityType="UnicornDBModel.tblWarehouse" />
+          <EntitySet Name="View_Detail_List" EntityType="UnicornDBModel.View_Detail_List" />
+          <EntitySet Name="View_Detail_List_OUt" EntityType="UnicornDBModel.View_Detail_List_OUt" />
+          <EntitySet Name="View_Menu_Permission_Role" EntityType="UnicornDBModel.View_Menu_Permission_Role" />
+          <EntitySet Name="View_tblStockInSheet_Accounting_Dic" EntityType="UnicornDBModel.View_tblStockInSheet_Accounting_Dic" />
+          <EntitySet Name="View_tblStockInSheet_Agent_Dic" EntityType="UnicornDBModel.View_tblStockInSheet_Agent_Dic" />
+          <EntitySet Name="View_tblStockInSheet_BusinessType_Dic" EntityType="UnicornDBModel.View_tblStockInSheet_BusinessType_Dic" />
+          <EntitySet Name="View_tblStockInSheet_Custodian_Dic" EntityType="UnicornDBModel.View_tblStockInSheet_Custodian_Dic" />
+          <EntitySet Name="View_tblStockInSheet_Peopleofaccount_Dic" EntityType="UnicornDBModel.View_tblStockInSheet_Peopleofaccount_Dic" />
+          <EntitySet Name="View_tblStockInSheet_Procurementtype_Dic" EntityType="UnicornDBModel.View_tblStockInSheet_Procurementtype_Dic" />
+          <EntitySet Name="View_tblStockInSheet_StockInStyle_Dic" EntityType="UnicornDBModel.View_tblStockInSheet_StockInStyle_Dic" />
+          <EntitySet Name="View_tblStockOutSheet_Agent_Dic" EntityType="UnicornDBModel.View_tblStockOutSheet_Agent_Dic" />
+          <EntitySet Name="View_tblStockOutSheet_Deliveryman_Dic" EntityType="UnicornDBModel.View_tblStockOutSheet_Deliveryman_Dic" />
+          <EntitySet Name="View_tblStockOutSheet_StockOutType_Dic" EntityType="UnicornDBModel.View_tblStockOutSheet_StockOutType_Dic" />
+          <EntitySet Name="View_tblUser" EntityType="UnicornDBModel.View_tblUser" />
+          <AssociationSet Name="FK_D_DICINF_REFERENCE_D_DICTYP" Association="UnicornDBModel.FK_D_DICINF_REFERENCE_D_DICTYP">
+            <End Role="d_DicType" EntitySet="d_DicType" />
+            <End Role="d_DicInfo" EntitySet="d_DicInfo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLACTIO_REFERENCE_TBLACTIO" Association="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLACTIO">
+            <End Role="tblActionRight" EntitySet="tblActionRight" />
+            <End Role="tblAction_Permission_Role" EntitySet="tblAction_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLACTIO_REFERENCE_TBLROLE" Association="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLROLE">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblAction_Permission_Role" EntitySet="tblAction_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLACTIO_REFERENCE_TBLVISIT" Association="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLVISIT">
+            <End Role="tblVisitMask" EntitySet="tblVisitMask" />
+            <End Role="tblAction_Permission_Role" EntitySet="tblAction_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLACTIO_REFERENCE_TBLMENUR" Association="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblActionRight" EntitySet="tblActionRight" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLDATAO_REFERENCE_TBLDATAO" Association="UnicornDBModel.FK_TBLDATAO_REFERENCE_TBLDATAO">
+            <End Role="tblDataOperateRight" EntitySet="tblDataOperateRight" />
+            <End Role="tblDataOperate_Permission_Mask" EntitySet="tblDataOperate_Permission_Mask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLDATAO_REFERENCE_TBLVISIT" Association="UnicornDBModel.FK_TBLDATAO_REFERENCE_TBLVISIT">
+            <End Role="tblVisitMask" EntitySet="tblVisitMask" />
+            <End Role="tblDataOperate_Permission_Mask" EntitySet="tblDataOperate_Permission_Mask" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblMaterial_tblMaterialCategory" Association="UnicornDBModel.FK_tblMaterial_tblMaterialCategory">
+            <End Role="tblMaterialCategory" EntitySet="tblMaterialCategory" />
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStock_tblMaterial" Association="UnicornDBModel.FK_tblStock_tblMaterial">
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+            <End Role="tblStock" EntitySet="tblStock" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockCheck_tblMaterial" Association="UnicornDBModel.FK_tblStockCheck_tblMaterial">
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+            <End Role="tblStockCheck" EntitySet="tblStockCheck" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockInSheetDetail_tblMaterial" Association="UnicornDBModel.FK_tblStockInSheetDetail_tblMaterial">
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+            <End Role="tblStockInSheetDetail" EntitySet="tblStockInSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockOutSheetDetail_tblMaterial" Association="UnicornDBModel.FK_tblStockOutSheetDetail_tblMaterial">
+            <End Role="tblMaterial" EntitySet="tblMaterial" />
+            <End Role="tblStockOutSheetDetail" EntitySet="tblStockOutSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLMENU__REFERENCE_TBLMENUR" Association="UnicornDBModel.FK_TBLMENU__REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblMenu_Permission_Role" EntitySet="tblMenu_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLMENU__REFERENCE_TBLROLE" Association="UnicornDBModel.FK_TBLMENU__REFERENCE_TBLROLE">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblMenu_Permission_Role" EntitySet="tblMenu_Permission_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLROLEF_REFERENCE_TBLMENUR" Association="UnicornDBModel.FK_TBLROLEF_REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblRoleFastTrack" EntitySet="tblRoleFastTrack" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLUSERF_REFERENCE_TBLMENUR" Association="UnicornDBModel.FK_TBLUSERF_REFERENCE_TBLMENUR">
+            <End Role="tblMenuRight" EntitySet="tblMenuRight" />
+            <End Role="tblUserFavorites" EntitySet="tblUserFavorites" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLOPERA_REFERENCE_TBLUSER" Association="UnicornDBModel.FK_TBLOPERA_REFERENCE_TBLUSER">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblOperateLog" EntitySet="tblOperateLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLROLE__REFERENCE_TBLROLE" Association="UnicornDBModel.FK_TBLROLE__REFERENCE_TBLROLE">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblRole_User" EntitySet="tblRole_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLROLEF_REFERENCE_TBLROLE" Association="UnicornDBModel.FK_TBLROLEF_REFERENCE_TBLROLE">
+            <End Role="tblRole" EntitySet="tblRole" />
+            <End Role="tblRoleFastTrack" EntitySet="tblRoleFastTrack" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLROLE__REFERENCE_TBLUSER" Association="UnicornDBModel.FK_TBLROLE__REFERENCE_TBLUSER">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblRole_User" EntitySet="tblRole_User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblSetOfBook_tblWarehouse" Association="UnicornDBModel.FK_tblSetOfBook_tblWarehouse">
+            <End Role="tblWarehouse" EntitySet="tblWarehouse" />
+            <End Role="tblSetOfBook" EntitySet="tblSetOfBook" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockCheck_tblSetOfBook" Association="UnicornDBModel.FK_tblStockCheck_tblSetOfBook">
+            <End Role="tblSetOfBook" EntitySet="tblSetOfBook" />
+            <End Role="tblStockCheck" EntitySet="tblStockCheck" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockInSheetDetail_tblStockInSheet" Association="UnicornDBModel.FK_tblStockInSheetDetail_tblStockInSheet">
+            <End Role="tblStockInSheet" EntitySet="tblStockInSheet" />
+            <End Role="tblStockInSheetDetail" EntitySet="tblStockInSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockInSheetDetail_tblSuppliers" Association="UnicornDBModel.FK_tblStockInSheetDetail_tblSuppliers">
+            <End Role="tblSuppliers" EntitySet="tblSuppliers" />
+            <End Role="tblStockInSheetDetail" EntitySet="tblStockInSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblStockOutSheetDetail_tblStockOutSheet" Association="UnicornDBModel.FK_tblStockOutSheetDetail_tblStockOutSheet">
+            <End Role="tblStockOutSheet" EntitySet="tblStockOutSheet" />
+            <End Role="tblStockOutSheetDetail" EntitySet="tblStockOutSheetDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLSYSLO_REFERENCE_TBLUSER" Association="UnicornDBModel.FK_TBLSYSLO_REFERENCE_TBLUSER">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblSysLoginLog" EntitySet="tblSysLoginLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TBLUSERF_REFERENCE_TBLUSER" Association="UnicornDBModel.FK_TBLUSERF_REFERENCE_TBLUSER">
+            <End Role="tblUser" EntitySet="tblUser" />
+            <End Role="tblUserFavorites" EntitySet="tblUserFavorites" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="d_DicInfo">
+          <Key>
+            <PropertyRef Name="DicID" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicTypeID" Type="Guid" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicIndex" Type="Int32" />
+          <Property Name="DicRe" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="d_DicType" Relationship="UnicornDBModel.FK_D_DICINF_REFERENCE_D_DICTYP" FromRole="d_DicInfo" ToRole="d_DicType" />
+        </EntityType>
+        <EntityType Name="d_DicType">
+          <Key>
+            <PropertyRef Name="DicTypeID" />
+          </Key>
+          <Property Name="DicTypeID" Type="Guid" Nullable="false" />
+          <Property Name="TypeName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ZT" Type="Boolean" />
+          <NavigationProperty Name="d_DicInfo" Relationship="UnicornDBModel.FK_D_DICINF_REFERENCE_D_DICTYP" FromRole="d_DicType" ToRole="d_DicInfo" />
+        </EntityType>
+        <EntityType Name="tblAction_Permission_Role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ActionPermissionID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="RoleID" Type="Guid" />
+          <Property Name="VisitMaskID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblActionRight" Relationship="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLACTIO" FromRole="tblAction_Permission_Role" ToRole="tblActionRight" />
+          <NavigationProperty Name="tblRole" Relationship="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLROLE" FromRole="tblAction_Permission_Role" ToRole="tblRole" />
+          <NavigationProperty Name="tblVisitMask" Relationship="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLVISIT" FromRole="tblAction_Permission_Role" ToRole="tblVisitMask" />
+        </EntityType>
+        <EntityType Name="tblActionRight">
+          <Key>
+            <PropertyRef Name="ActionPermissionID" />
+          </Key>
+          <Property Name="ActionPermissionID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="MenuPermissionID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Action" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Control" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+          <NavigationProperty Name="tblAction_Permission_Role" Relationship="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLACTIO" FromRole="tblActionRight" ToRole="tblAction_Permission_Role" />
+          <NavigationProperty Name="tblMenuRight" Relationship="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLMENUR" FromRole="tblActionRight" ToRole="tblMenuRight" />
+        </EntityType>
+        <EntityType Name="tblDataOperate_Permission_Mask">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DataOperateRightID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="VisitMaskID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblDataOperateRight" Relationship="UnicornDBModel.FK_TBLDATAO_REFERENCE_TBLDATAO" FromRole="tblDataOperate_Permission_Mask" ToRole="tblDataOperateRight" />
+          <NavigationProperty Name="tblVisitMask" Relationship="UnicornDBModel.FK_TBLDATAO_REFERENCE_TBLVISIT" FromRole="tblDataOperate_Permission_Mask" ToRole="tblVisitMask" />
+        </EntityType>
+        <EntityType Name="tblDataOperateRight">
+          <Key>
+            <PropertyRef Name="DataOperateRightID" />
+          </Key>
+          <Property Name="DataOperateRightID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="DataOperateRightName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="DataOperateRightCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+          <NavigationProperty Name="tblDataOperate_Permission_Mask" Relationship="UnicornDBModel.FK_TBLDATAO_REFERENCE_TBLDATAO" FromRole="tblDataOperateRight" ToRole="tblDataOperate_Permission_Mask" />
+        </EntityType>
+        <EntityType Name="tblMaterial">
+          <Key>
+            <PropertyRef Name="MaterialID" />
+          </Key>
+          <Property Name="MaterialID" Type="Guid" Nullable="false" />
+          <Property Name="CategoryID" Type="Guid" />
+          <Property Name="MaterialName" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Technicalparameters" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Specification" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Amount" Type="Int32" />
+          <Property Name="Material" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="ReserveProperty" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Spareparts" Type="Boolean" />
+          <Property Name="Unitprice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Limit" Type="Int32" />
+          <Property Name="LowerLimit" Type="Int32" />
+          <Property Name="Increaserate" Type="Double" />
+          <Property Name="UseFlag" Type="Boolean" />
+          <Property Name="SelectFlag" Type="Boolean" />
+          <Property Name="Manufacturer" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblMaterialCategory" Relationship="UnicornDBModel.FK_tblMaterial_tblMaterialCategory" FromRole="tblMaterial" ToRole="tblMaterialCategory" />
+          <NavigationProperty Name="tblStock" Relationship="UnicornDBModel.FK_tblStock_tblMaterial" FromRole="tblMaterial" ToRole="tblStock" />
+          <NavigationProperty Name="tblStockCheck" Relationship="UnicornDBModel.FK_tblStockCheck_tblMaterial" FromRole="tblMaterial" ToRole="tblStockCheck" />
+          <NavigationProperty Name="tblStockInSheetDetail" Relationship="UnicornDBModel.FK_tblStockInSheetDetail_tblMaterial" FromRole="tblMaterial" ToRole="tblStockInSheetDetail" />
+          <NavigationProperty Name="tblStockOutSheetDetail" Relationship="UnicornDBModel.FK_tblStockOutSheetDetail_tblMaterial" FromRole="tblMaterial" ToRole="tblStockOutSheetDetail" />
+        </EntityType>
+        <EntityType Name="tblMaterialCategory">
+          <Key>
+            <PropertyRef Name="CategoryID" />
+          </Key>
+          <Property Name="CategoryID" Type="Guid" Nullable="false" />
+          <Property Name="CategoryName" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="ParentNode" Type="Guid" />
+          <Property Name="NodeLevel" Type="Int16" />
+          <Property Name="CategoryCode" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblMaterial" Relationship="UnicornDBModel.FK_tblMaterial_tblMaterialCategory" FromRole="tblMaterialCategory" ToRole="tblMaterial" />
+        </EntityType>
+        <EntityType Name="tblMenu_Permission_Role">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="MenuPermissionID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="RoleID" Type="Guid" />
+          <NavigationProperty Name="tblMenuRight" Relationship="UnicornDBModel.FK_TBLMENU__REFERENCE_TBLMENUR" FromRole="tblMenu_Permission_Role" ToRole="tblMenuRight" />
+          <NavigationProperty Name="tblRole" Relationship="UnicornDBModel.FK_TBLMENU__REFERENCE_TBLROLE" FromRole="tblMenu_Permission_Role" ToRole="tblRole" />
+        </EntityType>
+        <EntityType Name="tblMenuRight">
+          <Key>
+            <PropertyRef Name="MenuPermissionID" />
+          </Key>
+          <Property Name="MenuPermissionID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Action" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Control" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Icon1" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Icon2" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="MenuName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ParentNode" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TreeCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="NodeLevel" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="IsLeaves" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="URL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="IsAJAXPage" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Sort" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="IsRoot" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="isfast" Type="Decimal" Precision="1" Scale="0" />
+          <NavigationProperty Name="tblActionRight" Relationship="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLMENUR" FromRole="tblMenuRight" ToRole="tblActionRight" />
+          <NavigationProperty Name="tblMenu_Permission_Role" Relationship="UnicornDBModel.FK_TBLMENU__REFERENCE_TBLMENUR" FromRole="tblMenuRight" ToRole="tblMenu_Permission_Role" />
+          <NavigationProperty Name="tblRoleFastTrack" Relationship="UnicornDBModel.FK_TBLROLEF_REFERENCE_TBLMENUR" FromRole="tblMenuRight" ToRole="tblRoleFastTrack" />
+          <NavigationProperty Name="tblUserFavorites" Relationship="UnicornDBModel.FK_TBLUSERF_REFERENCE_TBLMENUR" FromRole="tblMenuRight" ToRole="tblUserFavorites" />
+        </EntityType>
+        <EntityType Name="tblOperateLog">
+          <Key>
+            <PropertyRef Name="OperateLogID" />
+          </Key>
+          <Property Name="OperateLogID" Type="Guid" Nullable="false" />
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="Action" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Control" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="OperateDesc" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDt" Type="DateTime" Nullable="false" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+          <NavigationProperty Name="tblUser" Relationship="UnicornDBModel.FK_TBLOPERA_REFERENCE_TBLUSER" FromRole="tblOperateLog" ToRole="tblUser" />
+        </EntityType>
+        <EntityType Name="tblRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RoleID" Type="Guid" Nullable="false" />
+          <Property Name="RoleName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="RoleCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+          <NavigationProperty Name="tblAction_Permission_Role" Relationship="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLROLE" FromRole="tblRole" ToRole="tblAction_Permission_Role" />
+          <NavigationProperty Name="tblMenu_Permission_Role" Relationship="UnicornDBModel.FK_TBLMENU__REFERENCE_TBLROLE" FromRole="tblRole" ToRole="tblMenu_Permission_Role" />
+          <NavigationProperty Name="tblRole_User" Relationship="UnicornDBModel.FK_TBLROLE__REFERENCE_TBLROLE" FromRole="tblRole" ToRole="tblRole_User" />
+          <NavigationProperty Name="tblRoleFastTrack" Relationship="UnicornDBModel.FK_TBLROLEF_REFERENCE_TBLROLE" FromRole="tblRole" ToRole="tblRoleFastTrack" />
+        </EntityType>
+        <EntityType Name="tblRole_User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="UserID" Type="Guid" />
+          <Property Name="RoleID" Type="Guid" />
+          <NavigationProperty Name="tblRole" Relationship="UnicornDBModel.FK_TBLROLE__REFERENCE_TBLROLE" FromRole="tblRole_User" ToRole="tblRole" />
+          <NavigationProperty Name="tblUser" Relationship="UnicornDBModel.FK_TBLROLE__REFERENCE_TBLUSER" FromRole="tblRole_User" ToRole="tblUser" />
+        </EntityType>
+        <EntityType Name="tblRoleFastTrack">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="RoleID" Type="Guid" />
+          <Property Name="MenuPermissionID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblMenuRight" Relationship="UnicornDBModel.FK_TBLROLEF_REFERENCE_TBLMENUR" FromRole="tblRoleFastTrack" ToRole="tblMenuRight" />
+          <NavigationProperty Name="tblRole" Relationship="UnicornDBModel.FK_TBLROLEF_REFERENCE_TBLROLE" FromRole="tblRoleFastTrack" ToRole="tblRole" />
+        </EntityType>
+        <EntityType Name="tblSetOfBook">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="Guid" Nullable="false" />
+          <Property Name="WarehouseID" Type="Guid" />
+          <Property Name="BookName" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="ModifyState" Type="Boolean" />
+          <Property Name="InitDate" Type="DateTime" />
+          <Property Name="State" Type="Boolean" />
+          <Property Name="CloseBookDate" Type="DateTime" />
+          <Property Name="Remark" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblWarehouse" Relationship="UnicornDBModel.FK_tblSetOfBook_tblWarehouse" FromRole="tblSetOfBook" ToRole="tblWarehouse" />
+          <NavigationProperty Name="tblStockCheck" Relationship="UnicornDBModel.FK_tblStockCheck_tblSetOfBook" FromRole="tblSetOfBook" ToRole="tblStockCheck" />
+        </EntityType>
+        <EntityType Name="tblStock">
+          <Key>
+            <PropertyRef Name="BookID" />
+          </Key>
+          <Property Name="BookID" Type="Guid" Nullable="false" />
+          <Property Name="MaterialID" Type="Guid" />
+          <Property Name="Positions" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="StockPrice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="StockAmount" Type="Int32" />
+          <Property Name="BorrowAmount" Type="Int32" />
+          <Property Name="StockInTotal" Type="Int64" />
+          <Property Name="StockOutTotal" Type="Int64" />
+          <Property Name="Purchaseprice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Purchasediscount" Type="Double" />
+          <Property Name="ProcurementUnit" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Inventorydate" Type="DateTime" />
+          <Property Name="Settlementmonth" Type="DateTime" />
+          <Property Name="SettlementDate" Type="DateTime" />
+          <Property Name="Remark" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblMaterial" Relationship="UnicornDBModel.FK_tblStock_tblMaterial" FromRole="tblStock" ToRole="tblMaterial" />
+        </EntityType>
+        <EntityType Name="tblStockCheck">
+          <Key>
+            <PropertyRef Name="StockCheckID" />
+          </Key>
+          <Property Name="StockCheckID" Type="Guid" Nullable="false" />
+          <Property Name="MaterialID" Type="Guid" />
+          <Property Name="BookID" Type="Guid" />
+          <Property Name="StockCheckDt" Type="DateTime" />
+          <Property Name="SignDt" Type="DateTime" />
+          <Property Name="Reviewers" Type="Guid" />
+          <Property Name="Agent" Type="Guid" />
+          <Property Name="Remark" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblMaterial" Relationship="UnicornDBModel.FK_tblStockCheck_tblMaterial" FromRole="tblStockCheck" ToRole="tblMaterial" />
+          <NavigationProperty Name="tblSetOfBook" Relationship="UnicornDBModel.FK_tblStockCheck_tblSetOfBook" FromRole="tblStockCheck" ToRole="tblSetOfBook" />
+        </EntityType>
+        <EntityType Name="tblStockInSheet">
+          <Key>
+            <PropertyRef Name="StockInID" />
+          </Key>
+          <Property Name="StockInID" Type="Guid" Nullable="false" />
+          <Property Name="StockInCode" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StockInSource" Type="Guid" />
+          <Property Name="Agent" Type="Guid" />
+          <Property Name="Custodian" Type="Guid" />
+          <Property Name="StockInDt" Type="DateTime" />
+          <Property Name="Accounting" Type="Guid" />
+          <Property Name="TengaccountDt" Type="DateTime" />
+          <Property Name="QCPeople" Type="Guid" />
+          <Property Name="QCDt" Type="DateTime" />
+          <Property Name="StockInStyle" Type="Guid" />
+          <Property Name="Reviewers" Type="Guid" />
+          <Property Name="IsPrint" Type="Boolean" />
+          <Property Name="Invoicenumber" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="SlottingNo_" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Entryperson" Type="Guid" />
+          <Property Name="TotalTax" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Totalnon_tax" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="BusinessType" Type="Guid" />
+          <Property Name="Procurementtype" Type="Guid" />
+          <Property Name="StockInType" Type="Guid" />
+          <Property Name="Peopleofaccount" Type="Guid" />
+          <NavigationProperty Name="tblStockInSheetDetail" Relationship="UnicornDBModel.FK_tblStockInSheetDetail_tblStockInSheet" FromRole="tblStockInSheet" ToRole="tblStockInSheetDetail" />
+        </EntityType>
+        <EntityType Name="tblStockInSheetDetail">
+          <Key>
+            <PropertyRef Name="StockInDetailID" />
+          </Key>
+          <Property Name="StockInDetailID" Type="Guid" Nullable="false" />
+          <Property Name="StockInID" Type="Guid" />
+          <Property Name="SuppliersID" Type="Guid" />
+          <Property Name="MaterialID" Type="Guid" />
+          <Property Name="Planprice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="PriceTax" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="PricenonTax" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="StockInAmount" Type="Int32" />
+          <Property Name="ContractAmount" Type="Int32" />
+          <Property Name="Consuming" Type="Int32" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <NavigationProperty Name="tblMaterial" Relationship="UnicornDBModel.FK_tblStockInSheetDetail_tblMaterial" FromRole="tblStockInSheetDetail" ToRole="tblMaterial" />
+          <NavigationProperty Name="tblStockInSheet" Relationship="UnicornDBModel.FK_tblStockInSheetDetail_tblStockInSheet" FromRole="tblStockInSheetDetail" ToRole="tblStockInSheet" />
+          <NavigationProperty Name="tblSuppliers" Relationship="UnicornDBModel.FK_tblStockInSheetDetail_tblSuppliers" FromRole="tblStockInSheetDetail" ToRole="tblSuppliers" />
+        </EntityType>
+        <EntityType Name="tblStockOutSheet">
+          <Key>
+            <PropertyRef Name="StockOutID" />
+          </Key>
+          <Property Name="StockOutID" Type="Guid" Nullable="false" />
+          <Property Name="StockOutCode" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="StockOutDt" Type="DateTime" />
+          <Property Name="StockOutType" Type="Guid" />
+          <Property Name="Agent" Type="Guid" />
+          <Property Name="Deliveryman" Type="Guid" />
+          <Property Name="PostDt" Type="DateTime" />
+          <Property Name="IsPrint" Type="Boolean" />
+          <NavigationProperty Name="tblStockOutSheetDetail" Relationship="UnicornDBModel.FK_tblStockOutSheetDetail_tblStockOutSheet" FromRole="tblStockOutSheet" ToRole="tblStockOutSheetDetail" />
+        </EntityType>
+        <EntityType Name="tblStockOutSheetDetail">
+          <Key>
+            <PropertyRef Name="StockOutDetailID" />
+          </Key>
+          <Property Name="StockOutDetailID" Type="Guid" Nullable="false" />
+          <Property Name="StockOutID" Type="Guid" />
+          <Property Name="MaterialID" Type="Guid" />
+          <Property Name="PlanPrice" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="SalePrice" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="StockOutNumber" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <NavigationProperty Name="tblMaterial" Relationship="UnicornDBModel.FK_tblStockOutSheetDetail_tblMaterial" FromRole="tblStockOutSheetDetail" ToRole="tblMaterial" />
+          <NavigationProperty Name="tblStockOutSheet" Relationship="UnicornDBModel.FK_tblStockOutSheetDetail_tblStockOutSheet" FromRole="tblStockOutSheetDetail" ToRole="tblStockOutSheet" />
+        </EntityType>
+        <EntityType Name="tblSuppliers">
+          <Key>
+            <PropertyRef Name="SuppliersID" />
+          </Key>
+          <Property Name="SuppliersID" Type="Guid" Nullable="false" />
+          <Property Name="SuppliersName" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="Contact" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="Tel" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="ZipCode" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblStockInSheetDetail" Relationship="UnicornDBModel.FK_tblStockInSheetDetail_tblSuppliers" FromRole="tblSuppliers" ToRole="tblStockInSheetDetail" />
+        </EntityType>
+        <EntityType Name="tblSysLoginLog">
+          <Key>
+            <PropertyRef Name="LoginLogID" />
+          </Key>
+          <Property Name="LoginLogID" Type="Guid" Nullable="false" />
+          <Property Name="UserID" Type="Guid" />
+          <Property Name="InTime" Type="DateTime" />
+          <Property Name="OnlineLength" Type="DateTime" />
+          <Property Name="OutTime" Type="DateTime" />
+          <Property Name="LoginIP" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="BrowerType" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+          <NavigationProperty Name="tblUser" Relationship="UnicornDBModel.FK_TBLSYSLO_REFERENCE_TBLUSER" FromRole="tblSysLoginLog" ToRole="tblUser" />
+        </EntityType>
+        <EntityType Name="tblSystemConfig">
+          <Key>
+            <PropertyRef Name="SID" />
+          </Key>
+          <Property Name="SID" Type="Guid" Nullable="false" />
+          <Property Name="SName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DbVersion" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="DateConfig" Type="DateTime" />
+          <Property Name="ServerEmail" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IsEmailRule" Type="Boolean" />
+          <Property Name="IsLogin" Type="Boolean" />
+          <Property Name="IsUpdateEmail" Type="Boolean" />
+          <Property Name="UploadSaveType" Type="Boolean" />
+          <Property Name="IPManageSwitch" Type="Boolean" />
+          <Property Name="UploadFileSize" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="OverTimeSwitch" Type="Boolean" />
+          <Property Name="TimeFormat" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IndexBack" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AllTextSwitch" Type="Boolean" />
+          <Property Name="IndexMin" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TextIndexSign" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IndexPurview" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SysStorage" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="UserStorage" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ErrorLogRule" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ErrorLogDate" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SysLanguage" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SysStyle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SysLogo" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="UserChangeLang" Type="Boolean" />
+          <Property Name="UserChangeStyle" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LoginName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LoginPwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="UserCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="Email" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Language" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StyleSheet" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+          <NavigationProperty Name="tblOperateLog" Relationship="UnicornDBModel.FK_TBLOPERA_REFERENCE_TBLUSER" FromRole="tblUser" ToRole="tblOperateLog" />
+          <NavigationProperty Name="tblRole_User" Relationship="UnicornDBModel.FK_TBLROLE__REFERENCE_TBLUSER" FromRole="tblUser" ToRole="tblRole_User" />
+          <NavigationProperty Name="tblSysLoginLog" Relationship="UnicornDBModel.FK_TBLSYSLO_REFERENCE_TBLUSER" FromRole="tblUser" ToRole="tblSysLoginLog" />
+          <NavigationProperty Name="tblUserFavorites" Relationship="UnicornDBModel.FK_TBLUSERF_REFERENCE_TBLUSER" FromRole="tblUser" ToRole="tblUserFavorites" />
+        </EntityType>
+        <EntityType Name="tblUserFavorites">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="UserID" Type="Guid" />
+          <Property Name="MenuPermissionID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="ID" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="tblMenuRight" Relationship="UnicornDBModel.FK_TBLUSERF_REFERENCE_TBLMENUR" FromRole="tblUserFavorites" ToRole="tblMenuRight" />
+          <NavigationProperty Name="tblUser" Relationship="UnicornDBModel.FK_TBLUSERF_REFERENCE_TBLUSER" FromRole="tblUserFavorites" ToRole="tblUser" />
+        </EntityType>
+        <EntityType Name="tblVisitMask">
+          <Key>
+            <PropertyRef Name="VisitMaskID" />
+          </Key>
+          <Property Name="VisitMaskID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="VisitMaskName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="VisitCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="1" Scale="0" />
+          <NavigationProperty Name="tblAction_Permission_Role" Relationship="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLVISIT" FromRole="tblVisitMask" ToRole="tblAction_Permission_Role" />
+          <NavigationProperty Name="tblDataOperate_Permission_Mask" Relationship="UnicornDBModel.FK_TBLDATAO_REFERENCE_TBLVISIT" FromRole="tblVisitMask" ToRole="tblDataOperate_Permission_Mask" />
+        </EntityType>
+        <EntityType Name="tblWarehouse">
+          <Key>
+            <PropertyRef Name="WarehouseID" />
+          </Key>
+          <Property Name="WarehouseID" Type="Guid" Nullable="false" />
+          <Property Name="WarehouseName" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="Custodian" Type="Guid" />
+          <Property Name="State" Type="Boolean" />
+          <Property Name="Remark" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblSetOfBook" Relationship="UnicornDBModel.FK_tblSetOfBook_tblWarehouse" FromRole="tblWarehouse" ToRole="tblSetOfBook" />
+        </EntityType>
+        <EntityType Name="View_Detail_List">
+          <Key>
+            <PropertyRef Name="StockInDetailID" />
+          </Key>
+          <Property Name="MaterialName" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="Consuming" Type="Int32" />
+          <Property Name="ContractAmount" Type="Int32" />
+          <Property Name="StockInAmount" Type="Int32" />
+          <Property Name="PricenonTax" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="PriceTax" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Planprice" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="MaterialID" Type="Guid" />
+          <Property Name="SuppliersID" Type="Guid" />
+          <Property Name="StockInID" Type="Guid" />
+          <Property Name="StockInDetailID" Type="Guid" Nullable="false" />
+          <Property Name="SuppliersName" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="View_Detail_List_OUt">
+          <Key>
+            <PropertyRef Name="StockOutDetailID" />
+          </Key>
+          <Property Name="MaterialName" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="Remark" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+          <Property Name="StockOutDetailID" Type="Guid" Nullable="false" />
+          <Property Name="StockOutID" Type="Guid" />
+          <Property Name="MaterialID" Type="Guid" />
+          <Property Name="PlanPrice" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="SalePrice" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="StockOutNumber" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="View_Menu_Permission_Role">
+          <Key>
+            <PropertyRef Name="MenuPermissionID" />
+          </Key>
+          <Property Name="RoleID" Type="Guid" />
+          <Property Name="MenuPermissionID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Action" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Control" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Icon1" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Icon2" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="MenuName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ParentNode" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TreeCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="NodeLevel" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="IsLeaves" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="URL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="IsAJAXPage" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Sort" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="IsRoot" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="isfast" Type="Decimal" Precision="1" Scale="0" />
+        </EntityType>
+        <EntityType Name="View_tblStockInSheet_Accounting_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockInSheet_Agent_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockInSheet_BusinessType_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockInSheet_Custodian_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockInSheet_Peopleofaccount_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockInSheet_Procurementtype_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockInSheet_StockInStyle_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockOutSheet_Agent_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockOutSheet_Deliveryman_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblStockOutSheet_StockOutType_Dic">
+          <Key>
+            <PropertyRef Name="DicID" />
+            <PropertyRef Name="DicDode" />
+          </Key>
+          <Property Name="DicID" Type="Guid" Nullable="false" />
+          <Property Name="DicName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DicDode" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="View_tblUser">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Guid" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LoginName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="LoginPwd" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="UserCode" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="Email" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Desc" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Language" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="StyleSheet" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreateDt" Type="DateTime" />
+          <Property Name="IsDeleted" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="Version" Type="Decimal" Precision="10" Scale="0" />
+        </EntityType>
+        <Association Name="FK_D_DICINF_REFERENCE_D_DICTYP">
+          <End Role="d_DicType" Type="UnicornDBModel.d_DicType" Multiplicity="0..1" />
+          <End Role="d_DicInfo" Type="UnicornDBModel.d_DicInfo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="d_DicType">
+              <PropertyRef Name="DicTypeID" />
+            </Principal>
+            <Dependent Role="d_DicInfo">
+              <PropertyRef Name="DicTypeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLACTIO_REFERENCE_TBLACTIO">
+          <End Role="tblActionRight" Type="UnicornDBModel.tblActionRight" Multiplicity="0..1" />
+          <End Role="tblAction_Permission_Role" Type="UnicornDBModel.tblAction_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblActionRight">
+              <PropertyRef Name="ActionPermissionID" />
+            </Principal>
+            <Dependent Role="tblAction_Permission_Role">
+              <PropertyRef Name="ActionPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLACTIO_REFERENCE_TBLROLE">
+          <End Role="tblRole" Type="UnicornDBModel.tblRole" Multiplicity="0..1" />
+          <End Role="tblAction_Permission_Role" Type="UnicornDBModel.tblAction_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblAction_Permission_Role">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLACTIO_REFERENCE_TBLVISIT">
+          <End Role="tblVisitMask" Type="UnicornDBModel.tblVisitMask" Multiplicity="0..1" />
+          <End Role="tblAction_Permission_Role" Type="UnicornDBModel.tblAction_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblVisitMask">
+              <PropertyRef Name="VisitMaskID" />
+            </Principal>
+            <Dependent Role="tblAction_Permission_Role">
+              <PropertyRef Name="VisitMaskID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLACTIO_REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="UnicornDBModel.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblActionRight" Type="UnicornDBModel.tblActionRight" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Principal>
+            <Dependent Role="tblActionRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLDATAO_REFERENCE_TBLDATAO">
+          <End Role="tblDataOperateRight" Type="UnicornDBModel.tblDataOperateRight" Multiplicity="0..1" />
+          <End Role="tblDataOperate_Permission_Mask" Type="UnicornDBModel.tblDataOperate_Permission_Mask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblDataOperateRight">
+              <PropertyRef Name="DataOperateRightID" />
+            </Principal>
+            <Dependent Role="tblDataOperate_Permission_Mask">
+              <PropertyRef Name="DataOperateRightID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLDATAO_REFERENCE_TBLVISIT">
+          <End Role="tblVisitMask" Type="UnicornDBModel.tblVisitMask" Multiplicity="0..1" />
+          <End Role="tblDataOperate_Permission_Mask" Type="UnicornDBModel.tblDataOperate_Permission_Mask" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblVisitMask">
+              <PropertyRef Name="VisitMaskID" />
+            </Principal>
+            <Dependent Role="tblDataOperate_Permission_Mask">
+              <PropertyRef Name="VisitMaskID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblMaterial_tblMaterialCategory">
+          <End Role="tblMaterialCategory" Type="UnicornDBModel.tblMaterialCategory" Multiplicity="0..1" />
+          <End Role="tblMaterial" Type="UnicornDBModel.tblMaterial" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterialCategory">
+              <PropertyRef Name="CategoryID" />
+            </Principal>
+            <Dependent Role="tblMaterial">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStock_tblMaterial">
+          <End Role="tblMaterial" Type="UnicornDBModel.tblMaterial" Multiplicity="0..1" />
+          <End Role="tblStock" Type="UnicornDBModel.tblStock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterial">
+              <PropertyRef Name="MaterialID" />
+            </Principal>
+            <Dependent Role="tblStock">
+              <PropertyRef Name="MaterialID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockCheck_tblMaterial">
+          <End Role="tblMaterial" Type="UnicornDBModel.tblMaterial" Multiplicity="0..1" />
+          <End Role="tblStockCheck" Type="UnicornDBModel.tblStockCheck" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterial">
+              <PropertyRef Name="MaterialID" />
+            </Principal>
+            <Dependent Role="tblStockCheck">
+              <PropertyRef Name="MaterialID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockInSheetDetail_tblMaterial">
+          <End Role="tblMaterial" Type="UnicornDBModel.tblMaterial" Multiplicity="0..1" />
+          <End Role="tblStockInSheetDetail" Type="UnicornDBModel.tblStockInSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterial">
+              <PropertyRef Name="MaterialID" />
+            </Principal>
+            <Dependent Role="tblStockInSheetDetail">
+              <PropertyRef Name="MaterialID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockOutSheetDetail_tblMaterial">
+          <End Role="tblMaterial" Type="UnicornDBModel.tblMaterial" Multiplicity="0..1" />
+          <End Role="tblStockOutSheetDetail" Type="UnicornDBModel.tblStockOutSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMaterial">
+              <PropertyRef Name="MaterialID" />
+            </Principal>
+            <Dependent Role="tblStockOutSheetDetail">
+              <PropertyRef Name="MaterialID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLMENU__REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="UnicornDBModel.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblMenu_Permission_Role" Type="UnicornDBModel.tblMenu_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Principal>
+            <Dependent Role="tblMenu_Permission_Role">
+              <PropertyRef Name="MenuPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLMENU__REFERENCE_TBLROLE">
+          <End Role="tblRole" Type="UnicornDBModel.tblRole" Multiplicity="0..1" />
+          <End Role="tblMenu_Permission_Role" Type="UnicornDBModel.tblMenu_Permission_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblMenu_Permission_Role">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLROLEF_REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="UnicornDBModel.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblRoleFastTrack" Type="UnicornDBModel.tblRoleFastTrack" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Principal>
+            <Dependent Role="tblRoleFastTrack">
+              <PropertyRef Name="MenuPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLUSERF_REFERENCE_TBLMENUR">
+          <End Role="tblMenuRight" Type="UnicornDBModel.tblMenuRight" Multiplicity="0..1" />
+          <End Role="tblUserFavorites" Type="UnicornDBModel.tblUserFavorites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblMenuRight">
+              <PropertyRef Name="MenuPermissionID" />
+            </Principal>
+            <Dependent Role="tblUserFavorites">
+              <PropertyRef Name="MenuPermissionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLOPERA_REFERENCE_TBLUSER">
+          <End Role="tblUser" Type="UnicornDBModel.tblUser" Multiplicity="1" />
+          <End Role="tblOperateLog" Type="UnicornDBModel.tblOperateLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblOperateLog">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLROLE__REFERENCE_TBLROLE">
+          <End Role="tblRole" Type="UnicornDBModel.tblRole" Multiplicity="0..1" />
+          <End Role="tblRole_User" Type="UnicornDBModel.tblRole_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblRole_User">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLROLEF_REFERENCE_TBLROLE">
+          <End Role="tblRole" Type="UnicornDBModel.tblRole" Multiplicity="0..1" />
+          <End Role="tblRoleFastTrack" Type="UnicornDBModel.tblRoleFastTrack" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblRole">
+              <PropertyRef Name="RoleID" />
+            </Principal>
+            <Dependent Role="tblRoleFastTrack">
+              <PropertyRef Name="RoleID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLROLE__REFERENCE_TBLUSER">
+          <End Role="tblUser" Type="UnicornDBModel.tblUser" Multiplicity="0..1" />
+          <End Role="tblRole_User" Type="UnicornDBModel.tblRole_User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblRole_User">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblSetOfBook_tblWarehouse">
+          <End Role="tblWarehouse" Type="UnicornDBModel.tblWarehouse" Multiplicity="0..1" />
+          <End Role="tblSetOfBook" Type="UnicornDBModel.tblSetOfBook" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblWarehouse">
+              <PropertyRef Name="WarehouseID" />
+            </Principal>
+            <Dependent Role="tblSetOfBook">
+              <PropertyRef Name="WarehouseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockCheck_tblSetOfBook">
+          <End Role="tblSetOfBook" Type="UnicornDBModel.tblSetOfBook" Multiplicity="0..1" />
+          <End Role="tblStockCheck" Type="UnicornDBModel.tblStockCheck" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSetOfBook">
+              <PropertyRef Name="BookID" />
+            </Principal>
+            <Dependent Role="tblStockCheck">
+              <PropertyRef Name="BookID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockInSheetDetail_tblStockInSheet">
+          <End Role="tblStockInSheet" Type="UnicornDBModel.tblStockInSheet" Multiplicity="0..1" />
+          <End Role="tblStockInSheetDetail" Type="UnicornDBModel.tblStockInSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblStockInSheet">
+              <PropertyRef Name="StockInID" />
+            </Principal>
+            <Dependent Role="tblStockInSheetDetail">
+              <PropertyRef Name="StockInID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockInSheetDetail_tblSuppliers">
+          <End Role="tblSuppliers" Type="UnicornDBModel.tblSuppliers" Multiplicity="0..1" />
+          <End Role="tblStockInSheetDetail" Type="UnicornDBModel.tblStockInSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSuppliers">
+              <PropertyRef Name="SuppliersID" />
+            </Principal>
+            <Dependent Role="tblStockInSheetDetail">
+              <PropertyRef Name="SuppliersID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblStockOutSheetDetail_tblStockOutSheet">
+          <End Role="tblStockOutSheet" Type="UnicornDBModel.tblStockOutSheet" Multiplicity="0..1" />
+          <End Role="tblStockOutSheetDetail" Type="UnicornDBModel.tblStockOutSheetDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblStockOutSheet">
+              <PropertyRef Name="StockOutID" />
+            </Principal>
+            <Dependent Role="tblStockOutSheetDetail">
+              <PropertyRef Name="StockOutID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLSYSLO_REFERENCE_TBLUSER">
+          <End Role="tblUser" Type="UnicornDBModel.tblUser" Multiplicity="0..1" />
+          <End Role="tblSysLoginLog" Type="UnicornDBModel.tblSysLoginLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblSysLoginLog">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TBLUSERF_REFERENCE_TBLUSER">
+          <End Role="tblUser" Type="UnicornDBModel.tblUser" Multiplicity="0..1" />
+          <End Role="tblUserFavorites" Type="UnicornDBModel.tblUserFavorites" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUser">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="tblUserFavorites">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UnicornDBModelStoreContainer" CdmEntityContainer="UnicornDBEntities">
+          <EntitySetMapping Name="d_DicInfo"><EntityTypeMapping TypeName="UnicornDBModel.d_DicInfo"><MappingFragment StoreEntitySet="d_DicInfo">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicTypeID" ColumnName="DicTypeID" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicIndex" ColumnName="DicIndex" />
+            <ScalarProperty Name="DicRe" ColumnName="DicRe" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="d_DicType"><EntityTypeMapping TypeName="UnicornDBModel.d_DicType"><MappingFragment StoreEntitySet="d_DicType">
+            <ScalarProperty Name="DicTypeID" ColumnName="DicTypeID" />
+            <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+            <ScalarProperty Name="ZT" ColumnName="ZT" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblAction_Permission_Role"><EntityTypeMapping TypeName="UnicornDBModel.tblAction_Permission_Role"><MappingFragment StoreEntitySet="tblAction_Permission_Role">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="ActionPermissionID" ColumnName="ActionPermissionID" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+            <ScalarProperty Name="VisitMaskID" ColumnName="VisitMaskID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblActionRight"><EntityTypeMapping TypeName="UnicornDBModel.tblActionRight"><MappingFragment StoreEntitySet="tblActionRight">
+            <ScalarProperty Name="ActionPermissionID" ColumnName="ActionPermissionID" />
+            <ScalarProperty Name="MenuPermissionID" ColumnName="MenuPermissionID" />
+            <ScalarProperty Name="Action" ColumnName="Action" />
+            <ScalarProperty Name="Control" ColumnName="Control" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblDataOperate_Permission_Mask"><EntityTypeMapping TypeName="UnicornDBModel.tblDataOperate_Permission_Mask"><MappingFragment StoreEntitySet="tblDataOperate_Permission_Mask">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="DataOperateRightID" ColumnName="DataOperateRightID" />
+            <ScalarProperty Name="VisitMaskID" ColumnName="VisitMaskID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblDataOperateRight"><EntityTypeMapping TypeName="UnicornDBModel.tblDataOperateRight"><MappingFragment StoreEntitySet="tblDataOperateRight">
+            <ScalarProperty Name="DataOperateRightID" ColumnName="DataOperateRightID" />
+            <ScalarProperty Name="DataOperateRightName" ColumnName="DataOperateRightName" />
+            <ScalarProperty Name="DataOperateRightCode" ColumnName="DataOperateRightCode" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblMaterial"><EntityTypeMapping TypeName="UnicornDBModel.tblMaterial"><MappingFragment StoreEntitySet="tblMaterial">
+            <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+            <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+            <ScalarProperty Name="MaterialName" ColumnName="MaterialName" />
+            <ScalarProperty Name="Technicalparameters" ColumnName="Technicalparameters" />
+            <ScalarProperty Name="Specification" ColumnName="Specification" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+            <ScalarProperty Name="Material" ColumnName="Material" />
+            <ScalarProperty Name="ReserveProperty" ColumnName="ReserveProperty" />
+            <ScalarProperty Name="Spareparts" ColumnName="Spareparts" />
+            <ScalarProperty Name="Unitprice" ColumnName="Unitprice" />
+            <ScalarProperty Name="Limit" ColumnName="Limit" />
+            <ScalarProperty Name="LowerLimit" ColumnName="LowerLimit" />
+            <ScalarProperty Name="Increaserate" ColumnName="Increaserate" />
+            <ScalarProperty Name="UseFlag" ColumnName="UseFlag" />
+            <ScalarProperty Name="SelectFlag" ColumnName="SelectFlag" />
+            <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblMaterialCategory"><EntityTypeMapping TypeName="UnicornDBModel.tblMaterialCategory"><MappingFragment StoreEntitySet="tblMaterialCategory">
+            <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+            <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+            <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+            <ScalarProperty Name="NodeLevel" ColumnName="NodeLevel" />
+            <ScalarProperty Name="CategoryCode" ColumnName="CategoryCode" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblMenu_Permission_Role"><EntityTypeMapping TypeName="UnicornDBModel.tblMenu_Permission_Role"><MappingFragment StoreEntitySet="tblMenu_Permission_Role">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="MenuPermissionID" ColumnName="MenuPermissionID" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblMenuRight"><EntityTypeMapping TypeName="UnicornDBModel.tblMenuRight"><MappingFragment StoreEntitySet="tblMenuRight">
+            <ScalarProperty Name="MenuPermissionID" ColumnName="MenuPermissionID" />
+            <ScalarProperty Name="Action" ColumnName="Action" />
+            <ScalarProperty Name="Control" ColumnName="Control" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="Icon1" ColumnName="Icon1" />
+            <ScalarProperty Name="Icon2" ColumnName="Icon2" />
+            <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+            <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+            <ScalarProperty Name="TreeCode" ColumnName="TreeCode" />
+            <ScalarProperty Name="NodeLevel" ColumnName="NodeLevel" />
+            <ScalarProperty Name="IsLeaves" ColumnName="IsLeaves" />
+            <ScalarProperty Name="URL" ColumnName="URL" />
+            <ScalarProperty Name="IsAJAXPage" ColumnName="IsAJAXPage" />
+            <ScalarProperty Name="Sort" ColumnName="Sort" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+            <ScalarProperty Name="IsRoot" ColumnName="IsRoot" />
+            <ScalarProperty Name="isfast" ColumnName="isfast" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblOperateLog"><EntityTypeMapping TypeName="UnicornDBModel.tblOperateLog"><MappingFragment StoreEntitySet="tblOperateLog">
+            <ScalarProperty Name="OperateLogID" ColumnName="OperateLogID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="Action" ColumnName="Action" />
+            <ScalarProperty Name="Control" ColumnName="Control" />
+            <ScalarProperty Name="OperateDesc" ColumnName="OperateDesc" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblRole"><EntityTypeMapping TypeName="UnicornDBModel.tblRole"><MappingFragment StoreEntitySet="tblRole">
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+            <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+            <ScalarProperty Name="RoleCode" ColumnName="RoleCode" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblRole_User"><EntityTypeMapping TypeName="UnicornDBModel.tblRole_User"><MappingFragment StoreEntitySet="tblRole_User">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblRoleFastTrack"><EntityTypeMapping TypeName="UnicornDBModel.tblRoleFastTrack"><MappingFragment StoreEntitySet="tblRoleFastTrack">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+            <ScalarProperty Name="MenuPermissionID" ColumnName="MenuPermissionID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblSetOfBook"><EntityTypeMapping TypeName="UnicornDBModel.tblSetOfBook"><MappingFragment StoreEntitySet="tblSetOfBook">
+            <ScalarProperty Name="BookID" ColumnName="BookID" />
+            <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+            <ScalarProperty Name="BookName" ColumnName="BookName" />
+            <ScalarProperty Name="ModifyState" ColumnName="ModifyState" />
+            <ScalarProperty Name="InitDate" ColumnName="InitDate" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="CloseBookDate" ColumnName="CloseBookDate" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblStock"><EntityTypeMapping TypeName="UnicornDBModel.tblStock"><MappingFragment StoreEntitySet="tblStock">
+            <ScalarProperty Name="BookID" ColumnName="BookID" />
+            <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+            <ScalarProperty Name="Positions" ColumnName="Positions" />
+            <ScalarProperty Name="StockPrice" ColumnName="StockPrice" />
+            <ScalarProperty Name="StockAmount" ColumnName="StockAmount" />
+            <ScalarProperty Name="BorrowAmount" ColumnName="BorrowAmount" />
+            <ScalarProperty Name="StockInTotal" ColumnName="StockInTotal" />
+            <ScalarProperty Name="StockOutTotal" ColumnName="StockOutTotal" />
+            <ScalarProperty Name="Purchaseprice" ColumnName="Purchaseprice" />
+            <ScalarProperty Name="Purchasediscount" ColumnName="Purchasediscount" />
+            <ScalarProperty Name="ProcurementUnit" ColumnName="ProcurementUnit" />
+            <ScalarProperty Name="Inventorydate" ColumnName="Inventorydate" />
+            <ScalarProperty Name="Settlementmonth" ColumnName="Settlementmonth" />
+            <ScalarProperty Name="SettlementDate" ColumnName="SettlementDate" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblStockCheck"><EntityTypeMapping TypeName="UnicornDBModel.tblStockCheck"><MappingFragment StoreEntitySet="tblStockCheck">
+            <ScalarProperty Name="StockCheckID" ColumnName="StockCheckID" />
+            <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+            <ScalarProperty Name="BookID" ColumnName="BookID" />
+            <ScalarProperty Name="StockCheckDt" ColumnName="StockCheckDt" />
+            <ScalarProperty Name="SignDt" ColumnName="SignDt" />
+            <ScalarProperty Name="Reviewers" ColumnName="Reviewers" />
+            <ScalarProperty Name="Agent" ColumnName="Agent" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblStockInSheet"><EntityTypeMapping TypeName="UnicornDBModel.tblStockInSheet"><MappingFragment StoreEntitySet="tblStockInSheet">
+            <ScalarProperty Name="StockInID" ColumnName="StockInID" />
+            <ScalarProperty Name="StockInCode" ColumnName="StockInCode" />
+            <ScalarProperty Name="StockInSource" ColumnName="StockInSource" />
+            <ScalarProperty Name="Agent" ColumnName="Agent" />
+            <ScalarProperty Name="Custodian" ColumnName="Custodian" />
+            <ScalarProperty Name="StockInDt" ColumnName="StockInDt" />
+            <ScalarProperty Name="Accounting" ColumnName="Accounting" />
+            <ScalarProperty Name="TengaccountDt" ColumnName="TengaccountDt" />
+            <ScalarProperty Name="QCPeople" ColumnName="QCPeople" />
+            <ScalarProperty Name="QCDt" ColumnName="QCDt" />
+            <ScalarProperty Name="StockInStyle" ColumnName="StockInStyle" />
+            <ScalarProperty Name="Reviewers" ColumnName="Reviewers" />
+            <ScalarProperty Name="IsPrint" ColumnName="IsPrint" />
+            <ScalarProperty Name="Invoicenumber" ColumnName="Invoicenumber" />
+            <ScalarProperty Name="SlottingNo_" ColumnName="SlottingNo." />
+            <ScalarProperty Name="Entryperson" ColumnName="Entryperson" />
+            <ScalarProperty Name="TotalTax" ColumnName="TotalTax" />
+            <ScalarProperty Name="Totalnon_tax" ColumnName="Totalnon-tax" />
+            <ScalarProperty Name="BusinessType" ColumnName="BusinessType" />
+            <ScalarProperty Name="Procurementtype" ColumnName="Procurementtype" />
+            <ScalarProperty Name="StockInType" ColumnName="StockInType" />
+            <ScalarProperty Name="Peopleofaccount" ColumnName="Peopleofaccount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblStockInSheetDetail"><EntityTypeMapping TypeName="UnicornDBModel.tblStockInSheetDetail"><MappingFragment StoreEntitySet="tblStockInSheetDetail">
+            <ScalarProperty Name="StockInDetailID" ColumnName="StockInDetailID" />
+            <ScalarProperty Name="StockInID" ColumnName="StockInID" />
+            <ScalarProperty Name="SuppliersID" ColumnName="SuppliersID" />
+            <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+            <ScalarProperty Name="Planprice" ColumnName="Planprice" />
+            <ScalarProperty Name="PriceTax" ColumnName="PriceTax" />
+            <ScalarProperty Name="PricenonTax" ColumnName="PricenonTax" />
+            <ScalarProperty Name="StockInAmount" ColumnName="StockInAmount" />
+            <ScalarProperty Name="ContractAmount" ColumnName="ContractAmount" />
+            <ScalarProperty Name="Consuming" ColumnName="Consuming" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblStockOutSheet"><EntityTypeMapping TypeName="UnicornDBModel.tblStockOutSheet"><MappingFragment StoreEntitySet="tblStockOutSheet">
+            <ScalarProperty Name="StockOutID" ColumnName="StockOutID" />
+            <ScalarProperty Name="StockOutCode" ColumnName="StockOutCode" />
+            <ScalarProperty Name="StockOutDt" ColumnName="StockOutDt" />
+            <ScalarProperty Name="StockOutType" ColumnName="StockOutType" />
+            <ScalarProperty Name="Agent" ColumnName="Agent" />
+            <ScalarProperty Name="Deliveryman" ColumnName="Deliveryman" />
+            <ScalarProperty Name="PostDt" ColumnName="PostDt" />
+            <ScalarProperty Name="IsPrint" ColumnName="IsPrint" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblStockOutSheetDetail"><EntityTypeMapping TypeName="UnicornDBModel.tblStockOutSheetDetail"><MappingFragment StoreEntitySet="tblStockOutSheetDetail">
+            <ScalarProperty Name="StockOutDetailID" ColumnName="StockOutDetailID" />
+            <ScalarProperty Name="StockOutID" ColumnName="StockOutID" />
+            <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+            <ScalarProperty Name="PlanPrice" ColumnName="PlanPrice" />
+            <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+            <ScalarProperty Name="StockOutNumber" ColumnName="StockOutNumber" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblSuppliers"><EntityTypeMapping TypeName="UnicornDBModel.tblSuppliers"><MappingFragment StoreEntitySet="tblSuppliers">
+            <ScalarProperty Name="SuppliersID" ColumnName="SuppliersID" />
+            <ScalarProperty Name="SuppliersName" ColumnName="SuppliersName" />
+            <ScalarProperty Name="Contact" ColumnName="Contact" />
+            <ScalarProperty Name="Tel" ColumnName="Tel" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblSysLoginLog"><EntityTypeMapping TypeName="UnicornDBModel.tblSysLoginLog"><MappingFragment StoreEntitySet="tblSysLoginLog">
+            <ScalarProperty Name="LoginLogID" ColumnName="LoginLogID" />
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="InTime" ColumnName="InTime" />
+            <ScalarProperty Name="OnlineLength" ColumnName="OnlineLength" />
+            <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+            <ScalarProperty Name="LoginIP" ColumnName="LoginIP" />
+            <ScalarProperty Name="BrowerType" ColumnName="BrowerType" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblSystemConfig"><EntityTypeMapping TypeName="UnicornDBModel.tblSystemConfig"><MappingFragment StoreEntitySet="tblSystemConfig">
+            <ScalarProperty Name="SID" ColumnName="SID" />
+            <ScalarProperty Name="SName" ColumnName="SName" />
+            <ScalarProperty Name="DbVersion" ColumnName="DbVersion" />
+            <ScalarProperty Name="DateConfig" ColumnName="DateConfig" />
+            <ScalarProperty Name="ServerEmail" ColumnName="ServerEmail" />
+            <ScalarProperty Name="IsEmailRule" ColumnName="IsEmailRule" />
+            <ScalarProperty Name="IsLogin" ColumnName="IsLogin" />
+            <ScalarProperty Name="IsUpdateEmail" ColumnName="IsUpdateEmail" />
+            <ScalarProperty Name="UploadSaveType" ColumnName="UploadSaveType" />
+            <ScalarProperty Name="IPManageSwitch" ColumnName="IPManageSwitch" />
+            <ScalarProperty Name="UploadFileSize" ColumnName="UploadFileSize" />
+            <ScalarProperty Name="OverTimeSwitch" ColumnName="OverTimeSwitch" />
+            <ScalarProperty Name="TimeFormat" ColumnName="TimeFormat" />
+            <ScalarProperty Name="IndexBack" ColumnName="IndexBack" />
+            <ScalarProperty Name="AllTextSwitch" ColumnName="AllTextSwitch" />
+            <ScalarProperty Name="IndexMin" ColumnName="IndexMin" />
+            <ScalarProperty Name="TextIndexSign" ColumnName="TextIndexSign" />
+            <ScalarProperty Name="IndexPurview" ColumnName="IndexPurview" />
+            <ScalarProperty Name="SysStorage" ColumnName="SysStorage" />
+            <ScalarProperty Name="UserStorage" ColumnName="UserStorage" />
+            <ScalarProperty Name="ErrorLogRule" ColumnName="ErrorLogRule" />
+            <ScalarProperty Name="ErrorLogDate" ColumnName="ErrorLogDate" />
+            <ScalarProperty Name="SysLanguage" ColumnName="SysLanguage" />
+            <ScalarProperty Name="SysStyle" ColumnName="SysStyle" />
+            <ScalarProperty Name="SysLogo" ColumnName="SysLogo" />
+            <ScalarProperty Name="UserChangeLang" ColumnName="UserChangeLang" />
+            <ScalarProperty Name="UserChangeStyle" ColumnName="UserChangeStyle" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblUser"><EntityTypeMapping TypeName="UnicornDBModel.tblUser"><MappingFragment StoreEntitySet="tblUser">
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+            <ScalarProperty Name="LoginPwd" ColumnName="LoginPwd" />
+            <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="Language" ColumnName="Language" />
+            <ScalarProperty Name="StyleSheet" ColumnName="StyleSheet" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblUserFavorites"><EntityTypeMapping TypeName="UnicornDBModel.tblUserFavorites"><MappingFragment StoreEntitySet="tblUserFavorites">
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="MenuPermissionID" ColumnName="MenuPermissionID" />
+            <ScalarProperty Name="ID" ColumnName="ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblVisitMask"><EntityTypeMapping TypeName="UnicornDBModel.tblVisitMask"><MappingFragment StoreEntitySet="tblVisitMask">
+            <ScalarProperty Name="VisitMaskID" ColumnName="VisitMaskID" />
+            <ScalarProperty Name="VisitMaskName" ColumnName="VisitMaskName" />
+            <ScalarProperty Name="VisitCode" ColumnName="VisitCode" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblWarehouse"><EntityTypeMapping TypeName="UnicornDBModel.tblWarehouse"><MappingFragment StoreEntitySet="tblWarehouse">
+            <ScalarProperty Name="WarehouseID" ColumnName="WarehouseID" />
+            <ScalarProperty Name="WarehouseName" ColumnName="WarehouseName" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="Custodian" ColumnName="Custodian" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_Detail_List"><EntityTypeMapping TypeName="UnicornDBModel.View_Detail_List"><MappingFragment StoreEntitySet="View_Detail_List">
+            <ScalarProperty Name="MaterialName" ColumnName="MaterialName" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+            <ScalarProperty Name="Consuming" ColumnName="Consuming" />
+            <ScalarProperty Name="ContractAmount" ColumnName="ContractAmount" />
+            <ScalarProperty Name="StockInAmount" ColumnName="StockInAmount" />
+            <ScalarProperty Name="PricenonTax" ColumnName="PricenonTax" />
+            <ScalarProperty Name="PriceTax" ColumnName="PriceTax" />
+            <ScalarProperty Name="Planprice" ColumnName="Planprice" />
+            <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+            <ScalarProperty Name="SuppliersID" ColumnName="SuppliersID" />
+            <ScalarProperty Name="StockInID" ColumnName="StockInID" />
+            <ScalarProperty Name="StockInDetailID" ColumnName="StockInDetailID" />
+            <ScalarProperty Name="SuppliersName" ColumnName="SuppliersName" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_Detail_List_OUt"><EntityTypeMapping TypeName="UnicornDBModel.View_Detail_List_OUt"><MappingFragment StoreEntitySet="View_Detail_List_OUt">
+            <ScalarProperty Name="MaterialName" ColumnName="MaterialName" />
+            <ScalarProperty Name="Remark" ColumnName="Remark" />
+            <ScalarProperty Name="StockOutDetailID" ColumnName="StockOutDetailID" />
+            <ScalarProperty Name="StockOutID" ColumnName="StockOutID" />
+            <ScalarProperty Name="MaterialID" ColumnName="MaterialID" />
+            <ScalarProperty Name="PlanPrice" ColumnName="PlanPrice" />
+            <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+            <ScalarProperty Name="StockOutNumber" ColumnName="StockOutNumber" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_Menu_Permission_Role"><EntityTypeMapping TypeName="UnicornDBModel.View_Menu_Permission_Role"><MappingFragment StoreEntitySet="View_Menu_Permission_Role">
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+            <ScalarProperty Name="MenuPermissionID" ColumnName="MenuPermissionID" />
+            <ScalarProperty Name="Action" ColumnName="Action" />
+            <ScalarProperty Name="Control" ColumnName="Control" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="Icon1" ColumnName="Icon1" />
+            <ScalarProperty Name="Icon2" ColumnName="Icon2" />
+            <ScalarProperty Name="MenuName" ColumnName="MenuName" />
+            <ScalarProperty Name="ParentNode" ColumnName="ParentNode" />
+            <ScalarProperty Name="TreeCode" ColumnName="TreeCode" />
+            <ScalarProperty Name="NodeLevel" ColumnName="NodeLevel" />
+            <ScalarProperty Name="IsLeaves" ColumnName="IsLeaves" />
+            <ScalarProperty Name="URL" ColumnName="URL" />
+            <ScalarProperty Name="IsAJAXPage" ColumnName="IsAJAXPage" />
+            <ScalarProperty Name="Sort" ColumnName="Sort" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+            <ScalarProperty Name="IsRoot" ColumnName="IsRoot" />
+            <ScalarProperty Name="isfast" ColumnName="isfast" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockInSheet_Accounting_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockInSheet_Accounting_Dic"><MappingFragment StoreEntitySet="View_tblStockInSheet_Accounting_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockInSheet_Agent_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockInSheet_Agent_Dic"><MappingFragment StoreEntitySet="View_tblStockInSheet_Agent_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockInSheet_BusinessType_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockInSheet_BusinessType_Dic"><MappingFragment StoreEntitySet="View_tblStockInSheet_BusinessType_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockInSheet_Custodian_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockInSheet_Custodian_Dic"><MappingFragment StoreEntitySet="View_tblStockInSheet_Custodian_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockInSheet_Peopleofaccount_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockInSheet_Peopleofaccount_Dic"><MappingFragment StoreEntitySet="View_tblStockInSheet_Peopleofaccount_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockInSheet_Procurementtype_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockInSheet_Procurementtype_Dic"><MappingFragment StoreEntitySet="View_tblStockInSheet_Procurementtype_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockInSheet_StockInStyle_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockInSheet_StockInStyle_Dic"><MappingFragment StoreEntitySet="View_tblStockInSheet_StockInStyle_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockOutSheet_Agent_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockOutSheet_Agent_Dic"><MappingFragment StoreEntitySet="View_tblStockOutSheet_Agent_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockOutSheet_Deliveryman_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockOutSheet_Deliveryman_Dic"><MappingFragment StoreEntitySet="View_tblStockOutSheet_Deliveryman_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblStockOutSheet_StockOutType_Dic"><EntityTypeMapping TypeName="UnicornDBModel.View_tblStockOutSheet_StockOutType_Dic"><MappingFragment StoreEntitySet="View_tblStockOutSheet_StockOutType_Dic">
+            <ScalarProperty Name="DicID" ColumnName="DicID" />
+            <ScalarProperty Name="DicName" ColumnName="DicName" />
+            <ScalarProperty Name="DicDode" ColumnName="DicDode" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="View_tblUser"><EntityTypeMapping TypeName="UnicornDBModel.View_tblUser"><MappingFragment StoreEntitySet="View_tblUser">
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+            <ScalarProperty Name="LoginPwd" ColumnName="LoginPwd" />
+            <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+            <ScalarProperty Name="Desc" ColumnName="Desc" />
+            <ScalarProperty Name="Language" ColumnName="Language" />
+            <ScalarProperty Name="StyleSheet" ColumnName="StyleSheet" />
+            <ScalarProperty Name="CreateDt" ColumnName="CreateDt" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Version" ColumnName="Version" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ModelDemo">
+        <EntityTypeShape EntityType="UnicornDBModel.d_DicInfo" Width="1.5" PointX="8" PointY="16" Height="2.3520719401041692" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.d_DicType" Width="1.5" PointX="5.75" PointY="16.25" Height="1.7790128580729174" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblAction_Permission_Role" Width="1.5" PointX="18.25" PointY="10.5" Height="2.3520719401041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblActionRight" Width="1.5" PointX="16" PointY="2.125" Height="2.9251310221354156" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblDataOperate_Permission_Mask" Width="1.5" PointX="18.25" PointY="16.625" Height="1.9700325520833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblDataOperateRight" Width="1.5" PointX="16" PointY="20.375" Height="2.5430916341145817" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblMaterial" Width="1.5" PointX="3" PointY="9.875" Height="5.2173673502604174" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblMaterialCategory" Width="1.5" PointX="0.75" PointY="11.25" Height="2.3520719401041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblMenu_Permission_Role" Width="1.5" PointX="16" PointY="13" Height="1.9700325520833317" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblMenuRight" Width="1.5" PointX="13.75" PointY="0.75" Height="5.4083870442708317" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblOperateLog" Width="1.5" PointX="13" PointY="7.125" Height="2.7341113281250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblRole" Width="1.5" PointX="13.75" PointY="17.75" Height="3.3071704101562531" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblRole_User" Width="1.5" PointX="16" PointY="9.5" Height="1.9700325520833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblRoleFastTrack" Width="1.5" PointX="19" PointY="7" Height="1.9700325520833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblSetOfBook" Width="1.5" PointX="6" PointY="27" Height="2.9251310221354174" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblStock" Width="1.5" PointX="5.25" PointY="10.375" Height="4.0712491861979174" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblStockCheck" Width="1.5" PointX="8.25" PointY="11" Height="2.9251310221354174" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblStockInSheet" Width="1.5" PointX="3" PointY="16.625" Height="5.4083870442708388" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblStockInSheetDetail" Width="1.5" PointX="5.25" PointY="5.625" Height="3.6892097981770888" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblStockOutSheet" Width="1.5" PointX="6" PointY="2.125" Height="2.7341113281250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblStockOutSheetDetail" Width="1.5" PointX="8.25" PointY="7.125" Height="2.7341113281250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblSuppliers" Width="1.5" PointX="3" PointY="22.75" Height="2.5430916341145746" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblSysLoginLog" Width="1.5" PointX="13" PointY="13.375" Height="3.1161507161458246" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblSystemConfig" Width="1.5" PointX="10.75" PointY="17.75" Height="6.17246582031251" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblUser" Width="1.5" PointX="10.75" PointY="8.375" Height="4.2622688802083246" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblUserFavorites" Width="1.5" PointX="16" PointY="6.5" Height="1.9700325520833388" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblVisitMask" Width="1.5" PointX="16" PointY="16.25" Height="2.7341113281250102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.tblWarehouse" Width="1.5" PointX="3.75" PointY="27.25" Height="2.3520719401041674" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_Detail_List" Width="1.5" PointX="0.75" PointY="3.75" Height="3.6892097981770746" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_Detail_List_OUt" Width="1.5" PointX="5.75" PointY="19.75" Height="2.7341113281250102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_Menu_Permission_Role" Width="1.5" PointX="7.75" PointY="19.75" Height="4.8353279622395746" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockInSheet_Accounting_Dic" Width="1.5" PointX="8.75" PointY="3.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockInSheet_Agent_Dic" Width="1.5" PointX="10.75" PointY="3.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockInSheet_BusinessType_Dic" Width="1.5" PointX="12.75" PointY="10.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockInSheet_Custodian_Dic" Width="1.5" PointX="18.75" PointY="3.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockInSheet_Peopleofaccount_Dic" Width="1.5" PointX="18.75" PointY="13.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockInSheet_Procurementtype_Dic" Width="1.5" PointX="18.75" PointY="19.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockInSheet_StockInStyle_Dic" Width="1.5" PointX="12.75" PointY="22.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockOutSheet_Agent_Dic" Width="1.5" PointX="18.75" PointY="22.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockOutSheet_Deliveryman_Dic" Width="1.5" PointX="20.75" PointY="3.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblStockOutSheet_StockOutType_Dic" Width="1.5" PointX="20.75" PointY="9.75" Height="1.5879931640625102" IsExpanded="true" />
+        <EntityTypeShape EntityType="UnicornDBModel.View_tblUser" Width="1.5" PointX="20.75" PointY="12.75" Height="3.4981901041666674" IsExpanded="true" />
+        <AssociationConnector Association="UnicornDBModel.FK_D_DICINF_REFERENCE_D_DICTYP" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.25" PointY="17.139506429036459" />
+          <ConnectorPoint PointX="8" PointY="17.139506429036459" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLACTIO" ManuallyRouted="false">
+          <ConnectorPoint PointX="17.5" PointY="2.90625" />
+          <ConnectorPoint PointX="18.46875" PointY="2.90625" />
+          <ConnectorPoint PointX="18.46875" PointY="10.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLROLE" ManuallyRouted="false">
+          <ConnectorPoint PointX="14.90625" PointY="17.75" />
+          <ConnectorPoint PointX="14.90625" PointY="12.626282552083339" />
+          <ConnectorPoint PointX="14.994791666666666" PointY="12.626282552083339" />
+          <ConnectorPoint PointX="15.247395833333334" PointY="12.626282552083339" />
+          <ConnectorPoint PointX="17.791666666666668" PointY="12.626282552083339" />
+          <ConnectorPoint PointX="17.958333333333332" PointY="12.626282552083339" />
+          <ConnectorPoint PointX="18.25" PointY="12.626282552083339" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLVISIT" ManuallyRouted="false">
+          <ConnectorPoint PointX="17.5" PointY="16.25" />
+          <ConnectorPoint PointX="17.875" PointY="15.875" />
+          <ConnectorPoint PointX="17.875" PointY="11.531889276041667" />
+          <ConnectorPoint PointX="18.25" PointY="11.531889276041667" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLACTIO_REFERENCE_TBLMENUR" ManuallyRouted="false">
+          <ConnectorPoint PointX="15.25" PointY="3.5875655110677078" />
+          <ConnectorPoint PointX="16" PointY="3.5875655110677078" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLDATAO_REFERENCE_TBLDATAO" ManuallyRouted="false">
+          <ConnectorPoint PointX="17.5" PointY="22.043996582031255" />
+          <ConnectorPoint PointX="18.46875" PointY="22.043996582031255" />
+          <ConnectorPoint PointX="18.46875" PointY="18.595032552083332" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLDATAO_REFERENCE_TBLVISIT" ManuallyRouted="false">
+          <ConnectorPoint PointX="17.5" PointY="17.610016276041666" />
+          <ConnectorPoint PointX="18.25" PointY="17.610016276041666" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblMaterial_tblMaterialCategory" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="12.426035970052084" />
+          <ConnectorPoint PointX="3" PointY="12.426035970052084" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblStock_tblMaterial" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="12.410624593098959" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="12.410624593098959" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="12.410624593098959" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="12.410624593098959" />
+          <ConnectorPoint PointX="5.145833333333333" PointY="12.410624593098959" />
+          <ConnectorPoint PointX="5.25" PointY="12.410624593098959" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblStockCheck_tblMaterial" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="14.800558268229167" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="14.800558268229167" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="14.800558268229167" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="14.800558268229167" />
+          <ConnectorPoint PointX="5.145833333333333" PointY="14.800558268229167" />
+          <ConnectorPoint PointX="9" PointY="14.800558268229167" />
+          <ConnectorPoint PointX="9" PointY="13.925131022135417" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblStockInSheetDetail_tblMaterial" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="9.875" />
+          <ConnectorPoint PointX="3.75" PointY="7.4696048990885444" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="7.4696048990885435" />
+          <ConnectorPoint PointX="5.145833333333333" PointY="7.4696048990885444" />
+          <ConnectorPoint PointX="5.25" PointY="7.4696048990885444" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblStockOutSheetDetail_tblMaterial" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.1562525" PointY="9.875" />
+          <ConnectorPoint PointX="4.1562525" PointY="9.617910563151046" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="9.617910563151046" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="9.617910563151046" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="9.617910563151046" />
+          <ConnectorPoint PointX="5.145833333333333" PointY="9.617910563151046" />
+          <ConnectorPoint PointX="8.25" PointY="9.617910563151046" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLMENU__REFERENCE_TBLMENUR" ManuallyRouted="false">
+          <ConnectorPoint PointX="15.078125" PointY="6.1583870442708317" />
+          <ConnectorPoint PointX="15.078125" PointY="13.15625" />
+          <ConnectorPoint PointX="15.080729166666666" PointY="13.15625" />
+          <ConnectorPoint PointX="15.247395833333334" PointY="13.15625" />
+          <ConnectorPoint PointX="16" PointY="13.15625" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLMENU__REFERENCE_TBLROLE" ManuallyRouted="false">
+          <ConnectorPoint PointX="14.7031225" PointY="17.75" />
+          <ConnectorPoint PointX="14.7031225" PointY="13.2656275" />
+          <ConnectorPoint PointX="14.822916666666666" PointY="13.2656275" />
+          <ConnectorPoint PointX="14.989583333333334" PointY="13.2656275" />
+          <ConnectorPoint PointX="15.080729166666666" PointY="13.2656275" />
+          <ConnectorPoint PointX="15.247395833333334" PointY="13.2656275" />
+          <ConnectorPoint PointX="16" PointY="13.2656275" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLROLEF_REFERENCE_TBLMENUR" ManuallyRouted="false">
+          <ConnectorPoint PointX="15.25" PointY="1.40625" />
+          <ConnectorPoint PointX="20.40625" PointY="1.40625" />
+          <ConnectorPoint PointX="20.40625" PointY="7" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLUSERF_REFERENCE_TBLMENUR" ManuallyRouted="false">
+          <ConnectorPoint PointX="14.78906" PointY="6.1583870442708317" />
+          <ConnectorPoint PointX="14.78906" PointY="6.78125" />
+          <ConnectorPoint PointX="14.994791666666666" PointY="6.7812499999999991" />
+          <ConnectorPoint PointX="15.161458333333334" PointY="6.78125" />
+          <ConnectorPoint PointX="16" PointY="6.78125" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLOPERA_REFERENCE_TBLUSER" ManuallyRouted="false">
+          <ConnectorPoint PointX="12.25" PointY="9.1170556640625016" />
+          <ConnectorPoint PointX="13" PointY="9.1170556640625016" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLROLE__REFERENCE_TBLROLE" ManuallyRouted="false">
+          <ConnectorPoint PointX="15.1640625" PointY="17.75" />
+          <ConnectorPoint PointX="15.1640625" PointY="10.304555664062502" />
+          <ConnectorPoint PointX="16" PointY="10.304555664062502" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLROLEF_REFERENCE_TBLROLE" ManuallyRouted="false">
+          <ConnectorPoint PointX="15.25" PointY="19.367055664062505" />
+          <ConnectorPoint PointX="18.385416666666668" PointY="19.367055664062505" />
+          <ConnectorPoint PointX="18.552083333333332" PointY="19.367055664062505" />
+          <ConnectorPoint PointX="20.40625" PointY="19.367055664062505" />
+          <ConnectorPoint PointX="20.40625" PointY="8.9700325520833388" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLROLE__REFERENCE_TBLUSER" ManuallyRouted="false">
+          <ConnectorPoint PointX="12.25" PointY="10.558527832031251" />
+          <ConnectorPoint PointX="14.994791666666666" PointY="10.558527832031251" />
+          <ConnectorPoint PointX="15.247395833333334" PointY="10.558527832031251" />
+          <ConnectorPoint PointX="16" PointY="10.558527832031251" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblSetOfBook_tblWarehouse" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="28.426035970052084" />
+          <ConnectorPoint PointX="6" PointY="28.426035970052084" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblStockCheck_tblSetOfBook" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.5" PointY="28.462565511067709" />
+          <ConnectorPoint PointX="9.65625" PointY="28.462565511067709" />
+          <ConnectorPoint PointX="9.65625" PointY="13.925131022135417" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblStockInSheetDetail_tblStockInSheet" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="16.626152846153843" />
+          <ConnectorPoint PointX="4.875" PointY="16.251152846153843" />
+          <ConnectorPoint PointX="4.875" PointY="8.4231593486328116" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="8.4231593486328116" />
+          <ConnectorPoint PointX="5.145833333333333" PointY="8.4231593486328116" />
+          <ConnectorPoint PointX="5.25" PointY="8.4231593486328116" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblStockInSheetDetail_tblSuppliers" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="22.813460538461534" />
+          <ConnectorPoint PointX="5.0625" PointY="22.250960538461534" />
+          <ConnectorPoint PointX="5.0625" PointY="6.516050449544279" />
+          <ConnectorPoint PointX="5.25" PointY="6.516050449544279" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_tblStockOutSheetDetail_tblStockOutSheet" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.15625" PointY="4.8591113281250031" />
+          <ConnectorPoint PointX="7.15625" PointY="9.4660576806640737" />
+          <ConnectorPoint PointX="8.25" PointY="9.4660576806640737" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLSYSLO_REFERENCE_TBLUSER" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.5" PointY="12.637268880208325" />
+          <ConnectorPoint PointX="11.5" PointY="14.933075358072912" />
+          <ConnectorPoint PointX="13" PointY="14.933075358072912" />
+        </AssociationConnector>
+        <AssociationConnector Association="UnicornDBModel.FK_TBLUSERF_REFERENCE_TBLUSER" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.5" PointY="8.375" />
+          <ConnectorPoint PointX="11.5" PointY="6.9531274999999937" />
+          <ConnectorPoint PointX="14.994791666666666" PointY="6.9531274999999928" />
+          <ConnectorPoint PointX="15.161458333333334" PointY="6.9531274999999937" />
+          <ConnectorPoint PointX="16" PointY="6.9531274999999937" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

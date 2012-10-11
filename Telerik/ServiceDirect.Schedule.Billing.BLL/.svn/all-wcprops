@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/service_direct_project/!svn/ver/634/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL
+END
+TasksTemp.cs
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn/service_direct_project/!svn/ver/536/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL/TasksTemp.cs
+END
+ScheduleTasksBLL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/svn/service_direct_project/!svn/ver/613/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL/ScheduleTasksBLL.cs
+END
+vSysJobsBLL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/svn/service_direct_project/!svn/ver/476/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL/vSysJobsBLL.cs
+END
+vScheduleLogBLL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/svn/service_direct_project/!svn/ver/634/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL/vScheduleLogBLL.cs
+END
+BackupBLL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/svn/service_direct_project/!svn/ver/610/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL/BackupBLL.cs
+END
+EmailBLL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/service_direct_project/!svn/ver/610/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL/EmailBLL.cs
+END
+ServiceDirect.Schedule.Billing.BLL.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/svn/service_direct_project/!svn/ver/554/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL/ServiceDirect.Schedule.Billing.BLL.csproj
+END
+vUTPCustomerBLL.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/svn/service_direct_project/!svn/ver/307/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.Billing.BLL/vUTPCustomerBLL.cs
+END

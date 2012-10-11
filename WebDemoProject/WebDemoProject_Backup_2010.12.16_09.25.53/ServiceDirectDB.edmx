@@ -1,0 +1,2350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ServiceDirectDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ServiceDirectDBModelStoreContainer">
+          <EntitySet Name="tbl15DayNotice" EntityType="ServiceDirectDBModel.Store.tbl15DayNotice" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblAnnualfee" EntityType="ServiceDirectDBModel.Store.tblAnnualfee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBackflow" EntityType="ServiceDirectDBModel.Store.tblBackflow" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBackflowRequireType" EntityType="ServiceDirectDBModel.Store.tblBackflowRequireType" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblBFPToWUE" EntityType="ServiceDirectDBModel.Store.tblBFPToWUE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblCompletedTestOrder" EntityType="ServiceDirectDBModel.Store.tblCompletedTestOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblDisconnectOrder" EntityType="ServiceDirectDBModel.Store.tblDisconnectOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblFailureOrder" EntityType="ServiceDirectDBModel.Store.tblFailureOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblGauge" EntityType="ServiceDirectDBModel.Store.tblGauge" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblInspectionOrder" EntityType="ServiceDirectDBModel.Store.tblInspectionOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblManufacturer" EntityType="ServiceDirectDBModel.Store.tblManufacturer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblModel" EntityType="ServiceDirectDBModel.Store.tblModel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblShutOffOrder" EntityType="ServiceDirectDBModel.Store.tblShutOffOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblSize" EntityType="ServiceDirectDBModel.Store.tblSize" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblTechnician" EntityType="ServiceDirectDBModel.Store.tblTechnician" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblTestOrder" EntityType="ServiceDirectDBModel.Store.tblTestOrder" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblTestResults" EntityType="ServiceDirectDBModel.Store.tblTestResults" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblUTPCustomer" EntityType="ServiceDirectDBModel.Store.tblUTPCustomer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblUTPMeter" EntityType="ServiceDirectDBModel.Store.tblUTPMeter" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblWaterUsingEquipment" EntityType="ServiceDirectDBModel.Store.tblWaterUsingEquipment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vBackflow" EntityType="ServiceDirectDBModel.Store.vBackflow" store:Type="Views" store:Schema="dbo" store:Name="vBackflow">
+            <DefiningQuery>SELECT 
+      [vBackflow].[BFPID] AS [BFPID], 
+      [vBackflow].[Size] AS [Size], 
+      [vBackflow].[MfrName] AS [MfrName], 
+      [vBackflow].[Model] AS [Model], 
+      [vBackflow].[Serial] AS [Serial], 
+      [vBackflow].[TestInterval] AS [TestInterval], 
+      [vBackflow].[Location] AS [Location], 
+      [vBackflow].[LastTestDate] AS [LastTestDate], 
+      [vBackflow].[NextTestDate] AS [NextTestDate], 
+      [vBackflow].[Status] AS [Status], 
+      [vBackflow].[Comment] AS [Comment], 
+      [vBackflow].[CustomerName] AS [CustomerName], 
+      [vBackflow].[BussinessName] AS [BussinessName], 
+      [vBackflow].[CreatedDate] AS [CreatedDate], 
+      [vBackflow].[IsDeleted] AS [IsDeleted]
+      FROM [dbo].[vBackflow] AS [vBackflow]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_tbl15DayNotice_tblTechnician" Association="ServiceDirectDBModel.Store.FK_tbl15DayNotice_tblTechnician">
+            <End Role="tblTechnician" EntitySet="tblTechnician" />
+            <End Role="tbl15DayNotice" EntitySet="tbl15DayNotice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl15DayNotice_tblUTPCustomer" Association="ServiceDirectDBModel.Store.FK_tbl15DayNotice_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tbl15DayNotice" EntitySet="tbl15DayNotice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAnnualfee_tblUTPCustomer" Association="ServiceDirectDBModel.Store.FK_tblAnnualfee_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblAnnualfee" EntitySet="tblAnnualfee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBackflow_tblManufacturer" Association="ServiceDirectDBModel.Store.FK_tblBackflow_tblManufacturer">
+            <End Role="tblManufacturer" EntitySet="tblManufacturer" />
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBackflow_tblModel" Association="ServiceDirectDBModel.Store.FK_tblBackflow_tblModel">
+            <End Role="tblModel" EntitySet="tblModel" />
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBackflow_tblSize" Association="ServiceDirectDBModel.Store.FK_tblBackflow_tblSize">
+            <End Role="tblSize" EntitySet="tblSize" />
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBackflow_tblUTPCustomer" Association="ServiceDirectDBModel.Store.FK_tblBackflow_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBFPToWUE_tblBackflow" Association="ServiceDirectDBModel.Store.FK_tblBFPToWUE_tblBackflow">
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+            <End Role="tblBFPToWUE" EntitySet="tblBFPToWUE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBFPToWUE_tblWaterUsingEquipment" Association="ServiceDirectDBModel.Store.FK_tblBFPToWUE_tblWaterUsingEquipment">
+            <End Role="tblWaterUsingEquipment" EntitySet="tblWaterUsingEquipment" />
+            <End Role="tblBFPToWUE" EntitySet="tblBFPToWUE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCompletedTestOrder_tblTestOrder" Association="ServiceDirectDBModel.Store.FK_tblCompletedTestOrder_tblTestOrder">
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+            <End Role="tblCompletedTestOrder" EntitySet="tblCompletedTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblDisconnectOrder_tblUTPCustomer" Association="ServiceDirectDBModel.Store.FK_tblDisconnectOrder_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblDisconnectOrder" EntitySet="tblDisconnectOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblFailureOrder_tblTestOrder" Association="ServiceDirectDBModel.Store.FK_tblFailureOrder_tblTestOrder">
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+            <End Role="tblFailureOrder" EntitySet="tblFailureOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblGauge_tblManufacturer" Association="ServiceDirectDBModel.Store.FK_tblGauge_tblManufacturer">
+            <End Role="tblManufacturer" EntitySet="tblManufacturer" />
+            <End Role="tblGauge" EntitySet="tblGauge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblGauge_tblModel" Association="ServiceDirectDBModel.Store.FK_tblGauge_tblModel">
+            <End Role="tblModel" EntitySet="tblModel" />
+            <End Role="tblGauge" EntitySet="tblGauge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblGauge_tblSize" Association="ServiceDirectDBModel.Store.FK_tblGauge_tblSize">
+            <End Role="tblSize" EntitySet="tblSize" />
+            <End Role="tblGauge" EntitySet="tblGauge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblInspectionOrder_tblBackflowRequireType" Association="ServiceDirectDBModel.Store.FK_tblInspectionOrder_tblBackflowRequireType">
+            <End Role="tblBackflowRequireType" EntitySet="tblBackflowRequireType" />
+            <End Role="tblInspectionOrder" EntitySet="tblInspectionOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblInspectionOrder_tblModel" Association="ServiceDirectDBModel.Store.FK_tblInspectionOrder_tblModel">
+            <End Role="tblModel" EntitySet="tblModel" />
+            <End Role="tblInspectionOrder" EntitySet="tblInspectionOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblInspectionOrder_tblSize" Association="ServiceDirectDBModel.Store.FK_tblInspectionOrder_tblSize">
+            <End Role="tblSize" EntitySet="tblSize" />
+            <End Role="tblInspectionOrder" EntitySet="tblInspectionOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblInspectionOrder_tblUTPCustomer" Association="ServiceDirectDBModel.Store.FK_tblInspectionOrder_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblInspectionOrder" EntitySet="tblInspectionOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblShutOffOrder_tblUTPCustomer" Association="ServiceDirectDBModel.Store.FK_tblShutOffOrder_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblShutOffOrder" EntitySet="tblShutOffOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestOrder_tblBackflow" Association="ServiceDirectDBModel.Store.FK_tblTestOrder_tblBackflow">
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestOrder_tblGauge" Association="ServiceDirectDBModel.Store.FK_tblTestOrder_tblGauge">
+            <End Role="tblGauge" EntitySet="tblGauge" />
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestOrder_tblTechnician" Association="ServiceDirectDBModel.Store.FK_tblTestOrder_tblTechnician">
+            <End Role="tblTechnician" EntitySet="tblTechnician" />
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestOrder_tblUTPCustomer" Association="ServiceDirectDBModel.Store.FK_tblTestOrder_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestResults_tblTestOrder" Association="ServiceDirectDBModel.Store.FK_tblTestResults_tblTestOrder">
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+            <End Role="tblTestResults" EntitySet="tblTestResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblUTPMeter_tblUTPCustomer" Association="ServiceDirectDBModel.Store.FK_tblUTPMeter_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblUTPMeter" EntitySet="tblUTPMeter" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl15DayNotice">
+          <Key>
+            <PropertyRef Name="FDNID" />
+          </Key>
+          <Property Name="FDNID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CustomerID" Type="uniqueidentifier" />
+          <Property Name="TechID" Type="uniqueidentifier" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="finalNoticeDate" Type="date" />
+          <Property Name="Noticetype" Type="smallint" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblAnnualfee">
+          <Key>
+            <PropertyRef Name="AFID" />
+          </Key>
+          <Property Name="AFID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CustomerID" Type="uniqueidentifier" />
+          <Property Name="Amount" Type="money" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBackflow">
+          <Key>
+            <PropertyRef Name="BFPID" />
+          </Key>
+          <Property Name="BFPID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="SizeID" Type="uniqueidentifier" />
+          <Property Name="MfrID" Type="uniqueidentifier" />
+          <Property Name="ModelID" Type="uniqueidentifier" />
+          <Property Name="Serial" Type="varchar" MaxLength="30" />
+          <Property Name="TestInterval" Type="smallint" />
+          <Property Name="ServiceOfType" Type="varchar" MaxLength="30" />
+          <Property Name="Location" Type="varchar" MaxLength="50" />
+          <Property Name="LastTestDate" Type="date" />
+          <Property Name="NextTestDate" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="10" />
+          <Property Name="Comment" Type="varchar" MaxLength="100" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+          <Property Name="CustomerID" Type="uniqueidentifier" />
+        </EntityType>
+        <EntityType Name="tblBackflowRequireType">
+          <Key>
+            <PropertyRef Name="BRTID" />
+          </Key>
+          <Property Name="BRTID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BRT" Type="varchar" MaxLength="10" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblBFPToWUE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BFPID" Type="uniqueidentifier" />
+          <Property Name="WUEID" Type="uniqueidentifier" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblCompletedTestOrder">
+          <Key>
+            <PropertyRef Name="CTOID" />
+          </Key>
+          <Property Name="CTOID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TOID" Type="uniqueidentifier" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblDisconnectOrder">
+          <Key>
+            <PropertyRef Name="DOID" />
+          </Key>
+          <Property Name="DOID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CustomerID" Type="uniqueidentifier" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblFailureOrder">
+          <Key>
+            <PropertyRef Name="FOID" />
+          </Key>
+          <Property Name="FOID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TOID" Type="uniqueidentifier" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="DueDate" Type="date" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblGauge">
+          <Key>
+            <PropertyRef Name="GaugeID" />
+          </Key>
+          <Property Name="GaugeID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="GaugeCode" Type="varchar" MaxLength="20" />
+          <Property Name="SizeID" Type="uniqueidentifier" />
+          <Property Name="MfrID" Type="uniqueidentifier" />
+          <Property Name="ModelID" Type="uniqueidentifier" />
+          <Property Name="LastCalibrationDate" Type="datetime" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblInspectionOrder">
+          <Key>
+            <PropertyRef Name="IOID" />
+          </Key>
+          <Property Name="CustomerID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="IOID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BRTID" Type="uniqueidentifier" />
+          <Property Name="SCTID" Type="uniqueidentifier" />
+          <Property Name="SizeID" Type="uniqueidentifier" />
+          <Property Name="MfrID" Type="uniqueidentifier" />
+          <Property Name="ModelID" Type="uniqueidentifier" />
+          <Property Name="InspectionDate" Type="date" />
+          <Property Name="InspectionTime" Type="time" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="Due Date" Type="datetime" />
+          <Property Name="Comment" Type="varchar" MaxLength="200" />
+          <Property Name="Action" Type="varchar" MaxLength="200" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+          <Property Name="IO_3" Type="varchar" MaxLength="10" />
+          <Property Name="IO_4" Type="varchar" MaxLength="10" />
+          <Property Name="IO_5" Type="varchar" MaxLength="10" />
+          <Property Name="Serial" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tblManufacturer">
+          <Key>
+            <PropertyRef Name="MfrID" />
+          </Key>
+          <Property Name="MfrID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="MfrName" Type="varchar" MaxLength="150" />
+          <Property Name="MfrType" Type="varchar" MaxLength="10" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblModel">
+          <Key>
+            <PropertyRef Name="ModelID" />
+          </Key>
+          <Property Name="ModelID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Model" Type="varchar" MaxLength="50" />
+          <Property Name="ModelType" Type="varchar" MaxLength="10" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblShutOffOrder">
+          <Key>
+            <PropertyRef Name="SOOID" />
+          </Key>
+          <Property Name="SOOID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CustomerID" Type="uniqueidentifier" />
+          <Property Name="CreateDate" Type="date" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblSize">
+          <Key>
+            <PropertyRef Name="SizeID" />
+          </Key>
+          <Property Name="SizeID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Size" Type="varchar" MaxLength="50" />
+          <Property Name="SizeType" Type="varchar" MaxLength="10" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblTechnician">
+          <Key>
+            <PropertyRef Name="TechID" />
+          </Key>
+          <Property Name="TechID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TechName" Type="varchar" MaxLength="20" />
+          <Property Name="TechCode" Type="varchar" MaxLength="20" />
+          <Property Name="Phone" Type="varchar" MaxLength="20" />
+          <Property Name="Firm" Type="varchar" MaxLength="50" />
+          <Property Name="FirmAddress" Type="varchar" MaxLength="100" />
+          <Property Name="FirmCity" Type="varchar" MaxLength="20" />
+          <Property Name="FirmState" Type="varchar" MaxLength="20" />
+          <Property Name="FirmZip" Type="varchar" MaxLength="10" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblTestOrder">
+          <Key>
+            <PropertyRef Name="TOID" />
+          </Key>
+          <Property Name="TOID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BFPID" Type="uniqueidentifier" />
+          <Property Name="CustomerID" Type="uniqueidentifier" />
+          <Property Name="TechID" Type="uniqueidentifier" />
+          <Property Name="GaugeID" Type="uniqueidentifier" />
+          <Property Name="TestDate" Type="date" />
+          <Property Name="TestTime" Type="time" />
+          <Property Name="TestType" Type="varchar" MaxLength="20" />
+          <Property Name="AR_TECP" Type="smallint" />
+          <Property Name="AR_LVWD_RK" Type="smallint" />
+          <Property Name="AR_AFPP" Type="smallint" />
+          <Property Name="AR_LVWD_RMK" Type="smallint" />
+          <Property Name="Comment" Type="varchar" MaxLength="200" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblTestResults">
+          <Key>
+            <PropertyRef Name="ResultID" />
+          </Key>
+          <Property Name="ResultID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="TOID" Type="uniqueidentifier" />
+          <Property Name="Status" Type="varchar" MaxLength="10" />
+          <Property Name="RP_CV1_AR" Type="float" />
+          <Property Name="RP_CV1_RV" Type="float" />
+          <Property Name="RP_CV2_Tight" Type="bit" />
+          <Property Name="RP_CV1_CR" Type="float" />
+          <Property Name="RP_CV2" Type="float" />
+          <Property Name="RP_Buffer" Type="float" />
+          <Property Name="DC_CV1" Type="float" />
+          <Property Name="DC_CV2" Type="float" />
+          <Property Name="PVB" Type="bit" />
+          <Property Name="SVB" Type="bit" />
+          <Property Name="AIV" Type="float" />
+          <Property Name="CV" Type="float" />
+          <Property Name="Comment_RC" Type="varchar" MaxLength="100" />
+          <Property Name="Comment_VC" Type="varchar" MaxLength="100" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tblUTPCustomer">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Account" Type="varchar" MaxLength="15" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+          <Property Name="BussinessName" Type="varchar" MaxLength="50" />
+          <Property Name="Address" Type="varchar" MaxLength="150" />
+          <Property Name="ServiceAddress" Type="varchar" MaxLength="150" />
+          <Property Name="BillingAddress" Type="varchar" MaxLength="150" />
+          <Property Name="City" Type="varchar" MaxLength="50" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Zip" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="tblUTPMeter">
+          <Key>
+            <PropertyRef Name="MeterID" />
+          </Key>
+          <Property Name="MeterID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="CustomerID" Type="uniqueidentifier" />
+          <Property Name="MeterNumber" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tblWaterUsingEquipment">
+          <Key>
+            <PropertyRef Name="WUEID" />
+          </Key>
+          <Property Name="WUEID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="WUE" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedByID" Type="uniqueidentifier" />
+          <Property Name="LastModifiedByID" Type="uniqueidentifier" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="OwnerID" Type="uniqueidentifier" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="SystemModstamp" Type="datetime" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vBackflow”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vBackflow">
+          <Key>
+            <PropertyRef Name="BFPID" />
+          </Key>
+          <Property Name="BFPID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Size" Type="varchar" MaxLength="50" />
+          <Property Name="MfrName" Type="varchar" MaxLength="150" />
+          <Property Name="Model" Type="varchar" MaxLength="50" />
+          <Property Name="Serial" Type="varchar" MaxLength="30" />
+          <Property Name="TestInterval" Type="smallint" />
+          <Property Name="Location" Type="varchar" MaxLength="50" />
+          <Property Name="LastTestDate" Type="date" />
+          <Property Name="NextTestDate" Type="date" />
+          <Property Name="Status" Type="varchar" MaxLength="10" />
+          <Property Name="Comment" Type="varchar" MaxLength="100" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+          <Property Name="BussinessName" Type="varchar" MaxLength="50" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="IsDeleted" Type="bit" />
+        </EntityType>
+        <Association Name="FK_tbl15DayNotice_tblTechnician">
+          <End Role="tblTechnician" Type="ServiceDirectDBModel.Store.tblTechnician" Multiplicity="0..1" />
+          <End Role="tbl15DayNotice" Type="ServiceDirectDBModel.Store.tbl15DayNotice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTechnician">
+              <PropertyRef Name="TechID" />
+            </Principal>
+            <Dependent Role="tbl15DayNotice">
+              <PropertyRef Name="TechID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl15DayNotice_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.Store.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tbl15DayNotice" Type="ServiceDirectDBModel.Store.tbl15DayNotice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tbl15DayNotice">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAnnualfee_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.Store.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblAnnualfee" Type="ServiceDirectDBModel.Store.tblAnnualfee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblAnnualfee">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBackflow_tblManufacturer">
+          <End Role="tblManufacturer" Type="ServiceDirectDBModel.Store.tblManufacturer" Multiplicity="0..1" />
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.Store.tblBackflow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblManufacturer">
+              <PropertyRef Name="MfrID" />
+            </Principal>
+            <Dependent Role="tblBackflow">
+              <PropertyRef Name="MfrID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBackflow_tblModel">
+          <End Role="tblModel" Type="ServiceDirectDBModel.Store.tblModel" Multiplicity="0..1" />
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.Store.tblBackflow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblModel">
+              <PropertyRef Name="ModelID" />
+            </Principal>
+            <Dependent Role="tblBackflow">
+              <PropertyRef Name="ModelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBackflow_tblSize">
+          <End Role="tblSize" Type="ServiceDirectDBModel.Store.tblSize" Multiplicity="0..1" />
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.Store.tblBackflow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSize">
+              <PropertyRef Name="SizeID" />
+            </Principal>
+            <Dependent Role="tblBackflow">
+              <PropertyRef Name="SizeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBackflow_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.Store.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.Store.tblBackflow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblBackflow">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBFPToWUE_tblBackflow">
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.Store.tblBackflow" Multiplicity="0..1" />
+          <End Role="tblBFPToWUE" Type="ServiceDirectDBModel.Store.tblBFPToWUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBackflow">
+              <PropertyRef Name="BFPID" />
+            </Principal>
+            <Dependent Role="tblBFPToWUE">
+              <PropertyRef Name="BFPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBFPToWUE_tblWaterUsingEquipment">
+          <End Role="tblWaterUsingEquipment" Type="ServiceDirectDBModel.Store.tblWaterUsingEquipment" Multiplicity="0..1" />
+          <End Role="tblBFPToWUE" Type="ServiceDirectDBModel.Store.tblBFPToWUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblWaterUsingEquipment">
+              <PropertyRef Name="WUEID" />
+            </Principal>
+            <Dependent Role="tblBFPToWUE">
+              <PropertyRef Name="WUEID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCompletedTestOrder_tblTestOrder">
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.Store.tblTestOrder" Multiplicity="0..1" />
+          <End Role="tblCompletedTestOrder" Type="ServiceDirectDBModel.Store.tblCompletedTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTestOrder">
+              <PropertyRef Name="TOID" />
+            </Principal>
+            <Dependent Role="tblCompletedTestOrder">
+              <PropertyRef Name="TOID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblDisconnectOrder_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.Store.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblDisconnectOrder" Type="ServiceDirectDBModel.Store.tblDisconnectOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblDisconnectOrder">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblFailureOrder_tblTestOrder">
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.Store.tblTestOrder" Multiplicity="0..1" />
+          <End Role="tblFailureOrder" Type="ServiceDirectDBModel.Store.tblFailureOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTestOrder">
+              <PropertyRef Name="TOID" />
+            </Principal>
+            <Dependent Role="tblFailureOrder">
+              <PropertyRef Name="TOID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblGauge_tblManufacturer">
+          <End Role="tblManufacturer" Type="ServiceDirectDBModel.Store.tblManufacturer" Multiplicity="0..1" />
+          <End Role="tblGauge" Type="ServiceDirectDBModel.Store.tblGauge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblManufacturer">
+              <PropertyRef Name="MfrID" />
+            </Principal>
+            <Dependent Role="tblGauge">
+              <PropertyRef Name="MfrID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblGauge_tblModel">
+          <End Role="tblModel" Type="ServiceDirectDBModel.Store.tblModel" Multiplicity="0..1" />
+          <End Role="tblGauge" Type="ServiceDirectDBModel.Store.tblGauge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblModel">
+              <PropertyRef Name="ModelID" />
+            </Principal>
+            <Dependent Role="tblGauge">
+              <PropertyRef Name="ModelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblGauge_tblSize">
+          <End Role="tblSize" Type="ServiceDirectDBModel.Store.tblSize" Multiplicity="0..1" />
+          <End Role="tblGauge" Type="ServiceDirectDBModel.Store.tblGauge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSize">
+              <PropertyRef Name="SizeID" />
+            </Principal>
+            <Dependent Role="tblGauge">
+              <PropertyRef Name="SizeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblInspectionOrder_tblBackflowRequireType">
+          <End Role="tblBackflowRequireType" Type="ServiceDirectDBModel.Store.tblBackflowRequireType" Multiplicity="0..1" />
+          <End Role="tblInspectionOrder" Type="ServiceDirectDBModel.Store.tblInspectionOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBackflowRequireType">
+              <PropertyRef Name="BRTID" />
+            </Principal>
+            <Dependent Role="tblInspectionOrder">
+              <PropertyRef Name="BRTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblInspectionOrder_tblModel">
+          <End Role="tblModel" Type="ServiceDirectDBModel.Store.tblModel" Multiplicity="0..1" />
+          <End Role="tblInspectionOrder" Type="ServiceDirectDBModel.Store.tblInspectionOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblModel">
+              <PropertyRef Name="ModelID" />
+            </Principal>
+            <Dependent Role="tblInspectionOrder">
+              <PropertyRef Name="ModelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblInspectionOrder_tblSize">
+          <End Role="tblSize" Type="ServiceDirectDBModel.Store.tblSize" Multiplicity="0..1" />
+          <End Role="tblInspectionOrder" Type="ServiceDirectDBModel.Store.tblInspectionOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSize">
+              <PropertyRef Name="SizeID" />
+            </Principal>
+            <Dependent Role="tblInspectionOrder">
+              <PropertyRef Name="SizeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblInspectionOrder_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.Store.tblUTPCustomer" Multiplicity="1" />
+          <End Role="tblInspectionOrder" Type="ServiceDirectDBModel.Store.tblInspectionOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblInspectionOrder">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblShutOffOrder_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.Store.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblShutOffOrder" Type="ServiceDirectDBModel.Store.tblShutOffOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblShutOffOrder">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestOrder_tblBackflow">
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.Store.tblBackflow" Multiplicity="0..1" />
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.Store.tblTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBackflow">
+              <PropertyRef Name="BFPID" />
+            </Principal>
+            <Dependent Role="tblTestOrder">
+              <PropertyRef Name="BFPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestOrder_tblGauge">
+          <End Role="tblGauge" Type="ServiceDirectDBModel.Store.tblGauge" Multiplicity="0..1" />
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.Store.tblTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblGauge">
+              <PropertyRef Name="GaugeID" />
+            </Principal>
+            <Dependent Role="tblTestOrder">
+              <PropertyRef Name="GaugeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestOrder_tblTechnician">
+          <End Role="tblTechnician" Type="ServiceDirectDBModel.Store.tblTechnician" Multiplicity="0..1" />
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.Store.tblTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTechnician">
+              <PropertyRef Name="TechID" />
+            </Principal>
+            <Dependent Role="tblTestOrder">
+              <PropertyRef Name="TechID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestOrder_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.Store.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.Store.tblTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblTestOrder">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestResults_tblTestOrder">
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.Store.tblTestOrder" Multiplicity="0..1" />
+          <End Role="tblTestResults" Type="ServiceDirectDBModel.Store.tblTestResults" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTestOrder">
+              <PropertyRef Name="TOID" />
+            </Principal>
+            <Dependent Role="tblTestResults">
+              <PropertyRef Name="TOID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblUTPMeter_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.Store.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblUTPMeter" Type="ServiceDirectDBModel.Store.tblUTPMeter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblUTPMeter">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <!--生成过程中发现错误:
+      警告 6013: 表/视图“ServiceDirectDB.dbo.vGauge”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="vGauge">
+        <Property Name="GaugeCode" Type="varchar" MaxLength="20" />
+        <Property Name="Model" Type="varchar" MaxLength="50" />
+        <Property Name="Size" Type="varchar" MaxLength="50" />
+        <Property Name="MfrName" Type="varchar" MaxLength="150" />
+        <Property Name="LastCalibrationDate" Type="datetime" />
+      </EntityType>
+      生成过程中发现错误:
+      警告 6013: 表/视图“ServiceDirectDB.dbo.vTestOrder”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+      
+      <EntityType Name="vTestOrder">
+        <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+        <Property Name="ServiceAddress" Type="varchar" MaxLength="150" />
+        <Property Name="MeterNumber" Type="varchar" MaxLength="20" />
+        <Property Name="Serial" Type="varchar" MaxLength="30" />
+        <Property Name="Location" Type="varchar" MaxLength="50" />
+        <Property Name="Status" Type="varchar" MaxLength="10" />
+        <Property Name="RP_CV1_AR" Type="float" />
+        <Property Name="RP_CV1_RV" Type="float" />
+        <Property Name="RP_CV2_Tight" Type="bit" />
+        <Property Name="RP_CV1_CR" Type="float" />
+        <Property Name="RP_CV2" Type="float" />
+        <Property Name="RP_Buffer" Type="float" />
+        <Property Name="DC_CV1" Type="float" />
+        <Property Name="DC_CV2" Type="float" />
+        <Property Name="PVB" Type="bit" />
+        <Property Name="SVB" Type="bit" />
+        <Property Name="AIV" Type="float" />
+        <Property Name="CV" Type="float" />
+        <Property Name="TechName" Type="varchar" MaxLength="20" />
+        <Property Name="TechCode" Type="varchar" MaxLength="20" />
+        <Property Name="Phone" Type="varchar" MaxLength="20" />
+        <Property Name="Firm" Type="varchar" MaxLength="50" />
+        <Property Name="FirmAddress" Type="varchar" MaxLength="100" />
+        <Property Name="FirmCity" Type="varchar" MaxLength="20" />
+        <Property Name="FirmState" Type="varchar" MaxLength="20" />
+        <Property Name="FirmZip" Type="varchar" MaxLength="10" />
+        <Property Name="MfrName" Type="varchar" MaxLength="150" />
+        <Property Name="Model" Type="varchar" MaxLength="50" />
+        <Property Name="Size" Type="varchar" MaxLength="50" />
+        <Property Name="Gauge Mfrname" Type="varchar" MaxLength="150" />
+        <Property Name="Gauge Size" Type="varchar" MaxLength="50" />
+        <Property Name="Gauge Model" Type="varchar" MaxLength="50" />
+        <Property Name="TestDate" Type="date" />
+        <Property Name="TestType" Type="varchar" MaxLength="20" />
+        <Property Name="LastCalibrationDate" Type="datetime" />
+        <Property Name="AR_TECP" Type="smallint" />
+        <Property Name="AR_LVWD_RK" Type="smallint" />
+        <Property Name="AR_AFPP" Type="smallint" />
+        <Property Name="AR_LVWD_RMK" Type="smallint" />
+        <Property Name="Comment" Type="varchar" MaxLength="200" />
+      </EntityType>-->
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ServiceDirectDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ServiceDirectDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl15DayNotice" EntityType="ServiceDirectDBModel.tbl15DayNotice" />
+          <EntitySet Name="tblAnnualfee" EntityType="ServiceDirectDBModel.tblAnnualfee" />
+          <EntitySet Name="tblBackflow" EntityType="ServiceDirectDBModel.tblBackflow" />
+          <EntitySet Name="tblBackflowRequireType" EntityType="ServiceDirectDBModel.tblBackflowRequireType" />
+          <EntitySet Name="tblBFPToWUE" EntityType="ServiceDirectDBModel.tblBFPToWUE" />
+          <EntitySet Name="tblCompletedTestOrder" EntityType="ServiceDirectDBModel.tblCompletedTestOrder" />
+          <EntitySet Name="tblDisconnectOrder" EntityType="ServiceDirectDBModel.tblDisconnectOrder" />
+          <EntitySet Name="tblFailureOrder" EntityType="ServiceDirectDBModel.tblFailureOrder" />
+          <EntitySet Name="tblGauge" EntityType="ServiceDirectDBModel.tblGauge" />
+          <EntitySet Name="tblInspectionOrder" EntityType="ServiceDirectDBModel.tblInspectionOrder" />
+          <EntitySet Name="tblManufacturer" EntityType="ServiceDirectDBModel.tblManufacturer" />
+          <EntitySet Name="tblModel" EntityType="ServiceDirectDBModel.tblModel" />
+          <EntitySet Name="tblShutOffOrder" EntityType="ServiceDirectDBModel.tblShutOffOrder" />
+          <EntitySet Name="tblSize" EntityType="ServiceDirectDBModel.tblSize" />
+          <EntitySet Name="tblTechnician" EntityType="ServiceDirectDBModel.tblTechnician" />
+          <EntitySet Name="tblTestOrder" EntityType="ServiceDirectDBModel.tblTestOrder" />
+          <EntitySet Name="tblTestResults" EntityType="ServiceDirectDBModel.tblTestResults" />
+          <EntitySet Name="tblUTPCustomer" EntityType="ServiceDirectDBModel.tblUTPCustomer" />
+          <EntitySet Name="tblUTPMeter" EntityType="ServiceDirectDBModel.tblUTPMeter" />
+          <EntitySet Name="tblWaterUsingEquipment" EntityType="ServiceDirectDBModel.tblWaterUsingEquipment" />
+          <AssociationSet Name="FK_tbl15DayNotice_tblTechnician" Association="ServiceDirectDBModel.FK_tbl15DayNotice_tblTechnician">
+            <End Role="tblTechnician" EntitySet="tblTechnician" />
+            <End Role="tbl15DayNotice" EntitySet="tbl15DayNotice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl15DayNotice_tblUTPCustomer" Association="ServiceDirectDBModel.FK_tbl15DayNotice_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tbl15DayNotice" EntitySet="tbl15DayNotice" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblAnnualfee_tblUTPCustomer" Association="ServiceDirectDBModel.FK_tblAnnualfee_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblAnnualfee" EntitySet="tblAnnualfee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBackflow_tblManufacturer" Association="ServiceDirectDBModel.FK_tblBackflow_tblManufacturer">
+            <End Role="tblManufacturer" EntitySet="tblManufacturer" />
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBackflow_tblModel" Association="ServiceDirectDBModel.FK_tblBackflow_tblModel">
+            <End Role="tblModel" EntitySet="tblModel" />
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBackflow_tblSize" Association="ServiceDirectDBModel.FK_tblBackflow_tblSize">
+            <End Role="tblSize" EntitySet="tblSize" />
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBFPToWUE_tblBackflow" Association="ServiceDirectDBModel.FK_tblBFPToWUE_tblBackflow">
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+            <End Role="tblBFPToWUE" EntitySet="tblBFPToWUE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestOrder_tblBackflow" Association="ServiceDirectDBModel.FK_tblTestOrder_tblBackflow">
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblInspectionOrder_tblBackflowRequireType" Association="ServiceDirectDBModel.FK_tblInspectionOrder_tblBackflowRequireType">
+            <End Role="tblBackflowRequireType" EntitySet="tblBackflowRequireType" />
+            <End Role="tblInspectionOrder" EntitySet="tblInspectionOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBFPToWUE_tblWaterUsingEquipment" Association="ServiceDirectDBModel.FK_tblBFPToWUE_tblWaterUsingEquipment">
+            <End Role="tblWaterUsingEquipment" EntitySet="tblWaterUsingEquipment" />
+            <End Role="tblBFPToWUE" EntitySet="tblBFPToWUE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblCompletedTestOrder_tblTestOrder" Association="ServiceDirectDBModel.FK_tblCompletedTestOrder_tblTestOrder">
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+            <End Role="tblCompletedTestOrder" EntitySet="tblCompletedTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblDisconnectOrder_tblUTPCustomer" Association="ServiceDirectDBModel.FK_tblDisconnectOrder_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblDisconnectOrder" EntitySet="tblDisconnectOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblFailureOrder_tblTestOrder" Association="ServiceDirectDBModel.FK_tblFailureOrder_tblTestOrder">
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+            <End Role="tblFailureOrder" EntitySet="tblFailureOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblGauge_tblManufacturer" Association="ServiceDirectDBModel.FK_tblGauge_tblManufacturer">
+            <End Role="tblManufacturer" EntitySet="tblManufacturer" />
+            <End Role="tblGauge" EntitySet="tblGauge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblGauge_tblModel" Association="ServiceDirectDBModel.FK_tblGauge_tblModel">
+            <End Role="tblModel" EntitySet="tblModel" />
+            <End Role="tblGauge" EntitySet="tblGauge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblGauge_tblSize" Association="ServiceDirectDBModel.FK_tblGauge_tblSize">
+            <End Role="tblSize" EntitySet="tblSize" />
+            <End Role="tblGauge" EntitySet="tblGauge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestOrder_tblGauge" Association="ServiceDirectDBModel.FK_tblTestOrder_tblGauge">
+            <End Role="tblGauge" EntitySet="tblGauge" />
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblInspectionOrder_tblUTPCustomer" Association="ServiceDirectDBModel.FK_tblInspectionOrder_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblInspectionOrder" EntitySet="tblInspectionOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblShutOffOrder_tblUTPCustomer" Association="ServiceDirectDBModel.FK_tblShutOffOrder_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblShutOffOrder" EntitySet="tblShutOffOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestOrder_tblTechnician" Association="ServiceDirectDBModel.FK_tblTestOrder_tblTechnician">
+            <End Role="tblTechnician" EntitySet="tblTechnician" />
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestOrder_tblUTPCustomer" Association="ServiceDirectDBModel.FK_tblTestOrder_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblTestResults_tblTestOrder" Association="ServiceDirectDBModel.FK_tblTestResults_tblTestOrder">
+            <End Role="tblTestOrder" EntitySet="tblTestOrder" />
+            <End Role="tblTestResults" EntitySet="tblTestResults" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblUTPMeter_tblUTPCustomer" Association="ServiceDirectDBModel.FK_tblUTPMeter_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblUTPMeter" EntitySet="tblUTPMeter" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblBackflow_tblUTPCustomer" Association="ServiceDirectDBModel.FK_tblBackflow_tblUTPCustomer">
+            <End Role="tblUTPCustomer" EntitySet="tblUTPCustomer" />
+            <End Role="tblBackflow" EntitySet="tblBackflow" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblInspectionOrder_tblModel" Association="ServiceDirectDBModel.FK_tblInspectionOrder_tblModel">
+            <End Role="tblModel" EntitySet="tblModel" />
+            <End Role="tblInspectionOrder" EntitySet="tblInspectionOrder" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblInspectionOrder_tblSize" Association="ServiceDirectDBModel.FK_tblInspectionOrder_tblSize">
+            <End Role="tblSize" EntitySet="tblSize" />
+            <End Role="tblInspectionOrder" EntitySet="tblInspectionOrder" />
+          </AssociationSet>
+          <EntitySet Name="vBackflow" EntityType="ServiceDirectDBModel.vBackflow" />
+        </EntityContainer>
+        <EntityType Name="tbl15DayNotice">
+          <Key>
+            <PropertyRef Name="FDNID" />
+          </Key>
+          <Property Name="FDNID" Type="Guid" Nullable="false" />
+          <Property Name="CustomerID" Type="Guid" />
+          <Property Name="TechID" Type="Guid" />
+          <Property Name="CreateDate" Type="DateTime" />
+          <Property Name="finalNoticeDate" Type="DateTime" />
+          <Property Name="Noticetype" Type="Int16" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblTechnician" Relationship="ServiceDirectDBModel.FK_tbl15DayNotice_tblTechnician" FromRole="tbl15DayNotice" ToRole="tblTechnician" />
+          <NavigationProperty Name="tblUTPCustomer" Relationship="ServiceDirectDBModel.FK_tbl15DayNotice_tblUTPCustomer" FromRole="tbl15DayNotice" ToRole="tblUTPCustomer" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblAnnualfee">
+          <Key>
+            <PropertyRef Name="AFID" />
+          </Key>
+          <Property Name="AFID" Type="Guid" Nullable="false" />
+          <Property Name="CustomerID" Type="Guid" />
+          <Property Name="Amount" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="CreateDate" Type="DateTime" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblUTPCustomer" Relationship="ServiceDirectDBModel.FK_tblAnnualfee_tblUTPCustomer" FromRole="tblAnnualfee" ToRole="tblUTPCustomer" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblBackflow">
+          <Key>
+            <PropertyRef Name="BFPID" />
+          </Key>
+          <Property Name="BFPID" Type="Guid" Nullable="false" />
+          <Property Name="SizeID" Type="Guid" />
+          <Property Name="MfrID" Type="Guid" />
+          <Property Name="ModelID" Type="Guid" />
+          <Property Name="Serial" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="TestInterval" Type="Int16" />
+          <Property Name="Location" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastTestDate" Type="DateTime" />
+          <Property Name="NextTestDate" Type="DateTime" />
+          <Property Name="Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="Comment" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblManufacturer" Relationship="ServiceDirectDBModel.FK_tblBackflow_tblManufacturer" FromRole="tblBackflow" ToRole="tblManufacturer" />
+          <NavigationProperty Name="tblModel" Relationship="ServiceDirectDBModel.FK_tblBackflow_tblModel" FromRole="tblBackflow" ToRole="tblModel" />
+          <NavigationProperty Name="tblSize" Relationship="ServiceDirectDBModel.FK_tblBackflow_tblSize" FromRole="tblBackflow" ToRole="tblSize" />
+          <NavigationProperty Name="tblBFPToWUE" Relationship="ServiceDirectDBModel.FK_tblBFPToWUE_tblBackflow" FromRole="tblBackflow" ToRole="tblBFPToWUE" />
+          <NavigationProperty Name="tblTestOrder" Relationship="ServiceDirectDBModel.FK_tblTestOrder_tblBackflow" FromRole="tblBackflow" ToRole="tblTestOrder" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <Property Type="String" Name="ServiceOfType" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="CustomerID" />
+          <NavigationProperty Name="tblUTPCustomer" Relationship="ServiceDirectDBModel.FK_tblBackflow_tblUTPCustomer" FromRole="tblBackflow" ToRole="tblUTPCustomer" />
+        </EntityType>
+        <EntityType Name="tblBackflowRequireType">
+          <Key>
+            <PropertyRef Name="BRTID" />
+          </Key>
+          <Property Name="BRTID" Type="Guid" Nullable="false" />
+          <Property Name="BRT" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblInspectionOrder" Relationship="ServiceDirectDBModel.FK_tblInspectionOrder_tblBackflowRequireType" FromRole="tblBackflowRequireType" ToRole="tblInspectionOrder" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblBFPToWUE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="BFPID" Type="Guid" />
+          <Property Name="WUEID" Type="Guid" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblBackflow" Relationship="ServiceDirectDBModel.FK_tblBFPToWUE_tblBackflow" FromRole="tblBFPToWUE" ToRole="tblBackflow" />
+          <NavigationProperty Name="tblWaterUsingEquipment" Relationship="ServiceDirectDBModel.FK_tblBFPToWUE_tblWaterUsingEquipment" FromRole="tblBFPToWUE" ToRole="tblWaterUsingEquipment" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblCompletedTestOrder">
+          <Key>
+            <PropertyRef Name="CTOID" />
+          </Key>
+          <Property Name="CTOID" Type="Guid" Nullable="false" />
+          <Property Name="TOID" Type="Guid" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblTestOrder" Relationship="ServiceDirectDBModel.FK_tblCompletedTestOrder_tblTestOrder" FromRole="tblCompletedTestOrder" ToRole="tblTestOrder" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblDisconnectOrder">
+          <Key>
+            <PropertyRef Name="DOID" />
+          </Key>
+          <Property Name="DOID" Type="Guid" Nullable="false" />
+          <Property Name="CustomerID" Type="Guid" />
+          <Property Name="CreateDate" Type="DateTime" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblUTPCustomer" Relationship="ServiceDirectDBModel.FK_tblDisconnectOrder_tblUTPCustomer" FromRole="tblDisconnectOrder" ToRole="tblUTPCustomer" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblFailureOrder">
+          <Key>
+            <PropertyRef Name="FOID" />
+          </Key>
+          <Property Name="FOID" Type="Guid" Nullable="false" />
+          <Property Name="TOID" Type="Guid" />
+          <Property Name="CreateDate" Type="DateTime" />
+          <Property Name="DueDate" Type="DateTime" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblTestOrder" Relationship="ServiceDirectDBModel.FK_tblFailureOrder_tblTestOrder" FromRole="tblFailureOrder" ToRole="tblTestOrder" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblGauge">
+          <Key>
+            <PropertyRef Name="GaugeID" />
+          </Key>
+          <Property Name="GaugeID" Type="Guid" Nullable="false" />
+          <Property Name="SizeID" Type="Guid" />
+          <Property Name="MfrID" Type="Guid" />
+          <Property Name="ModelID" Type="Guid" />
+          <Property Name="LastCalibrationDate" Type="DateTime" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblManufacturer" Relationship="ServiceDirectDBModel.FK_tblGauge_tblManufacturer" FromRole="tblGauge" ToRole="tblManufacturer" />
+          <NavigationProperty Name="tblModel" Relationship="ServiceDirectDBModel.FK_tblGauge_tblModel" FromRole="tblGauge" ToRole="tblModel" />
+          <NavigationProperty Name="tblSize" Relationship="ServiceDirectDBModel.FK_tblGauge_tblSize" FromRole="tblGauge" ToRole="tblSize" />
+          <NavigationProperty Name="tblTestOrder" Relationship="ServiceDirectDBModel.FK_tblTestOrder_tblGauge" FromRole="tblGauge" ToRole="tblTestOrder" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <Property Type="String" Name="GaugeCode" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblInspectionOrder">
+          <Key>
+            <PropertyRef Name="IOID" />
+          </Key>
+          <Property Name="CustomerID" Type="Guid" Nullable="false" />
+          <Property Name="IOID" Type="Guid" Nullable="false" />
+          <Property Name="BRTID" Type="Guid" />
+          <Property Name="InspectionDate" Type="DateTime" />
+          <Property Name="InspectionTime" Type="Time" />
+          <Property Name="CreateDate" Type="DateTime" />
+          <Property Name="Due_Date" Type="DateTime" />
+          <Property Name="Comment" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="Action" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblBackflowRequireType" Relationship="ServiceDirectDBModel.FK_tblInspectionOrder_tblBackflowRequireType" FromRole="tblInspectionOrder" ToRole="tblBackflowRequireType" />
+          <NavigationProperty Name="tblUTPCustomer" Relationship="ServiceDirectDBModel.FK_tblInspectionOrder_tblUTPCustomer" FromRole="tblInspectionOrder" ToRole="tblUTPCustomer" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <Property Type="Guid" Name="SCTID" />
+          <Property Type="Guid" Name="SizeID" />
+          <Property Type="Guid" Name="MfrID" />
+          <Property Type="Guid" Name="ModelID" />
+          <Property Type="String" Name="IO_3" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="IO_4" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="IO_5" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Serial" MaxLength="10" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblModel" Relationship="ServiceDirectDBModel.FK_tblInspectionOrder_tblModel" FromRole="tblInspectionOrder" ToRole="tblModel" />
+          <NavigationProperty Name="tblSize" Relationship="ServiceDirectDBModel.FK_tblInspectionOrder_tblSize" FromRole="tblInspectionOrder" ToRole="tblSize" />
+        </EntityType>
+        <EntityType Name="tblManufacturer">
+          <Key>
+            <PropertyRef Name="MfrID" />
+          </Key>
+          <Property Name="MfrID" Type="Guid" Nullable="false" />
+          <Property Name="MfrName" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="MfrType" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblBackflow" Relationship="ServiceDirectDBModel.FK_tblBackflow_tblManufacturer" FromRole="tblManufacturer" ToRole="tblBackflow" />
+          <NavigationProperty Name="tblGauge" Relationship="ServiceDirectDBModel.FK_tblGauge_tblManufacturer" FromRole="tblManufacturer" ToRole="tblGauge" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblModel">
+          <Key>
+            <PropertyRef Name="ModelID" />
+          </Key>
+          <Property Name="ModelID" Type="Guid" Nullable="false" />
+          <Property Name="Model" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="ModelType" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblBackflow" Relationship="ServiceDirectDBModel.FK_tblBackflow_tblModel" FromRole="tblModel" ToRole="tblBackflow" />
+          <NavigationProperty Name="tblGauge" Relationship="ServiceDirectDBModel.FK_tblGauge_tblModel" FromRole="tblModel" ToRole="tblGauge" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <NavigationProperty Name="tblInspectionOrder" Relationship="ServiceDirectDBModel.FK_tblInspectionOrder_tblModel" FromRole="tblModel" ToRole="tblInspectionOrder" />
+        </EntityType>
+        <EntityType Name="tblShutOffOrder">
+          <Key>
+            <PropertyRef Name="SOOID" />
+          </Key>
+          <Property Name="SOOID" Type="Guid" Nullable="false" />
+          <Property Name="CustomerID" Type="Guid" />
+          <Property Name="CreateDate" Type="DateTime" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblUTPCustomer" Relationship="ServiceDirectDBModel.FK_tblShutOffOrder_tblUTPCustomer" FromRole="tblShutOffOrder" ToRole="tblUTPCustomer" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblSize">
+          <Key>
+            <PropertyRef Name="SizeID" />
+          </Key>
+          <Property Name="SizeID" Type="Guid" Nullable="false" />
+          <Property Name="Size" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="SizeType" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblBackflow" Relationship="ServiceDirectDBModel.FK_tblBackflow_tblSize" FromRole="tblSize" ToRole="tblBackflow" />
+          <NavigationProperty Name="tblGauge" Relationship="ServiceDirectDBModel.FK_tblGauge_tblSize" FromRole="tblSize" ToRole="tblGauge" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <NavigationProperty Name="tblInspectionOrder" Relationship="ServiceDirectDBModel.FK_tblInspectionOrder_tblSize" FromRole="tblSize" ToRole="tblInspectionOrder" />
+        </EntityType>
+        <EntityType Name="tblTechnician">
+          <Key>
+            <PropertyRef Name="TechID" />
+          </Key>
+          <Property Name="TechID" Type="Guid" Nullable="false" />
+          <Property Name="TechName" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Phone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Firm" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="FirmAddress" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="FirmCity" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="FirmState" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="FirmZip" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tbl15DayNotice" Relationship="ServiceDirectDBModel.FK_tbl15DayNotice_tblTechnician" FromRole="tblTechnician" ToRole="tbl15DayNotice" />
+          <NavigationProperty Name="tblTestOrder" Relationship="ServiceDirectDBModel.FK_tblTestOrder_tblTechnician" FromRole="tblTechnician" ToRole="tblTestOrder" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <Property Type="String" Name="TechCode" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblTestOrder">
+          <Key>
+            <PropertyRef Name="TOID" />
+          </Key>
+          <Property Name="TOID" Type="Guid" Nullable="false" />
+          <Property Name="BFPID" Type="Guid" />
+          <Property Name="CustomerID" Type="Guid" />
+          <Property Name="TechID" Type="Guid" />
+          <Property Name="GaugeID" Type="Guid" />
+          <Property Name="TestDate" Type="DateTime" />
+          <Property Name="TestTime" Type="Time" />
+          <Property Name="TestType" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="AR_TECP" Type="Int16" />
+          <Property Name="AR_LVWD_RK" Type="Int16" />
+          <Property Name="AR_AFPP" Type="Int16" />
+          <Property Name="AR_LVWD_RMK" Type="Int16" />
+          <Property Name="Comment" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblBackflow" Relationship="ServiceDirectDBModel.FK_tblTestOrder_tblBackflow" FromRole="tblTestOrder" ToRole="tblBackflow" />
+          <NavigationProperty Name="tblCompletedTestOrder" Relationship="ServiceDirectDBModel.FK_tblCompletedTestOrder_tblTestOrder" FromRole="tblTestOrder" ToRole="tblCompletedTestOrder" />
+          <NavigationProperty Name="tblFailureOrder" Relationship="ServiceDirectDBModel.FK_tblFailureOrder_tblTestOrder" FromRole="tblTestOrder" ToRole="tblFailureOrder" />
+          <NavigationProperty Name="tblGauge" Relationship="ServiceDirectDBModel.FK_tblTestOrder_tblGauge" FromRole="tblTestOrder" ToRole="tblGauge" />
+          <NavigationProperty Name="tblTechnician" Relationship="ServiceDirectDBModel.FK_tblTestOrder_tblTechnician" FromRole="tblTestOrder" ToRole="tblTechnician" />
+          <NavigationProperty Name="tblUTPCustomer" Relationship="ServiceDirectDBModel.FK_tblTestOrder_tblUTPCustomer" FromRole="tblTestOrder" ToRole="tblUTPCustomer" />
+          <NavigationProperty Name="tblTestResults" Relationship="ServiceDirectDBModel.FK_tblTestResults_tblTestOrder" FromRole="tblTestOrder" ToRole="tblTestResults" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <EntityType Name="tblTestResults">
+          <Key>
+            <PropertyRef Name="ResultID" />
+          </Key>
+          <Property Name="ResultID" Type="Guid" Nullable="false" />
+          <Property Name="TOID" Type="Guid" />
+          <Property Name="Status" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="RP_CV1_AR" Type="Double" />
+          <Property Name="RP_CV1_RV" Type="Double" />
+          <Property Name="RP_CV2_Tight" Type="Boolean" />
+          <Property Name="RP_CV1_CR" Type="Double" />
+          <Property Name="RP_CV2" Type="Double" />
+          <Property Name="RP_Buffer" Type="Double" />
+          <Property Name="DC_CV1" Type="Double" />
+          <Property Name="DC_CV2" Type="Double" />
+          <Property Name="PVB" Type="Boolean" />
+          <Property Name="SVB" Type="Boolean" />
+          <Property Name="AIV" Type="Double" />
+          <Property Name="CV" Type="Double" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblTestOrder" Relationship="ServiceDirectDBModel.FK_tblTestResults_tblTestOrder" FromRole="tblTestResults" ToRole="tblTestOrder" />
+          <Property Type="Boolean" Name="IsDeleted" />
+          <Property Type="String" Name="Comment_RC" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Comment_VC" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblUTPCustomer">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="Guid" Nullable="false" />
+          <Property Name="Account" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="BussinessName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Address" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="ServiceAddress" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="BillingAddress" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Zip" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tbl15DayNotice" Relationship="ServiceDirectDBModel.FK_tbl15DayNotice_tblUTPCustomer" FromRole="tblUTPCustomer" ToRole="tbl15DayNotice" />
+          <NavigationProperty Name="tblAnnualfee" Relationship="ServiceDirectDBModel.FK_tblAnnualfee_tblUTPCustomer" FromRole="tblUTPCustomer" ToRole="tblAnnualfee" />
+          <NavigationProperty Name="tblDisconnectOrder" Relationship="ServiceDirectDBModel.FK_tblDisconnectOrder_tblUTPCustomer" FromRole="tblUTPCustomer" ToRole="tblDisconnectOrder" />
+          <NavigationProperty Name="tblInspectionOrder" Relationship="ServiceDirectDBModel.FK_tblInspectionOrder_tblUTPCustomer" FromRole="tblUTPCustomer" ToRole="tblInspectionOrder" />
+          <NavigationProperty Name="tblShutOffOrder" Relationship="ServiceDirectDBModel.FK_tblShutOffOrder_tblUTPCustomer" FromRole="tblUTPCustomer" ToRole="tblShutOffOrder" />
+          <NavigationProperty Name="tblTestOrder" Relationship="ServiceDirectDBModel.FK_tblTestOrder_tblUTPCustomer" FromRole="tblUTPCustomer" ToRole="tblTestOrder" />
+          <NavigationProperty Name="tblUTPMeter" Relationship="ServiceDirectDBModel.FK_tblUTPMeter_tblUTPCustomer" FromRole="tblUTPCustomer" ToRole="tblUTPMeter" />
+          <NavigationProperty Name="tblBackflow" Relationship="ServiceDirectDBModel.FK_tblBackflow_tblUTPCustomer" FromRole="tblUTPCustomer" ToRole="tblBackflow" />
+        </EntityType>
+        <EntityType Name="tblUTPMeter">
+          <Key>
+            <PropertyRef Name="MeterID" />
+          </Key>
+          <Property Name="MeterID" Type="Guid" Nullable="false" />
+          <Property Name="CustomerID" Type="Guid" />
+          <Property Name="MeterNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="tblUTPCustomer" Relationship="ServiceDirectDBModel.FK_tblUTPMeter_tblUTPCustomer" FromRole="tblUTPMeter" ToRole="tblUTPCustomer" />
+        </EntityType>
+        <EntityType Name="tblWaterUsingEquipment">
+          <Key>
+            <PropertyRef Name="WUEID" />
+          </Key>
+          <Property Name="WUEID" Type="Guid" Nullable="false" />
+          <Property Name="WUE" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CreatedByID" Type="Guid" />
+          <Property Name="LastModifiedByID" Type="Guid" />
+          <Property Name="CreatedDate" Type="DateTime" />
+          <Property Name="LastModifiedDate" Type="DateTime" />
+          <Property Name="OwnerID" Type="Guid" />
+          <Property Name="SystemModstamp" Type="DateTime" />
+          <NavigationProperty Name="tblBFPToWUE" Relationship="ServiceDirectDBModel.FK_tblBFPToWUE_tblWaterUsingEquipment" FromRole="tblWaterUsingEquipment" ToRole="tblBFPToWUE" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+        <Association Name="FK_tbl15DayNotice_tblTechnician">
+          <End Role="tblTechnician" Type="ServiceDirectDBModel.tblTechnician" Multiplicity="0..1" />
+          <End Role="tbl15DayNotice" Type="ServiceDirectDBModel.tbl15DayNotice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTechnician">
+              <PropertyRef Name="TechID" />
+            </Principal>
+            <Dependent Role="tbl15DayNotice">
+              <PropertyRef Name="TechID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl15DayNotice_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tbl15DayNotice" Type="ServiceDirectDBModel.tbl15DayNotice" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tbl15DayNotice">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblAnnualfee_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblAnnualfee" Type="ServiceDirectDBModel.tblAnnualfee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblAnnualfee">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBackflow_tblManufacturer">
+          <End Role="tblManufacturer" Type="ServiceDirectDBModel.tblManufacturer" Multiplicity="0..1" />
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.tblBackflow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblManufacturer">
+              <PropertyRef Name="MfrID" />
+            </Principal>
+            <Dependent Role="tblBackflow">
+              <PropertyRef Name="MfrID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBackflow_tblModel">
+          <End Role="tblModel" Type="ServiceDirectDBModel.tblModel" Multiplicity="0..1" />
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.tblBackflow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblModel">
+              <PropertyRef Name="ModelID" />
+            </Principal>
+            <Dependent Role="tblBackflow">
+              <PropertyRef Name="ModelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBackflow_tblSize">
+          <End Role="tblSize" Type="ServiceDirectDBModel.tblSize" Multiplicity="0..1" />
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.tblBackflow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSize">
+              <PropertyRef Name="SizeID" />
+            </Principal>
+            <Dependent Role="tblBackflow">
+              <PropertyRef Name="SizeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBFPToWUE_tblBackflow">
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.tblBackflow" Multiplicity="0..1" />
+          <End Role="tblBFPToWUE" Type="ServiceDirectDBModel.tblBFPToWUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBackflow">
+              <PropertyRef Name="BFPID" />
+            </Principal>
+            <Dependent Role="tblBFPToWUE">
+              <PropertyRef Name="BFPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestOrder_tblBackflow">
+          <End Role="tblBackflow" Type="ServiceDirectDBModel.tblBackflow" Multiplicity="0..1" />
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.tblTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBackflow">
+              <PropertyRef Name="BFPID" />
+            </Principal>
+            <Dependent Role="tblTestOrder">
+              <PropertyRef Name="BFPID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblInspectionOrder_tblBackflowRequireType">
+          <End Role="tblBackflowRequireType" Type="ServiceDirectDBModel.tblBackflowRequireType" Multiplicity="0..1" />
+          <End Role="tblInspectionOrder" Type="ServiceDirectDBModel.tblInspectionOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBackflowRequireType">
+              <PropertyRef Name="BRTID" />
+            </Principal>
+            <Dependent Role="tblInspectionOrder">
+              <PropertyRef Name="BRTID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBFPToWUE_tblWaterUsingEquipment">
+          <End Role="tblWaterUsingEquipment" Type="ServiceDirectDBModel.tblWaterUsingEquipment" Multiplicity="0..1" />
+          <End Role="tblBFPToWUE" Type="ServiceDirectDBModel.tblBFPToWUE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblWaterUsingEquipment">
+              <PropertyRef Name="WUEID" />
+            </Principal>
+            <Dependent Role="tblBFPToWUE">
+              <PropertyRef Name="WUEID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblCompletedTestOrder_tblTestOrder">
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.tblTestOrder" Multiplicity="0..1" />
+          <End Role="tblCompletedTestOrder" Type="ServiceDirectDBModel.tblCompletedTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTestOrder">
+              <PropertyRef Name="TOID" />
+            </Principal>
+            <Dependent Role="tblCompletedTestOrder">
+              <PropertyRef Name="TOID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblDisconnectOrder_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblDisconnectOrder" Type="ServiceDirectDBModel.tblDisconnectOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblDisconnectOrder">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblFailureOrder_tblTestOrder">
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.tblTestOrder" Multiplicity="0..1" />
+          <End Role="tblFailureOrder" Type="ServiceDirectDBModel.tblFailureOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTestOrder">
+              <PropertyRef Name="TOID" />
+            </Principal>
+            <Dependent Role="tblFailureOrder">
+              <PropertyRef Name="TOID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblGauge_tblManufacturer">
+          <End Role="tblManufacturer" Type="ServiceDirectDBModel.tblManufacturer" Multiplicity="0..1" />
+          <End Role="tblGauge" Type="ServiceDirectDBModel.tblGauge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblManufacturer">
+              <PropertyRef Name="MfrID" />
+            </Principal>
+            <Dependent Role="tblGauge">
+              <PropertyRef Name="MfrID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblGauge_tblModel">
+          <End Role="tblModel" Type="ServiceDirectDBModel.tblModel" Multiplicity="0..1" />
+          <End Role="tblGauge" Type="ServiceDirectDBModel.tblGauge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblModel">
+              <PropertyRef Name="ModelID" />
+            </Principal>
+            <Dependent Role="tblGauge">
+              <PropertyRef Name="ModelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblGauge_tblSize">
+          <End Role="tblSize" Type="ServiceDirectDBModel.tblSize" Multiplicity="0..1" />
+          <End Role="tblGauge" Type="ServiceDirectDBModel.tblGauge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSize">
+              <PropertyRef Name="SizeID" />
+            </Principal>
+            <Dependent Role="tblGauge">
+              <PropertyRef Name="SizeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestOrder_tblGauge">
+          <End Role="tblGauge" Type="ServiceDirectDBModel.tblGauge" Multiplicity="0..1" />
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.tblTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblGauge">
+              <PropertyRef Name="GaugeID" />
+            </Principal>
+            <Dependent Role="tblTestOrder">
+              <PropertyRef Name="GaugeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblInspectionOrder_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.tblUTPCustomer" Multiplicity="1" />
+          <End Role="tblInspectionOrder" Type="ServiceDirectDBModel.tblInspectionOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblInspectionOrder">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblShutOffOrder_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblShutOffOrder" Type="ServiceDirectDBModel.tblShutOffOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblShutOffOrder">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestOrder_tblTechnician">
+          <End Role="tblTechnician" Type="ServiceDirectDBModel.tblTechnician" Multiplicity="0..1" />
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.tblTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTechnician">
+              <PropertyRef Name="TechID" />
+            </Principal>
+            <Dependent Role="tblTestOrder">
+              <PropertyRef Name="TechID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestOrder_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.tblTestOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblTestOrder">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblTestResults_tblTestOrder">
+          <End Role="tblTestOrder" Type="ServiceDirectDBModel.tblTestOrder" Multiplicity="0..1" />
+          <End Role="tblTestResults" Type="ServiceDirectDBModel.tblTestResults" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblTestOrder">
+              <PropertyRef Name="TOID" />
+            </Principal>
+            <Dependent Role="tblTestResults">
+              <PropertyRef Name="TOID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblUTPMeter_tblUTPCustomer">
+          <End Role="tblUTPCustomer" Type="ServiceDirectDBModel.tblUTPCustomer" Multiplicity="0..1" />
+          <End Role="tblUTPMeter" Type="ServiceDirectDBModel.tblUTPMeter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblUTPMeter">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblBackflow_tblUTPCustomer">
+          <End Type="ServiceDirectDBModel.tblUTPCustomer" Role="tblUTPCustomer" Multiplicity="0..1" />
+          <End Type="ServiceDirectDBModel.tblBackflow" Role="tblBackflow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblUTPCustomer">
+              <PropertyRef Name="CustomerID" />
+            </Principal>
+            <Dependent Role="tblBackflow">
+              <PropertyRef Name="CustomerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblInspectionOrder_tblModel">
+          <End Type="ServiceDirectDBModel.tblModel" Role="tblModel" Multiplicity="0..1" />
+          <End Type="ServiceDirectDBModel.tblInspectionOrder" Role="tblInspectionOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblModel">
+              <PropertyRef Name="ModelID" />
+            </Principal>
+            <Dependent Role="tblInspectionOrder">
+              <PropertyRef Name="ModelID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblInspectionOrder_tblSize">
+          <End Type="ServiceDirectDBModel.tblSize" Role="tblSize" Multiplicity="0..1" />
+          <End Type="ServiceDirectDBModel.tblInspectionOrder" Role="tblInspectionOrder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblSize">
+              <PropertyRef Name="SizeID" />
+            </Principal>
+            <Dependent Role="tblInspectionOrder">
+              <PropertyRef Name="SizeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="vBackflow">
+          <Key>
+            <PropertyRef Name="BFPID" />
+          </Key>
+          <Property Type="Guid" Name="BFPID" Nullable="false" />
+          <Property Type="String" Name="Size" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="MfrName" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Model" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Serial" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="TestInterval" />
+          <Property Type="String" Name="Location" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="LastTestDate" />
+          <Property Type="DateTime" Name="NextTestDate" />
+          <Property Type="String" Name="Status" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Comment" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CustomerName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BussinessName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="CreatedDate" />
+          <Property Type="Boolean" Name="IsDeleted" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ServiceDirectDBModelStoreContainer" CdmEntityContainer="ServiceDirectDBEntities">
+          <EntitySetMapping Name="tbl15DayNotice"><EntityTypeMapping TypeName="ServiceDirectDBModel.tbl15DayNotice"><MappingFragment StoreEntitySet="tbl15DayNotice">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="FDNID" ColumnName="FDNID" />
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="TechID" ColumnName="TechID" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="finalNoticeDate" ColumnName="finalNoticeDate" />
+            <ScalarProperty Name="Noticetype" ColumnName="Noticetype" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblAnnualfee"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblAnnualfee"><MappingFragment StoreEntitySet="tblAnnualfee">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="AFID" ColumnName="AFID" />
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="Amount" ColumnName="Amount" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblBackflow"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblBackflow"><MappingFragment StoreEntitySet="tblBackflow">
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="ServiceOfType" ColumnName="ServiceOfType" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="BFPID" ColumnName="BFPID" />
+            <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+            <ScalarProperty Name="MfrID" ColumnName="MfrID" />
+            <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+            <ScalarProperty Name="Serial" ColumnName="Serial" />
+            <ScalarProperty Name="TestInterval" ColumnName="TestInterval" />
+            <ScalarProperty Name="Location" ColumnName="Location" />
+            <ScalarProperty Name="LastTestDate" ColumnName="LastTestDate" />
+            <ScalarProperty Name="NextTestDate" ColumnName="NextTestDate" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblBackflowRequireType"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblBackflowRequireType"><MappingFragment StoreEntitySet="tblBackflowRequireType">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="BRTID" ColumnName="BRTID" />
+            <ScalarProperty Name="BRT" ColumnName="BRT" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblBFPToWUE"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblBFPToWUE"><MappingFragment StoreEntitySet="tblBFPToWUE">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="BFPID" ColumnName="BFPID" />
+            <ScalarProperty Name="WUEID" ColumnName="WUEID" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblCompletedTestOrder"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblCompletedTestOrder"><MappingFragment StoreEntitySet="tblCompletedTestOrder">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CTOID" ColumnName="CTOID" />
+            <ScalarProperty Name="TOID" ColumnName="TOID" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblDisconnectOrder"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblDisconnectOrder"><MappingFragment StoreEntitySet="tblDisconnectOrder">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="DOID" ColumnName="DOID" />
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblFailureOrder"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblFailureOrder"><MappingFragment StoreEntitySet="tblFailureOrder">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="FOID" ColumnName="FOID" />
+            <ScalarProperty Name="TOID" ColumnName="TOID" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblGauge"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblGauge"><MappingFragment StoreEntitySet="tblGauge">
+            <ScalarProperty Name="GaugeCode" ColumnName="GaugeCode" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="GaugeID" ColumnName="GaugeID" />
+            <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+            <ScalarProperty Name="MfrID" ColumnName="MfrID" />
+            <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+            <ScalarProperty Name="LastCalibrationDate" ColumnName="LastCalibrationDate" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblInspectionOrder"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblInspectionOrder"><MappingFragment StoreEntitySet="tblInspectionOrder">
+            <ScalarProperty Name="Serial" ColumnName="Serial" />
+                <ScalarProperty Name="IO_5" ColumnName="IO_5" />
+                <ScalarProperty Name="IO_4" ColumnName="IO_4" />
+                <ScalarProperty Name="IO_3" ColumnName="IO_3" />
+                <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+                <ScalarProperty Name="MfrID" ColumnName="MfrID" />
+                <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+                <ScalarProperty Name="SCTID" ColumnName="SCTID" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="IOID" ColumnName="IOID" />
+            <ScalarProperty Name="BRTID" ColumnName="BRTID" />
+            <ScalarProperty Name="InspectionDate" ColumnName="InspectionDate" />
+            <ScalarProperty Name="InspectionTime" ColumnName="InspectionTime" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="Due_Date" ColumnName="Due Date" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+            <ScalarProperty Name="Action" ColumnName="Action" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblManufacturer"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblManufacturer"><MappingFragment StoreEntitySet="tblManufacturer">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="MfrID" ColumnName="MfrID" />
+            <ScalarProperty Name="MfrName" ColumnName="MfrName" />
+            <ScalarProperty Name="MfrType" ColumnName="MfrType" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblModel"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblModel"><MappingFragment StoreEntitySet="tblModel">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+            <ScalarProperty Name="Model" ColumnName="Model" />
+            <ScalarProperty Name="ModelType" ColumnName="ModelType" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblShutOffOrder"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblShutOffOrder"><MappingFragment StoreEntitySet="tblShutOffOrder">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="SOOID" ColumnName="SOOID" />
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblSize"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblSize"><MappingFragment StoreEntitySet="tblSize">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+            <ScalarProperty Name="Size" ColumnName="Size" />
+            <ScalarProperty Name="SizeType" ColumnName="SizeType" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblTechnician"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblTechnician"><MappingFragment StoreEntitySet="tblTechnician">
+            <ScalarProperty Name="TechCode" ColumnName="TechCode" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="TechID" ColumnName="TechID" />
+            <ScalarProperty Name="TechName" ColumnName="TechName" />
+            <ScalarProperty Name="Phone" ColumnName="Phone" />
+            <ScalarProperty Name="Firm" ColumnName="Firm" />
+            <ScalarProperty Name="FirmAddress" ColumnName="FirmAddress" />
+            <ScalarProperty Name="FirmCity" ColumnName="FirmCity" />
+            <ScalarProperty Name="FirmState" ColumnName="FirmState" />
+            <ScalarProperty Name="FirmZip" ColumnName="FirmZip" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblTestOrder"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblTestOrder"><MappingFragment StoreEntitySet="tblTestOrder">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="TOID" ColumnName="TOID" />
+            <ScalarProperty Name="BFPID" ColumnName="BFPID" />
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="TechID" ColumnName="TechID" />
+            <ScalarProperty Name="GaugeID" ColumnName="GaugeID" />
+            <ScalarProperty Name="TestDate" ColumnName="TestDate" />
+            <ScalarProperty Name="TestTime" ColumnName="TestTime" />
+            <ScalarProperty Name="TestType" ColumnName="TestType" />
+            <ScalarProperty Name="AR_TECP" ColumnName="AR_TECP" />
+            <ScalarProperty Name="AR_LVWD_RK" ColumnName="AR_LVWD_RK" />
+            <ScalarProperty Name="AR_AFPP" ColumnName="AR_AFPP" />
+            <ScalarProperty Name="AR_LVWD_RMK" ColumnName="AR_LVWD_RMK" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblTestResults"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblTestResults"><MappingFragment StoreEntitySet="tblTestResults">
+            <ScalarProperty Name="Comment_VC" ColumnName="Comment_VC" />
+                <ScalarProperty Name="Comment_RC" ColumnName="Comment_RC" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="ResultID" ColumnName="ResultID" />
+            <ScalarProperty Name="TOID" ColumnName="TOID" />
+            <ScalarProperty Name="Status" ColumnName="Status" />
+            <ScalarProperty Name="RP_CV1_AR" ColumnName="RP_CV1_AR" />
+            <ScalarProperty Name="RP_CV1_RV" ColumnName="RP_CV1_RV" />
+            <ScalarProperty Name="RP_CV2_Tight" ColumnName="RP_CV2_Tight" />
+            <ScalarProperty Name="RP_CV1_CR" ColumnName="RP_CV1_CR" />
+            <ScalarProperty Name="RP_CV2" ColumnName="RP_CV2" />
+            <ScalarProperty Name="RP_Buffer" ColumnName="RP_Buffer" />
+            <ScalarProperty Name="DC_CV1" ColumnName="DC_CV1" />
+            <ScalarProperty Name="DC_CV2" ColumnName="DC_CV2" />
+            <ScalarProperty Name="PVB" ColumnName="PVB" />
+            <ScalarProperty Name="SVB" ColumnName="SVB" />
+            <ScalarProperty Name="AIV" ColumnName="AIV" />
+            <ScalarProperty Name="CV" ColumnName="CV" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblUTPCustomer"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblUTPCustomer"><MappingFragment StoreEntitySet="tblUTPCustomer">
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="Account" ColumnName="Account" />
+            <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+            <ScalarProperty Name="BussinessName" ColumnName="BussinessName" />
+            <ScalarProperty Name="Address" ColumnName="Address" />
+            <ScalarProperty Name="ServiceAddress" ColumnName="ServiceAddress" />
+            <ScalarProperty Name="BillingAddress" ColumnName="BillingAddress" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Zip" ColumnName="Zip" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblUTPMeter"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblUTPMeter"><MappingFragment StoreEntitySet="tblUTPMeter">
+            <ScalarProperty Name="MeterID" ColumnName="MeterID" />
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="MeterNumber" ColumnName="MeterNumber" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblWaterUsingEquipment"><EntityTypeMapping TypeName="ServiceDirectDBModel.tblWaterUsingEquipment"><MappingFragment StoreEntitySet="tblWaterUsingEquipment">
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="WUEID" ColumnName="WUEID" />
+            <ScalarProperty Name="WUE" ColumnName="WUE" />
+            <ScalarProperty Name="CreatedByID" ColumnName="CreatedByID" />
+            <ScalarProperty Name="LastModifiedByID" ColumnName="LastModifiedByID" />
+            <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+            <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+            <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+            <ScalarProperty Name="SystemModstamp" ColumnName="SystemModstamp" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vBackflow">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vBackflow">
+              <MappingFragment StoreEntitySet="vBackflow">
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="BussinessName" ColumnName="BussinessName" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="NextTestDate" ColumnName="NextTestDate" />
+                <ScalarProperty Name="LastTestDate" ColumnName="LastTestDate" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="TestInterval" ColumnName="TestInterval" />
+                <ScalarProperty Name="Serial" ColumnName="Serial" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="MfrName" ColumnName="MfrName" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="BFPID" ColumnName="BFPID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ServiceDirectDB" ZoomLevel="72">
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tbl15DayNotice" Width="1.5" PointX="6" PointY="21.25" Height="3.8802294921874996" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblAnnualfee" Width="1.5" PointX="3" PointY="21" Height="3.3071704101562531" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblBackflow" Width="1.5" PointX="0.75" PointY="9.5" Height="5.4083870442708335" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblBackflowRequireType" Width="1.5" PointX="3.75" PointY="1.625" Height="2.9251310221354156" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblBFPToWUE" Width="1.5" PointX="3" PointY="9.5" Height="3.3071704101562496" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblCompletedTestOrder" Width="1.5" PointX="5.25" PointY="10.5" Height="2.9251310221354156" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblDisconnectOrder" Width="1.5" PointX="3" PointY="25" Height="3.1161507161458353" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblFailureOrder" Width="1.5" PointX="5.25" PointY="6.25" Height="3.3071704101562496" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblGauge" Width="1.5" PointX="0.75" PointY="15.625" Height="4.071249186197921" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblInspectionOrder" Width="1.5" PointX="6" PointY="15.875" Height="4.45328857421875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblManufacturer" Width="1.5" PointX="1.5" PointY="4.5" Height="3.3071704101562496" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblModel" Width="1.5" PointX="1.5" PointY="29.5" Height="3.3071704101562531" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblShutOffOrder" Width="1.5" PointX="3" PointY="34.125" Height="3.1161507161458317" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblSize" Width="1.5" PointX="1.5" PointY="38.625" Height="3.3071704101562531" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblTechnician" Width="1.5" PointX="0.75" PointY="43.5" Height="4.2622688802083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblTestOrder" Width="1.5" PointX="3" PointY="14" Height="6.1724658203125031" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblTestResults" Width="1.5" PointX="5.25" PointY="26.25" Height="5.4083870442708353" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblUTPCustomer" Width="1.5" PointX="0.75" PointY="21" Height="4.2622688802083388" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblUTPMeter" Width="1.5" PointX="3" PointY="51.875" Height="1.7790128580729174" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblWaterUsingEquipment" Width="1.5" PointX="0.75" PointY="0.75" Height="2.9251310221354165" IsExpanded="true" />
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tbl15DayNotice_tblTechnician" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="46.435802895109262" />
+          <ConnectorPoint PointX="3.1666666666666665" PointY="46.435802895109262" />
+          <ConnectorPoint PointX="3.3333333333333335" PointY="46.435802895109262" />
+          <ConnectorPoint PointX="7.15625" PointY="46.435802895109262" />
+          <ConnectorPoint PointX="7.15625" PointY="25.1302294921875" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tbl15DayNotice_tblUTPCustomer" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="24.653585205078127" />
+          <ConnectorPoint PointX="2.3854166666666665" PointY="24.653585205078123" />
+          <ConnectorPoint PointX="2.9591472330729167" PointY="24.653585205078127" />
+          <ConnectorPoint PointX="4.666666666666667" PointY="24.653585205078127" />
+          <ConnectorPoint PointX="4.833333333333333" PointY="24.653585205078127" />
+          <ConnectorPoint PointX="5.354166666666667" PointY="24.653585205078127" />
+          <ConnectorPoint PointX="5.520833333333333" PointY="24.653585205078127" />
+          <ConnectorPoint PointX="6" PointY="24.653585205078127" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblAnnualfee_tblUTPCustomer" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="22.653585205078127" />
+          <ConnectorPoint PointX="2.3854166666666665" PointY="22.653585205078123" />
+          <ConnectorPoint PointX="2.9591472330729167" PointY="22.653585205078127" />
+          <ConnectorPoint PointX="3" PointY="22.653585205078127" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblBackflow_tblManufacturer" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.875" PointY="7.80717041015625" />
+          <ConnectorPoint PointX="1.875" PointY="9.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblBackflow_tblModel" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.7532555989583329" PointY="29.5" />
+          <ConnectorPoint PointX="2.7532555989583329" PointY="12.749545810023378" />
+          <ConnectorPoint PointX="2.25" PointY="12.749545810023378" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblBackflow_tblSize" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5253836153846161" PointY="38.625" />
+          <ConnectorPoint PointX="1.4628836153846194" PointY="38.5625" />
+          <ConnectorPoint PointX="0.25" PointY="38.5625" />
+          <ConnectorPoint PointX="0.25" PointY="16.007983587840542" />
+          <ConnectorPoint PointX="0.77653746153845937" PointY="15.481446126302084" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblBFPToWUE_tblBackflow" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="11.062272905011689" />
+          <ConnectorPoint PointX="2.730794466145833" PointY="11.062272905011689" />
+          <ConnectorPoint PointX="2.8974611328125" PointY="11.062272905011689" />
+          <ConnectorPoint PointX="3" PointY="11.062272905011689" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblTestOrder_tblBackflow" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="14.740723063151041" />
+          <ConnectorPoint PointX="2.6699222656249995" PointY="14.740723063151041" />
+          <ConnectorPoint PointX="2.8974611328125" PointY="14.740723063151041" />
+          <ConnectorPoint PointX="3" PointY="14.740723063151041" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblInspectionOrder_tblBackflowRequireType" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.03125" PointY="4.5501310221354156" />
+          <ConnectorPoint PointX="5.03125" PointY="20.469127197265625" />
+          <ConnectorPoint PointX="5.354166666666667" PointY="20.469127197265625" />
+          <ConnectorPoint PointX="5.520833333333333" PointY="20.469127197265625" />
+          <ConnectorPoint PointX="6" PointY="20.469127197265625" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblBFPToWUE_tblWaterUsingEquipment" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="1.15625" />
+          <ConnectorPoint PointX="3.375" PointY="1.15625" />
+          <ConnectorPoint PointX="3.375" PointY="9.5" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblCompletedTestOrder_tblTestOrder" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="14.80509896059041" />
+          <ConnectorPoint PointX="4.947916666666667" PointY="14.80509896059041" />
+          <ConnectorPoint PointX="5.114583333333333" PointY="14.80509896059041" />
+          <ConnectorPoint PointX="5.6796875" PointY="14.80509896059041" />
+          <ConnectorPoint PointX="5.6796875" PointY="13.425131022135416" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblDisconnectOrder_tblUTPCustomer" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="25.226644287109373" />
+          <ConnectorPoint PointX="2.3854166666666665" PointY="25.226644287109369" />
+          <ConnectorPoint PointX="2.9591472330729167" PointY="25.226644287109373" />
+          <ConnectorPoint PointX="3" PointY="25.226644287109373" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblFailureOrder_tblTestOrder" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="14.001152846153847" />
+          <ConnectorPoint PointX="4.875" PointY="13.626152846153847" />
+          <ConnectorPoint PointX="4.875" PointY="7.9035852050781248" />
+          <ConnectorPoint PointX="4.947916666666667" PointY="7.9035852050781239" />
+          <ConnectorPoint PointX="5.114583333333333" PointY="7.9035852050781248" />
+          <ConnectorPoint PointX="5.25" PointY="7.9035852050781248" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblGauge_tblManufacturer" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.8141277994791665" PointY="7.80717041015625" />
+          <ConnectorPoint PointX="2.8141277994791665" PointY="17.933930659505112" />
+          <ConnectorPoint PointX="2.7708333333333335" PointY="17.933930659505112" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="17.933930659505112" />
+          <ConnectorPoint PointX="2.25" PointY="17.933930659505112" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblGauge_tblModel" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.8758138997395832" PointY="29.5" />
+          <ConnectorPoint PointX="2.8758138997395832" PointY="18.941852269856724" />
+          <ConnectorPoint PointX="2.8365889322916664" PointY="18.941852269856724" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="18.941852269856724" />
+          <ConnectorPoint PointX="2.25" PointY="18.941852269856724" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblGauge_tblSize" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="38.649230769230769" />
+          <ConnectorPoint PointX="1.1007692307692309" PointY="38.25" />
+          <ConnectorPoint PointX="0.375" PointY="38.25" />
+          <ConnectorPoint PointX="0.375" PointY="20.263421726362186" />
+          <ConnectorPoint PointX="0.50357443490112075" PointY="20.134847291461064" />
+          <ConnectorPoint PointX="0.62142556509887892" PointY="20.016996161263307" />
+          <ConnectorPoint PointX="0.75115284615384947" PointY="19.887268880208335" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblTestOrder_tblGauge" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="16.79001111352532" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="16.79001111352532" />
+          <ConnectorPoint PointX="2.8974611328125" PointY="16.79001111352532" />
+          <ConnectorPoint PointX="3" PointY="16.79001111352532" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblInspectionOrder_tblUTPCustomer" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.4687480000000002" PointY="21" />
+          <ConnectorPoint PointX="1.4687480000000002" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="2.9591472330729167" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="4.666666666666667" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="4.833333333333333" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="5.354166666666667" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="5.520833333333333" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="5.625" PointY="20.422465820312503" />
+          <ConnectorPoint PointX="5.625" PointY="18.140811598632819" />
+          <ConnectorPoint PointX="6" PointY="18.140811598632819" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblShutOffOrder_tblUTPCustomer" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.09375" PointY="25.45328857421875" />
+          <ConnectorPoint PointX="1.09375" PointY="35.683075358072912" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="35.683075358072912" />
+          <ConnectorPoint PointX="2.8333333333333335" PointY="35.683075358072912" />
+          <ConnectorPoint PointX="3" PointY="35.683075358072912" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblTestOrder_tblTechnician" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="44.936649447554636" />
+          <ConnectorPoint PointX="3.1666666666666665" PointY="44.936649447554636" />
+          <ConnectorPoint PointX="3.3333333333333335" PointY="44.936649447554636" />
+          <ConnectorPoint PointX="3.75" PointY="44.936649447554636" />
+          <ConnectorPoint PointX="3.75" PointY="37.491150716145825" />
+          <ConnectorPoint PointX="2.75" PointY="37.491150716145825" />
+          <ConnectorPoint PointX="2.75" PointY="33.248190104166667" />
+          <ConnectorPoint PointX="3.25" PointY="33.248190104166667" />
+          <ConnectorPoint PointX="3.25" PointY="28.366150716145839" />
+          <ConnectorPoint PointX="2.9591472330729167" PointY="28.366150716145839" />
+          <ConnectorPoint PointX="2.6699222656249995" PointY="28.366150716145839" />
+          <ConnectorPoint PointX="2.625" PointY="28.366150716145839" />
+          <ConnectorPoint PointX="2.625" PointY="20.547465820312503" />
+          <ConnectorPoint PointX="2.6699222656249995" PointY="20.547465820312503" />
+          <ConnectorPoint PointX="2.9591472330729167" PointY="20.547465820312503" />
+          <ConnectorPoint PointX="3.75" PointY="20.547465820312503" />
+          <ConnectorPoint PointX="3.75" PointY="20.172465820312503" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblTestOrder_tblUTPCustomer" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="21.063460538461534" />
+          <ConnectorPoint PointX="2.4098244349011204" PointY="20.903636103560412" />
+          <ConnectorPoint PointX="2.5276755650988791" PointY="20.785784973362656" />
+          <ConnectorPoint PointX="2.5660744349011204" PointY="20.747386103560412" />
+          <ConnectorPoint PointX="2.6839255650988791" PointY="20.629534973362656" />
+          <ConnectorPoint PointX="2.6875" PointY="20.625960538461534" />
+          <ConnectorPoint PointX="2.6875" PointY="15.765367088338181" />
+          <ConnectorPoint PointX="2.730794466145833" PointY="15.765367088338181" />
+          <ConnectorPoint PointX="2.8974611328125" PointY="15.765367088338181" />
+          <ConnectorPoint PointX="3" PointY="15.765367088338181" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblTestResults_tblTestOrder" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="15.340051980295199" />
+          <ConnectorPoint PointX="4.947916666666667" PointY="15.340051980295199" />
+          <ConnectorPoint PointX="5.114583333333333" PointY="15.340051980295199" />
+          <ConnectorPoint PointX="5.4375" PointY="15.340051980295199" />
+          <ConnectorPoint PointX="5.4375" PointY="26.25" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblUTPMeter_tblUTPCustomer" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.7031269999999998" PointY="25.45328857421875" />
+          <ConnectorPoint PointX="1.7031269999999998" PointY="29.25" />
+          <ConnectorPoint PointX="2.3854166666666665" PointY="29.25" />
+          <ConnectorPoint PointX="2.5520833333333335" PointY="29.25" />
+          <ConnectorPoint PointX="2.6699222656249995" PointY="29.25" />
+          <ConnectorPoint PointX="2.9591472330729167" PointY="29.25" />
+          <ConnectorPoint PointX="3.3125" PointY="29.25" />
+          <ConnectorPoint PointX="3.3125" PointY="33.875" />
+          <ConnectorPoint PointX="2.6875" PointY="33.875" />
+          <ConnectorPoint PointX="2.6875" PointY="38.375" />
+          <ConnectorPoint PointX="3.25" PointY="38.375" />
+          <ConnectorPoint PointX="3.25" PointY="51.625" />
+          <ConnectorPoint PointX="2.75" PointY="51.625" />
+          <ConnectorPoint PointX="2.75" PointY="52.764506429036459" />
+          <ConnectorPoint PointX="3" PointY="52.764506429036459" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblBackflow_tblUTPCustomer" >
+          <ConnectorPoint PointX="0.81346053846153821" PointY="21" />
+          <ConnectorPoint PointX="0.5625" PointY="20.749039461538462" />
+          <ConnectorPoint PointX="0.5625" PointY="15.644715357071313" />
+          <ConnectorPoint PointX="0.75" PointY="15.457215357071313" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblInspectionOrder_tblModel" >
+          <ConnectorPoint PointX="2.46875" PointY="29.5" />
+          <ConnectorPoint PointX="2.46875" PointY="20.742482910156252" />
+          <ConnectorPoint PointX="2.4876442949719491" PointY="20.742482910156252" />
+          <ConnectorPoint PointX="2.9591472330729167" PointY="20.742482910156252" />
+          <ConnectorPoint PointX="4.666666666666667" PointY="20.742482910156252" />
+          <ConnectorPoint PointX="4.833333333333333" PointY="20.742482910156252" />
+          <ConnectorPoint PointX="5.354166666666667" PointY="20.742482910156252" />
+          <ConnectorPoint PointX="5.520833333333333" PointY="20.742482910156252" />
+          <ConnectorPoint PointX="6" PointY="20.742482910156252" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblInspectionOrder_tblSize" >
+          <ConnectorPoint PointX="2.1376943076923078" PointY="38.625" />
+          <ConnectorPoint PointX="2.1376943076923078" PointY="38" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="38" />
+          <ConnectorPoint PointX="2.7708333333333335" PointY="38" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="38" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="38" />
+          <ConnectorPoint PointX="4.75" PointY="38" />
+          <ConnectorPoint PointX="4.75" PointY="19.312891209472653" />
+          <ConnectorPoint PointX="4.947916666666667" PointY="19.312891209472653" />
+          <ConnectorPoint PointX="5.114583333333333" PointY="19.312891209472653" />
+          <ConnectorPoint PointX="5.354166666666667" PointY="19.312891209472653" />
+          <ConnectorPoint PointX="5.520833333333333" PointY="19.312891209472653" />
+          <ConnectorPoint PointX="5.541666666666667" PointY="19.312891209472653" />
+          <ConnectorPoint PointX="5.708333333333333" PointY="19.312891209472653" />
+          <ConnectorPoint PointX="6" PointY="19.312891209472653" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vBackflow" Width="1.5" PointX="8.75" PointY="1.625" Height="3.8802294921875031" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

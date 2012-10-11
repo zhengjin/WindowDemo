@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ServiceDirectDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ServiceDirectDBModelStoreContainer">
+          <EntitySet Name="vUTPRightWithRole" EntityType="ServiceDirectDBModel.Store.vUTPRightWithRole" store:Type="Views" store:Schema="dbo" store:Name="vUTPRightWithRole">
+            <DefiningQuery>SELECT 
+      [vUTPRightWithRole].[RightCode] AS [RightCode], 
+      [vUTPRightWithRole].[RoleID] AS [RoleID]
+      FROM [dbo].[vUTPRightWithRole] AS [vUTPRightWithRole]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vUTPRole" EntityType="ServiceDirectDBModel.Store.vUTPRole" store:Type="Views" store:Schema="dbo" store:Name="vUTPRole">
+            <DefiningQuery>SELECT 
+      [vUTPRole].[RoleID] AS [RoleID], 
+      [vUTPRole].[RoleName] AS [RoleName], 
+      [vUTPRole].[Comment] AS [Comment], 
+      [vUTPRole].[LastUpdated] AS [LastUpdated]
+      FROM [dbo].[vUTPRole] AS [vUTPRole]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vUTPUserWithRole" EntityType="ServiceDirectDBModel.Store.vUTPUserWithRole" store:Type="Views" store:Schema="dbo" store:Name="vUTPUserWithRole">
+            <DefiningQuery>SELECT 
+      [vUTPUserWithRole].[UserID] AS [UserID], 
+      [vUTPUserWithRole].[UserName] AS [UserName], 
+      [vUTPUserWithRole].[Password] AS [Password], 
+      [vUTPUserWithRole].[IsDeleted] AS [IsDeleted], 
+      [vUTPUserWithRole].[Gender] AS [Gender], 
+      [vUTPUserWithRole].[isPayStation] AS [isPayStation], 
+      [vUTPUserWithRole].[IsViewOnly] AS [IsViewOnly], 
+      [vUTPUserWithRole].[RoleID] AS [RoleID]
+      FROM [dbo].[vUTPUserWithRole] AS [vUTPUserWithRole]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vUTPRightWithRole”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vUTPRightWithRole">
+          <Key>
+            <PropertyRef Name="RightCode" />
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RightCode" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="RoleID" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vUTPRole”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vUTPRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="RoleName" />
+          </Key>
+          <Property Name="RoleID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="RoleName" Type="varchar" Nullable="false" MaxLength="40" />
+          <Property Name="Comment" Type="varchar" MaxLength="250" />
+          <Property Name="LastUpdated" Type="datetime" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vUTPUserWithRole”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vUTPUserWithRole">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="IsDeleted" />
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="UserName" Type="char" Nullable="false" MaxLength="18" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="IsDeleted" Type="bit" Nullable="false" />
+          <Property Name="Gender" Type="varchar" MaxLength="2" />
+          <Property Name="isPayStation" Type="bit" />
+          <Property Name="IsViewOnly" Type="bit" />
+          <Property Name="RoleID" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ServiceDirectDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ServiceDirectMembershipDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="vUTPRightWithRole" EntityType="ServiceDirectDBModel.vUTPRightWithRole" />
+          <EntitySet Name="vUTPRole" EntityType="ServiceDirectDBModel.vUTPRole" />
+          <EntitySet Name="vUTPUserWithRole" EntityType="ServiceDirectDBModel.vUTPUserWithRole" />
+        </EntityContainer>
+        <EntityType Name="vUTPRightWithRole">
+          <Key>
+            <PropertyRef Name="RightCode" />
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="RightCode" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="RoleID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vUTPRole">
+          <Key>
+            <PropertyRef Name="RoleID" />
+            <PropertyRef Name="RoleName" />
+          </Key>
+          <Property Name="RoleID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="Comment" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+          <Property Name="LastUpdated" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="vUTPUserWithRole">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="IsDeleted" />
+            <PropertyRef Name="RoleID" />
+          </Key>
+          <Property Name="UserID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="18" Unicode="false" FixedLength="true" />
+          <Property Name="Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="2" Unicode="false" FixedLength="false" />
+          <Property Name="isPayStation" Type="Boolean" />
+          <Property Name="IsViewOnly" Type="Boolean" />
+          <Property Name="RoleID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ServiceDirectDBModelStoreContainer" CdmEntityContainer="ServiceDirectMembershipDBEntities">
+          <EntitySetMapping Name="vUTPRightWithRole"><EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPRightWithRole"><MappingFragment StoreEntitySet="vUTPRightWithRole">
+            <ScalarProperty Name="RightCode" ColumnName="RightCode" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vUTPRole"><EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPRole"><MappingFragment StoreEntitySet="vUTPRole">
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+            <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+            <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vUTPUserWithRole"><EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPUserWithRole"><MappingFragment StoreEntitySet="vUTPUserWithRole">
+            <ScalarProperty Name="UserID" ColumnName="UserID" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="Password" ColumnName="Password" />
+            <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+            <ScalarProperty Name="Gender" ColumnName="Gender" />
+            <ScalarProperty Name="isPayStation" ColumnName="isPayStation" />
+            <ScalarProperty Name="IsViewOnly" ColumnName="IsViewOnly" />
+            <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="MembershipModel">
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vUTPRightWithRole" Width="3" PointX="0.75" PointY="0.75" Height="1.3969734700520831" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vUTPRole" Width="1.5" PointX="2.375" PointY="4.375" Height="1.7790128580729174" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vUTPUserWithRole" Width="3.25" PointX="5.125" PointY="0.75" Height="2.5430916341145835" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,1129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ServiceDirectDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ServiceDirectDBModelStoreContainer">
+          <EntitySet Name="tblBackup" EntityType="ServiceDirectDBModel.Store.tblBackup" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblEmail" EntityType="ServiceDirectDBModel.Store.tblEmail" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tblScheduler" EntityType="ServiceDirectDBModel.Store.tblScheduler" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="vBackupAndEmailSetting" EntityType="ServiceDirectDBModel.Store.vBackupAndEmailSetting" store:Type="Views" store:Schema="dbo" store:Name="vBackupAndEmailSetting">
+            <DefiningQuery>SELECT 
+      [vBackupAndEmailSetting].[BackupID] AS [BackupID], 
+      [vBackupAndEmailSetting].[BackupFloder] AS [BackupFloder], 
+      [vBackupAndEmailSetting].[BackupDatabase] AS [BackupDatabase], 
+      [vBackupAndEmailSetting].[DeleteBackupOlder] AS [DeleteBackupOlder], 
+      [vBackupAndEmailSetting].[BackupServer] AS [BackupServer], 
+      [vBackupAndEmailSetting].[BackupUser] AS [BackupUser], 
+      [vBackupAndEmailSetting].[BackupPassword] AS [BackupPassword], 
+      [vBackupAndEmailSetting].[EmailID] AS [EmailID], 
+      [vBackupAndEmailSetting].[EmailFrom] AS [EmailFrom], 
+      [vBackupAndEmailSetting].[EmailPort] AS [EmailPort], 
+      [vBackupAndEmailSetting].[EmailSSL] AS [EmailSSL], 
+      [vBackupAndEmailSetting].[SMTPHost] AS [SMTPHost], 
+      [vBackupAndEmailSetting].[SMTPUsername] AS [SMTPUsername], 
+      [vBackupAndEmailSetting].[SMTPPassword] AS [SMTPPassword]
+      FROM [dbo].[vBackupAndEmailSetting] AS [vBackupAndEmailSetting]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vOnlySysJobs" EntityType="ServiceDirectDBModel.Store.vOnlySysJobs" store:Type="Views" store:Schema="dbo" store:Name="vOnlySysJobs">
+            <DefiningQuery>SELECT 
+      [vOnlySysJobs].[job_id] AS [job_id], 
+      [vOnlySysJobs].[name] AS [name], 
+      [vOnlySysJobs].[enabled] AS [enabled], 
+      [vOnlySysJobs].[description] AS [description], 
+      [vOnlySysJobs].[start_step_id] AS [start_step_id], 
+      [vOnlySysJobs].[category_id] AS [category_id], 
+      [vOnlySysJobs].[notify_level_eventlog] AS [notify_level_eventlog], 
+      [vOnlySysJobs].[notify_level_email] AS [notify_level_email], 
+      [vOnlySysJobs].[notify_level_netsend] AS [notify_level_netsend], 
+      [vOnlySysJobs].[notify_level_page] AS [notify_level_page], 
+      [vOnlySysJobs].[notify_email_operator_id] AS [notify_email_operator_id], 
+      [vOnlySysJobs].[notify_netsend_operator_id] AS [notify_netsend_operator_id], 
+      [vOnlySysJobs].[notify_page_operator_id] AS [notify_page_operator_id], 
+      [vOnlySysJobs].[delete_level] AS [delete_level], 
+      [vOnlySysJobs].[date_created] AS [date_created], 
+      [vOnlySysJobs].[date_modified] AS [date_modified], 
+      [vOnlySysJobs].[next_run_date] AS [next_run_date], 
+      [vOnlySysJobs].[next_run_time] AS [next_run_time], 
+      [vOnlySysJobs].[last_run_time] AS [last_run_time], 
+      [vOnlySysJobs].[last_run_date] AS [last_run_date]
+      FROM [dbo].[vOnlySysJobs] AS [vOnlySysJobs]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vSchedulerEmailBackup" EntityType="ServiceDirectDBModel.Store.vSchedulerEmailBackup" store:Type="Views" store:Schema="dbo" store:Name="vSchedulerEmailBackup">
+            <DefiningQuery>SELECT 
+      [vSchedulerEmailBackup].[BackupID] AS [BackupID], 
+      [vSchedulerEmailBackup].[EmailID] AS [EmailID], 
+      [vSchedulerEmailBackup].[TaskName] AS [TaskName], 
+      [vSchedulerEmailBackup].[ScheduleType] AS [ScheduleType], 
+      [vSchedulerEmailBackup].[StartTime] AS [StartTime], 
+      [vSchedulerEmailBackup].[RunOnly] AS [RunOnly], 
+      [vSchedulerEmailBackup].[RunOnlyStart] AS [RunOnlyStart], 
+      [vSchedulerEmailBackup].[RunOnlyEnd] AS [RunOnlyEnd], 
+      [vSchedulerEmailBackup].[Action] AS [Action], 
+      [vSchedulerEmailBackup].[PostAction] AS [PostAction], 
+      [vSchedulerEmailBackup].[Company] AS [Company], 
+      [vSchedulerEmailBackup].[Cycle] AS [Cycle], 
+      [vSchedulerEmailBackup].[Status] AS [Status], 
+      [vSchedulerEmailBackup].[Copy] AS [Copy], 
+      [vSchedulerEmailBackup].[Calc] AS [Calc], 
+      [vSchedulerEmailBackup].[Trace] AS [Trace], 
+      [vSchedulerEmailBackup].[TraceType] AS [TraceType], 
+      [vSchedulerEmailBackup].[TraceTable] AS [TraceTable], 
+      [vSchedulerEmailBackup].[UTPUser] AS [UTPUser], 
+      [vSchedulerEmailBackup].[JobID] AS [JobID], 
+      [vSchedulerEmailBackup].[UTPPwd] AS [UTPPwd], 
+      [vSchedulerEmailBackup].[KillID] AS [KillID], 
+      [vSchedulerEmailBackup].[CommandID] AS [CommandID], 
+      [vSchedulerEmailBackup].[EmailTo] AS [EmailTo], 
+      [vSchedulerEmailBackup].[SMTPPassword] AS [SMTPPassword], 
+      [vSchedulerEmailBackup].[SMTPUsername] AS [SMTPUsername], 
+      [vSchedulerEmailBackup].[SMTPHost] AS [SMTPHost], 
+      [vSchedulerEmailBackup].[EmailSSL] AS [EmailSSL], 
+      [vSchedulerEmailBackup].[EmailPort] AS [EmailPort], 
+      [vSchedulerEmailBackup].[EmailFrom] AS [EmailFrom], 
+      [vSchedulerEmailBackup].[BackupPassword] AS [BackupPassword], 
+      [vSchedulerEmailBackup].[BackupUser] AS [BackupUser], 
+      [vSchedulerEmailBackup].[BackupServer] AS [BackupServer], 
+      [vSchedulerEmailBackup].[DeleteBackupOlder] AS [DeleteBackupOlder], 
+      [vSchedulerEmailBackup].[BackupDatabase] AS [BackupDatabase], 
+      [vSchedulerEmailBackup].[BackupFloder] AS [BackupFloder], 
+      [vSchedulerEmailBackup].[ScheduleID] AS [ScheduleID]
+      FROM [dbo].[vSchedulerEmailBackup] AS [vSchedulerEmailBackup]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vSchedulerTasks" EntityType="ServiceDirectDBModel.Store.vSchedulerTasks" store:Type="Views" store:Schema="dbo" store:Name="vSchedulerTasks">
+            <DefiningQuery>SELECT 
+      [vSchedulerTasks].[job_id] AS [job_id], 
+      [vSchedulerTasks].[name] AS [name], 
+      [vSchedulerTasks].[enabled] AS [enabled], 
+      [vSchedulerTasks].[description] AS [description], 
+      [vSchedulerTasks].[start_step_id] AS [start_step_id], 
+      [vSchedulerTasks].[category_id] AS [category_id], 
+      [vSchedulerTasks].[notify_level_eventlog] AS [notify_level_eventlog], 
+      [vSchedulerTasks].[notify_level_email] AS [notify_level_email], 
+      [vSchedulerTasks].[notify_level_netsend] AS [notify_level_netsend], 
+      [vSchedulerTasks].[notify_level_page] AS [notify_level_page], 
+      [vSchedulerTasks].[notify_email_operator_id] AS [notify_email_operator_id], 
+      [vSchedulerTasks].[notify_netsend_operator_id] AS [notify_netsend_operator_id], 
+      [vSchedulerTasks].[notify_page_operator_id] AS [notify_page_operator_id], 
+      [vSchedulerTasks].[delete_level] AS [delete_level], 
+      [vSchedulerTasks].[date_created] AS [date_created], 
+      [vSchedulerTasks].[date_modified] AS [date_modified], 
+      [vSchedulerTasks].[ScheduleType] AS [ScheduleType], 
+      [vSchedulerTasks].[ScheduleID] AS [ScheduleID], 
+      [vSchedulerTasks].[JobID] AS [JobID], 
+      [vSchedulerTasks].[RunOnlyStart] AS [RunOnlyStart], 
+      [vSchedulerTasks].[RunOnlyEnd] AS [RunOnlyEnd]
+      FROM [dbo].[vSchedulerTasks] AS [vSchedulerTasks]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vUTPCommand" EntityType="ServiceDirectDBModel.Store.vUTPCommand" store:Type="Views" store:Schema="dbo" store:Name="vUTPCommand">
+            <DefiningQuery>SELECT 
+      [vUTPCommand].[CommandID] AS [CommandID], 
+      [vUTPCommand].[Sequence] AS [Sequence], 
+      [vUTPCommand].[CommandLine] AS [CommandLine], 
+      [vUTPCommand].[RelateID] AS [RelateID]
+      FROM [dbo].[vUTPCommand] AS [vUTPCommand]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vUTPCompany" EntityType="ServiceDirectDBModel.Store.vUTPCompany" store:Type="Views" store:Schema="dbo" store:Name="vUTPCompany">
+            <DefiningQuery>SELECT 
+      [vUTPCompany].[CompName] AS [CompName], 
+      [vUTPCompany].[CompLongitude] AS [CompLongitude], 
+      [vUTPCompany].[CompLatitude] AS [CompLatitude], 
+      [vUTPCompany].[Comp] AS [Comp], 
+      [vUTPCompany].[CompanyID] AS [CompanyID]
+      FROM [dbo].[vUTPCompany] AS [vUTPCompany]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vUTPCustomerState" EntityType="ServiceDirectDBModel.Store.vUTPCustomerState" store:Type="Views" store:Schema="dbo" store:Name="vUTPCustomerState">
+            <DefiningQuery>SELECT 
+      [vUTPCustomerState].[StatCode] AS [StatCode], 
+      [vUTPCustomerState].[CustomerStateID] AS [CustomerStateID], 
+      [vUTPCustomerState].[StatType] AS [StatType], 
+      [vUTPCustomerState].[Description] AS [Description], 
+      [vUTPCustomerState].[Billable] AS [Billable]
+      FROM [dbo].[vUTPCustomerState] AS [vUTPCustomerState]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vUTPCycle" EntityType="ServiceDirectDBModel.Store.vUTPCycle" store:Type="Views" store:Schema="dbo" store:Name="vUTPCycle">
+            <DefiningQuery>SELECT 
+      [vUTPCycle].[Cycle] AS [Cycle], 
+      [vUTPCycle].[CompanyID] AS [CompanyID], 
+      [vUTPCycle].[CycleID] AS [CycleID], 
+      [vUTPCycle].[BillPeriodDays] AS [BillPeriodDays], 
+      [vUTPCycle].[Description] AS [Description], 
+      [vUTPCycle].[BillFrequency] AS [BillFrequency]
+      FROM [dbo].[vUTPCycle] AS [vUTPCycle]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vUTPScheduleMessager" EntityType="ServiceDirectDBModel.Store.vUTPScheduleMessager" store:Type="Views" store:Schema="dbo" store:Name="vUTPScheduleMessager">
+            <DefiningQuery>SELECT 
+      [vUTPScheduleMessager].[PID] AS [PID], 
+      [vUTPScheduleMessager].[SID] AS [SID], 
+      [vUTPScheduleMessager].[SDT] AS [SDT], 
+      [vUTPScheduleMessager].[SSubject] AS [SSubject], 
+      [vUTPScheduleMessager].[SMessage] AS [SMessage], 
+      [vUTPScheduleMessager].[UserName] AS [UserName], 
+      [vUTPScheduleMessager].[GDT] AS [GDT]
+      FROM [dbo].[vUTPScheduleMessager] AS [vUTPScheduleMessager]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_tblScheduler_tblBackup" Association="ServiceDirectDBModel.Store.FK_tblScheduler_tblBackup">
+            <End Role="tblBackup" EntitySet="tblBackup" />
+            <End Role="tblScheduler" EntitySet="tblScheduler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblScheduler_tblEmail" Association="ServiceDirectDBModel.Store.FK_tblScheduler_tblEmail">
+            <End Role="tblEmail" EntitySet="tblEmail" />
+            <End Role="tblScheduler" EntitySet="tblScheduler" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tblBackup">
+          <Key>
+            <PropertyRef Name="BackupID" />
+          </Key>
+          <Property Name="BackupID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BackupFloder" Type="varchar" MaxLength="100" />
+          <Property Name="BackupDatabase" Type="varchar" MaxLength="50" />
+          <Property Name="DeleteBackupOlder" Type="int" />
+          <Property Name="BackupServer" Type="varchar" MaxLength="50" />
+          <Property Name="BackupUser" Type="varchar" MaxLength="50" />
+          <Property Name="BackupPassword" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblEmail">
+          <Key>
+            <PropertyRef Name="EmailID" />
+          </Key>
+          <Property Name="EmailID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EmailFrom" Type="varchar" MaxLength="100" />
+          <Property Name="EmailPort" Type="int" />
+          <Property Name="EmailSSL" Type="bit" />
+          <Property Name="SMTPHost" Type="varchar" MaxLength="50" />
+          <Property Name="SMTPUsername" Type="varchar" MaxLength="50" />
+          <Property Name="SMTPPassword" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblScheduler">
+          <Key>
+            <PropertyRef Name="ScheduleID" />
+          </Key>
+          <Property Name="ScheduleID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BackupID" Type="uniqueidentifier" />
+          <Property Name="EmailID" Type="uniqueidentifier" />
+          <Property Name="TaskName" Type="varchar" MaxLength="50" />
+          <Property Name="ScheduleType" Type="varchar" MaxLength="50" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="RunOnly" Type="varchar" MaxLength="100" />
+          <Property Name="RunOnlyStart" Type="datetime" />
+          <Property Name="RunOnlyEnd" Type="datetime" />
+          <Property Name="Action" Type="varchar" MaxLength="50" />
+          <Property Name="PostAction" Type="varchar" MaxLength="50" />
+          <Property Name="Company" Type="varchar" MaxLength="50" />
+          <Property Name="Cycle" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Copy" Type="varchar" MaxLength="50" />
+          <Property Name="Calc" Type="varchar" MaxLength="50" />
+          <Property Name="Trace" Type="varchar" MaxLength="50" />
+          <Property Name="TraceType" Type="varchar" />
+          <Property Name="TraceTable" Type="varchar" />
+          <Property Name="UTPUser" Type="varchar" MaxLength="50" />
+          <Property Name="UTPPwd" Type="varchar" MaxLength="50" />
+          <Property Name="JobID" Type="uniqueidentifier" />
+          <Property Name="KillID" Type="uniqueidentifier" />
+          <Property Name="CommandID" Type="uniqueidentifier" />
+          <Property Name="EmailTo" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vBackupAndEmailSetting”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vBackupAndEmailSetting">
+          <Key>
+            <PropertyRef Name="BackupID" />
+            <PropertyRef Name="EmailID" />
+          </Key>
+          <Property Name="BackupID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="BackupFloder" Type="varchar" MaxLength="100" />
+          <Property Name="BackupDatabase" Type="varchar" MaxLength="50" />
+          <Property Name="DeleteBackupOlder" Type="int" />
+          <Property Name="BackupServer" Type="varchar" MaxLength="50" />
+          <Property Name="BackupUser" Type="varchar" MaxLength="50" />
+          <Property Name="BackupPassword" Type="varchar" MaxLength="50" />
+          <Property Name="EmailID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="EmailFrom" Type="varchar" MaxLength="100" />
+          <Property Name="EmailPort" Type="int" />
+          <Property Name="EmailSSL" Type="bit" />
+          <Property Name="SMTPHost" Type="varchar" MaxLength="50" />
+          <Property Name="SMTPUsername" Type="varchar" MaxLength="50" />
+          <Property Name="SMTPPassword" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vOnlySysJobs”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vOnlySysJobs">
+          <Key>
+            <PropertyRef Name="job_id" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="enabled" />
+            <PropertyRef Name="start_step_id" />
+            <PropertyRef Name="category_id" />
+            <PropertyRef Name="notify_level_eventlog" />
+            <PropertyRef Name="notify_level_email" />
+            <PropertyRef Name="notify_level_netsend" />
+            <PropertyRef Name="notify_level_page" />
+            <PropertyRef Name="notify_email_operator_id" />
+            <PropertyRef Name="notify_netsend_operator_id" />
+            <PropertyRef Name="notify_page_operator_id" />
+            <PropertyRef Name="delete_level" />
+            <PropertyRef Name="date_created" />
+            <PropertyRef Name="date_modified" />
+            <PropertyRef Name="next_run_date" />
+            <PropertyRef Name="next_run_time" />
+            <PropertyRef Name="last_run_time" />
+            <PropertyRef Name="last_run_date" />
+          </Key>
+          <Property Name="job_id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="enabled" Type="tinyint" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="512" />
+          <Property Name="start_step_id" Type="int" Nullable="false" />
+          <Property Name="category_id" Type="int" Nullable="false" />
+          <Property Name="notify_level_eventlog" Type="int" Nullable="false" />
+          <Property Name="notify_level_email" Type="int" Nullable="false" />
+          <Property Name="notify_level_netsend" Type="int" Nullable="false" />
+          <Property Name="notify_level_page" Type="int" Nullable="false" />
+          <Property Name="notify_email_operator_id" Type="int" Nullable="false" />
+          <Property Name="notify_netsend_operator_id" Type="int" Nullable="false" />
+          <Property Name="notify_page_operator_id" Type="int" Nullable="false" />
+          <Property Name="delete_level" Type="int" Nullable="false" />
+          <Property Name="date_created" Type="datetime" Nullable="false" />
+          <Property Name="date_modified" Type="datetime" Nullable="false" />
+          <Property Name="next_run_date" Type="int" Nullable="false" />
+          <Property Name="next_run_time" Type="int" Nullable="false" />
+          <Property Name="last_run_time" Type="int" Nullable="false" />
+          <Property Name="last_run_date" Type="int" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vSchedulerEmailBackup”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vSchedulerEmailBackup">
+          <Key>
+            <PropertyRef Name="ScheduleID" />
+          </Key>
+          <Property Name="BackupID" Type="uniqueidentifier" />
+          <Property Name="EmailID" Type="uniqueidentifier" />
+          <Property Name="TaskName" Type="varchar" MaxLength="50" />
+          <Property Name="ScheduleType" Type="varchar" MaxLength="50" />
+          <Property Name="StartTime" Type="datetime" />
+          <Property Name="RunOnly" Type="varchar" MaxLength="100" />
+          <Property Name="RunOnlyStart" Type="datetime" />
+          <Property Name="RunOnlyEnd" Type="datetime" />
+          <Property Name="Action" Type="varchar" MaxLength="50" />
+          <Property Name="PostAction" Type="varchar" MaxLength="50" />
+          <Property Name="Company" Type="varchar" MaxLength="50" />
+          <Property Name="Cycle" Type="varchar" MaxLength="50" />
+          <Property Name="Status" Type="varchar" MaxLength="50" />
+          <Property Name="Copy" Type="varchar" MaxLength="50" />
+          <Property Name="Calc" Type="varchar" MaxLength="50" />
+          <Property Name="Trace" Type="varchar" MaxLength="50" />
+          <Property Name="TraceType" Type="varchar" />
+          <Property Name="TraceTable" Type="varchar" />
+          <Property Name="UTPUser" Type="varchar" MaxLength="50" />
+          <Property Name="JobID" Type="uniqueidentifier" />
+          <Property Name="UTPPwd" Type="varchar" MaxLength="50" />
+          <Property Name="KillID" Type="uniqueidentifier" />
+          <Property Name="CommandID" Type="uniqueidentifier" />
+          <Property Name="EmailTo" Type="varchar" MaxLength="100" />
+          <Property Name="SMTPPassword" Type="varchar" MaxLength="50" />
+          <Property Name="SMTPUsername" Type="varchar" MaxLength="50" />
+          <Property Name="SMTPHost" Type="varchar" MaxLength="50" />
+          <Property Name="EmailSSL" Type="bit" />
+          <Property Name="EmailPort" Type="int" />
+          <Property Name="EmailFrom" Type="varchar" MaxLength="100" />
+          <Property Name="BackupPassword" Type="varchar" MaxLength="50" />
+          <Property Name="BackupUser" Type="varchar" MaxLength="50" />
+          <Property Name="BackupServer" Type="varchar" MaxLength="50" />
+          <Property Name="DeleteBackupOlder" Type="int" />
+          <Property Name="BackupDatabase" Type="varchar" MaxLength="50" />
+          <Property Name="BackupFloder" Type="varchar" MaxLength="100" />
+          <Property Name="ScheduleID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vSchedulerTasks”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vSchedulerTasks">
+          <Key>
+            <PropertyRef Name="job_id" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="enabled" />
+            <PropertyRef Name="start_step_id" />
+            <PropertyRef Name="category_id" />
+            <PropertyRef Name="notify_level_eventlog" />
+            <PropertyRef Name="notify_level_email" />
+            <PropertyRef Name="notify_level_netsend" />
+            <PropertyRef Name="notify_level_page" />
+            <PropertyRef Name="notify_email_operator_id" />
+            <PropertyRef Name="notify_netsend_operator_id" />
+            <PropertyRef Name="notify_page_operator_id" />
+            <PropertyRef Name="delete_level" />
+            <PropertyRef Name="date_created" />
+            <PropertyRef Name="date_modified" />
+            <PropertyRef Name="ScheduleID" />
+          </Key>
+          <Property Name="job_id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="enabled" Type="tinyint" Nullable="false" />
+          <Property Name="description" Type="nvarchar" MaxLength="512" />
+          <Property Name="start_step_id" Type="int" Nullable="false" />
+          <Property Name="category_id" Type="int" Nullable="false" />
+          <Property Name="notify_level_eventlog" Type="int" Nullable="false" />
+          <Property Name="notify_level_email" Type="int" Nullable="false" />
+          <Property Name="notify_level_netsend" Type="int" Nullable="false" />
+          <Property Name="notify_level_page" Type="int" Nullable="false" />
+          <Property Name="notify_email_operator_id" Type="int" Nullable="false" />
+          <Property Name="notify_netsend_operator_id" Type="int" Nullable="false" />
+          <Property Name="notify_page_operator_id" Type="int" Nullable="false" />
+          <Property Name="delete_level" Type="int" Nullable="false" />
+          <Property Name="date_created" Type="datetime" Nullable="false" />
+          <Property Name="date_modified" Type="datetime" Nullable="false" />
+          <Property Name="ScheduleType" Type="varchar" MaxLength="50" />
+          <Property Name="ScheduleID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="JobID" Type="uniqueidentifier" />
+          <Property Name="RunOnlyStart" Type="datetime" />
+          <Property Name="RunOnlyEnd" Type="datetime" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vUTPCommand”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vUTPCommand">
+          <Key>
+            <PropertyRef Name="CommandID" />
+            <PropertyRef Name="Sequence" />
+            <PropertyRef Name="CommandLine" />
+            <PropertyRef Name="RelateID" />
+          </Key>
+          <Property Name="CommandID" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="Sequence" Type="int" Nullable="false" />
+          <Property Name="CommandLine" Type="text" Nullable="false" />
+          <Property Name="RelateID" Type="varchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vUTPCompany”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vUTPCompany">
+          <Key>
+            <PropertyRef Name="CompName" />
+            <PropertyRef Name="Comp" />
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="CompName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="CompLongitude" Type="varchar" MaxLength="20" />
+          <Property Name="CompLatitude" Type="varchar" MaxLength="20" />
+          <Property Name="Comp" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="CompanyID" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vUTPCustomerState”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vUTPCustomerState">
+          <Key>
+            <PropertyRef Name="StatCode" />
+            <PropertyRef Name="CustomerStateID" />
+          </Key>
+          <Property Name="StatCode" Type="varchar" Nullable="false" MaxLength="4" />
+          <Property Name="CustomerStateID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="StatType" Type="smallint" />
+          <Property Name="Description" Type="varchar" MaxLength="250" />
+          <Property Name="Billable" Type="bit" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vUTPCycle”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vUTPCycle">
+          <Key>
+            <PropertyRef Name="Cycle" />
+            <PropertyRef Name="CycleID" />
+          </Key>
+          <Property Name="Cycle" Type="smallint" Nullable="false" />
+          <Property Name="CompanyID" Type="varchar" MaxLength="20" />
+          <Property Name="CycleID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="BillPeriodDays" Type="real" />
+          <Property Name="Description" Type="varchar" MaxLength="255" />
+          <Property Name="BillFrequency" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“ServiceDirectDB.dbo.vUTPScheduleMessager”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="vUTPScheduleMessager">
+          <Key>
+            <PropertyRef Name="PID" />
+            <PropertyRef Name="SSubject" />
+            <PropertyRef Name="SMessage" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="GDT" />
+          </Key>
+          <Property Name="PID" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="SID" Type="varchar" MaxLength="255" />
+          <Property Name="SDT" Type="datetime" />
+          <Property Name="SSubject" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="SMessage" Type="nvarchar" Nullable="false" />
+          <Property Name="UserName" Type="char" Nullable="false" MaxLength="18" />
+          <Property Name="GDT" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_tblScheduler_tblBackup">
+          <End Role="tblBackup" Type="ServiceDirectDBModel.Store.tblBackup" Multiplicity="0..1" />
+          <End Role="tblScheduler" Type="ServiceDirectDBModel.Store.tblScheduler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBackup">
+              <PropertyRef Name="BackupID" />
+            </Principal>
+            <Dependent Role="tblScheduler">
+              <PropertyRef Name="BackupID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblScheduler_tblEmail">
+          <End Role="tblEmail" Type="ServiceDirectDBModel.Store.tblEmail" Multiplicity="0..1" />
+          <End Role="tblScheduler" Type="ServiceDirectDBModel.Store.tblScheduler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmail">
+              <PropertyRef Name="EmailID" />
+            </Principal>
+            <Dependent Role="tblScheduler">
+              <PropertyRef Name="EmailID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="PrJobEmail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="sEmailID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="PrUpdateJob" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Sjob_name" Type="varchar" Mode="In" />
+          <Parameter Name="ienabled" Type="int" Mode="In" />
+        </Function>
+        <Function Name="vUTPCommand_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CommandID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="vUTPCommand_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CommandID" Type="varchar" Mode="In" />
+          <Parameter Name="CommandLine" Type="varchar" Mode="In" />
+          <Parameter Name="RelateID" Type="varchar" Mode="In" />
+          <Parameter Name="Sequence" Type="int" Mode="In" />
+        </Function>
+        <Function Name="vUTPCommand_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CommandID" Type="varchar" Mode="In" />
+          <Parameter Name="CommandLine" Type="varchar" Mode="In" />
+          <Parameter Name="RelateID" Type="varchar" Mode="In" />
+          <Parameter Name="Sequence" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ServiceDirectDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ServiceDirectDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="vUTPCompany" EntityType="ServiceDirectDBModel.vUTPCompany" />
+          <EntitySet Name="vUTPCycle" EntityType="ServiceDirectDBModel.vUTPCycle" />
+          <EntitySet Name="tblBackup" EntityType="ServiceDirectDBModel.tblBackup" />
+          <EntitySet Name="vUTPCommand" EntityType="ServiceDirectDBModel.vUTPCommand" />
+          <EntitySet Name="vOnlySysJobs" EntityType="ServiceDirectDBModel.vOnlySysJobs" />
+          <FunctionImport Name="PrUpdateJob">
+            <Parameter Name="Sjob_name" Mode="In" Type="String" />
+            <Parameter Name="ienabled" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="vSchedulerTasks" EntityType="ServiceDirectDBModel.vSchedulerTasks" />
+          <EntitySet Name="tblEmail" EntityType="ServiceDirectDBModel.tblEmail" />
+          <EntitySet Name="tblScheduler" EntityType="ServiceDirectDBModel.tblScheduler" />
+          <AssociationSet Name="FK_tblScheduler_tblBackup" Association="ServiceDirectDBModel.FK_tblScheduler_tblBackup">
+            <End Role="tblBackup" EntitySet="tblBackup" />
+            <End Role="tblScheduler" EntitySet="tblScheduler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tblScheduler_tblEmail" Association="ServiceDirectDBModel.FK_tblScheduler_tblEmail">
+            <End Role="tblEmail" EntitySet="tblEmail" />
+            <End Role="tblScheduler" EntitySet="tblScheduler" />
+          </AssociationSet>
+          <FunctionImport Name="PrJobEmail">
+          <Parameter Name="sEmailID" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="vBackupAndEmailSetting" EntityType="ServiceDirectDBModel.vBackupAndEmailSetting" />
+          <EntitySet Name="vUTPScheduleMessager" EntityType="ServiceDirectDBModel.vUTPScheduleMessager" />
+          <EntitySet Name="vSchedulerEmailBackup" EntityType="ServiceDirectDBModel.vSchedulerEmailBackup" />
+          <EntitySet Name="vUTPCustomerState" EntityType="ServiceDirectDBModel.vUTPCustomerState" />
+          </EntityContainer>
+        <EntityType Name="vUTPCompany">
+          <Key>
+            <PropertyRef Name="CompName" />
+            <PropertyRef Name="Comp" />
+            <PropertyRef Name="CompanyID" />
+          </Key>
+          <Property Name="CompName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="CompLongitude" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CompLatitude" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Comp" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="false" />
+          <Property Name="CompanyID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="vUTPCycle">
+          <Key>
+            <PropertyRef Name="Cycle" />
+            <PropertyRef Name="CycleID" />
+          </Key>
+          <Property Name="Cycle" Type="Int16" Nullable="false" />
+          <Property Name="CompanyID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CycleID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="BillPeriodDays" Type="Single" />
+          <Property Name="Description" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="BillFrequency" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tblBackup">
+          <Key>
+            <PropertyRef Name="BackupID" />
+          </Key>
+          <Property Type="Guid" Name="BackupID" Nullable="false" />
+          <Property Type="String" Name="BackupFloder" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupDatabase" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="DeleteBackupOlder" />
+          <Property Type="String" Name="BackupServer" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupUser" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupPassword" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblScheduler" Relationship="ServiceDirectDBModel.FK_tblScheduler_tblBackup" FromRole="tblBackup" ToRole="tblScheduler" />
+        </EntityType>
+        <EntityType Name="vUTPCommand">
+          <Key>
+            <PropertyRef Name="CommandID" />
+            <PropertyRef Name="Sequence" />
+            <PropertyRef Name="CommandLine" />
+            <PropertyRef Name="RelateID" />
+          </Key>
+          <Property Type="String" Name="CommandID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="Sequence" Nullable="false" />
+          <Property Type="String" Name="CommandLine" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RelateID" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="vOnlySysJobs">
+          <Key>
+            <PropertyRef Name="job_id" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="enabled" />
+            <PropertyRef Name="start_step_id" />
+            <PropertyRef Name="category_id" />
+            <PropertyRef Name="notify_level_eventlog" />
+            <PropertyRef Name="notify_level_email" />
+            <PropertyRef Name="notify_level_netsend" />
+            <PropertyRef Name="notify_level_page" />
+            <PropertyRef Name="notify_email_operator_id" />
+            <PropertyRef Name="notify_netsend_operator_id" />
+            <PropertyRef Name="notify_page_operator_id" />
+            <PropertyRef Name="delete_level" />
+            <PropertyRef Name="date_created" />
+            <PropertyRef Name="date_modified" />
+            <PropertyRef Name="next_run_date" />
+            <PropertyRef Name="next_run_time" />
+            <PropertyRef Name="last_run_time" />
+            <PropertyRef Name="last_run_date" />
+          </Key>
+          <Property Type="Guid" Name="job_id" Nullable="false" />
+          <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Byte" Name="enabled" Nullable="false" />
+          <Property Type="String" Name="description" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="start_step_id" Nullable="false" />
+          <Property Type="Int32" Name="category_id" Nullable="false" />
+          <Property Type="Int32" Name="notify_level_eventlog" Nullable="false" />
+          <Property Type="Int32" Name="notify_level_email" Nullable="false" />
+          <Property Type="Int32" Name="notify_level_netsend" Nullable="false" />
+          <Property Type="Int32" Name="notify_level_page" Nullable="false" />
+          <Property Type="Int32" Name="notify_email_operator_id" Nullable="false" />
+          <Property Type="Int32" Name="notify_netsend_operator_id" Nullable="false" />
+          <Property Type="Int32" Name="notify_page_operator_id" Nullable="false" />
+          <Property Type="Int32" Name="delete_level" Nullable="false" />
+          <Property Type="DateTime" Name="date_created" Nullable="false" />
+          <Property Type="DateTime" Name="date_modified" Nullable="false" />
+          <Property Type="Int32" Name="next_run_date" Nullable="false" />
+          <Property Type="Int32" Name="next_run_time" Nullable="false" />
+          <Property Type="Int32" Name="last_run_time" Nullable="false" />
+          <Property Type="Int32" Name="last_run_date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vSchedulerTasks">
+          <Key>
+            <PropertyRef Name="job_id" />
+            <PropertyRef Name="name" />
+            <PropertyRef Name="enabled" />
+            <PropertyRef Name="start_step_id" />
+            <PropertyRef Name="category_id" />
+            <PropertyRef Name="notify_level_eventlog" />
+            <PropertyRef Name="notify_level_email" />
+            <PropertyRef Name="notify_level_netsend" />
+            <PropertyRef Name="notify_level_page" />
+            <PropertyRef Name="notify_email_operator_id" />
+            <PropertyRef Name="notify_netsend_operator_id" />
+            <PropertyRef Name="notify_page_operator_id" />
+            <PropertyRef Name="delete_level" />
+            <PropertyRef Name="date_created" />
+            <PropertyRef Name="date_modified" />
+            <PropertyRef Name="ScheduleID" />
+          </Key>
+          <Property Type="Guid" Name="job_id" Nullable="false" />
+          <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Byte" Name="enabled" Nullable="false" />
+          <Property Type="String" Name="description" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="start_step_id" Nullable="false" />
+          <Property Type="Int32" Name="category_id" Nullable="false" />
+          <Property Type="Int32" Name="notify_level_eventlog" Nullable="false" />
+          <Property Type="Int32" Name="notify_level_email" Nullable="false" />
+          <Property Type="Int32" Name="notify_level_netsend" Nullable="false" />
+          <Property Type="Int32" Name="notify_level_page" Nullable="false" />
+          <Property Type="Int32" Name="notify_email_operator_id" Nullable="false" />
+          <Property Type="Int32" Name="notify_netsend_operator_id" Nullable="false" />
+          <Property Type="Int32" Name="notify_page_operator_id" Nullable="false" />
+          <Property Type="Int32" Name="delete_level" Nullable="false" />
+          <Property Type="DateTime" Name="date_created" Nullable="false" />
+          <Property Type="DateTime" Name="date_modified" Nullable="false" />
+          <Property Type="String" Name="ScheduleType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="ScheduleID" Nullable="false" />
+          <Property Type="Guid" Name="JobID" />
+          <Property Type="DateTime" Name="RunOnlyStart" />
+          <Property Type="DateTime" Name="RunOnlyEnd" />
+        </EntityType>
+        <EntityType Name="tblEmail">
+          <Key>
+            <PropertyRef Name="EmailID" />
+          </Key>
+          <Property Type="Guid" Name="EmailID" Nullable="false" />
+          <Property Type="String" Name="EmailFrom" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="EmailPort" />
+          <Property Type="Boolean" Name="EmailSSL" />
+          <Property Type="String" Name="SMTPHost" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMTPUsername" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMTPPassword" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblScheduler" Relationship="ServiceDirectDBModel.FK_tblScheduler_tblEmail" FromRole="tblEmail" ToRole="tblScheduler" />
+        </EntityType>
+        <EntityType Name="tblScheduler">
+          <Key>
+            <PropertyRef Name="ScheduleID" />
+          </Key>
+          <Property Type="Guid" Name="ScheduleID" Nullable="false" />
+          <Property Type="Guid" Name="BackupID" />
+          <Property Type="Guid" Name="EmailID" />
+          <Property Type="String" Name="TaskName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ScheduleType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartTime" />
+          <Property Type="String" Name="RunOnly" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="RunOnlyStart" />
+          <Property Type="DateTime" Name="RunOnlyEnd" />
+          <Property Type="String" Name="Action" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PostAction" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Cycle" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Copy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Calc" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Trace" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TraceType" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TraceTable" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UTPUser" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UTPPwd" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="JobID" />
+          <Property Type="Guid" Name="KillID" />
+          <Property Type="Guid" Name="CommandID" />
+          <Property Type="String" Name="EmailTo" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tblBackup" Relationship="ServiceDirectDBModel.FK_tblScheduler_tblBackup" FromRole="tblScheduler" ToRole="tblBackup" />
+          <NavigationProperty Name="tblEmail" Relationship="ServiceDirectDBModel.FK_tblScheduler_tblEmail" FromRole="tblScheduler" ToRole="tblEmail" />
+        </EntityType>
+        <Association Name="FK_tblScheduler_tblBackup">
+          <End Type="ServiceDirectDBModel.tblBackup" Role="tblBackup" Multiplicity="0..1" />
+          <End Type="ServiceDirectDBModel.tblScheduler" Role="tblScheduler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblBackup">
+              <PropertyRef Name="BackupID" />
+            </Principal>
+            <Dependent Role="tblScheduler">
+              <PropertyRef Name="BackupID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tblScheduler_tblEmail">
+          <End Type="ServiceDirectDBModel.tblEmail" Role="tblEmail" Multiplicity="0..1" />
+          <End Type="ServiceDirectDBModel.tblScheduler" Role="tblScheduler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tblEmail">
+              <PropertyRef Name="EmailID" />
+            </Principal>
+            <Dependent Role="tblScheduler">
+              <PropertyRef Name="EmailID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="vBackupAndEmailSetting">
+          <Key>
+            <PropertyRef Name="BackupID" />
+            <PropertyRef Name="EmailID" />
+          </Key>
+          <Property Type="Guid" Name="BackupID" Nullable="false" />
+          <Property Type="String" Name="BackupFloder" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupDatabase" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="DeleteBackupOlder" />
+          <Property Type="String" Name="BackupServer" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupUser" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupPassword" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="EmailID" Nullable="false" />
+          <Property Type="String" Name="EmailFrom" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="EmailPort" />
+          <Property Type="Boolean" Name="EmailSSL" />
+          <Property Type="String" Name="SMTPHost" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMTPUsername" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMTPPassword" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="vUTPScheduleMessager">
+          <Key>
+            <PropertyRef Name="PID" />
+            <PropertyRef Name="SSubject" />
+            <PropertyRef Name="SMessage" />
+            <PropertyRef Name="UserName" />
+            <PropertyRef Name="GDT" />
+          </Key>
+          <Property Type="String" Name="PID" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SID" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="SDT" />
+          <Property Type="String" Name="SSubject" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMessage" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="18" FixedLength="true" Unicode="false" />
+          <Property Type="DateTime" Name="GDT" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vSchedulerEmailBackup">
+          <Key>
+            <PropertyRef Name="ScheduleID" />
+          </Key>
+          <Property Type="Guid" Name="BackupID" />
+          <Property Type="Guid" Name="EmailID" />
+          <Property Type="String" Name="TaskName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="ScheduleType" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="StartTime" />
+          <Property Type="String" Name="RunOnly" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="RunOnlyStart" />
+          <Property Type="DateTime" Name="RunOnlyEnd" />
+          <Property Type="String" Name="Action" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PostAction" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Company" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Cycle" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Copy" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Calc" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Trace" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TraceType" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="TraceTable" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UTPUser" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="JobID" />
+          <Property Type="String" Name="UTPPwd" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="KillID" />
+          <Property Type="Guid" Name="CommandID" />
+          <Property Type="String" Name="EmailTo" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMTPPassword" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMTPUsername" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SMTPHost" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="EmailSSL" />
+          <Property Type="Int32" Name="EmailPort" />
+          <Property Type="String" Name="EmailFrom" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupPassword" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupUser" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupServer" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="DeleteBackupOlder" />
+          <Property Type="String" Name="BackupDatabase" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BackupFloder" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Guid" Name="ScheduleID" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vUTPCustomerState">
+          <Key>
+            <PropertyRef Name="StatCode" />
+            <PropertyRef Name="CustomerStateID" />
+          </Key>
+          <Property Type="String" Name="StatCode" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="CustomerStateID" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Int16" Name="StatType" />
+          <Property Type="String" Name="Description" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="Billable" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ServiceDirectDBModelStoreContainer" CdmEntityContainer="ServiceDirectDBEntities">
+          <EntitySetMapping Name="vUTPCompany"><EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPCompany"><MappingFragment StoreEntitySet="vUTPCompany">
+            <ScalarProperty Name="CompName" ColumnName="CompName" />
+            <ScalarProperty Name="CompLongitude" ColumnName="CompLongitude" />
+            <ScalarProperty Name="CompLatitude" ColumnName="CompLatitude" />
+            <ScalarProperty Name="Comp" ColumnName="Comp" />
+            <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="vUTPCycle"><EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPCycle"><MappingFragment StoreEntitySet="vUTPCycle">
+            <ScalarProperty Name="Cycle" ColumnName="Cycle" />
+            <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+            <ScalarProperty Name="CycleID" ColumnName="CycleID" />
+            <ScalarProperty Name="BillPeriodDays" ColumnName="BillPeriodDays" />
+            <ScalarProperty Name="Description" ColumnName="Description" />
+            <ScalarProperty Name="BillFrequency" ColumnName="BillFrequency" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="tblBackup">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.tblBackup">
+              <MappingFragment StoreEntitySet="tblBackup">
+                <ScalarProperty Name="BackupPassword" ColumnName="BackupPassword" />
+                <ScalarProperty Name="BackupUser" ColumnName="BackupUser" />
+                <ScalarProperty Name="BackupServer" ColumnName="BackupServer" />
+                <ScalarProperty Name="DeleteBackupOlder" ColumnName="DeleteBackupOlder" />
+                <ScalarProperty Name="BackupDatabase" ColumnName="BackupDatabase" />
+                <ScalarProperty Name="BackupFloder" ColumnName="BackupFloder" />
+                <ScalarProperty Name="BackupID" ColumnName="BackupID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vUTPCommand">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPCommand">
+              <MappingFragment StoreEntitySet="vUTPCommand">
+                <ScalarProperty Name="RelateID" ColumnName="RelateID" />
+                <ScalarProperty Name="CommandLine" ColumnName="CommandLine" />
+                <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+                <ScalarProperty Name="CommandID" ColumnName="CommandID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPCommand">
+              <ModificationFunctionMapping>
+                <InsertFunction FunctionName="ServiceDirectDBModel.Store.vUTPCommand_Insert">
+                  <ScalarProperty Name="Sequence" ParameterName="Sequence" />
+                  <ScalarProperty Name="RelateID" ParameterName="RelateID" />
+                  <ScalarProperty Name="CommandLine" ParameterName="CommandLine" />
+                  <ScalarProperty Name="CommandID" ParameterName="CommandID" />
+                </InsertFunction>
+                <UpdateFunction FunctionName="ServiceDirectDBModel.Store.vUTPCommand_Update">
+                  <ScalarProperty Name="Sequence" ParameterName="Sequence" Version="Current" />
+                  <ScalarProperty Name="RelateID" ParameterName="RelateID" Version="Current" />
+                  <ScalarProperty Name="CommandLine" ParameterName="CommandLine" Version="Current" />
+                  <ScalarProperty Name="CommandID" ParameterName="CommandID" Version="Current" />
+                </UpdateFunction>
+                <DeleteFunction FunctionName="ServiceDirectDBModel.Store.vUTPCommand_Delete">
+                  <ScalarProperty Name="CommandID" ParameterName="CommandID" />
+                </DeleteFunction>
+              </ModificationFunctionMapping>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vOnlySysJobs">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vOnlySysJobs">
+              <MappingFragment StoreEntitySet="vOnlySysJobs">
+                <ScalarProperty Name="last_run_date" ColumnName="last_run_date" />
+                <ScalarProperty Name="last_run_time" ColumnName="last_run_time" />
+                <ScalarProperty Name="next_run_time" ColumnName="next_run_time" />
+                <ScalarProperty Name="next_run_date" ColumnName="next_run_date" />
+                <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+                <ScalarProperty Name="date_created" ColumnName="date_created" />
+                <ScalarProperty Name="delete_level" ColumnName="delete_level" />
+                <ScalarProperty Name="notify_page_operator_id" ColumnName="notify_page_operator_id" />
+                <ScalarProperty Name="notify_netsend_operator_id" ColumnName="notify_netsend_operator_id" />
+                <ScalarProperty Name="notify_email_operator_id" ColumnName="notify_email_operator_id" />
+                <ScalarProperty Name="notify_level_page" ColumnName="notify_level_page" />
+                <ScalarProperty Name="notify_level_netsend" ColumnName="notify_level_netsend" />
+                <ScalarProperty Name="notify_level_email" ColumnName="notify_level_email" />
+                <ScalarProperty Name="notify_level_eventlog" ColumnName="notify_level_eventlog" />
+                <ScalarProperty Name="category_id" ColumnName="category_id" />
+                <ScalarProperty Name="start_step_id" ColumnName="start_step_id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="enabled" ColumnName="enabled" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="job_id" ColumnName="job_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="PrUpdateJob" FunctionName="ServiceDirectDBModel.Store.PrUpdateJob" />
+          <EntitySetMapping Name="vSchedulerTasks">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vSchedulerTasks">
+              <MappingFragment StoreEntitySet="vSchedulerTasks">
+                <ScalarProperty Name="RunOnlyEnd" ColumnName="RunOnlyEnd" />
+                <ScalarProperty Name="RunOnlyStart" ColumnName="RunOnlyStart" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="ScheduleID" ColumnName="ScheduleID" />
+                <ScalarProperty Name="ScheduleType" ColumnName="ScheduleType" />
+                <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+                <ScalarProperty Name="date_created" ColumnName="date_created" />
+                <ScalarProperty Name="delete_level" ColumnName="delete_level" />
+                <ScalarProperty Name="notify_page_operator_id" ColumnName="notify_page_operator_id" />
+                <ScalarProperty Name="notify_netsend_operator_id" ColumnName="notify_netsend_operator_id" />
+                <ScalarProperty Name="notify_email_operator_id" ColumnName="notify_email_operator_id" />
+                <ScalarProperty Name="notify_level_page" ColumnName="notify_level_page" />
+                <ScalarProperty Name="notify_level_netsend" ColumnName="notify_level_netsend" />
+                <ScalarProperty Name="notify_level_email" ColumnName="notify_level_email" />
+                <ScalarProperty Name="notify_level_eventlog" ColumnName="notify_level_eventlog" />
+                <ScalarProperty Name="category_id" ColumnName="category_id" />
+                <ScalarProperty Name="start_step_id" ColumnName="start_step_id" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="enabled" ColumnName="enabled" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="job_id" ColumnName="job_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblEmail">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.tblEmail">
+              <MappingFragment StoreEntitySet="tblEmail">
+                <ScalarProperty Name="SMTPPassword" ColumnName="SMTPPassword" />
+                <ScalarProperty Name="SMTPUsername" ColumnName="SMTPUsername" />
+                <ScalarProperty Name="SMTPHost" ColumnName="SMTPHost" />
+                <ScalarProperty Name="EmailSSL" ColumnName="EmailSSL" />
+                <ScalarProperty Name="EmailPort" ColumnName="EmailPort" />
+                <ScalarProperty Name="EmailFrom" ColumnName="EmailFrom" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblScheduler">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.tblScheduler">
+              <MappingFragment StoreEntitySet="tblScheduler">
+                <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+                <ScalarProperty Name="CommandID" ColumnName="CommandID" />
+                <ScalarProperty Name="KillID" ColumnName="KillID" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="UTPPwd" ColumnName="UTPPwd" />
+                <ScalarProperty Name="UTPUser" ColumnName="UTPUser" />
+                <ScalarProperty Name="TraceTable" ColumnName="TraceTable" />
+                <ScalarProperty Name="TraceType" ColumnName="TraceType" />
+                <ScalarProperty Name="Trace" ColumnName="Trace" />
+                <ScalarProperty Name="Calc" ColumnName="Calc" />
+                <ScalarProperty Name="Copy" ColumnName="Copy" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Cycle" ColumnName="Cycle" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="PostAction" ColumnName="PostAction" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="RunOnlyEnd" ColumnName="RunOnlyEnd" />
+                <ScalarProperty Name="RunOnlyStart" ColumnName="RunOnlyStart" />
+                <ScalarProperty Name="RunOnly" ColumnName="RunOnly" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="ScheduleType" ColumnName="ScheduleType" />
+                <ScalarProperty Name="TaskName" ColumnName="TaskName" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="BackupID" ColumnName="BackupID" />
+                <ScalarProperty Name="ScheduleID" ColumnName="ScheduleID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="PrJobEmail" FunctionName="ServiceDirectDBModel.Store.PrJobEmail" />
+          <EntitySetMapping Name="vBackupAndEmailSetting">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vBackupAndEmailSetting">
+              <MappingFragment StoreEntitySet="vBackupAndEmailSetting">
+                <ScalarProperty Name="SMTPPassword" ColumnName="SMTPPassword" />
+                <ScalarProperty Name="SMTPUsername" ColumnName="SMTPUsername" />
+                <ScalarProperty Name="SMTPHost" ColumnName="SMTPHost" />
+                <ScalarProperty Name="EmailSSL" ColumnName="EmailSSL" />
+                <ScalarProperty Name="EmailPort" ColumnName="EmailPort" />
+                <ScalarProperty Name="EmailFrom" ColumnName="EmailFrom" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="BackupPassword" ColumnName="BackupPassword" />
+                <ScalarProperty Name="BackupUser" ColumnName="BackupUser" />
+                <ScalarProperty Name="BackupServer" ColumnName="BackupServer" />
+                <ScalarProperty Name="DeleteBackupOlder" ColumnName="DeleteBackupOlder" />
+                <ScalarProperty Name="BackupDatabase" ColumnName="BackupDatabase" />
+                <ScalarProperty Name="BackupFloder" ColumnName="BackupFloder" />
+                <ScalarProperty Name="BackupID" ColumnName="BackupID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vUTPScheduleMessager">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPScheduleMessager">
+              <MappingFragment StoreEntitySet="vUTPScheduleMessager">
+                <ScalarProperty Name="GDT" ColumnName="GDT" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="SMessage" ColumnName="SMessage" />
+                <ScalarProperty Name="SSubject" ColumnName="SSubject" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="SID" ColumnName="SID" />
+                <ScalarProperty Name="PID" ColumnName="PID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vSchedulerEmailBackup">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vSchedulerEmailBackup">
+              <MappingFragment StoreEntitySet="vSchedulerEmailBackup">
+                <ScalarProperty Name="ScheduleID" ColumnName="ScheduleID" />
+                <ScalarProperty Name="BackupFloder" ColumnName="BackupFloder" />
+                <ScalarProperty Name="BackupDatabase" ColumnName="BackupDatabase" />
+                <ScalarProperty Name="DeleteBackupOlder" ColumnName="DeleteBackupOlder" />
+                <ScalarProperty Name="BackupServer" ColumnName="BackupServer" />
+                <ScalarProperty Name="BackupUser" ColumnName="BackupUser" />
+                <ScalarProperty Name="BackupPassword" ColumnName="BackupPassword" />
+                <ScalarProperty Name="EmailFrom" ColumnName="EmailFrom" />
+                <ScalarProperty Name="EmailPort" ColumnName="EmailPort" />
+                <ScalarProperty Name="EmailSSL" ColumnName="EmailSSL" />
+                <ScalarProperty Name="SMTPHost" ColumnName="SMTPHost" />
+                <ScalarProperty Name="SMTPUsername" ColumnName="SMTPUsername" />
+                <ScalarProperty Name="SMTPPassword" ColumnName="SMTPPassword" />
+                <ScalarProperty Name="EmailTo" ColumnName="EmailTo" />
+                <ScalarProperty Name="CommandID" ColumnName="CommandID" />
+                <ScalarProperty Name="KillID" ColumnName="KillID" />
+                <ScalarProperty Name="UTPPwd" ColumnName="UTPPwd" />
+                <ScalarProperty Name="JobID" ColumnName="JobID" />
+                <ScalarProperty Name="UTPUser" ColumnName="UTPUser" />
+                <ScalarProperty Name="TraceTable" ColumnName="TraceTable" />
+                <ScalarProperty Name="TraceType" ColumnName="TraceType" />
+                <ScalarProperty Name="Trace" ColumnName="Trace" />
+                <ScalarProperty Name="Calc" ColumnName="Calc" />
+                <ScalarProperty Name="Copy" ColumnName="Copy" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Cycle" ColumnName="Cycle" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="PostAction" ColumnName="PostAction" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="RunOnlyEnd" ColumnName="RunOnlyEnd" />
+                <ScalarProperty Name="RunOnlyStart" ColumnName="RunOnlyStart" />
+                <ScalarProperty Name="RunOnly" ColumnName="RunOnly" />
+                <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+                <ScalarProperty Name="ScheduleType" ColumnName="ScheduleType" />
+                <ScalarProperty Name="TaskName" ColumnName="TaskName" />
+                <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+                <ScalarProperty Name="BackupID" ColumnName="BackupID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vUTPCustomerState">
+            <EntityTypeMapping TypeName="ServiceDirectDBModel.vUTPCustomerState">
+              <MappingFragment StoreEntitySet="vUTPCustomerState">
+                <ScalarProperty Name="Billable" ColumnName="Billable" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="StatType" ColumnName="StatType" />
+                <ScalarProperty Name="CustomerStateID" ColumnName="CustomerStateID" />
+                <ScalarProperty Name="StatCode" ColumnName="StatCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ServiceDirectModel">
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vUTPCompany" Width="1.5" PointX="0.75" PointY="4.125" Height="1.9700325520833335" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vUTPCycle" Width="1.5" PointX="6.75" PointY="4.125" Height="2.1610522460937496" IsExpanded="true" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblBackup" Width="1.5" PointX="0.75" PointY="9.5" Height="2.5430916341145817" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vUTPCommand" Width="1.5" PointX="0.75" PointY="0.75" Height="1.7790128580729174" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vOnlySysJobs" Width="1.5" PointX="7.375" PointY="7.75" Height="4.8353279622395853" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vSchedulerTasks" Width="1.5" PointX="3.375" PointY="0.75" Height="5.0263476562500031" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblEmail" Width="1.5" PointX="0.75" PointY="13.5" Height="2.5430916341145817" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.tblScheduler" Width="1.5" PointX="3" PointY="10.625" Height="6.1724658203125031" />
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblScheduler_tblBackup" >
+          <ConnectorPoint PointX="2.25" PointY="11.334045817057291" />
+          <ConnectorPoint PointX="3" PointY="11.334045817057291" />
+        </AssociationConnector>
+        <AssociationConnector Association="ServiceDirectDBModel.FK_tblScheduler_tblEmail" >
+          <ConnectorPoint PointX="2.25" PointY="14.771545817057291" />
+          <ConnectorPoint PointX="3" PointY="14.771545817057291" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vBackupAndEmailSetting" Width="1.5" PointX="9.375" PointY="9.75" Height="3.6892097981770746" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vUTPScheduleMessager" Width="1.5" PointX="3.375" PointY="6.75" Height="2.3520719401041674" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vSchedulerEmailBackup" Width="1.5" PointX="9.375" PointY="0.75" Height="8.0826627604166674" />
+        <EntityTypeShape EntityType="ServiceDirectDBModel.vUTPCustomerState" Width="1.5" PointX="5.375" PointY="0.75" Height="1.9700325520833388" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

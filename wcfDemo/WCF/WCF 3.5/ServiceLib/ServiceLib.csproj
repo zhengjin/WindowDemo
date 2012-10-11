@@ -1,0 +1,163 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3B0AA5C-E4BC-41FA-B14C-26BB75F4A7C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WCF.ServiceLib</RootNamespace>
+    <AssemblyName>WCF.ServiceLib</AssemblyName>
+    <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\WCF.ServiceLib.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.IdentityModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binding\Hello.cs" />
+    <Compile Include="Binding\IHello.cs" />
+    <Compile Include="ConcurrencyLock\Enum.cs" />
+    <Compile Include="ConcurrencyLock\IHello.cs" />
+    <Compile Include="ConcurrencyLock\Hello.cs" />
+    <Compile Include="Contract\Student.cs" />
+    <Compile Include="Contract\IPersonManager.cs" />
+    <Compile Include="Contract\Person.cs" />
+    <Compile Include="Contract\PersonManager.cs" />
+    <Compile Include="DB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Exception\FaultErrorHandler.cs" />
+    <Compile Include="Exception\FaultMessage.cs" />
+    <Compile Include="Exception\Hello.cs" />
+    <Compile Include="Exception\IHello.cs" />
+    <Compile Include="InstanceMode\PerCallMode.cs" />
+    <Compile Include="InstanceMode\PerSessionMode.cs" />
+    <Compile Include="InstanceMode\SingleMode.cs" />
+    <Compile Include="Message\OneWay.cs" />
+    <Compile Include="Message\IOneWay.cs" />
+    <Compile Include="Message\IDuplex.cs" />
+    <Compile Include="Message\Duplex.cs" />
+    <Compile Include="Message\IMtom.cs" />
+    <Compile Include="Message\Mtom.cs" />
+    <Compile Include="Message\IStreamed.cs" />
+    <Compile Include="Message\Streamed.cs" />
+    <Compile Include="Message\IDuplexReentrant.cs" />
+    <Compile Include="Message\DuplexReentrant.cs" />
+    <Compile Include="Message\IReliable.cs" />
+    <Compile Include="Message\Reliable.cs" />
+    <Compile Include="Message\IMSMQ.cs" />
+    <Compile Include="Message\MSMQ.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\IHello.cs" />
+    <Compile Include="Sample\Hello.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Hello.cs" />
+    <Compile Include="Security\IHello.cs" />
+    <Compile Include="Security\CustomNamePasswordValidator.cs" />
+    <Compile Include="Serialization\DataContractSerializerObject.cs" />
+    <Compile Include="Serialization\XmlSerializerObject.cs" />
+    <Compile Include="Serialization\SoapFormatterObject.cs" />
+    <Compile Include="Serialization\BinaryFormatterObject.cs" />
+    <Compile Include="Serialization\DataContractJsonSerializerObject.cs" />
+    <Compile Include="SessionManagement\Hello.cs" />
+    <Compile Include="SessionManagement\IHello.cs" />
+    <Compile Include="Transaction\Hello.cs" />
+    <Compile Include="Transaction\Hi.cs" />
+    <Compile Include="Transaction\Result.cs" />
+    <Compile Include="Web\REST.cs" />
+    <Compile Include="Web\IREST.cs" />
+    <Compile Include="Web\User.cs" />
+    <Compile Include="Web\IAJAX.cs" />
+    <Compile Include="Web\AJAX.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.mdf">
+    </Content>
+    <Content Include="Database_log.LDF">
+      <DependentUpon>Database.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DB.dbml.layout">
+      <DependentUpon>DB.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

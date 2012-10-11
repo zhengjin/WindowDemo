@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\vsTemp" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="App_Data/RadCaptcha/6.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/D.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/1.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="Global.asax" publishTime="08/01/2011 16:18:42" />
+    <file relUrl="App_Data/RadCaptcha/J.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="Site.Master" publishTime="08/01/2011 16:18:42" />
+    <file relUrl="App_Data/RadCaptcha/T.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/B.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="Styles/Site1.css" publishTime="08/02/2011 08:24:52" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="08/01/2011 16:18:42" />
+    <file relUrl="App_Data/RadCaptcha/4.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="bin/CDPro.BLL.dll" publishTime="08/04/2011 11:18:39" />
+    <file relUrl="App_Data/RadCaptcha/R.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/G.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/H.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/Q.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/2.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/3.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="bin/Telerik.Web.UI.dll" publishTime="05/18/2011 15:44:48" />
+    <file relUrl="App_Data/RadCaptcha/X.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/9.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/O.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/P.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/7.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="08/01/2011 16:18:42" />
+    <file relUrl="App_Data/RadCaptcha/8.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="LoginFolder/LoginPage.aspx" publishTime="08/04/2011 10:46:55" />
+    <file relUrl="App_Data/RadCaptcha/0.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="Default.aspx" publishTime="08/04/2011 11:14:37" />
+    <file relUrl="App_Data/RadCaptcha/W.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="bin/cssControl.dll" publishTime="08/04/2011 11:18:39" />
+    <file relUrl="App_Data/RadCaptcha/E.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="bin/cssControl.pdb" publishTime="08/04/2011 11:18:39" />
+    <file relUrl="LoginFolder/LoginPage1.aspx" publishTime="08/04/2011 10:27:35" />
+    <file relUrl="App_Data/RadCaptcha/5.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="Styles/Site.css" publishTime="08/02/2011 08:24:46" />
+    <file relUrl="App_Data/RadCaptcha/U.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/M.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="differentSkin.aspx" publishTime="08/04/2011 10:00:23" />
+    <file relUrl="App_Data/RadCaptcha/K.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/N.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="bin/CDPro.BLL.pdb" publishTime="08/04/2011 11:18:39" />
+    <file relUrl="App_Data/RadCaptcha/C.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="Web.config" publishTime="08/04/2011 11:18:46" />
+    <file relUrl="App_Data/RadCaptcha/F.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/I.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/L.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/S.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/V.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/A.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/Y.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="App_Data/RadCaptcha/Z.wav" publishTime="05/19/2011 15:42:14" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="08/01/2011 16:18:42" />
+  </publishProfile>
+</publishData>

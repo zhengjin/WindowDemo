@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4bb8771d-4e06-4542-b656-4b5531d87c0f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3502/ServiceHost/Serialization/DataContractSerializer.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DataContractSerializer.disco" MetadataType="Disco" ID="5e279adc-40b3-4eab-a4ae-0aac500e4863" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Serialization/DataContractSerializer.svc?disco" />
+    <MetadataFile FileName="Sample.wsdl" MetadataType="Wsdl" ID="dcfed08c-5c18-4a6c-b959-059913185791" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Serialization/DataContractSerializer.svc?wsdl" />
+    <MetadataFile FileName="DataContractSerializer1.xsd" MetadataType="Schema" ID="4aab4b3a-20e6-4840-8cc3-f990431ce9c5" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Serialization/DataContractSerializer.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,313 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47BD3942-3428-45F8-8F1C-E904DA2538F9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>datepickerDemo</RootNamespace>
+    <AssemblyName>datepickerDemo</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calendar.html" />
+    <Content Include="css\jiathis_share.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\SyntaxHighlighter.css" />
+    <Content Include="images\a.png" />
+    <Content Include="images\add.gif" />
+    <Content Include="images\addb.gif" />
+    <Content Include="images\all.css" />
+    <Content Include="images\all.gif" />
+    <Content Include="images\allB.gif" />
+    <Content Include="images\allclear.gif" />
+    <Content Include="images\allclearB.gif" />
+    <Content Include="images\AllToLeft.gif" />
+    <Content Include="images\AllToRight.gif" />
+    <Content Include="images\arrow-left.gif" />
+    <Content Include="images\arrow-right.gif" />
+    <Content Include="images\bg_blank.gif" />
+    <Content Include="images\blank100.gif" />
+    <Content Include="images\blank100B.gif" />
+    <Content Include="images\Blank25.gif" />
+    <Content Include="images\blank25B.gif" />
+    <Content Include="images\blank50.gif" />
+    <Content Include="images\blank50B.gif" />
+    <Content Include="images\blank80.gif" />
+    <Content Include="images\blank80b.gif" />
+    <Content Include="images\body-bg.png" />
+    <Content Include="images\butsel.gif" />
+    <Content Include="images\buttom_bgs.gif" />
+    <Content Include="images\buttom_bgs1.gif" />
+    <Content Include="images\buttom_left2.gif" />
+    <Content Include="images\buttom_right2.gif" />
+    <Content Include="images\calendar.css" />
+    <Content Include="images\calendar.gif" />
+    <Content Include="images\calTit.jpg" />
+    <Content Include="images\cancel.gif" />
+    <Content Include="images\cancelb.gif" />
+    <Content Include="images\changeWeekDay.png" />
+    <Content Include="images\changeWeekDayIco.png" />
+    <Content Include="images\changeWorkDay.png" />
+    <Content Include="images\changeWorkDayIco.png" />
+    <Content Include="images\clean.gif" />
+    <Content Include="images\cleanB.gif" />
+    <Content Include="images\close.gif" />
+    <Content Include="images\closeB.gif" />
+    <Content Include="images\closewin.gif" />
+    <Content Include="images\Collapse.gif" />
+    <Content Include="images\confirm.gif" />
+    <Content Include="images\confirmb.gif" />
+    <Content Include="images\consign.gif" />
+    <Content Include="images\consignB.gif" />
+    <Content Include="images\content-bg.gif" />
+    <Content Include="images\del.gif" />
+    <Content Include="images\delB.gif" />
+    <Content Include="images\deleteFile.gif" />
+    <Content Include="images\Expand.gif" />
+    <Content Include="images\fontSize12.css" />
+    <Content Include="images\goback.gif" />
+    <Content Include="images\gobackB.gif" />
+    <Content Include="images\green.gif" />
+    <Content Include="images\ji.gif" />
+    <Content Include="images\leach.gif" />
+    <Content Include="images\leachB.gif" />
+    <Content Include="images\left-top-right.gif" />
+    <Content Include="images\list.jpg" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\logon.gif" />
+    <Content Include="images\mail_leftbg.gif" />
+    <Content Include="images\mail_rightbg.gif" />
+    <Content Include="images\main.css" />
+    <Content Include="images\menu_bg1.gif" />
+    <Content Include="images\menu_bg2.gif" />
+    <Content Include="images\menu_bgs.gif" />
+    <Content Include="images\menu_topimg.gif" />
+    <Content Include="images\menu_topline.gif" />
+    <Content Include="images\message.gif" />
+    <Content Include="images\messageShow.png" />
+    <Content Include="images\mod.gif" />
+    <Content Include="images\modb.gif" />
+    <Content Include="images\nav-right-bg.gif" />
+    <Content Include="images\nav.jpg" />
+    <Content Include="images\newrecord.gif" />
+    <Content Include="images\news-title-bg.gif" />
+    <Content Include="images\ok.gif" />
+    <Content Include="images\okB.gif" />
+    <Content Include="images\oldrecord.gif" />
+    <Content Include="images\PanelTab.css" />
+    <Content Include="images\pic_user2.gif" />
+    <Content Include="images\print.gif" />
+    <Content Include="images\printb.gif" />
+    <Content Include="images\quit.gif" />
+    <Content Include="images\red.gif" />
+    <Content Include="images\reelection.gif" />
+    <Content Include="images\reelectionB.gif" />
+    <Content Include="images\refuse.gif" />
+    <Content Include="images\refuseB.gif" />
+    <Content Include="images\reselect.gif" />
+    <Content Include="images\reselectB.gif" />
+    <Content Include="images\save.gif" />
+    <Content Include="images\saveB.gif" />
+    <Content Include="images\search.jpg" />
+    <Content Include="images\SelKm_c.gif" />
+    <Content Include="images\SelKm_cb.gif" />
+    <Content Include="images\serach.gif" />
+    <Content Include="images\serachB.gif" />
+    <Content Include="images\setup.gif" />
+    <Content Include="images\setupb.gif" />
+    <Content Include="images\skin.css" />
+    <Content Include="images\sort.gif" />
+    <Content Include="images\SortAsc.gif" />
+    <Content Include="images\SortDesc.gif" />
+    <Content Include="images\submit.gif" />
+    <Content Include="images\submitB.gif" />
+    <Content Include="images\switch.gif" />
+    <Content Include="images\switch80.gif" />
+    <Content Include="images\switch80B.gif" />
+    <Content Include="images\switchB.gif" />
+    <Content Include="images\tableHead.gif" />
+    <Content Include="images\tableHead2.gif" />
+    <Content Include="images\tlbBjFx.gif" />
+    <Content Include="images\tlbBzCx.gif" />
+    <Content Include="images\tlbChart.gif" />
+    <Content Include="images\ToLeft.gif" />
+    <Content Include="images\tool-sprites.gif" />
+    <Content Include="images\tool.gif" />
+    <Content Include="images\top-right.gif" />
+    <Content Include="images\topBarC.gif" />
+    <Content Include="images\top_bt.jpg" />
+    <Content Include="images\top_bt1.jpg" />
+    <Content Include="images\top_bt3.jpg" />
+    <Content Include="images\top_bt4.jpg" />
+    <Content Include="images\top_bt5.jpg" />
+    <Content Include="images\top_bt6.jpg" />
+    <Content Include="images\top_bt7.jpg" />
+    <Content Include="images\top_btx.jpg" />
+    <Content Include="images\ToRight.gif" />
+    <Content Include="images\undo.gif" />
+    <Content Include="images\undob.gif" />
+    <Content Include="images\validator.css" />
+    <Content Include="images\view.gif" />
+    <Content Include="images\vip.gif" />
+    <Content Include="images\vipb.gif" />
+    <Content Include="images\weakDay.png" />
+    <Content Include="images\WebResource.gif" />
+    <Content Include="images\withdraw.gif" />
+    <Content Include="images\withdrawb.gif" />
+    <Content Include="images\workDay.png" />
+    <Content Include="images\write.gif" />
+    <Content Include="images\writeb.gif" />
+    <Content Include="images\yellow.gif" />
+    <Content Include="images\yi.gif" />
+    <Content Include="js\calendar.js" />
+    <Content Include="js\closewin.gif" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\popup.js" />
+    <Content Include="js\popupclass.js" />
+    <Content Include="js\show_ads.js" />
+    <Content Include="My97DatePicker\calendar.js" />
+    <Content Include="My97DatePicker\lang\en.js" />
+    <Content Include="My97DatePicker\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\skin\default\img.gif" />
+    <Content Include="My97DatePicker\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\skin\whyGreen\img.gif" />
+    <Content Include="My97DatePicker\WdatePicker.js" />
+    <Content Include="My97DatePicker\开发包\lang\en.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-cn.js" />
+    <Content Include="My97DatePicker\开发包\lang\zh-tw.js" />
+    <Content Include="My97DatePicker\开发包\readme.txt" />
+    <Content Include="My97DatePicker\开发包\skin\datePicker.gif" />
+    <Content Include="My97DatePicker\开发包\skin\default\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\default\img.gif" />
+    <Content Include="My97DatePicker\开发包\skin\WdatePicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\bg.jpg" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\datepicker.css" />
+    <Content Include="My97DatePicker\开发包\skin\whyGreen\img.gif" />
+    <Content Include="my97Demo.aspx" />
+    <Content Include="openWindow.aspx" />
+    <Content Include="popup.htm" />
+    <Content Include="SetWorkingDays.aspx" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="my97Demo.aspx.cs">
+      <DependentUpon>my97Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="my97Demo.aspx.designer.cs">
+      <DependentUpon>my97Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="openWindow.aspx.cs">
+      <DependentUpon>openWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="openWindow.aspx.designer.cs">
+      <DependentUpon>openWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetWorkingDays.aspx.cs">
+      <DependentUpon>SetWorkingDays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetWorkingDays.aspx.designer.cs">
+      <DependentUpon>SetWorkingDays.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\buttom_bgs1.psd" />
+    <None Include="images\buttom_left2.psd" />
+    <None Include="images\login.psd" />
+    <None Include="images\logo.psd" />
+    <None Include="images\top_bt1.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2501</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

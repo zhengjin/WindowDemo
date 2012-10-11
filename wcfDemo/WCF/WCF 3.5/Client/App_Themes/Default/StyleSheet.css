@@ -1,0 +1,29 @@
+﻿body, table, tr, td
+{
+    margin: 0;
+    font-size: 12px;
+}
+
+input
+{
+    font-size: 12px;
+    color: #000000;
+    font-weight: normal;
+    background-color: #EEEEEE;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+select
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 90%;
+}
+
+textarea
+{
+    width: 200px;
+    height: 60px;
+}

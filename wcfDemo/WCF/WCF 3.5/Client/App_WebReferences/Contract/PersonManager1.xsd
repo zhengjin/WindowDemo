@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF.ServiceLib.Contract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF.ServiceLib.Contract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="StudentModel">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:PersonModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="School" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudentModel" nillable="true" type="tns:StudentModel" />
+  <xs:complexType name="PersonModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PersonName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PersonAge" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonModel" nillable="true" type="tns:PersonModel" />
+</xs:schema>

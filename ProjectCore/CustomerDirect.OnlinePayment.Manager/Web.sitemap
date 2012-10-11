@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Home"  description="Home">
+    <siteMapNode url="~/Authorization/RoleManagerForm.aspx" title="Role Manager"  description="Role Manager" />
+    <siteMapNode url="~/Authorization/UserManagerForm.aspx" title="User Manager"  description="User Manager" />
+    <siteMapNode url="~/BaseData/BaseDataManagerForm.aspx" title="Value List Manager"  description="Value List Manager" />
+
+    <siteMapNode url="~/AuditTrail.aspx" title="Audit Trail"  description="Audit Trail" />
+    <siteMapNode url="~/WorkOrder/NewWorkOrderForm.aspx" title="Create Work Order"  description="Create Work Order" />
+    <siteMapNode url="~/WorkOrder/EditWorkOrderSercahForm.aspx" title="Edit Work Order"  description="Edit Work Order" >
+      <siteMapNode url="~/WorkOrder/EditWorkOrderForm.aspx" title="Edit Work Detail"  description="Edit Work Detail" />
+      <siteMapNode url="~/WorkOrder/WorkOrderViewForm.aspx" title="Work Order View"  description="Work Order View" />
+    </siteMapNode>
+    <siteMapNode url="~/WorkOrder/CreateWorkOrderFile.aspx" title="Create Work Order From File"  description="Create Work Order From File" />
+    <siteMapNode url="~/WorkOrder/ExportFile.aspx" title="Work Order Transfer To Handhled"  description="Work Order Transfer To Handhled" />
+    <siteMapNode url="~/WorkOrder/ImportFile.aspx" title="Work Order Transfer From Handhled"  description="Work Order Transfer From Handhled" >
+      <siteMapNode url="~/WorkOrder/ImportWorkOrder.aspx" title="Import Data"  description="Import Data" />
+    </siteMapNode>
+    <siteMapNode url="~/Scheduler/WorkScheduler.aspx" title="Work Scheduler"  description="Work Scheduler" />
+    <siteMapNode url="~/Authorization/ExpressSetting.aspx" title="Express Setting"  description="Express Setting" />
+  </siteMapNode>
+</siteMap>

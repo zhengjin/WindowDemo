@@ -1,0 +1,4355 @@
+/* Telerik.com Global Styles */
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+body 
+{
+    background: #21242C;
+    color: #333;
+    font: 11px/1.4 arial,sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.tWrapAll 
+{
+    background: #fff url('/CSS/Global/body.jpg') repeat-x 0 0;    
+    min-width: 986px;
+}
+
+img
+{
+    border: 0;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus
+{
+    cursor: pointer;
+    outline: none;
+}
+input.fSubmitBtn
+{
+    outline: 0;
+    cursor: pointer;
+}
+iframe
+{
+    border: 0;
+}
+
+.tPageMain a:active, .tPageMain a:focus
+{
+    color: #cc0000;
+}
+
+a, object
+{
+    outline: none;
+}
+hr
+{
+    width: 100%;
+    height: 1px;
+    float: left;
+    clear: both;
+    background-color: #e5e4e4;
+    border: 0;
+    border-color: #e5e4e4;
+    color: #e5e4e4;
+    margin-top: 5px;
+}
+
+/*floats*/
+.tTop:after, .tContent:after, .tBottom:after, .tSiteDir:after, .tBorderBox:after, .tClear:after
+{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.tTop, .tContent, .tBottom, .tSiteDir, .tBorderBox, .tClear
+{
+    display: inline-block;
+}
+.tTop, .tContent, .tBottom, .tSiteDir, .tBorderBox, .tClear
+{
+    display: block;
+}
+.tClearer
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+acronym
+{
+    cursor: help;
+    border-bottom: 1px dotted;
+}
+.tNone
+{
+    position: absolute;
+    top: 0;
+    left: -4444px;
+}
+/*navigation over content*/
+.tTop
+{
+    position: relative; 
+    z-index: 2;
+}
+.tContent
+{
+    position: relative; 
+    z-index: 1;
+    min-height: 450px;
+    background: #fff;
+}
+/*top*/
+.tTopWrap
+{
+    height: 100px;
+    float:left;
+    margin:2px 0 0;
+    width:100%;    
+    background: url('/CSS/Global/menu-sprite.png') no-repeat top center;
+}
+.tTop h1 a, .tTop span.telerik a
+{
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -4444px;
+    position: relative; /*IE8*/
+    color: #999; /*outline*/    
+}
+
+.tSiteSearch
+{
+    background:url("/CSS/Global/menu-sprite.png") no-repeat scroll -797px -91px transparent;
+    clear:right;
+    font:11px/22px arial,sans-serif;
+    padding:6px 0 3px;
+    position: absolute;
+    right: 0;    
+    text-align:right;
+    top: 57px;    
+    width:189px;
+    z-index: 110;        
+}
+.tSiteSearch label
+{
+    position: absolute;
+    top: 9px;
+    left: 0; /* width:193px; */
+    padding: 0 0 0 10px;
+    color: #999;
+    text-align: left;
+    font-style: italic;
+}
+.tSiteSearch input
+{
+    border: 0;
+    margin-top:6px;
+}
+.tSearchBoxBtn
+{
+    display:block;     
+    width: 25px; 
+    height: 22px; 
+    position: absolute; 
+    top:44px;
+    right: 0;    
+    cursor: pointer;
+    z-index: 2;
+}
+.tSearchBox
+{
+    width: 156px;
+    height: 14px;
+    padding: 0;
+    background: #fff;
+    line-height: 12px;
+    vertical-align: middle;
+}
+.tSearchSubmit
+{
+    background:url("/CSS/Global/menu-sprite.png") no-repeat scroll -766px -97px;
+    cursor: pointer;
+    height:18px;
+    vertical-align: middle;
+    width:26px;
+}
+
+/* ** * * * ** * ** * * * * * * * **/
+
+/*subnavigation*/
+.rmFirst .rmGroup .tNavTemplate .tBorderBox
+{
+    background-position: -970px 0;
+}
+.tLogInTemplate .tBorderBox
+{
+    background: none;
+}
+.tNavTemplate .tLeft
+{
+    float: left;
+    width: 131px;
+    padding-right: 19px;
+    margin-right: 19px;
+}
+.tNavTemplate .tRight
+{
+    float: right;
+    width: 131px;
+}
+.tNavTemplate a
+{
+    font: normal 11px/36px arial,sans-serif;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: normal !important;
+    display: block;
+}
+.tNavTemplate a:hover
+{
+    text-decoration: none;
+    color: #fff;
+}
+.tProductList li
+{
+    width: 200px;
+    margin: 0 0 0 4px;
+    border-bottom: 1px solid #3c3f44;
+}
+.tProductList li.tNoBrd
+{
+    border: 0;
+}
+.tProductList p a
+{
+    display: block;
+    height: 22px;
+    padding: 2px 0 0 25px;
+    margin: 0 0 0 8px;
+    background: url('/CSS/Global/spriteTopNavIcons.gif') no-repeat;
+    font: bold 11px/1.2 arial,sans-serif;
+    cursor: pointer;
+}
+.tProductList .tRadAsp
+{
+    background-position: 0 0;
+}
+.tProductList a.tRadAsp:hover
+{
+    background-position: 0 -391px;
+}
+.tProductList .tRadWin
+{
+    background-position: 0 -50px;
+}
+.tProductList a.tRadWin:hover
+{
+    background-position: 0 -459px;
+}
+.tProductList .tRadSil
+{
+    background-position: 0 -186px;
+}
+
+.tProductList a.tRadSil:hover
+{
+    background-position: 0 -594px;
+}
+.tProductList .tRadWPF
+{
+    background-position: 0 -118px;
+}
+.tProductList a.tRadWPF:hover
+{
+    background-position: 0 -526px;
+}
+.tProductList .tRadOrm
+{
+    background-position: 0 -322px;
+}
+.tProductList a.tRadOrm:hover
+{
+    background-position: 0 -730px;
+}
+.tProductList .tRadSit
+{
+    background-position: 0 -799px;
+}
+.tProductList a.tRadSit:hover
+{
+    background-position: 0 -868px;
+}
+.tProductList .tRadRep
+{
+    background-position: 0 -254px;
+}
+.tProductList a.tRadRep:hover
+{
+    background-position: 0 -662px;
+}
+.tProductList .tWEBtest
+{
+    background-position: 0 -937px;
+}
+.tProductList a.tWEBtest:hover
+{
+    background-position: 0 -1006px;
+}
+.tProductList p a span
+{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.tNavTemplate a:hover
+{
+    text-decoration: none;
+}
+.tProductList, .tComplexList, .tSimpleList
+{
+    list-style-type: none;
+    font: 11px/14px arial,sans-serif;
+}
+.tProductList li
+{
+    padding: 0 0 2px 0;
+}
+
+.tComplexList li
+{
+    padding: 0 0 17px 0;
+}
+.tRTF ul.tComplexList li
+{
+    margin-bottom: 10px;
+}
+.tSimpleList li
+{
+    padding: 0 0 0.4em 0;
+}
+
+.tComplexList p
+{
+    padding: 0 0 3px 0;
+}
+
+.tProductList p
+{
+    padding: 8px 0 0 0;
+}
+
+*html .tProductList p
+{
+    padding: 1px 0 0 0;
+}
+
+.tSimpleList p
+{
+    padding: 0 0 4px 0;
+}
+
+.tProductList em, .tComplexList em, .tSimpleList em
+{
+    font-style: normal;
+    color: #666;
+}
+
+.tLogInTemplate input
+{
+    vertical-align: middle;
+}
+
+.tLogInUser, .tLogInPass
+{
+    border: 1px solid #999;
+    padding: 3px 5px 4px;
+    background: #fff;
+    color: #666;
+    font-style: italic;
+}
+
+.tLogInUser
+{
+    width: 239px;
+    margin: 1px 0 11px;
+}
+
+.tLogInPass
+{
+    width: 145px;
+    margin: 0 0 6px;
+}
+
+
+.tLogInTemplate .tSignUp
+{
+    border-top: 1px solid #2b2b2b;
+    padding-top: 14px;
+}
+
+/* Header Basket */
+.tBasketAndLogin .tHeaderBasket
+{
+    display: inline;
+}
+.tBasketAndLogin .tHeaderBasket a
+{
+    padding: 2px 23px 10px 32px;
+    color: #cf0;
+    background: transparent url('/CSS/Global/headerBasket.gif') no-repeat 0 0px;
+    text-decoration: none;
+}
+
+/* login status */
+.tBasketAndLogin
+{
+    width: 238px;
+    height: 40px;
+    right: 0;
+    top: 5px;
+    text-align:right;
+    position: absolute;
+    z-index: 9000;
+    line-height: 1.2;
+}
+
+*html .tBasketAndLogin
+{
+    height: 32px;
+    vertical-align: middle;
+}
+
+.tLoginNameAndStatus
+{    
+    display: inline;
+    color: #999;    
+}
+.tLoginStatus span
+{
+    margin: 0;
+}
+.tLoginNameAndStatus a:link, .tLoginNameAndStatus a:visited, .tLoginNameAndStatus a:hover, .tLoginNameAndStatus a:active
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 3px;
+    font-weight: bold;
+}
+.tLoginNameAndStatus a:hover
+{
+    text-decoration: underline;
+}
+.tLoginNameAndStatus a.tLogoutLink:link, .tLoginNameAndStatus a.tLogoutLink:visited, .tLoginNameAndStatus a.tLogoutLink:hover, .tLoginNameAndStatus a.tLogoutLink:active
+{
+    font-weight: normal;
+}
+.tSignUpLink, .tLoginStatus
+{
+    display: inline;
+}
+
+.tLogoutButtonLink, .tLoginButtonLink
+{
+    background: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 11px;
+    width: 41px;
+}
+
+/* IE fixes */
+* + html .tLogoutButtonLink, * + html .tLoginButtonLink, * + html .RadMenu
+{
+    vertical-align: middle;
+}
+
+*html .tLogoutButtonLink, *html .tLoginButtonLink, *html .RadMenu
+{
+    vertical-align: middle;
+}
+/* EndOf IE fixes */
+
+.tLoginButtonLink
+{
+    font-weight: bold;
+}
+
+input.tLogoutButtonLink:hover
+{
+    background: transparent url('/CSS/Global/dots.gif') no-repeat 4px 13px;
+}
+
+input.tLoginButtonLink:hover
+{
+    background: transparent url('/CSS/Global/dots.gif') no-repeat 4px -36px;
+}
+
+html*input.tLoginButtonLink:hover
+{
+    background: transparent url('/CSS/Global/dots.gif') no-repeat 5px -36px;
+}
+
+html*input.tLogoutButtonLink:hover
+{
+    background: transparent url('/CSS/Global/dots.gif') no-repeat 6px 13px;
+}
+
+@media screen and (min-width:550px)
+{
+    :root input.tLoginButtonLink:hover
+    {
+        background: transparent url('/CSS/Global/dots.gif') no-repeat 3px -36px;
+    }
+    :root input.tLogoutButtonLink:hover
+    {
+        background: transparent url('/CSS/Global/dots.gif') no-repeat 2px 13px;
+    }
+}
+
+.tYourAccountLink
+{
+    font-weight: bold;
+}
+a.tWhyRegister:link, a.tWhyRegister:visited, a.tWhyRegister:hover, a.tWhyRegister:active
+{
+    color: #999;
+    position: relative;
+    z-index: 10000;
+    font-weight: normal;
+    padding: 0;
+    background: transparent url('/CSS/Global/tWhyRegisterBG.gif') repeat-x 0 100%;
+}
+a.tWhyRegister:hover
+{
+    text-decoration: none;
+}
+.tWhyRegisterExplanation
+{
+    position: absolute;
+    top:25px;
+    right: 2px;
+    z-index: 8000;
+    text-align: left;
+    width: 254px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.tWhyRegisterExplanation strong
+{
+    display: block;
+    color: #333;
+    background: transparent url('/CSS/Global/whyRegister.png') no-repeat 0 0;
+    padding: 35px 25px 0;
+}
+.tWhyRegisterExplanation ul
+{
+    padding: 0 23px 23px;
+    background: transparent url('/CSS/Global/whyRegister.png') no-repeat 0 100%;
+}
+
+.tWhyRegisterExplanation .closeWhyRegisterExplanation
+{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    display: block;
+    width: 11px;
+    height: 11px;
+    text-indent: -9999px;
+    outline: 0;
+    background: transparent url('/CSS/Global/closeXBtn.gif') no-repeat 0 0;
+}
+
+/*content*/
+
+.tContentWrap
+{       
+}
+
+.tInnerWrap
+{
+    width: 986px;
+    margin: 0 auto; 
+}
+
+/*page head*/
+
+.tPageHead h1, .tPageHead p
+{
+    padding: 22px 34px 0;
+    font: 30px/1.1 arial,sans-serif;
+}
+
+.tPlainHead
+{
+    background: #fff url('/CSS/Global/menu-sprite.png') no-repeat 0 -860px;  
+    min-height: 10px;
+}
+
+/*breadcrumbs*/
+
+.tCrumbs
+{
+    padding: 39px 33px 0;
+}
+
+.tCrumbs a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.tCrumbs a:hover
+{
+    text-decoration: underline;
+}
+
+.tBreadcrumb
+{
+    display: block;
+    padding: 7px 34px 0;
+    background-color: #fff;
+    color: #666;
+    font-size: 11px;
+}
+.tRTF .tBreadcrumb
+{
+    margin: 0;
+    padding: 0 0 13px 0;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+.tBreadcrumb span
+{
+    float: left;
+}
+.tBreadcrumb a, .tBreadcrumb a:link, .tBreadcrumb a:visited, .tBreadcrumb a:hover, .tBreadcrumb a:active,
+.tRTF .tBreadcrumb a, .tRTF .tBreadcrumb a:link, .tRTF .tBreadcrumb a:visited, .tRTF .tBreadcrumb a:hover, .tRTF .tBreadcrumb a:active
+{
+    color: #000;
+    text-decoration: underline;
+    float: left;
+}
+.tBreadcrumb a:hover
+{
+    text-decoration: none;
+}
+.tBreadCrumbSeparator
+{
+    width: 4px;
+    height: 5px;
+    margin: 6px 4px 0;
+    text-indent: -99999px;
+    overflow: hidden;
+    display: block;
+    background: transparent url('/CSS/Global/breadcrumbSeparator.gif') no-repeat 0 0;
+}
+/*main*/
+
+.tPageMain
+{
+    padding: 0 34px 51px;
+    background: #fff;    
+}
+.tPageMain a:link, .tPageMain a:visited, .tPageMain a:active
+{
+    color: #376aac;
+    text-decoration: none;
+}
+.tPageMain a:visited
+{
+    color: #5a53a6;
+}
+.tPageMain a:hover
+{
+    color: #002a7f;
+}
+.tPageMain a:focus
+{
+    outline: 0;
+}
+.tPageLeft
+{
+    float: left;
+    width: 544px;
+    margin: 5px 0 0;
+}
+.tPageRight
+{
+    float: right;
+    width: 340px;
+    margin: 17px 0 34px;
+}
+.tPageLeftReversed
+{
+    float: left;
+    width: 340px;
+}
+.tPageRightReversed
+{
+    float: right;
+    width: 544px;
+}
+.tPageRightIn
+{
+    border-top: 1px solid #ededed;
+    padding: 0 17px 17px;
+    background: #ededed;
+}
+
+.tPageRightIn h2.tRightBoxTop {
+    line-height: 2.5;
+}
+
+.tPageOneCol
+{
+    padding: 5px 0 0;
+    clear: both;
+}
+.tPurchaseHome
+{
+    padding-top: 18px;
+}
+.tPurchaseHome .tPageLeft
+{
+    float: none;
+    width: auto;
+}
+.tPurchaseHome .tPageRight
+{
+    margin-top: 0;
+}
+/* Support */
+.tControlsSupport .tPageLeft
+{
+    width: 410px;
+    padding-right: 36px;
+    margin: 0;
+}
+.tControlsSupport .tPageRight
+{
+    width: 396px;
+    padding-right: 26px;
+    padding-left: 10px;
+    margin: 0;
+    float: left;
+}
+.sOtherControlSupport
+{
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+/*footer*/
+
+.tBottomWrap
+{
+    color: #666;
+    background: #21242c;
+    min-width: 986px;
+}
+
+.tBottom
+{
+    background: #21242c;
+}
+
+.tBottom div
+{
+    border-bottom: 1px dashed #525252;
+    margin: 0 34px;
+    padding: 8px 0 10px;
+}
+
+.tBottom div.tLast
+{
+    border-bottom: 0;
+    padding-bottom: 17px;
+    padding-top: 17px;
+}
+
+.tBottom a:link, .tBottom a:visited, .tBottom a:hover, .tBottom a:active
+{
+    color: #999;
+    text-decoration: none;
+}
+
+.tBottom a:hover
+{
+    text-decoration: underline;
+}
+
+.tBottom .tLeft
+{
+    float: left;
+    position:relative;
+}
+
+.tBottom .tRight
+{
+    float: right;
+}
+
+.tBottom address
+{
+    font-style: normal;
+}
+
+
+.poweredBySitefinity
+{
+    background:url("/CSS/Global/menu-sprite.png") no-repeat scroll -138px -100px transparent;
+    float: right;
+    width: 145px;
+    height: 21px;
+    text-indent: -99999px;
+    overflow: hidden;
+}
+
+/* Social media in the footer */
+#tOnFacebook, #tOnTwitter, #tOnLinkedIn {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    text-indent: -999px;
+    background:url('/CSS/Global/sm-logos.png') no-repeat 0 0;
+    margin-left: 3px;
+    top: 0;
+}
+
+#tOnFacebook {
+    background-position: 0 -34px;
+    left:281px;
+}
+#tOnFacebook:hover {
+    background-position: 0 -51px;
+}
+
+#tOnTwitter {
+    background-position: -23px -34px;
+    left:304px;
+}
+#tOnTwitter:hover {
+    background-position: -23px -51px;
+}
+
+#tOnLinkedIn {
+    background-position: -46px -34px;
+    left: 327px;
+}
+#tOnLinkedIn:hover {
+    background-position: -46px -51px;
+}
+
+#tSocMediaTxt {
+    padding-left: 76px;
+}
+
+/*reusable content elements*/
+
+/*orange link*/
+
+.tPageMain a.tLink
+{
+    font-size: 11px;
+}
+
+
+/*plain text page*/
+
+.tRTF
+{
+    font: 12px/18px arial,sans-serif;
+    color: #333;
+}
+
+.tRTF h1, .tRTF h2, .tRTF h3, .tRTFProducts h1, .tRTFProducts h2, .tRTFProducts h3
+{
+    color: #333;
+}
+
+.tRTF h1, .tRTFProducts h1
+{
+    margin: 17px 0 7px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.tRTF h2, .tRTFProducts h2
+{
+    margin: 17px 0 7px;
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+.tRTF h3, .tRTFProducts h3
+{
+    margin: 1.2em 0 7px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.tRTF p
+{
+    margin: 0.6em 0 0;
+}
+
+.tRTF ul, .tRTF ol
+{
+    font-size: 12px;
+    line-height: 24px;
+    color: #333;
+    margin: 1em 0 0;
+}
+
+.tRTF ul
+{
+    list-style-type: none;
+}
+
+.tRTF ol
+{
+    list-style-position: inside;
+    padding: 0 0 0 3px;
+}
+
+
+.tRTF a:hover
+{
+    /* text-decoration: underline; */
+    color: #002a7f;
+}
+.tRTF ul li .forumsPostText
+{
+    line-height: 1.4em;
+    margin-bottom: 20px;
+}
+
+
+/*right column boxes*/
+
+.tRightBoxTop
+{
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    margin: 17px 0 0;
+    padding: 0 15px;
+    font: 14px/32px arial,sans-serif;
+    clear: both;
+}
+.tRightBoxMid .tRightBoxTop
+{
+    border-left: 0;
+    border-right: 0;
+}
+.tRightBoxMid
+{
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    margin: 0;
+    padding: 15px;
+    background: #fff;
+    font-size: 12px;
+    line-height: 17px;
+    color: #333;
+}
+.tRightBoxMid ol
+{
+    padding: 0 15px;
+}
+.tRightBoxTop ul
+{
+    padding: 15px 0;
+}
+.tRightBoxTop ul li
+{
+    margin: 0 0 6px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.tRightBoxBot
+{
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+    padding: 8px 15px;
+    background: #fff;
+    color: #999;
+}
+
+.tRightBoxBot a
+{
+    margin: 0 2px;
+}
+
+.tRightBoxBot a:hover
+{
+    text-decoration: none;
+}
+
+.tRightBoxBot em
+{
+    margin: 0 2px;
+    font-style: normal;
+    color: #777;
+}
+
+.tRightBanner
+{
+    margin: 17px 0 0;
+}
+.tRightBoxTwoColumns
+{
+    padding: 0 5% 0 0;
+    width: 45%;
+    float: left;
+    font-size: 1.1em;
+}
+.tRightBoxTwoColumns ul
+{
+    list-style-type: none;
+    color: #666;
+}
+.tPageRight .tAsterisk
+{
+    color: #c26c2c;
+}
+
+.tRightBoxMid .tboxRTF ul
+{
+    margin: 1em 0 0;
+    font-size: 12px;
+    line-height: 24px;
+    color: #333;
+}
+
+.tSeparateBox
+{
+    margin-top: 17px;
+    border-top: #D9D9D9 1px solid;
+}
+
+
+
+.tRightBoxMid .tboxRTF a:hover
+{
+    /* text-decoration: underline; */
+    color: #002a7f;
+}
+
+/*RadTabStrip Telerik2008 start */
+
+.RadTabStripTop_Telerik2008 .rtsLink
+{
+    background: url('/CSS/Global/RadTabStrip_Telerik2008.gif') 0 0 no-repeat;
+    padding-left: 5px;
+    font: bold 11px/30px arial,sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.RadTabStripTop_Telerik2008 .rtsOut
+{
+    background: url('/CSS/Global/RadTabStrip_Telerik2008.gif') 100% -120px no-repeat;
+    padding-right: 5px;
+}
+
+.RadTabStripTop_Telerik2008 .rtsIn
+{
+    background: url('/CSS/Global/RadTabStrip_Telerik2008.gif') 0 -60px repeat-x;
+    padding: 0 16px;
+}
+
+.RadTabStripTop_Telerik2008 .rtsLink:hover, .RadTabStripTop_Telerik2008 .rtsSelected
+{
+    background: url('/CSS/Global/RadTabStrip_Telerik2008.gif') 0 -180px no-repeat;
+    color: #000;
+}
+
+.RadTabStripTop_Telerik2008 .rtsLink:hover .rtsOut, .RadTabStripTop_Telerik2008 .rtsSelected .rtsOut
+{
+    background: url('/CSS/Global/RadTabStrip_Telerik2008.gif') 100% -300px no-repeat;
+}
+
+.RadTabStripTop_Telerik2008 .rtsLink:hover .rtsIn, .RadTabStripTop_Telerik2008 .rtsSelected .rtsIn
+{
+    background: url('/CSS/Global/RadTabStrip_Telerik2008.gif') 0 -240px repeat-x;
+}
+
+.rmGroup .rmTemplate
+{
+    width: 221px !important;
+}
+
+/*RadTabStrip Telerik2008 end */
+
+
+/*right column testimonials*/
+
+.poTestimonial
+{
+    padding: 17px 17px 0;
+}
+
+.poTestimonial dt
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.poTestimonial dd
+{
+    margin: 1.4em 0;
+    font: 11px/1.6 georgia,tahoma,sans-serif;
+}
+
+/*side navigation*/
+
+.tSideNav
+{
+    list-style: none;
+    padding: 11px 0 17px;
+    font-size: 1.1em;
+}
+
+.tSideNav li
+{
+    padding: 0.6em 0 0 17px;
+    font-weight: bold;
+}
+
+.tSideNav a
+{
+    font-weight: normal;
+}
+
+/* sprite-no-repeat styles and 3-level list items*/
+.tTop h1, .tTop span.telerik
+{    
+    width: 127px;
+    height: 30px;
+    background: url('/CSS/Global/menu-sprite.png') 0 -100px no-repeat;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 10px;
+}
+.tLogInButton
+{
+    width: 87px;
+    height: 26px;
+    margin: 0 0 6px 6px;
+    border: 0;
+    background: url('/CSS/Global/sprite-no-repeat.gif?x=476547569') -400px -112px no-repeat;
+    font-size: 1px;
+    color: #333;
+    cursor: pointer;
+}
+.tWhyRegisterExplanation li
+{
+    margin: 0;
+    padding: 0 0 0 15px;
+    list-style-type: none;
+    background: transparent url('/CSS/Global/sprite-no-repeat.gif?x=476547569') 6px -431px no-repeat;
+}
+.tRightBoxMid ul li
+{
+    margin: 0 0 6px;
+    padding: 0;
+    list-style-type: none;
+}
+.tRightBoxMid .tRightBulletList li
+{
+    list-style-type: none;
+    background: transparent url('/CSS/Global/sprite-no-repeat.gif?x=476547569') no-repeat 6px -432px; /* margin: 0; */
+    padding: 0 0 0 17px;
+}
+/*arrow list*/
+.tArrowList
+{
+    list-style: none;
+}
+
+.tRightBoxMid .tArrowList li
+{
+    margin: 7px 0 0;
+    padding: 0 0 0 10px;
+    background: url('/CSS/Global/sprite-no-repeat.gif?x=476547569') 0 -1194px no-repeat;
+}
+
+.tRightBoxMid .tArrowList
+{
+    padding: 6px 0 17px 17px;
+    font-size: 1.1em;
+}
+.tRTF ul li
+{
+    margin: 0;
+    padding: 0 0 0 17px;
+    background: url('/CSS/Global/sprite-no-repeat.gif?x=476547569') 6px -431px no-repeat;
+    line-height: 18px;
+}
+/*
+.tRTF ul li li
+{ 
+    background-position:  -913px -431px;
+}
+.tRTF ul li li li
+{
+    background-position:  -1830px -431px;
+}
+*/
+/* Success and Failure Messages */
+.tRTF .tSuccess, .tRTF .tFailure, .tRTF .tWarning
+{
+    line-height: 1.4;
+}
+
+.tRTF .tSuccess .tMessagesRegular, .tRTF .tFailure .tMessagesRegular, .tRTF .tWarning .tMessagesRegular {
+    color: #333;
+    font-weight: normal;
+}
+
+.tRTF .tSuccess
+{
+    display: block;
+    margin: 20px 0 0;
+    padding: 20px 20px 20px 50px;
+    background: #efffe5 url('/CSS/Global/msgs.gif') no-repeat 10px 20px;
+    color: #690;
+}
+.tRTF .tSuccess h2
+{
+    margin-top: 0;
+    color: #690;
+}
+.tRTF .tSuccess .tAdditional,.tRTF .tFailure .tAdditional
+{
+    font-weight: normal;
+    color: #333;
+}
+.tRTF .tFailure
+{
+    display: block;
+    margin: 20px 0 0;
+    padding: 20px 20px 20px 60px;
+    font-weight: bold;
+    background: #ffebe5 url('/CSS/Global/msgs.gif') no-repeat -940px 20px;
+    color: #bf3b24 !important;
+}
+.tDownloadAdditionalBottom 
+{
+    background: #EFFFE5 url('/CSS/Global/thank_you_arrow.gif') no-repeat bottom center;
+    display: block; 
+    width: 918px; 
+    height: 31px;
+}
+.tRTF .tFailureSingleLine
+{
+    background-position: -940px 12px;
+}
+.tRTF .tFailure ul
+{
+    margin: 0 0 0 20px;
+    font-weight: normal;
+    color: #bf3b24;
+}
+.tRTF .tFailure li
+{
+    padding-left: 0;
+    background: none;
+    list-style-type: disc;
+    list-style-position: outside;
+}
+.tRTF .tWarning, .tPageRightIn .tWarning
+{
+    display: block;
+    margin: 20px 0 0;
+    padding: 20px 20px 20px 60px;
+    background: #e5f7ff url('/CSS/Global/msgs.gif') no-repeat -1890px 10px; /*color: #2d7baa;*/
+    clear: both;
+}
+.tPageRightIn .tWarning
+{
+    margin-top: 0;
+    font-weight: normal;
+}
+.tPageRightIn .tWarning a
+{
+    font-weight: bold;
+}
+.tRTF .tWarning p, .tRTF .tInstructions
+{
+    font-weight: normal;
+    color: #666;
+}
+.tRTF .tSuccess p, .tRTF .tFailure p
+{
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+.tRTF .tWarning p
+{
+    margin: 0;
+}
+.tRTF .tSuccess .tEmphasized, .tRTF .tFailure .tEmphasized, .tRTF .tWarning .tEmphasized
+{
+    font-size: 14px;
+}
+.tRTF .tWarning label
+{
+    padding-left: 5px;
+}
+.tRTF .tWarning .tIndentedMessage
+{
+    padding-left: 18px;
+}
+.tRTF .tWarning .tIndentedMessage .tFadingMsg
+{
+    padding: 1px 5px;
+}
+.tSuggestions
+{
+    margin: 17px 0;
+    padding: 17px;
+    background-color: #e8f3d2;
+}
+.tRTF .tSuggestions p, .tRTF .tSuggestions ul
+{
+    margin-top: 0;
+}
+.tRTF .tSuggestions li
+{
+    padding-left: 0;
+    background-image: none;
+}
+.tRTF .tImportantInfo, .tRTF .tImportantInfo strong
+{
+    font-weight: normal;
+}
+.tRTF .tImportantInfo strong
+{
+    font-size: 18px;
+}
+/* Questions and possible answers */
+.blist h2
+{
+    margin-bottom: 0;
+}
+.blist ul li
+{
+    line-height: 17px;
+    background-position: -966px -1130px;
+}
+.tRTF .blist p
+{
+    margin-top: 0;
+    font-size: 12px;
+    color: #666;
+}
+.tRTF .blist ul, .tRTF .blist ol
+{
+    margin-top: 5px;
+}
+/* FAQs */
+.tFAQList
+{
+}
+.tFAQList h3
+{
+    margin-top: 5px;
+    font-weight: normal;
+}
+.tFAQList .tFAQExpanded h3
+{
+    font-weight: bold;
+}
+.tFAQList h3 em
+{
+    text-indent: -9999px;
+    display: block;
+    float: left;
+}
+.tRTF .tFAQItem
+{
+    background: none;
+    padding: 0;
+}
+.tRTF .tFAQList .tFAQCollapsed, .tRTF .tFAQList .tFAQExpanded, 
+.tFAQItem h3
+{
+    padding-left: 15px;
+    background: transparent url('/CSS/Global/faqArrows.gif') no-repeat 0 3px;
+}
+.tFAQTitle 
+{
+    position: relative;
+}
+.tFAQTitle span 
+{
+    font-size:11px;
+    padding:0 0 0 7px;
+    position:absolute;
+    top:7px;
+}
+.tRTF .tFAQList .tFAQExpanded, .tFAQItem h3.exp
+{
+    background-position: -980px 5px;
+}
+.tFAQList h3 .tNewFAQ
+{
+    padding-right: 30px;
+    background: transparent url('/CSS/Global/newFaq.gif') no-repeat 100% 80%;
+}
+.tFAQList .tFAQContent
+{
+    /* padding-top: 5px; */
+    padding-bottom: 15px;
+    line-height: 18px;
+}
+.tFAQItem .tFAQContent
+{
+    padding-left: 15px;
+}
+.tFAQList .tFAQContent *
+{
+    font-family: Arial !important;
+    line-height: 18px;
+}
+.tFAQList .tFAQContent ul
+{
+    margin-left: 30px;
+}
+.tFAQList .tFAQContent ul li
+{
+    background: none;
+    list-style-type: disc;
+    padding-left: 0;
+}
+/* FAQ - List default control*/
+.tFAQListControl ul li 
+{
+    background-image: none;
+    padding: 0;
+
+}
+.tFAQListControl ul li h3
+{
+    background: transparent url('/CSS/Global/faqArrows.gif') no-repeat 0 3px;
+    padding-left: 15px;
+    margin: 5px 0 7px 0;
+}
+.tFAQListControl ul li h3.sf_listItemTitleexp 
+{
+    background-position: -980px 5px;
+    color: #376AAC;
+    font-weight: bold;    
+}
+.tFAQListControl ul li .sf_listItemBody 
+{
+    padding-left: 15px;
+}
+.tFAQListControl p.sf_controlListItems
+{
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Tables */
+.tTable, .tableStyle1
+{
+    margin: 1em 0 20px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+.tableStyle1
+{
+    width: auto;
+    line-height: 1.1;
+}
+.tTable thead th, .tableStyle1 thead th, .tableStyle1 .tableStyle1Header td
+{
+    border-bottom: 2px solid #666;
+}
+.tTable th, .tTable td, .tableStyle1 th, .tableStyle1 td
+{
+    padding: 5px 17px;
+    text-align: left;
+    vertical-align: top;
+}
+.tTable tbody th, .tTable tbody td, .tableStyle1 tbody th, .tableStyle1 tbody td
+{
+    border-bottom: 1px solid #d9d9d9;
+    font-weight: normal;
+}
+.tableStyle1 p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.tTable thead th.right, .tTable td.right
+{
+    text-align: right;
+}
+
+.tTable img
+{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+/* Buttons */
+a.btnAddToCart:link, a.btnAddToCart:visited, a.btnAddToCart:hover, a.btnAddToCart:active
+{
+    display: block;
+    margin: 8px auto 0;
+    padding: 3px 0 0 28px;
+    background: transparent url('/CSS/Global/buttons.gif') no-repeat 0 0;
+    width: 87px;
+    height: 24px;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+}
+a.btnAddToCart:hover
+{
+    background-position: -300px 0;
+    text-decoration: none;
+    color: #fff;
+}
+a.btnSizeL:link, a.btnSizeL:visited, a.btnSizeL:hover, a.btnSizeL:active
+{
+    display: block;
+    margin: 8px auto 0;
+    padding: 3px 0 0 28px;
+    background: transparent url('/CSS/Global/buttons.gif') no-repeat scroll 0pt -120px;
+    width: 102px;
+    height: 27px;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+}
+a.btnSizeL:hover
+{
+    background-position: -300px -120px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a.btnStretch, a.btnProduct, a.btnIcon
+{
+    display: block;
+    background: transparent url('/CSS/Global/buttons-sprite.png') no-repeat 0 -138px;
+    height: 29px;
+    float: left;
+    padding: 0 0 0 25px;
+    margin:0;
+}
+a.btnStretch.centered
+{
+    display: inline-block;
+    float: none;
+}
+
+a.btnProduct
+{
+    padding-right: 8px;
+}
+a.btnProduct span
+{
+    width: 73px;    
+}
+
+a.btnIcon
+{
+    padding: 0 24px 0 34px;
+    font-size: 14px;
+    line-height: 29px !important; /*TODO: REMOVE !important with removal of the the unnecesasery buttons styles*/
+    color: #376aac;
+}
+
+a.btnIcon span, a.btnIcon:hover span
+{
+    background: none;
+}
+
+a.btnStretch:hover,  a.btnProduct:hover, a.btnIcon:hover
+{
+    background-position: 0 -207px;
+    text-decoration: none;
+}
+
+a.btnStretch span,
+a.btnProduct span, 
+a.btnIcon span
+{
+    display: block;
+    background: transparent url('/CSS/Global/buttons-sprite.png') no-repeat 100% 0px;
+    height: 21px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    text-align: left;
+    float: left;  
+    padding: 8px 10px 0 0;
+}
+a.btnStretch:hover span,
+a.btnProduct:hover span, 
+a.btnIcon:hover span
+{
+    background-position: 100% -69px;
+    text-decoration: none;
+    color: #fff;
+}
+
+a.btnProduct.last,
+a.btnIcon.last
+{
+    padding-right: 0px;
+}
+
+a.download
+{
+    background-position: 0px -276px;
+}
+a.download:hover
+{
+    background-position: 0px -345px;
+}
+
+a.purchase
+{
+    background-position: 0px -414px;
+}
+a.purchase:hover
+{
+    background-position: 0px -483px;
+}
+
+a.demos
+{
+    background-position: 0px -552px;
+}
+a.demos:hover
+{
+    background-position: 0px -621px;
+}
+
+a.videos
+{
+    background-position: 0px -690px;
+}
+a.videos:hover
+{
+    background-position: 0px -759px;
+}
+
+a.gallery
+{
+    background-position: 0px -828px;
+}
+a.gallery:hover
+{
+    background-position: 0px -897px;
+}
+
+a.features
+{
+    background-position: 0px -966px;
+}
+a.features:hover
+{
+    background-position: 0px -1035px;
+}
+
+a.search
+{
+    background-position: 0px -1104px;
+}
+a.search:hover
+{
+    background-position: 0px -1173px;
+}
+
+input.btnSearch,
+input.btnSubmit,
+input.btnSubmitFake,
+input.btnSubmitLong,
+input.btnSubmitLongFake
+{
+    background: url('/CSS/Global/submit-btn.png') no-repeat  !important;
+    border: 0;
+    padding: 0 !important; /* TODO: Delete !important after deleting .supportResourcesSearch input.fSubmitBtn < Support.css */
+    margin: 0;
+    width: 106px;
+    height: 30px;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+    font-family: Arial;
+}
+
+input.btnSearch::-moz-focus-inner,
+input.btnSubmit::-moz-focus-inner,
+input.btnSubmitFake::-moz-focus-inner,
+input.btnSubmitLong::-moz-focus-inner,
+input.btnSubmitLongFake::-moz-focus-inner
+{
+    outline: none;
+    border: none;
+}
+
+
+input.btnSearch
+{
+    background-position: 1px 1px !important;  
+    text-transform: uppercase;  
+}
+
+input.btnSearch:hover
+{
+    background-position: -199px 1px !important;   
+}
+
+
+input.btnSubmit,
+input.btnSubmitFake,
+input.btnSubmitLong,
+input.btnSubmitLongFake
+{
+    background-position: 1px -69px !important;
+}
+
+input.btnSubmit:hover,
+input.btnSubmitFake:hover
+{
+    background-position: -199px -69px !important;
+    margin: 0;
+    padding: 0 !important;
+    cursor: pointer;    
+}
+
+input.btnSubmitLong,
+input.btnSubmitLongFake
+{    
+    width: 155px;
+    background-position: 1px -219px !important;   
+}
+
+input.btnSubmitLong:hover,
+input.btnSubmitLongFake:hover
+{
+    background-position: -199px -219px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    cursor: pointer;    
+}
+
+
+.tReloadBtn
+{
+    margin-top: 20px;
+}
+/* EndOf Buttons */
+
+
+.tNavSelected, .rmExpandOver
+{
+    background: #31343a !important;
+}
+
+#rmExpandMenuArrow
+{
+    background: transparent url('/CSS/Global/menu-arrow.gif') no-repeat scroll 0pt;
+    height: 25px;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 25px;
+}
+
+#rmExpandMenuArrow .rmText
+{
+    width: 25px;
+    background: transparent url('/CSS/Global/menu-arrow.gif') no-repeat 0 0 !important;
+}
+
+#rmExpandMenuArrow:hover .rmText, .rmExpandOver .rmText
+{
+    background-position: -25px 0 !important;
+}
+
+.rmClicked #rmExpandMenuArrow, .rmMyClicked #rmExpandMenuArrow
+{
+    background-position: -25px 0;
+}
+
+.rmMyClicked
+{
+    background: #31343a !important;
+}
+/* Opera fix */
+.rmContextMenu .rmActive
+{
+    width: 221px;
+}
+/* Panigation */
+.tPanigation
+{
+    margin-top: 20px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}
+.tPanigation strong
+{
+    padding: 0 25px;
+    font-weight: normal;
+    color: #666;
+}
+/* Empty search validator */
+.tEmptySearchValidator
+{
+    display: none !important;
+}
+.poReportingFeatures ul.shortlist li
+{
+    margin-top: 4px;
+}
+.section
+{
+    clear: both;
+    padding-bottom: 3px;
+    margin-bottom: 17px;
+}
+
+/* File extensions */
+.maMyAvailableFilesForDownload a, .forumsPostAttachedFiles a
+{
+    padding-left: 25px;
+    padding-bottom: 3px;
+    background-image: url('/CSS/Global/extensions.gif');
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.maMyAvailableFilesForDownload .msi, .forumsPostAttachedFiles .msi
+{
+    background-position: 0 0;
+}
+.maMyAvailableFilesForDownload .msi
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.maMyAvailableFilesForDownload .zip, .forumsPostAttachedFiles .zip, .maMyAvailableFilesForDownload .ace, .forumsPostAttachedFiles .ace
+{
+    background-position: 0 -100px;
+}
+.maMyAvailableFilesForDownload .chm, .forumsPostAttachedFiles .chm
+{
+    background-position: 0 -200px;
+}
+.maMyAvailableFilesForDownload .pdf, .forumsPostAttachedFiles .pdf
+{
+    background-position: 0 -300px;
+}
+.maMyAvailableFilesForDownload .rar, .forumsPostAttachedFiles .rar
+{
+    background-position: 0 -400px;
+}
+.maMyAvailableFilesForDownload .gif, .forumsPostAttachedFiles .gif, .maMyAvailableFilesForDownload .png, .forumsPostAttachedFiles .png
+{
+    background-position: 0 -500px;
+}
+.maMyAvailableFilesForDownload .jpg, .forumsPostAttachedFiles .jpg
+{
+    background-position: 0 -600px;
+}
+
+.maMyAvailableFilesForDownload .css, .forumsPostAttachedFiles .css
+{
+    background-position: 0 -700px;
+}
+/* Release history, version notes and license agreement in your account */
+.tYourAccountDetailedInfo .tInnerWrap
+{
+    padding-bottom: 22px;
+}
+.tYourAccountDetailedInfo .tRTF ol
+{
+    list-style-position: outside;
+}
+.tYourAccountDetailedInfo .tRTF .tYourAccountDetailedInfoList
+{
+    list-style-type: none;
+}
+
+.tYourAccountDetailedInfoList
+{
+    width: 570px;
+}
+
+
+.tYourAccountDetailedInfo .tRTF .tYourAccountDetailedInfoList ol, .tYourAccountDetailedInfo .tRTF .tYourAccountDetailedInfoList ul
+{
+    margin-left: 30px;
+}
+
+
+/* Error */
+.tRTF .tSiteError h1
+{
+    margin-bottom: 0;
+}
+.tRTF .tSiteError p
+{
+    margin-top: 0;
+}
+
+p.tIntro
+{
+    color: #666;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+}
+
+span.tInfo
+{
+    color: #777;
+    font-size: 11px !important;
+}
+
+.tTextAlignRight {
+    text-align:right;
+}
+
+/*thumbnails*/
+.thumb
+{
+    position: relative;
+    float: left;
+}
+.thumb .zoom
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.thumb em
+{
+    font-size: 11px;
+}
+
+
+/* Quick Links */
+.moveQuickLink
+{
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 29px;
+    background: #fff url('/CSS/Global/quicklinks.gif') no-repeat -175px 10px;
+    top: -1px;
+    left: -21px;
+    cursor: move;
+    z-index: 99999;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: none;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+    border-left: 1px solid #C8C8C8;
+}
+.deleteQuickLink
+{
+    display: block;
+    width: 17px;
+    height: 29px;
+    background: #fff url('/CSS/Global/quicklinks.gif') no-repeat -128px -109px;
+    right: -17px;
+    top: -1px;
+    position: absolute;
+    cursor: pointer;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: none;
+    border-top: 1px solid #C8C8C8;
+    border-bottom: 1px solid #C8C8C8;
+    border-right: 1px solid #C8C8C8;
+}
+.tLoginNameAndStatus .tYourLinks .qlServiceItemHide
+{
+    display: none;
+}
+.lblEmptyList
+{
+    clear: both;
+    display: block;
+    color: #333;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 12px;
+}
+
+.sortableitemover .moveQuickLink, .sortableitemover .deleteQuickLink
+{
+    display: block;
+}
+
+.hlYourAccount {
+    padding-right: 75px;
+    display:inline-block;    
+}
+
+.tLoginNameAndStatus .tYourLinks .toBeDeleted
+{
+    background-position: -183px -109px;
+}
+.tLoginNameAndStatus .tYourLinks .RadMenu .rmItem
+{
+    clear: both;
+}
+.tLoginNameAndStatus .tYourLinks
+{
+    text-align: left;
+    line-height: normal;
+    position: absolute;
+    top:13px;
+    right: 46px;
+}
+
+.tLoginNameAndStatus .tYourLinks .rmSlide
+{
+    margin-left: -144px;
+}
+.tLoginNameAndStatus .tYourLinks a
+{
+    font-weight: normal;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 a:link, .tLoginNameAndStatus .tYourLinks .rmLevel1 a:visited, .tLoginNameAndStatus .tYourLinks .rmLevel1 a:hover, .tLoginNameAndStatus .tYourLinks .rmLevel1 a:active
+{
+    color: #666;
+    padding: 7px 18px 8px;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 a:hover
+{
+    color: #000;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 .rmText
+{
+    position: relative;
+    width: 185px;
+    overflow: hidden;
+}
+.tLoginNameAndStatus .RadMenu .rmGroup .rmText
+{
+    padding:0;
+    margin:0;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 .rmTemplate .rmText
+{
+    width: auto;
+}
+.tLoginNameAndStatus .tYourLinks a.tYourLinksExpander:link, .tLoginNameAndStatus .tYourLinks a.tYourLinksExpander:visited, .tLoginNameAndStatus .tYourLinks a.tYourLinksExpander:hover, .tLoginNameAndStatus .tYourLinks a.tYourLinksExpander:active
+{
+    padding: 3px 19px 7px 6px;
+    cursor: pointer;
+    background: transparent url('/CSS/Global/quicklinks.gif') no-repeat 62px 8px;
+    line-height: normal;
+    display: block;
+    font-weight: normal;
+}
+.tLoginNameAndStatus .tYourLinks a.tYourLinksExpander:focus
+{
+    outline: 0;
+}
+.tLoginNameAndStatus .tYourLinks a.rmExpanded:link, .tLoginNameAndStatus .tYourLinks a.rmExpanded:visited, .tLoginNameAndStatus .tYourLinks a.rmExpanded:hover, .tLoginNameAndStatus .tYourLinks a.rmExpanded:active
+{
+    color: #000;
+    background: #f0f0f0 url('/CSS/Global/quicklinks.gif') no-repeat 62px -42px;
+}
+.tLoginNameAndStatus .tYourLinks .RadMenu .rmHorizontal .rmText
+{
+    padding: 0;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1
+{
+    background-color: #f0f0f0;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 li
+{
+    border-bottom: 1px solid #c8c8c8;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 .sortableitemover
+{
+    background-color: #fff;
+    position: relative;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 a.tYourLinksCurrentPage:link, .tLoginNameAndStatus .tYourLinks .rmLevel1 a.tYourLinksCurrentPage:visited, .tLoginNameAndStatus .tYourLinks .rmLevel1 a.tYourLinksCurrentPage:hover, .tLoginNameAndStatus .tYourLinks .rmLevel1 a.tYourLinksCurrentPage:active
+{
+    font-weight: bold;
+    color: #000;
+    background: transparent url('/CSS/Global/quicklinks.gif') no-repeat 6px -69px;
+}
+/* Add Current Page Btn */
+.tLoginNameAndStatus #addCurrentPageWrapper
+{
+    padding: 17px 0 15px 12px;
+    width: 209 !important;
+    float: left;
+    clear: both;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 a.btnStretch.tAddLink:link, 
+.tLoginNameAndStatus .tYourLinks .rmLevel1 a.btnStretch.tAddLink:visited, 
+.tLoginNameAndStatus .tYourLinks .rmLevel1 a.btnStretch.tAddLink:hover, 
+.tLoginNameAndStatus .tYourLinks .rmLevel1 a.btnStretch.tAddLink:active
+{
+    padding: 0px 0px 0px 25px;
+}
+
+/* Add page form */
+.tLoginNameAndStatus .tYourLinks .tAddPageForm
+{
+    padding: 4px 5px;
+    float: left;
+    clear: both;
+}
+.tLoginNameAndStatus .tYourLinks .rmLevel1 .tAddPageForm a:link, 
+.tLoginNameAndStatus .tYourLinks .rmLevel1 .tAddPageForm a:visited, 
+.tLoginNameAndStatus .tYourLinks .rmLevel1 .tAddPageForm a:hover, 
+.tLoginNameAndStatus .tYourLinks .rmLevel1 .tAddPageForm a:active
+{
+    padding: 0 13px 0 25px;
+    margin-top: 3px;
+    margin-left: 6px;
+}
+.tLoginNameAndStatus .tYourLinks .tAddPageForm .txt
+{
+    width: 184px;
+    height: 18px;
+    padding: 4px 5px 2px 5px;
+    font-size: 1.1em;
+    border: 1px solid #afd1ff;
+    background-color: #ffc;
+}
+
+/* adjust quicklinks horizontal position  */
+.tLoginStatus
+{  
+   display:block;   
+   padding:0 0 2px 0;
+}
+.tLoginNameAndStatus .tYourLinks
+{
+     /* _top: -8px;
+    _right: 64px; *right:63px;  */
+}
+/* Quick Links End */
+/* Format Code Block Fix */
+.tFormatCodeBlock
+{
+    overflow: scroll !important;
+    overflow-y: hidden !important;
+    padding-bottom: 20px;
+    white-space: nowrap;
+}
+.tFormatCodeBlock table
+{
+    line-height: 120%;
+}
+.sKBArticleCodeBlock
+{
+    width: 520px;
+}
+/* Format Code Block Fix End */
+
+.hlCommonRSSFeed
+{
+    background: url('/CSS/Global/rss.gif') no-repeat 0 0;
+    float: right;
+    padding: 0 0 5px 22px;
+    font-size: 12px;
+    margin-left: 17px;
+}
+
+.hlCommonRSSFeedS
+{
+    background: url('/CSS/Global/rssS.gif') no-repeat 0 0;    
+    padding: 0 0 5px 17px;    
+}
+
+.hlCommonRSSFeedHidden
+{
+    display: none;
+}
+
+.hlCommonRSSControl
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    background: url('/CSS/Global/rss.gif') no-repeat 0 0;
+}
+
+
+a.hlNotActive
+{
+    text-decoration: none !important;
+    cursor: default !important;
+}
+
+li a.hlNotActive
+{
+    color: #666 !important;
+}
+
+/* Site search link style */
+
+a.siteSearchLink
+{
+    font-size: 11px;
+}
+
+/* External links */
+a.tExternalLink
+{
+    color: #376AAC !important;
+    background: url('/CSS/Global/externalLinkIcon.gif') 100% 3px no-repeat !important;
+    padding-right: 15px !important;
+}
+
+
+
+
+/* ** * * * * * * * * * * * * * * * *  *** * * * * ** * * * * * * * * * ** * * * * * * * *** * ** */
+
+/*One column*/
+.tOneColumn
+{
+    clear: both;
+    width: 918px;
+    margin: 0 0 34px 0;
+}
+/*Two columns*/
+.tTwoColumnsLeft, .tTwoColumnsRight
+{
+    margin: 0 0 34px 0;
+}
+.tTwoColumnsLeft
+{
+    float: left;
+    width: 600px;
+    margin-right: 34px;
+}
+.tTwoColumnsRight
+{
+    float: right;
+    width: 284px;
+}
+
+/*Two equal columns*/
+.tTwoEqualColumnsLeft, .tTwoEqualColumnsRight
+{
+    margin: 0 0 34px 0;
+}
+.tTwoEqualColumnsLeft
+{
+    float: left;
+    width: 442px;
+    margin-right: 34px;
+}
+.tTwoEqualColumnsRight
+{
+    float: right;
+    width: 442px;
+}
+/*Two columns 3:1 */
+.tTwoColumnsLeftv2, .tTwoColumnsRightv2
+{
+    margin: 0 0 34px 0;
+}
+.tTwoColumnsLeftv2
+{
+    float: left;
+    width: 600px;
+    margin-right: 34px;
+}
+.tTwoColumnsRightv2
+{
+    float: right;
+    width: 284px;
+}
+/* Two columns reversed 1:2 */
+.tTwoColumnsLeftReversed, .tTwoColumnsRightReversed
+{
+    margin: 0 0 34px 0;
+}
+.tTwoColumnsLeftReversed
+{
+    clear:both;
+    float: left;
+    width: 284px;
+    margin-right: 34px;
+}
+.tTwoColumnsRightReversed
+{
+    float: right;
+    width: 600px;
+}
+
+/* Two columns reversed 1:3 */
+.tTwoColumnsLeftReversedv2, .tTwoColumnsRightReversedv2
+{
+    margin: 0 0 34px 0;
+}
+.tTwoColumnsLeftReversedv2
+{
+    clear:both;
+    float: left;
+    width: 204px;
+    margin-right: 34px;
+}
+.tTwoColumnsRightReversedv2
+{
+    float: right;
+    width: 680px;
+}
+/*Two columns in Left Column V2 */
+.tTwoColumnsLeftInLeftV2, .tTwoColumnsRightInLeftV2
+{
+	margin: 0 0 34px 0;
+}
+
+.tTwoColumnsLeftInLeftV2
+{
+	float: left;
+	width: 323px;
+	margin-right: 34px;
+}
+
+.tTwoColumnsRightInLeftV2
+{
+	float: right;
+	width: 323px;
+}
+/*Three equal columns*/
+.tThreeColumnsLeftCenter, .tThreeColumnsRight
+{
+    margin: 0 0 34px 0;
+    width: 283px;
+    overflow: hidden;
+}
+.tThreeColumnsLeftCenter
+{
+    float: left;
+    margin-right: 34px;
+}
+.tThreeColumnsRight
+{
+    width: 284px;
+    float: right;
+}
+
+/*Four equal columns*/
+.tFourColumnsLeftCenter, .tFourColumnsRight
+{
+    margin: 0 0 34px 0;
+    width: 204px;
+}
+.tFourColumnsLeftCenter
+{
+    float: left;
+    margin-right: 34px;
+}
+.tFourColumnsRight
+{
+    float: right;
+}
+
+/* 3 columns: 1:2:1 */
+.tTreeColumns121Left, .tTreeColumns121Right
+{
+	width: 204px;
+    float: left;
+    margin: 0 0 34px 0;
+}
+.tTreeColumns121Center
+{	
+	width: 442px;
+    float: left;
+    margin: 8px 0 34px 0;
+}
+.tTreeColumns121Left, .tTreeColumns121Center
+{
+	margin-right: 34px;
+}
+
+/* 2 equal columns in the Left column */
+.tTwoColumnsLeft1x1Wrap {
+    overflow: auto;
+}
+
+.tTwoColumnsLeft1x1Left, .tTwoColumnsLeft1x1Right
+{
+    margin: 0 0 17px 0;
+    width: 255px;    
+}
+.tTwoColumnsLeft1x1Left
+{
+    clear: both;
+    float: left;    
+    margin-right: 34px;    
+}
+.tTwoColumnsLeft1x1Right
+{
+    float: right;    
+}
+
+/* Fix Distances */
+.tRemoveTopMargin
+{
+    margin-top: 0 !important;
+}
+.tRemoveBottomMargin
+{
+    margin-bottom: 0 !important;
+}
+.tRemoveMargin
+{
+    margin: 0 !important;
+}
+.tAddTopMargin
+{
+    margin-top: 34px !important;
+}
+.tAddBottomMargin
+{
+    margin-bottom: 34px !important;
+}
+
+.tAddBottomMargin24px
+{
+    margin-bottom: 24px !important;
+}
+
+.tAddTopMargin24px
+{
+    margin-top: 24px !important;
+}
+
+.tAddBottomMargin17px
+{
+    margin-bottom: 17px !important;
+}
+
+.tAddTopMargin17px
+{
+    margin-top: 17px !important;
+}
+
+.tLeftShifted20px
+{
+    padding-left: 20px;
+}
+
+.tRemoveBorders {
+    border: 0 !important;
+}
+
+.tRTF ul.tRemoveBullets li {
+    background:none;   
+    padding:0;
+}
+
+.tRTF ul.tSimpleBullets li {
+    background:none;   
+    list-style-type: disc;
+    list-style-position:inside;
+    padding:0 0 0 2px;
+    color: #777;
+    font-size: 11px;
+}
+
+/* regular small txt */
+span.tInfoRegular, .tInfoText
+{
+    font-size: 11px !important;
+}
+
+/* Video and Text Columns */
+.tTwoColumnsLeftVideo, .tTwoColumnsRightText
+{
+    padding: 17px 0 34px 0;
+}
+.tTwoColumnsLeftVideo
+{
+    float: left;
+    width: 284px;
+}
+.tTwoColumnsRightText
+{
+    float: right;
+    width: 600px;
+}
+
+/*site directory*/
+.tSiteDirWrap
+{    
+    background: #f0f0f0;
+}
+.tSiteDir
+{
+    padding: 10px 0 8px;
+    background: #f0f0f0;
+    margin:0 auto;
+    width:918px;
+}
+.tSiteDir h2
+{
+    padding: 6px 0;
+    font: 16px/24px arial,sans-serif;
+}
+.tSiteDirBoxes
+{
+    margin: 3px 0 22px;
+}
+.tSiteDirBoxes div
+{
+    float: left;
+    padding-right: 24px;
+    margin: 0;
+    width: 133px;
+}
+.tSiteDirBoxes .tLast
+{    
+    padding-right: 0 !important;
+}
+.tSiteDir h3
+{
+    padding: 3px 1px 1px;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+.tSiteDir h3.tDirTitle
+{
+    font-weight: normal;
+    font-size: 11px;
+}
+.tSiteDir .tSection
+{
+    margin-top: 4px;
+}
+.tSiteDir ul
+{
+    padding: 0 2px 0 0;
+    list-style: none;
+    font: 11px/15px arial,sans-serif;
+}
+.tSiteDir li
+{
+    padding: 0;
+}
+.tSiteDir a:link, .tSiteDir a:visited, .tSiteDir a:hover, .tSiteDir a:active
+{
+    color: #666;
+    text-decoration: none;
+    padding: 0 1px;
+}
+.tSiteDir h3 a:link, .tSiteDir h3 a:visited, .tSiteDir h3 a:hover, .tSiteDir h3 a:active
+{
+    color: #333;
+}
+.tSiteDir a:hover
+{
+    text-decoration: underline;
+}
+.tSiteDirEqualColumns div.col
+{
+    width: 124px;
+    padding-right: 0;
+    float: left;
+    margin-right: 34px;
+}
+.tSiteDirEqualColumns div.last
+{
+    margin-right: 0;
+}
+
+/* global Delete Basket - used in mvp */
+.deleteBasket
+{
+    display: block;
+    width: 17px;
+    height: 20px;
+    background: transparent url('/CSS/Global/quicklinks.gif') no-repeat -128px -109px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    cursor: pointer;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.deleteBasket:hover
+{
+    background-image: url('/CSS/Global/quicklinks.gif');
+    background-position: -183px -109px;
+}
+#videocontent object
+{
+    width: 987px;
+    overflow: hidden;    
+}
+.tPageHeadWrap
+{
+    padding-top: 15px;
+    clear:both;
+}
+*+html .tPageHeadWrap
+{
+    display: inline-block;
+}
+
+#noflashcontent
+{
+    height: 340px;
+    position: relative;
+}
+
+
+/*what's new*/
+.tRTF h2.poHeadline
+{
+    margin-left: 23px;
+    width: 50%;
+    clear: both;
+    line-height: 1.2em;
+}
+.poFullListLinks
+{
+    width: 892px;
+}
+.poVideoLink, .poRightButton
+{
+    clear: both;
+}
+.poBackgroundLink
+{
+    background-color: #e8f3d2;
+    display: block;
+    font-size: 12px;
+    margin: 11px 0;
+    padding: 8px 17px;
+}
+
+/*purchases*/
+.poNew, .poNewH1
+{
+    background: #CC3300 none repeat scroll 0 0;
+    bottom: 8px;
+    color: #fff !important;
+    display: inline;
+    font: 8px tahoma,verdana,sans-serif !important;
+    margin: 0;
+    padding: 1px 2px;
+    position: relative;
+    text-transform: uppercase;
+}
+.poNewH1
+{
+    bottom: 17px;
+}
+/* global stripped table */
+
+.tTableStripes
+{
+    border-collapse: separate;
+    margin: 17px 0 34px 0;
+    clear: both;
+    width: 100%;
+}
+.tTableStripesLast
+{
+    margin-bottom: 0px;
+}
+.tTableStripes caption
+{
+    font-size: 18px;
+    text-align: left;
+    padding: 0 0 0 20px;
+    height: 30px;
+}
+
+h2.caption
+{
+    float: left;
+    margin-bottom: 0;
+}
+
+.tTableStripes th
+{
+    background-color: #e6e6e6;
+    border: 0px !important;
+    color: #333;
+    height: 14px;
+    text-align: center;
+    font: bold 11px arial;
+    padding: 26px 17px 11px !important;
+}
+
+.tTableStripes td
+{
+    border-bottom: 0px !important;
+    vertical-align: middle;
+    margin: 0 auto;
+    padding: 5px 17px !important;
+}
+
+
+.tTableStripes td .hasFeature, .tTableStripes td .noFeature
+{
+    background: transparent url('/CSS/Global/yes-no.gif') no-repeat scroll 0 2px;
+    display: block;
+    overflow: hidden;
+    width: 17px;
+    margin: 0 auto;
+}
+.tTableAsterisk
+{
+    color: #333333;
+    font-size: 21px;
+    text-align: left;
+}
+td .tTableAsterisk
+{
+    display: inline-block;
+    height: 0 !important;
+    left: 45px;
+    position: relative;
+    width: 36px;
+}
+* + html td .tTableAsterisk
+{
+    left: 29px;
+}
+/*individual purchases tables*/
+.purchaseLicenseComparison .hasFeature
+{
+    padding-bottom: 3px;
+}
+.tPageOneCol .pSingleSuite h2
+{
+    margin: 20px 0 0 17px;
+}
+.puTableComparisonInfo
+{
+    border-collapse: separate !important;
+    border-spacing: 2px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.tTableStripes td .noFeature
+{
+    background-position: 0 -140px;
+}
+.tPageMain .tTableStripes td.subField
+{
+    padding-left: 33px !important;
+}
+.tTableStripes td .hasFeature em, .tTableStripes td .noFeature em
+{
+    display: inline-block;
+    text-indent: -9999px;
+}
+.tTableStripes .tTextLeft
+{
+    text-align: left;
+}
+.tTableStripes .tTextCenter
+{
+    text-align: center;
+}
+/* just-code stripped table */
+.tTableStripes th.feature, .tTableStripes th.shortcut, .tTableStripes th.jsfeature, .tTableStripes td.jsfeature
+{
+    text-align: left;
+    width: 284px;
+}
+.tTableStripes td.feature
+{
+    text-align: left;
+    font-weight: bold;
+    width: 45%;
+}
+
+.tTableStripes td.shortcut
+{
+    width: 14%;
+    text-align: left;
+}
+.tTableStripes td .supported, .tTableStripes td .limited, .tTableStripes td .notsupported
+{
+    background: transparent url('/CSS/Global/circles.png') no-repeat scroll 0 0;
+    color: #666;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 0 0 3px 0px;
+    display: block;
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    text-indent: 0px !important;
+}
+.limited em, .supported em, .notsupported em
+{
+    display: inline-block;
+    font-style: normal;
+    text-indent: -9999px;
+}
+.poLegend
+{
+    float: left;
+    clear: both;
+    margin: 17px 0 34px 0;
+}
+
+.poLegendBottom
+{
+    margin-bottom: 34px;
+}
+
+.poLegend ul
+{
+    list-style-type: none;
+    margin: 0;
+}
+
+.poLegend ul li
+{
+    background: transparent url('/CSS/Global/circles.png') no-repeat scroll 0 2px;
+    display: block;
+    padding: 0 0 0 20px;
+    margin: 5px 12px 5px 0px;
+    float: left;
+}
+.poLegend li.limited
+{
+    background-position: 0 -18px;
+}
+.poLegend li.notsupported
+{
+    background-position: 0 -38px;
+}
+
+.poLegend li.noimage
+{
+    background: none;
+    padding: 0;
+}
+
+.poLegend li.noimage span
+{
+    padding: 0 5px 0 0;
+}
+
+.tTableStripes td .supported
+{
+    background-position: 0 0;
+}
+
+.tTableStripes td .limited
+{
+    background-position: 0 -20px;
+}
+
+.tTableStripes td .notsupported
+{
+    background-position: 0 -40px;
+}
+
+.tTableStripes tr.odd td
+{
+    background-color: #ededed;
+}
+
+.jsDirections
+{
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/*included-components fix*/
+.tRTF .poFullListControlsList ul li
+{
+    background: none;
+}
+
+.tHeadlineBeta
+{
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+}
+/*PITS*/
+#silverlightControlHost
+{
+    margin-top: 12px;
+}
+#silverlightControlHost object
+{
+    width: 918px;
+}
+/*tooltips*/
+.poTooltipBox
+{
+    display: none;
+    position: absolute;
+}
+.poTooltipBoxShow
+{
+    display: block;
+    z-index: 2;
+}
+.poTooltipBoxTop, .poTooltipMiddle, .poTooltipBoxBottom
+{
+    background: transparent url('/CSS/Global/TooltipBox.png') no-repeat 0 0;
+    padding-left: 22px;
+    padding-right: 22px;
+    width: 260px;
+}
+.poTooltipBoxTop
+{
+    height: 16px;
+}
+.poTooltipMiddle
+{
+    padding-top: 10px;
+    padding-bottom: 14px;
+    background-repeat: repeat-y;
+    background-position: -400px 0;
+    white-space: normal;
+}
+.poTooltipBoxBottom
+{
+    height: 27px;
+    background-position: -800px 0;
+}
+.poTooltipBox .sTooltipClose
+{
+    background: transparent url('/CSS/Global/TooltipBox.png') no-repeat -1180px 0;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+/*end tooltips*/
+
+/* Messages */
+.tChristmas
+{
+    padding-bottom: 18px;
+    background: #e8f3d2 url('/CSS/Global/tree.gif') no-repeat 11px 21px;
+    margin-top: 29px;
+    padding: 18px 18px 18px 72px;
+}
+.tHoliday
+{
+    padding-bottom: 18px;
+    background-color: #ffd;
+    margin-top: 29px;
+    padding: 18px 18px 18px;
+}
+.tHoliday h2, .tChristmas h2
+{
+    margin-top: 0;
+}
+.tBlueBox
+{
+    background: #e2eeff;
+    padding: 17px;
+    clear: both;
+}
+.tPageRightIn .tBlueBox
+{
+    margin: 17px -17px -17px;
+    border-top: 17px #fff solid;
+}
+.tBlueBox h2
+{
+    margin-top: 0 !important;
+}
+.tGreyBox
+{
+    background: #f0f0f0;
+    padding: 17px;
+    clear: both;
+}
+
+.tYellowBox
+{    
+    background-color:#fffcd9;
+    border:1px solid #dfded4;    
+    padding: 17px;
+    clear: both;
+}
+
+/* End Of Messages */
+
+a.tArrowReadMore
+{
+    background: transparent url('/CSS/Global/nextIcon.gif') no-repeat 100% 5px;
+    padding-right: 12px;
+}
+
+a.arrowReadMore2 {
+    background: url("/CSS/Global/tArrowReadMore.gif") no-repeat scroll 0 5px;
+    padding-left: 18px;
+}
+
+
+/*what's included*/
+.tRTF .poFullListControlsList ul ul
+{
+    margin: 0 0 34px 0;
+}
+/*what's pits*/
+.tRTF ul.tPitsItems li
+{
+    background: none;
+    clear: both;
+    list-style-position: outside;
+    font-weight: normal;
+    font-size: 1em;
+}
+ul.tPitsItems li span
+{
+    background: url('/CSS/Global/pitsIcons.png') no-repeat 0 0;
+    display: block;
+    width: 10px;
+    padding: 3px 45px 3px 25px;
+    float: left;
+    text-indent: -9999px;
+}
+.tPitsItemsSmall .tPitsItems li span
+{
+    padding-left: 12px;
+    padding-right: 0;
+}
+
+ul.tPitsItems li.pitsOpen span
+{
+    background-position: 36px 7px;
+}
+ul.tPitsItems li.pitsResolved span
+{
+    background-position: 13px -27px;
+}
+ul.tPitsItems li.pitsInProgress span
+{
+    background-position: 0 -61px;
+}
+ul.tPitsItems li.pitsDeleted span
+{
+    background-position: 18px -95px;
+    padding-bottom: 10px;
+}
+ul.tPitsItems li.pitsOpenSmall span
+{
+    background-position: 0 -130px;
+}
+ul.tPitsItems li.pitsResolvedSmall span
+{
+    background-position: 0 -164px;
+}
+ul.tPitsItems li.pitsInProgressSmall span
+{
+    background-position: 0 -197px;
+}
+ul.tPitsItems li.pitsDeletedSmall span
+{
+    background-position: 0 -232px;
+    padding-bottom: 19px;
+}
+ul.tPitsItems li.pitsBug span
+{
+    background-position: 50px -269px;
+}
+
+ul.tPitsItems li.pitsFeature span
+{
+    background-position: 50px -304px;
+}
+.tBigOrderedList, .tBigOrderedList li
+{
+    clear: both;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.tBigOrderedList li span, .tBigOrderedList li a
+{
+    font-weight: normal;
+    font-size: 12px;
+}
+.tPitsImageText
+{
+    float: left;
+    margin: 5px 0 0 13px;
+    width: 462px;
+}
+
+/* Image gallery First step */
+.tImageGallery
+{
+    background: #eee;
+    padding: 17px 0;
+    margin-top: 17px;
+    float: left;
+    width: 100%;
+}
+
+.tImageGallery .top
+{
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.tImageGallery .top h2
+{
+    margin-top: 0;
+    display: inline;
+    padding-left: 17px;
+}
+.tImageGallery .top a
+{
+    position: absolute;
+    right: 42px;
+    top: 6px;
+    font-size: 12px;
+}
+
+.tImageGallery ul.tThumbs
+{
+    list-type: none !important;
+    display: block;
+    float: left;
+    margin: 0 0 0 7px;
+}
+.tImageGallery ul.tThumbs li:hover
+{
+    background: #fff;
+    border: solid #ccc 1px !important;
+}
+.tImageGallery ul.tThumbs li
+{
+    background: none;
+    width: 150px;
+    margin: 0 0 5px 5px;
+    float: left;
+    padding: 5px;
+    border: solid #eee 1px;
+    display: inline;
+    text-align: center;
+}
+.tImageGallery ul.tThumbs li span
+{
+    margin: 0 4px 0 4px;
+    display: block;
+    font-size: 11px;
+    line-height: 15px;
+    color: #777;
+}
+/* EndOf Image Gallery first step */
+
+/* Go To Top */
+p.tUpToTop
+{
+    text-align: right;
+    clear: both;
+    padding-top: 5px;
+}
+.tUpToTop a
+{
+    padding-left: 11px;
+    background: transparent url('/CSS/Global/top-arrow.gif') no-repeat 0 4px;
+    font-size: 11px;
+}
+
+/* Community links */
+ul.poCommunityLinks li
+{
+    padding: 0 0 5px 45px;
+    background: transparent url('/CSS/Global/quickProductsLinks.png?47687') no-repeat 0 0;
+    min-height: 35px;
+    font-size: 11px;
+    color: #999;
+}
+.poCommunityLinks .poForums
+{
+    background-position: 0 0;
+}
+.poCommunityLinks .poBlogs
+{
+    background-position: 0 -50px;
+}
+.poCommunityLinks .poCodeLibrary
+{
+    background-position: 0 -100px;
+}
+.poCommunityLinks .poDownloads
+{
+    background-position: 0 -149px;
+}
+.poCommunityLinks .poMVPProgram
+{
+    background-position: 0 -200px;
+}
+.poCommunityLinks .poVideos
+{
+    background-position: 0 -380px;
+}
+.poCommunityLinks .poKB
+{
+    background-position: 0 -320px;
+}
+.poCommunityLinks .poDocumentation
+{
+    background-position: 0 -256px;
+}
+.poCommunityLinks .poAjax
+{
+    background-position: 0 -437px;
+}
+.poCommunityLinks .poWin
+{
+    background-position: 0 -497px;
+}
+.poCommunityLinks .poWpf
+{
+    background-position: 0 -557px;
+}
+.poCommunityLinks .poSl
+{
+    background-position: 0 -617px;
+}
+.poCommunityLinks .poOrm
+{
+    background-position: 0 -667px;
+}
+.poCommunityLinks .poRep
+{
+    background-position: 0 -737px;
+}
+.poCommunityLinks .poTest
+{
+    background-position: 0 -797px;
+}
+.poCommunityLinks .poSupportResources
+{
+    background-position: 0 -857px;
+}
+.poCommunityLinks .poBeta
+{
+    background-position: 0 -907px;
+}
+.poCommunityLinks .poRequirements
+{
+    background-position: 0 -1087px;
+}
+.poCommunityLinks .poPDF
+{
+    background-position: 0 -1209px;
+}
+.poCommunityLinks a
+{
+    display: block;
+    font-size: 12px;
+}
+/* EndOf Community links */
+
+/*new releases product pages*/
+.poFullListLinks {
+    float: left;
+    background: #e2eeff no-repeat;
+    padding: 17px 17px 17px 7px;
+    margin-top: 17px;
+    float: left;
+    width: 892px;
+}
+.poFullListLinks h2 {
+    margin: 0 0 0 17px;
+    padding: 0;
+    width: 245px;
+    display: inline;
+    float: left;
+}
+.poFullListLinks ul {
+    float: left;
+    width: 210px;
+    margin: 0px;
+}
+.poFullListLinks ul li {
+    background-image: none;
+    padding-left: 0px;
+    margin: 0 0 5px 15px;
+}
+.poFullListLinks ul .selected {
+    list-style-type: disc;
+    list-style-position: outside;
+    font-weight: bold;
+}
+.poRightButton h1 {
+    float: left;
+    width: 763px;
+    padding-left: 23px;
+}
+.poRightButton .btnStretch {
+    margin: 40px 0 0px 0px;
+}
+.poChangesContent {
+    padding: 20px 90px 0px 90px;
+} 
+.poChangesContent h2 {
+    padding-top: 20px;
+    margin: 0px;
+}
+.poChangesContent img {
+    padding-bottom: 20px;
+}
+h2.large {
+    font-size: 24px;
+    margin: 0;
+    padding-top: 20px;
+}
+.poChangesContent .poBoxIconText {
+    width: 640px;
+}
+.poClear {
+    padding: 27px 0px;
+}
+.poVideoLink {
+    background: #e8f3d2 url('/CSS/Global/videoS.gif') no-repeat scroll 18px 5px;
+    display: block;
+    margin: 11px 0px;
+    padding: 8px 5px 8px 50px;
+    font-size: 12px;
+}
+/* Release notes */
+.poTopLine {
+    border-top: 2px solid #e1e1e1;
+    margin: 17px 0 40px 0;
+}
+.poBoxIcon {
+    float: left;
+    margin: 16px 22px 0 0;
+}
+.poBoxIconText {
+    float: right;
+    margin: 0;
+    width: 470px;
+}
+.poBoxIconText h2 {
+    margin: 15px 0 20px 0;
+}
+
+.poBoxIconText ul {
+    margin: 0 0 1em 0;
+}
+
+/* Corp Info */
+.tCorpInfoWrap {
+    background: #ccc;    
+}
+
+.tCorpInfoWrap p {    
+    padding:17px 34px;
+}
+
+.tCorpInfoWrap a {
+color:#333333;
+text-decoration:none;
+}
+
+/* Client Links Icons */
+.tClientLinkIcon
+{
+    background: transparent url('/CSS/Global/clientLinksIcons.png?x=7') no-repeat 0 0;
+    padding-left: 20px;
+    padding-bottom: 3px;
+}
+
+.tClientTweeter
+{
+    background: transparent url('/CSS/Global/clientLinksIcons.png?x=7') no-repeat 0 -132px;
+    padding-left: 18px;
+    padding-bottom: 3px;    
+}
+
+.tClientIconWithoutText
+{
+    text-indent:-4444px;    
+    overflow:hidden;
+    padding:0;
+    display:block; 
+    float: left;
+    width: 16px;   
+    height: 16px;    
+    margin-right: 3px;
+}
+
+.mvpVisibleIcon
+{
+    padding-left: 0;
+    padding-bottom: 3px;
+}
+
+.mvpInvisibleIcon
+{
+    background: transparent url('/CSS/Global/clientLinksIcons.png?x=7') no-repeat 0 -66px;
+    padding-left: 18px;
+    padding-bottom: 3px;
+}
+
+/* accordion */
+.poRightNavAccordion .accordionButton {
+	cursor: pointer;    
+    color: #376AAC;    
+    padding: 0 0;   
+    position: relative;
+    padding: 7px 15px 7px 34px;    
+    font-size: 12px;
+    font-weight:bold;
+}
+.poRightNavAccordion .accordionContent {		
+	display: none;  
+    font-size: 11px;
+    line-height:16px;  
+    padding: 3px 15px 17px 34px;    
+    overflow:hidden;
+}
+
+.poRightNavAccordion .selected {    
+    color: #393c45;    
+}
+
+.poRightNavAccordion .accordionButtonArrow {
+    display:inline-block;
+    position: absolute;
+    left: 17px;
+    top: 8px;
+    width: 13px;
+    height: 13px;
+    background: transparent url('/CSS/Products/milestones.png?x=457') -193px -739px no-repeat;    
+}
+.poRightNavAccordion .selected .accordionButtonArrow {
+    background-position: 0 -738px;
+    top: 10px;
+    left: 12px;
+}
+
+.poRightNavAccordion .tRightBoxMid {
+    padding: 0;
+}
+.poAddToCardSeparator
+{
+    background-color: #fff;
+    margin: 0 -17px;
+    height: 17px;
+}
+
+/* Search Autocomplete */
+.ac_results {
+	padding: 0px;
+	border: 1px solid #ccc;
+	background-color: white;
+    overflow:hidden;
+	z-index: 99999;
+}
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+    padding:0;
+	margin: 0;
+}
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+    display: block;
+	font-size: 12px;	
+	line-height: 16px;
+    overflow:hidden;
+}
+.ac_loading {
+}
+.ac_odd {
+	background-color: #fff;
+}
+
+.ac_over {
+	background-color: #376aac;	
+    color: #fff;
+}
+
+/* RadEditor & Chrome and Bug fix	*/
+#radePasteHelper {
+    position:static !important;
+}
+
+/* blue rounded box */
+.tRoundBox
+{
+    position: relative;
+	background-color: #f6f7f8;
+	border: 1px solid #d9d9d9;
+}
+.tTwoColumnsLeft .tRoundBox .tTwoEqualColumnsLeft, .tTwoColumnsLeft .tRoundBox .tTwoEqualColumnsRight
+{
+	width: 286px;
+}
+.tRound
+{      
+}
+.tBoxTopLeft, .tBoxTopRight, .tBoxBottomLeft, .tBoxBottomRight
+{
+    position: absolute;
+	width: 5px;
+	height: 5px;
+	background: transparent url('/CSS/Global/blue-box.gif') no-repeat 0 0;
+	_display: none;
+}
+.tBoxTopLeft
+{
+	top: -1px;
+	left: -1px;
+}
+.tBoxTopRight
+{
+	top: -1px;
+	right: -1px;
+	background-position: -5px 0;
+}
+.tBoxBottomLeft
+{
+	bottom: -1px;
+	left: -1px;
+	background-position: 0 -5px;
+}
+.tBoxBottomRight
+{
+	bottom: -1px;
+	right: -1px;
+	background-position: -5px -5px;
+}
+
+.tRound .tThreeColumnsLeftCenter, .tRound .tThreeColumnsRight
+{
+    margin: 0 0 17px 17px;
+}
+
+.tRound h3 {
+    margin: 17px 0 2px;
+}
+
+/* radtooltips with default skin > content  */
+td.rtWrapperContent {    
+    color: #333 !important;    
+    font: 12px/1.4 arial,sans-serif !important;
+    padding:6px !important;
+}
+td.rtWrapperContent h2 {    
+    margin: 10px 0 3px 0;
+}
+td.rtWrapperContent ul li {    
+    background:url('/CSS/Global/sprite-no-repeat.gif') no-repeat scroll 6px -431px transparent;
+    line-height:18px;
+    margin:0;
+    padding:0 0 0 17px;
+}
+td.rtWrapperContent ol li {    
+    line-height:18px;
+    margin:0;
+    list-style-position: inside;
+}
+td.rtWrapperContent p {    
+    margin-bottom: 5px;
+}
+
+
+/*RadTabStrip SectionTabs start*/
+
+.rtsLevel2
+{
+    display: none;
+}
+
+.RadTabStripTop_SectionTabs
+{  
+    float: right;  
+}
+
+.RadTabStripTop_SectionTabs .rtsLevel, .RadTabStripTop_SectionTabs .rtsLevel1
+{ 
+    width: auto !important;
+}
+
+.RadTabStripTop_SectionTabs a.rtsLink
+{
+    font: 12px/27px arial,sans-serif;
+    font-weight: normal !important;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-right: 7px;
+    float: left;    
+}
+.RadTabStripTop_SectionTabs li.rtsLast a.rtsLink
+{
+    margin-right: 0
+}
+
+.RadTabStripTop_SectionTabs .rtsIn
+{
+    padding: 0 !important;
+}
+.RadTabStripTop_SectionTabs .rtsOut {
+    padding-right: 0px !important;
+}
+.RadTabStripTop_SectionTabs a.rtsSelected .rtsIn, .RadTabStripTop_SectionTabs a.rtsSelected:hover .rtsIn
+{  
+    padding-top: 6px;
+}
+
+.RadTabStripTop_SectionTabs a.rtsLink:hover
+{
+    text-decoration: underline;
+}
+
+.RadTabStripTop_SectionTabs a.rtsSelected, .RadTabStripTop_SectionTabs a.rtsSelected:hover
+{    
+    color: #fff;
+    text-decoration: none;
+    background-color: #6c6e75;
+}
+
+.RadTabStripTop_SectionTabs a.rtsLink, .RadTabStripTop_SectionTabs a.rtsSelected
+{
+    padding: 0 3px !important;
+}
+
+.RadTabStripTop_SectionTabs li.rtsFirst a.rtsLink span.rtsTxt,
+.RadTabStripTop_SectionTabs a.rtsLink span.rtsTxt,
+.RadTabStripTop_SectionTabs li.rtsLast a.rtsLink span.rtsTxt,
+.RadTabStripTop_SectionTabs li.rtsFirst a.rtsSelected span.rtsTxt,
+.RadTabStripTop_SectionTabs a.rtsSelected span.rtsTxt,
+.RadTabStripTop_SectionTabs li.rtsLast a.rtsSelected span.rtsTxt
+{
+    line-height: 27px;
+    padding: 0 1px;
+}
+/*RadTabStrip SectionTabs end*/
+.tSectionMenu
+{
+    overflow: hidden;
+    margin: 0 auto;
+    width: 986px;
+    min-height: 44px; 
+}
+.tSectionTitle
+{
+    margin: 0 34px 12px 12px; 
+    float: left;       
+}
+*html .tSectionTitle
+{
+    margin-left: 6px;   
+}
+
+.tSectionTitle a, .tSectionTitle p, .tSectionTitle h2
+{ 
+    font-size: 22px;
+    color: #74757e;
+    text-decoration: none;
+}
+.tSectionTitle a.logo
+{
+    background: url('/CSS/Global/topLogos.jpg?x=34785') no-repeat;
+    display: block;
+    height: 27px;
+    width: 130px;
+    text-indent: -9999px;
+}
+.tSectionTitle a.ajax
+{
+    width: 137px;
+}
+.tSectionTitle a.sl
+{
+    background-position: 0 -37px;
+    width: 108px;
+}
+.tSectionTitle a.mvc
+{
+    background-position: 0 -74px;
+    width: 132px;
+}
+.tSectionTitle a.wpf
+{
+    background-position: 0 -110px;
+    width: 106px;
+}
+.tSectionTitle a.win
+{
+    background-position: 0 -147px;
+    width: 112px;
+}
+.tSectionTitle a.phone
+{
+    background-position: 0 -184px;
+    width: 160px;
+}
+.tSectionTitle a.orm
+{
+    background-position: 0 -222px;
+    width: 162px;
+}
+.tSectionTitle a.justcode
+{
+    background-position: 0 -259px;
+    width: 105px;
+}
+.tSectionTitle a.justmock
+{
+    background-position: 0 -295px;
+    width: 106px;
+}
+.tSectionTitle a.justtrace
+{
+    background-position: 0 -555px;
+    width: 150px;
+}
+.tSectionTitle a.justdecompile
+{
+    background-position: 0 -517px;
+    width: 150px;    
+}
+.tSectionTitle a.webui
+{
+    background-position: 0 -333px;
+    width: 174px;
+}
+.tSectionTitle a.teampulse
+{
+    background-position: 0 -370px;
+    width: 116px;
+}
+.tSectionTitle a.sitefinity
+{
+    background-position: 0 -408px;
+    width: 143px;
+}
+.tSectionTitle a.sp
+{
+    background-position: 0 -444px;
+    width: 245px;
+}
+.tSectionTitle a.rep
+{
+    background-position: 0 -481px;
+    width: 110px;
+}
+
+/* Menu 03/2011  */
+.tMenu {
+    display:inline;
+    float: left;    
+    height:40px;
+    margin-top:57px; 
+}
+.tMenu li {
+    list-style:none;
+}
+.tMenu a.tMenuMainItemLink span.arrow,
+.tMenu ul.infoList li,
+.tMenu ul.flags li,
+.tMenu a.btnBuy, 
+.tMenu a.btnBuy:hover, 
+.tMenu .aboutMap
+{
+    background: url('/CSS/Global/menu-sprite.png') no-repeat;
+}
+.tMenu li.tMenuMainItem {
+    float: left;      
+}
+.tMenu a.tMenuMainItemLink {    
+    height: 30px;
+    float: left;
+    width:auto;
+    padding: 10px 12px 0;    
+    color:#fff;
+    font-size: 13px;
+    text-decoration: none;       
+}
+.tMenu li.selected a.tMenuMainItemLink {    
+    background: #fff; 
+    color:#333;       
+}
+.tMenu a.tMenuMainItemLink:hover {    
+    background: #22252d;  
+}
+.tMenu a.tMenuMainItemLink span.arrow {    
+    background-position: 100% -500px;    
+    padding-right:12px;
+}
+.tMenu li.selected a.tMenuMainItemLink span.arrow {    
+    background-position: 100% -567px; 
+}
+
+.tMenu .colsAndShadowsWrap,
+.colsAndLeftShadow,
+.tMenu .colsAndShadowsWrap .cols {
+    background:transparent url('/CSS/Global/shadows-sprite.png') no-repeat;
+}
+
+.tMenu .colsAndShadowsWrap {
+    display: none;
+    position: absolute;
+    top: 97px;     
+    left: -11px; 
+    overflow:hidden;    
+    background-position:100% bottom;
+    padding-right: 11px;     
+}
+.colsAndLeftShadow {        
+    background-position:0 bottom;  
+    padding-left: 11px;  
+    float:left;    
+}
+.colsAndBtmShadow {
+    background:url("/CSS/Global/shadow-btm-sprite.png") repeat-x scroll 0 bottom transparent;
+    float:left;
+    padding-bottom:11px;
+}
+.tMenu .colsAndShadowsWrap .cols {
+    background-color:#ededed;
+    background-position:-456px 0;
+    overflow: hidden; 
+    font-size: 12px;        
+}
+*html .colsAndShadowsWrap .cols { /*IE6*/
+    float:left; 
+}
+.colsAndShadowsWrap .cols a {
+    color: #376aac;       
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.colsAndShadowsWrap .cols a:hover {
+    color: #002a7f;     
+}
+
+.colsAndShadowsWrap .col1 {
+    float: left;    
+    background:#fff;      
+}
+.colsAndShadowsWrap .col11, .colsAndShadowsWrap .col12, .colsAndShadowsWrap .col2 {
+    width: 228px;
+    float: left;      
+    padding: 22px 20px;  
+}
+.tSubMenuAbout .col11, .tSubMenuAbout .col12 {
+    padding-bottom: 48px;  
+}
+
+.colsAndShadowsWrap .col1 ul, .colsAndShadowsWrap .col2 ul, .colsAndShadowsWrap .col3 ul {
+    margin-bottom: 14px; 
+    padding-left: 10px;
+}
+
+.tMenu h3 {
+    color:#505050;
+    font-size: 10px;
+    line-height:1.8;
+    text-transform:uppercase;
+}
+
+.tMenu h3.tMenuTitle, .colsAndShadowsWrap .cols h3.tMenuTitle a {
+    color:#484a53;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform:none;
+}
+.colsAndShadowsWrap .cols h3.tMenuTitle a:hover {
+    color:#484a53;
+    text-decoration: underline;
+}
+
+.tMenu ul.infoList {
+    margin-left: 2px; 
+    padding: 0;
+}
+
+.tMenu ul.infoList li {    
+    font-size: 10px;
+    color:#6e6e6e;  
+    padding: 0 0 0 8px;
+    list-style-type: none; 
+    background-position: 0 -572px;
+}
+
+.tMenu ul.noIndent, .tMenu ul.noIndent li {
+    padding-left: 0; 
+}
+
+.tMenu ul.flags {
+    padding-left: 0;        
+}
+.tMenu ul.flags li {
+    padding: 0 0 3px 22px; 
+    background-position: 0 -150px;
+}
+.tMenu ul.flags li.uk {
+    background-position: 0 -211px;
+}
+.tMenu ul.flags li.de {
+    background-position: 0 -180px;
+}
+.tMenu ul.flags li.bg {
+    background-position: 0 -242px;
+}
+.tMenu ul.flags li.env {
+    background-position: 0 -273px;
+}
+.tMenu ul.flags li.au {
+    background-position: -294px -149px;
+}
+
+.tMenu a.btnBuy, .tMenu a.btnBuy:hover  {
+    display: block;    
+    font-size:13px;
+    height:32px;
+    padding:8px 0 0 50px;
+    width:90px;
+    background-position: -294px -100px; 
+    color:#fff;
+}
+
+.tMenu ul .tInfo {
+    display: block;   
+    margin-bottom: 16px;
+}
+
+.tMenu .aboutMap {
+    background-position: 100% -183px; 
+    padding-bottom: 0;
+}
+
+.tMenu .aboutMap h3 a {
+    margin-bottom: 22px;
+    padding-bottom: 115px;
+    display:block; 
+}
+
+.tMenu .aboutMap ul
+{
+    margin-bottom: 0;
+}
+.tMenu .tMenuBoxes {
+    position:relative; 
+    padding:15px 0 20px 55px;     
+}
+
+.tMenu .tMenuBoxes .iconSitefinity, 
+.tMenu .tMenuBoxes .iconUltimateCollection {    
+    display:block;
+    background: transparent url('/CSS/Global/menu-sprite.png') no-repeat 0 -337px;
+    position:absolute; 
+    width: 44px;  
+    height: 68px;  
+    top:15px;
+    left:0
+}
+.tMenu .tMenuBoxes .iconSitefinity {
+    background-position:0 -427px;
+    
+}
+
+
+/*menu search */
+.tSupportMenuSearch {
+    background-color: #e2eeff;
+    margin: 24px 0 0 20px;
+    padding: 7px;
+    width: 346px;
+}
+.tSupportMenuSearchInner {
+    border: solid #afd1ff 1px;
+    background:#fff;
+    padding-left: 5px;
+}
+.tSupportMenuSearch input {
+    border: 0 none;    
+}
+.tSupportMenuSearch label {
+    color: #999;
+    font-style: italic;
+    left: 40px;
+    padding: 0 0 0 10px;
+    position: absolute;
+    text-align: left;
+    top: 35px;
+}
+.tSupportMenuSearch .tSearchBox {    
+    height: 23px;    
+    line-height: 20px;
+    width: 306px;
+}
+
+/*about dropdown*/
+.tMenu .tSubMenuAbout {
+    left:225px;
+    right:-11px;
+}
+.tMenu .tSubMenuAbout .cols {
+    background-position: -482px 0;
+}
+.tSubMenuAbout .col1 {
+    min-height:280px;
+}
+.tSubMenuAbout .col11 {
+    width:206px;
+}
+.tSubMenuAbout .col12 {
+    width: 224px;
+}
+.tSubMenuAbout .col2 {
+    width:200px;
+}
+
+/*community dropdown*/
+.tMenu .tSubMenuCommunity {
+    left:291px;
+}
+.tMenu .tSubMenuCommunity .cols {
+    background-position:-592px 0;
+}
+.tSubMenuCommunity .col1 {
+    min-height:228px;
+}
+.tSubMenuCommunity .col11 {
+    width: 146px;
+}
+.tSubMenuCommunity .col12 {
+    width: 174px;
+}
+.tSubMenuCommunity .col2 {
+    width: 160px;
+}
+
+/*purchase dropdown*/
+.tMenu .tSubMenuPurchase {
+    left:390px;
+}
+.tMenu .tSubMenuPurchase .cols {
+    background-position:-813px 0;
+}
+.tSubMenuPurchase .col1 {
+    min-height: 200px;
+}
+.tSubMenuPurchase .col11 {
+    width: 140px;
+    height: 230px;
+}
+.tSubMenuPurchase .col2 {
+    width: 140px;
+}
+
+/*solutions dropdown*/
+.tMenu .tSubMenuSolutions {
+    left:77px;
+}
+.tMenu .tSubMenuSolutions .cols {
+    background-position:-456px 0;
+}
+.tSubMenuSolutions .col11 {
+    width:228px;
+}
+.tSubMenuSolutions .col2 {
+    width: 133px;
+}
+
+.tMenu a.promoPurchase {
+    background:#dadada url("/CSS/Global/menu-sprite.png") no-repeat scroll right -675px;
+    border-bottom:1px solid #ebebeb;
+    border-right:1px solid #ebebeb;
+    border-top:1px solid #ebebeb;
+    position:absolute; 
+    bottom:36px;
+    right:11px;
+    width:138px;
+    height:67px;    
+    padding:11px 20px;
+    color:#333;
+}
+.tMenu a.promoPurchase:hover {
+    color:#333;  
+    background-color:#f2ffd9;      
+}
+.tMenu .promoPurchaseSeeAll 
+{
+    border-bottom:1px solid #ebebeb;
+    border-right:1px solid #ebebeb;
+    border-top:1px solid #ebebeb;
+    padding: 3px 20px 6px 20px;
+    width:138px;
+    position: absolute;
+    bottom: 11px;
+    right: 11px;
+    height: 15px;
+    background-color: #dadada;
+    color: #376AAC;
+    font-size: 11px;
+}
+.tMenu .promoPurchaseSeeAll:hover 
+{
+    color: #002A7F;
+    background-color:#f2ffd9;
+}
+/* Tab MENU */
+ul.tTabMenu
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    background: url('/CSS/Global/tabMenuSprite.png') repeat-x;
+}
+
+ul.tTabMenu li
+{
+    display: block;
+    float: left;
+    width: 229px;   /*ul width 918px*/
+    height:50px;
+    background-image: none;    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;   
+    
+}
+ul.tTabMenu.threeTabs li
+{
+    width: 306px;
+}
+
+ul.tTabMenu.fiveTabs li
+{
+    width: 183px;
+}
+
+ul.tTabMenu li.last
+{
+     background: url('/CSS/Global/tabMenuSprite.png') no-repeat 228px -100px;
+}
+ul.tTabMenu.threeTabs li.last
+{
+     background: url('/CSS/Global/tabMenuSprite.png') no-repeat 305px -100px;
+}
+ul.tTabMenu.fiveTabs li.last
+{
+     background: url('/CSS/Global/tabMenuSprite.png') no-repeat 182px -100px;
+}
+
+ul.tTabMenu li.first
+{
+    background: url('/CSS/Global/tabMenuSprite.png') no-repeat 0px -100px;
+}
+ul.tTabMenu li.first a
+{
+    background: none;
+}
+
+ul.tTabMenu li:hover
+{
+    background: url('/CSS/Global/tabMenuSprite.png') repeat-x 0px -50px;
+}
+
+ul.tTabMenu li.selected
+{    
+    background: url('/CSS/Global/tabMenuSelected.png') top center no-repeat !important;
+}
+ul.tTabMenu li.selected a
+{
+    background: none;
+}
+
+ul.tTabMenu li a
+{
+    display: block;
+    height: 100%;
+    padding: 10px 0 0 0;
+    background: url('/CSS/Global/tabMenuSeparator.gif') no-repeat top left;
+}
+
+ul.tTabMenu li.selected a
+{
+    color: #FFF;    
+}
+
+/* Support Center quick links */
+ul.sSupportQuickLinks 
+{
+    border-bottom: 1px solid #D9D9D9;
+    overflow: hidden;
+    padding: 12px 0 2px;
+}
+ul.sSupportQuickLinks li {
+    background: none repeat scroll 0 0 transparent;
+    float: left;
+    position: relative;
+    padding: 5px 0 13px 0;
+    width: 283px;
+    margin-right: 34px;
+}
+ul.sSupportQuickLinks li.last {
+    margin: 0;
+}
+ul.sSupportQuickLinksFourColumns li
+{
+    width: 204px;
+    margin-right: 34px;
+}
+ul.sSupportQuickLinksFourColumns li.last
+{
+    margin: 0;
+}
+
+ul.sSupportQuickLinks li a {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+ul.sSupportQuickLinks span {
+    background: url("/CSS/Support/supportIcons.gif") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 32px;
+    width: 42px;
+}
+
+ul.sSupportQuickLinks li.first span {
+    left: 3px;
+}
+
+ul.sSupportQuickLinks span.iconVideos {
+    background-position: 4px 0;
+}
+ul.sSupportQuickLinks span.iconForums {
+    background-position: 0 -198px;
+}
+ul.sSupportQuickLinks span.iconKB {
+    background-position: 4px -100px;
+}
+ul.sSupportQuickLinks span.iconDocumentation {
+    background-position: 5px -300px;
+}
+ul.sSupportQuickLinks span.iconDemos {
+    background-position: 0 -399px;
+}
+ul.sSupportQuickLinks span.iconCL {
+    background-position: 0 -499px;
+}
+ul.sSupportQuickLinks span.iconPits {
+    background-position: 4px -697px;
+}
+ul.sSupportQuickLinks span.iconBlogs {
+    background-position: 5px -792px;
+}
+ul.sSupportQuickLinks span.iconWebinars {
+    background-position: 0 -1183px;
+}
+ul.sSupportQuickLinks span.iconStepByStep 
+{
+    background: url("/CSS/Support/supportIcons.gif") no-repeat scroll 0 0 transparent;
+    background-position: 0 -1303px;
+}
+ul.sSupportQuickLinks span.iconSupport
+{ 
+    background: url('/CSS/Global/quickProductsLinks.png?47687')no-repeat scroll  0px -857px transparent; 
+}
+
+/* TeamPulse Sitefinity sandbox sign up form */
+.tpAddUser 
+{
+	background: url("/CSS/ClientNet/icons.gif") no-repeat 0 -120px;
+	padding: 0 0 0 14px;
+	margin: 10px 0 0 41px;
+	clear: both;
+	float: left;
+}
+.tpRemoveUser 
+{
+	background: url("/CSS/ClientNet/icons.gif") no-repeat 0 -60px;
+	padding: 0 0 0 16px;
+	margin: 10px 0 0 15px;
+	float: left;
+}
+
+/* hide skype css */
+span.skype_pnh_container {
+    display:none !important;
+}
+span.skype_pnh_print_container {
+    display:inline !important;
+}
+
+.hide 
+{
+    display: none !important;
+}
+.noPadding 
+{
+    padding: 0 !important;
+}
+div.RadToolTip 
+{
+    width: 250px;
+}

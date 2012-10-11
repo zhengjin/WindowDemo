@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ServiceDirect.Schedule.WEB.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Service Direct - Scheduler
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">LogOn</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="LogOut" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem Text="Schedule Jobs" Value="Schedule Jobs">
+                            <asp:MenuItem NavigateUrl="~/Schedule Billing/ScheduleTasksForm.aspx" Text="Schedule Tasks" Value="Schedule Tasks"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Schedule Billing/TaskDetailForm.aspx" Text="Task Detail" Value="Task Detail"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Config" Value="Config">
+                            <asp:MenuItem NavigateUrl="~/Schedule Billing/BillingForm.aspx" 
+                                Text="Billing Setting" Value="Billing Setting"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Schedule Setting/BackupSettingForm.aspx" Text="Backup Setting" Value="Backup Setting"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Schedule Setting/EmailSettingForm.aspx" Text="Email Setting" Value="Email Setting"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+           
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

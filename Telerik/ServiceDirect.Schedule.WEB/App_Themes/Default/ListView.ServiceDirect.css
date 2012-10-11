@@ -1,0 +1,152 @@
+/*Telerik RadListView Web20 Skin*/
+
+/*global*/
+
+.RadListView_ServiceDirect
+{
+	border:1px solid #4e75b3;
+	background:#fff;
+	color:#000;
+	font:12px/16px "segoe ui",arial,sans-serif;
+}
+
+.RadListView_ServiceDirect .rlvA
+{
+	/*background:#e3eeff;*/
+}
+
+.RadListView_ServiceDirect .rlvISel
+{
+	background:#cdffb1;
+}
+
+/*buttons*/
+
+.RadListView_ServiceDirect .rlvBAdd,
+.RadListView_ServiceDirect .rlvBUpdate,
+.RadListView_ServiceDirect .rlvBCancel,
+.RadListView_ServiceDirect .rlvBDel,
+.RadListView_ServiceDirect .rlvBEdit
+{
+	background-image:url('Grid/sprite.gif');
+}
+
+.RadListView_ServiceDirect .rlvBAdd
+{
+	background-position:0 -1650px;
+}
+.RadListView_ServiceDirect .rlvBUpdate
+{
+	background-position:0 -1800px;
+}
+.RadListView_ServiceDirect .rlvBCancel
+{
+	background-position:0 -1850px;
+}
+.RadListView_ServiceDirect .rlvBSel
+{
+	background-image:url('FormDecorator/CheckBoxSprites.gif');
+	background-position:-2px -2px;
+}
+.RadListView_ServiceDirect .rlvISel .rlvBSel
+{
+	background-position:-2px -422px;
+}
+.RadListView_ServiceDirect .rlvBDel
+{
+	background-position:0 -1750px;
+}
+.RadListView_ServiceDirect .rlvBEdit
+{
+	background-position:0 -1700px;
+}
+
+.RadListView_ServiceDirect .rlvDrag
+{
+	background-image:url('ListView/drag.gif');
+	background-position:center center;
+}
+
+/*flow*/
+
+.RadListView_ServiceDirect div.rlvI,
+.RadListView_ServiceDirect div.rlvA,
+.RadListView_ServiceDirect div.rlvIEmpty,
+.RadListView_ServiceDirect div.rlvIEdit
+{
+	border-color:#cfd9e7;
+}
+
+.RadListView_ServiceDirect div.rlvISel
+{
+	border-color:#71bf25;
+}
+
+/*grid*/
+
+.RadListView_ServiceDirect tr.rlvHeader th
+{
+	border:1px solid;
+	border-color:#fff #6e8ec2 #204582 #355a99;
+	background:0 -2300px repeat-x #7fa5d7 url('Grid/sprite.gif');
+	color:#fff;
+}
+
+.RadListView_ServiceDirect tr.rlvI td,
+.RadListView_ServiceDirect tr.rlvA td,
+.RadListView_ServiceDirect tr.rlvISel td,
+.RadListView_ServiceDirect tr.rlvIEmpty td,
+.RadListView_ServiceDirect tr.rlvIEdit
+{
+	border:1px solid;
+	border-top:0;
+}
+
+.RadListView_ServiceDirect tr.rlvI td,
+.RadListView_ServiceDirect tr.rlvA td,
+.RadListView_ServiceDirect tr.rlvIEmpty td,
+.RadListView_ServiceDirect tr.rlvIEdit td
+{
+	border-color:#fff #fff #cfd9e7 #829cbf;
+}
+
+.RadListView_ServiceDirect tr.rlvISel td
+{
+	border-color:#cdffb1 #cdffb1 #71bf25;
+}
+
+/*single row*/
+
+.RadListView_ServiceDirect td.rlvI,
+.RadListView_ServiceDirect td.rlvA,
+.RadListView_ServiceDirect td.rlvISel,
+.RadListView_ServiceDirect td.rlvIEmpty,
+.RadListView_ServiceDirect td.rlvIEdit
+{
+	border:0;
+	border-right:1px solid #cfd9e7;
+}
+
+.RadListView_ServiceDirect td.rlvISel
+{
+	border-color:#71bf25;
+}
+
+/*floated*/
+
+.RadListView_ServiceDirect .rlvFloated .rlvI,
+.RadListView_ServiceDirect .rlvFloated .rlvA,
+.RadListView_ServiceDirect .rlvFloated .rlvISel,
+.RadListView_ServiceDirect .rlvFloated .rlvIEdit
+{
+	border-color:#4e75b3;
+}
+
+/*edit*/
+
+.RadListView_ServiceDirect .rlvInput
+{
+	border-color:#6788be;
+	background:#fff;
+	color:#000;
+}

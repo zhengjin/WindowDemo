@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC3899E8-A390-4F22-9C95-BA8B38D34D4A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Client2</RootNamespace>
+    <AssemblyName>Client2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binding\Hello.cs" />
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message\CallbackType.cs" />
+    <Compile Include="Message\Duplex.cs" />
+    <Compile Include="Message\OneWay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Message\Streamed.cs" />
+    <Compile Include="Message\DuplexReentrant.cs" />
+    <Compile Include="Message\ReentrantCallbackType.cs" />
+    <Compile Include="Message\MSMQ.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\BindingSvc.Hello\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MessageSvc.DuplexReentrant\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MessageSvc.Duplex\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MessageSvc.MSMQ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MessageSvc.OneWay\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MessageSvc.Streamed\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BindingSvc.Hello\" />
+    <WCFMetadataStorage Include="Service References\MessageSvc.DuplexReentrant\" />
+    <WCFMetadataStorage Include="Service References\MessageSvc.Duplex\" />
+    <WCFMetadataStorage Include="Service References\MessageSvc.MSMQ\" />
+    <WCFMetadataStorage Include="Service References\MessageSvc.OneWay\" />
+    <WCFMetadataStorage Include="Service References\MessageSvc.Streamed\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BindingSvc.Hello\item.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BindingSvc.Hello\Hello.wsdl" />
+    <None Include="Service References\BindingSvc.Hello\item.disco" />
+    <None Include="Service References\BindingSvc.Hello\item1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BindingSvc.Hello\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BindingSvc.Hello\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Service References\BindingSvc.Hello\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MessageSvc.OneWay\item.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.OneWay\item.disco" />
+    <None Include="Service References\MessageSvc.OneWay\OneWay.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.OneWay\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.OneWay\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.OneWay\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.Duplex\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.Duplex\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.Duplex\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MessageSvc.Streamed\item.xsd" />
+    <None Include="Service References\MessageSvc.Streamed\item1.xsd" />
+    <None Include="Service References\MessageSvc.Streamed\Streamed.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.Streamed\item.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.Streamed\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.Streamed\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.Streamed\item2.xsd" />
+    <None Include="Service References\MessageSvc.Streamed\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.DuplexReentrant\DuplexReentrant.xsd" />
+    <None Include="Service References\MessageSvc.Duplex\service.wsdl" />
+    <None Include="Service References\MessageSvc.Duplex\service.xsd" />
+    <None Include="Service References\MessageSvc.Duplex\service1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.DuplexReentrant\DuplexReentrant.disco" />
+    <None Include="Service References\MessageSvc.DuplexReentrant\DuplexReentrant.wsdl" />
+    <None Include="Service References\MessageSvc.DuplexReentrant\DuplexReentrant1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.DuplexReentrant\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.DuplexReentrant\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.DuplexReentrant\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MessageSvc.MSMQ\MSMQ.wsdl" />
+    <None Include="Service References\MessageSvc.MSMQ\MSMQ.xsd" />
+    <None Include="Service References\MessageSvc.MSMQ\MSMQ1.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.MSMQ\MSMQ.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.MSMQ\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.MSMQ\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MessageSvc.MSMQ\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

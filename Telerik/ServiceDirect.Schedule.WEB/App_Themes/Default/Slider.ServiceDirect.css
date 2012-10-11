@@ -1,0 +1,117 @@
+/* RadSlider for ASP.NET AJAX Web20 Skin */
+.RadSlider_ServiceDirect .rslTrack
+{
+	border-color:#7996c6 #fff #fff #7996c6;
+}
+
+.RadSlider_ServiceDirect .rslHorizontal a.rslHandle
+{
+	background-image:url('Slider/Handles.gif');
+}
+
+.RadSlider_ServiceDirect .rslHorizontal a.rslDraghandle
+{
+	background-image:url('Slider/DragHandle.gif');
+}
+
+.RadSlider_ServiceDirect .rslHorizontal .rslTrack
+{	
+	background:url('Slider/TrackBgr.gif') repeat-x;
+}
+
+.RadSlider_ServiceDirect .rslHorizontal .rslSelectedregion
+{
+	background:url('Slider/SelectedRegionHorizontalBgr.gif') right top no-repeat;
+}
+
+/* vertical slider */
+.RadSlider_ServiceDirect .rslVertical a.rslHandle
+{
+	background-image:url('Slider/HandlesVertical.gif');
+}
+
+.RadSlider_ServiceDirect .rslVertical .rslTrack
+{
+	background:url('Slider/TrackVerticalBgr.gif') repeat-y;
+}
+
+.RadSlider_ServiceDirect .rslVertical .rslSelectedregion
+{
+	background:url('Slider/SelectedRegionVerticalBgr.gif') left bottom no-repeat;
+}
+
+.RadSlider_ServiceDirect .rslVertical a.rslDraghandle
+{
+	background:url('Slider/DragVerticalHandle.gif') no-repeat 0 0;
+}
+
+.RadSlider_ServiceDirect .rslItem,
+.RadSlider_ServiceDirect .rslLargeTick span
+{
+	color:#333;
+}
+
+.RadSlider_ServiceDirect .rslItemsWrapper .rslItemSelected
+{
+	color:#000;
+}
+
+/* horizontal slider items */
+.RadSlider_ServiceDirect .rslHorizontal .rslItem
+{
+	background-image:url('Slider/ItemHorizontalBgr.gif');
+}
+
+/* vertical slider items */
+.RadSlider_ServiceDirect .rslVertical .rslItem
+{
+	background-image:url('Slider/ItemVerticalBgr.gif');
+}
+
+/* horizontal slider - TrackPosition=Top/Bottom */
+.RadSlider_ServiceDirect .rslTop .rslSmallTick,
+.RadSlider_ServiceDirect .rslBottom .rslSmallTick
+{
+	background-image:url('Slider/SmallChangeHorizontal.gif');
+}
+
+.RadSlider_ServiceDirect .rslTop .rslLargeTick,
+.RadSlider_ServiceDirect .rslBottom .rslLargeTick
+{
+	background-image:url('Slider/LargeChangeHorizontal.gif');
+}
+
+/* vertical slider - TrackPosition=Left/Right */
+.RadSlider_ServiceDirect .rslLeft .rslSmallTick,
+.RadSlider_ServiceDirect .rslRight .rslSmallTick
+{
+	background-image:url('Slider/SmallChangeVertical.gif');
+}
+
+.RadSlider_ServiceDirect .rslLeft .rslLargeTick,
+.RadSlider_ServiceDirect .rslRight .rslLargeTick
+{
+	background-image:url('Slider/LargelChangeVertical.gif');
+}
+
+/* horizontal slider - TrackPosition=Center */
+.RadSlider_ServiceDirect .rslMiddle .rslSmallTick
+{
+	background-image:url('Slider/SmallChangeMiddleHorizontal.gif');
+}
+
+.RadSlider_ServiceDirect .rslMiddle .rslLargeTick
+{
+	background-image:url('Slider/LargeChangeMiddleHorizontal.gif');
+}
+
+/* vertical slider - TrackPosition=Center */
+.RadSlider_ServiceDirect .rslCenter .rslSmallTick
+{
+	background-image:url('Slider/SmallChangeCenterVertical.gif');
+}
+
+.RadSlider_ServiceDirect .rslCenter .rslLargeTick
+{
+	background-image:url('Slider/LargelChangeCenterVertical.gif');
+}

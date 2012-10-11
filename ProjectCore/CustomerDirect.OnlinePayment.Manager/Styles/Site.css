@@ -1,0 +1,313 @@
+﻿.BODY
+{
+    margin: 0 0 0;
+    background: url(../Image/qsfBodyBack.png) repeat-x scroll left top #000;
+    color: #001119;
+    font-size: 62.5%;
+    line-height: 1.2;
+    /*页面字体*/
+    font-family: "segoe ui" ,arial,sans-serif;
+}
+/*居中*/
+.center
+{
+    margin: 0px auto;
+    width: 990px;
+    
+}
+
+#LogCss
+{
+    width: 80%;
+    height: 100%;
+    
+}
+.bottom .box_outer
+{
+    padding-bottom: 2px;
+    /*边框颜色*/
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    
+}
+.test
+{
+    /*渐变*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#CCCCCC,endColorStr=#FFFFFF); /*IE6*/
+    background: -moz-linear-gradient(top,#CCCCCC,#FFFFFF); /*非IE6的其它*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 80%, from(#CCCCCC), to(#FFFFFF)); /*非IE6的其它*/
+    height: 100%;
+}
+.style2
+{
+    color: #FFFFFF;
+    font-size: small;
+}
+.style2 a
+{
+    color:White;
+    }
+.style3
+{
+    font-size: x-large;
+    color: #666666;
+}
+/*超链接默认颜色*/
+a.a1
+{
+    color: #FFFFFF;
+}
+/*超链接鼠标放上时的颜色*/
+a.a1:hover
+{
+    color: #FFFFFF;
+}
+    .classInfo
+       {        
+        font-size:14px;
+        font-weight:lighter;
+        
+        }
+        
+/*------------------------------------Home 页面*/
+        .yaTableOfContents
+        {
+           margin: 0 0 0;
+            padding: 12px 0;
+            width: 370px;
+            background-color: #f6fcff;
+            border-top: 1px solid #e7e7e7;
+            border-bottom: 1px solid #e7e7e7;
+            overflow: hidden;
+        }
+        .yaTableOfContents a
+        {
+            color: #29538A;
+        }
+        
+        .yaAvatar
+        {
+            margin: 0 10px;
+            padding: 0;
+            float: left;
+            width: 80px;
+            overflow: hidden;
+        }
+        .yaAvatar a
+        {
+            display: block;
+            font-size: .9em;
+            line-height: normal;
+            padding-top: 2px;
+        }
+        
+        /*线*/
+        .lineThrough
+        {
+            position: relative;
+            height: 10px;
+            border-bottom: 1px solid #E7E7E7;
+    top: 0px;
+    left: 0px;
+}
+        
+/* Logon
+----------------------------------------------------------*/
+#LoginErrorMessage
+{
+    color:Red;
+    margin-top:50px;
+    line-height:20px;
+    font-size:17px;
+}
+.loginTitle
+{
+    margin-left:60px;
+    font-size: 40px;
+}
+.tFormFieldsList
+{
+    margin-top:50px;
+    margin-left:90px;
+    float: left;
+    line-height:27px;
+    width:500px;
+    list-style:none;
+}
+
+.tFormFieldsList li
+{
+    list-style-type: none;
+    clear:both;
+    top: 0px;
+}
+
+.txtWrapper
+{
+    display: block;
+    padding: 5px 8px 5px 0px;
+    float: left;
+    background-color: #e2eeff;
+}
+
+.LoginLabel
+{
+    width:105px;
+    text-align:right;
+    float:left;
+    font-size:18px;
+    font-weight:bolder;
+    position:relative;
+    padding:5px 5px 0;
+}
+
+.LoginTextBox
+{
+    height: 20px;
+    position:relative;
+    float:left;
+    margin-left:8px;
+    border:1px solid #000;
+    top: 0px;
+    left: 0px;
+}
+
+.tFormCheckbox
+{
+    position: relative;
+    left: 120px; 
+    text-align: left;
+    overflow:hidden;
+}
+.loginPosition
+{
+    float:left;
+    position: relative;
+    left:230px;
+    background-image:url(../Image/login-up.png) no-repeat;
+}
+
+.loginBtn
+{
+    position: relative;
+    float: left;
+    line-height:27px;
+    width:500px;
+    list-style:none;
+    margin-bottom:120px;
+    text-align:left;
+    left: 260px; 
+}
+
+.loghelp
+{
+    position: relative;
+    float: left;
+    left:0px;
+    clear:both;
+}
+
+.fFieldErrorMsg
+{
+    color:Red;
+    display:none;
+    float:left;
+    position:relative;
+    left:20px;
+    clear:both;
+}
+
+/*EmailWindow*/
+.otherWindow
+{
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    overflow-x: hidden; 
+    margin: 0px auto;
+}
+
+.emailWindow
+{
+    width: 100%;
+}
+
+table.emailWindow td
+{
+    font-family: Calibri, Arial;
+    color: #4f4236;
+    font-size: 13px;
+    padding-left:10px;
+}
+
+table.emailWindow .lblText
+{
+    text-align:right;
+    width:103px;
+}
+table.emailWindow .lblTextProfile
+{
+    text-align:right;
+    width:30px;
+}
+
+.homeWindowsbtn
+{
+    float: right;
+    margin:10px 10px 0 0;
+}
+
+/*Ohter window*/
+.homeWindow
+{
+    width: 100%;
+}
+
+table.homeWindow td
+{
+    font-family: Calibri, Arial;
+    color: #4f4236;
+    font-size: 13px;
+}
+
+table.homeWindow .lblText
+{
+    text-align:right;
+    width:103px;
+}
+table.homeWindow .lblTextProfile
+{
+    text-align:right;
+    width:65px;
+}
+
+.homeWindowsbtn
+{
+    float: right;
+    margin:10px 10px 0 0;
+}
+
+.otherContext
+{
+    margin:10px 0 20px 0;    
+}
+.Title3
+{
+    font-size:large;
+    font-weight: 700;
+}
+
+.topButton
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.gridViewToolTip
+{
+    max-width:500px;
+    height:auto;
+    font-size:15px;
+    padding:12px 10px 12px 10px;
+}

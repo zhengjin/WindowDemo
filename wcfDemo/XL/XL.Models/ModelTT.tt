@@ -1,0 +1,20 @@
+﻿<#@ assembly name="$(SolutionDir)\XL.Service\bin\XL.Service.dll" #>
+<#@ assembly name="Microsoft.SqlServer.ConnectionInfo" #>
+<#@ assembly name="Microsoft.SqlServer.Smo" #>
+<#@ assembly name="Microsoft.SqlServer.Management.Sdk.Sfc" #>
+<#@ import namespace="System" #>
+<#@ import namespace="Microsoft.SqlServer.Management.Smo" #>
+<#+
+// <copyright file="ModelTT.tt" company="MS">
+//  Copyright © MS. All Rights Reserved.
+// </copyright>
+
+public class ModelTT : Template
+{
+	public override string TransformText()
+	{
+
+        return this.GenerationEnvironment.ToString();
+	}
+}
+#>

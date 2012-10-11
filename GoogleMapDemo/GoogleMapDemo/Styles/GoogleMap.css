@@ -1,0 +1,100 @@
+﻿body 
+        {
+          background-color: white;
+          color: black;
+          font-family: Arial, sans-serif;
+          font-size: 13px;
+          margin: 15px;
+        }
+     
+        a:link 
+        {
+          color: #0000cc;
+        }
+     
+        a:active 
+        {
+          color: red;
+        }
+     
+        a:visited 
+        {
+          color: #551a8b;
+        }
+        
+        #placelist 
+        {
+          width: 500px;
+        }
+     
+        #search 
+        {
+          margin-bottom: 5px;
+        }
+     
+        #searchform 
+        {
+          width : 100%;
+        }
+     
+        #map 
+        {
+          border: 1px solid #979797;
+          height: 450px;
+        }
+     
+        #results 
+        {
+          position: absolute;
+          left: 540px;
+        }
+     
+        #searchwell 
+        {
+          width : 330px;
+        }
+     
+        #searchwell .unselected 
+        {
+          padding-left: 18px;
+          padding-top: 1px;
+          background-image: url("http://labs.google.com/ridefinder/images/mm_20_yellow.png");
+          background-repeat: no-repeat;
+          background-position: top left;
+        }
+     
+        .unselected .gs-watermark 
+        {
+          display: none;
+        }
+     
+        #searchwell .select 
+        {
+          margin-bottom: 1em;
+        }
+     
+        .unselected .select 
+        {
+          cursor: pointer;
+          text-decoration: underline;
+          color: #7777cc;
+        }
+     
+        #selected 
+        {
+          margin-top: 1em;
+        }
+     
+        #selected .gs-result 
+        {
+          margin-bottom: 1em;
+        }
+     
+        #selected .gs-result 
+        {
+          padding-left: 30px;
+          padding-top: 3px;
+          background-image: url("http://www.google.com/mapfiles/icon.png");
+          background-repeat: no-repeat;
+          background-position: top left;
+        }

@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SiteMaster</title>
+    <link href="CSS/Main.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+        <div>
+            <asp:Label ID="lblTitle" runat="server" Text="化零为整WCF" CssClass="title" />
+            <span class="breadcrumb">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                </asp:SiteMapPath>
+                <a href="http://webabcd.cnblogs.com" target="_blank">http://webabcd.cnblogs.com</a>
+            </span>
+        </div>
+    </div>
+    <div id="warp">
+        <div id="column1">
+            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+            </asp:TreeView>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </div>
+        <div id="column2">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+
+    <script type="text/javascript">
+    
+         // document.documentElement.style.height = "100%";
+         // document.getElementById('column1').style.height = "100%";
+         // document.getElementById('column1').style.width = "100";
+
+    </script>
+
+</body>
+</html>

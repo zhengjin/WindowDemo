@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UTPModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="UTPModelStoreContainer">
+          <EntitySet Name="View_CustomerInformation" EntityType="UTPModel.Store.View_CustomerInformation" store:Type="Views" store:Schema="dbo" store:Name="View_CustomerInformation">
+            <DefiningQuery>SELECT 
+      [View_CustomerInformation].[AcctNum] AS [AcctNum], 
+      [View_CustomerInformation].[CustomerID] AS [CustomerID], 
+      [View_CustomerInformation].[FirstName] AS [FirstName], 
+      [View_CustomerInformation].[LastName] AS [LastName], 
+      [View_CustomerInformation].[CurrDue] AS [CurrDue], 
+      [View_CustomerInformation].[TotalDue] AS [TotalDue], 
+      [View_CustomerInformation].[BillDate] AS [BillDate], 
+      [View_CustomerInformation].[BillAmt] AS [BillAmt], 
+      [View_CustomerInformation].[Email] AS [Email]
+      FROM [dbo].[View_CustomerInformation] AS [View_CustomerInformation]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--生成过程中发现错误:
+      警告 6002: 表/视图“UtilityCompany1.dbo.View_CustomerInformation”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+      -->
+        <EntityType Name="View_CustomerInformation">
+          <Key>
+            <PropertyRef Name="AcctNum" />
+            <PropertyRef Name="CustomerID" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="LastName" />
+          </Key>
+          <Property Name="AcctNum" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="CustomerID" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="CurrDue" Type="money" />
+          <Property Name="TotalDue" Type="money" />
+          <Property Name="BillDate" Type="datetime" />
+          <Property Name="BillAmt" Type="money" />
+          <Property Name="Email" Type="varchar" MaxLength="120" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UTPModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="UTPDataEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="View_CustomerInformation" EntityType="UTPModel.View_CustomerInformation" />
+        </EntityContainer>
+        <EntityType Name="View_CustomerInformation">
+          <Key>
+            <PropertyRef Name="AcctNum" />
+            <PropertyRef Name="CustomerID" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="LastName" />
+          </Key>
+          <Property Name="AcctNum" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="CustomerID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="CurrDue" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="TotalDue" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="BillDate" Type="DateTime" />
+          <Property Name="BillAmt" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Email" Type="String" MaxLength="120" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UTPModelStoreContainer" CdmEntityContainer="UTPDataEntities">
+          <EntitySetMapping Name="View_CustomerInformation"><EntityTypeMapping TypeName="UTPModel.View_CustomerInformation"><MappingFragment StoreEntitySet="View_CustomerInformation">
+            <ScalarProperty Name="AcctNum" ColumnName="AcctNum" />
+            <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="CurrDue" ColumnName="CurrDue" />
+            <ScalarProperty Name="TotalDue" ColumnName="TotalDue" />
+            <ScalarProperty Name="BillDate" ColumnName="BillDate" />
+            <ScalarProperty Name="BillAmt" ColumnName="BillAmt" />
+            <ScalarProperty Name="Email" ColumnName="Email" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="UTPModel">
+        <EntityTypeShape EntityType="UTPModel.View_CustomerInformation" Width="2.75" PointX="2.375" PointY="1.125" Height="2.7341113281249996" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

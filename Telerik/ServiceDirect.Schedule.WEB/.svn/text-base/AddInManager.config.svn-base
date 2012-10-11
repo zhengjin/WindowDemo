@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<configuration>
+
+    <system.web>
+        <compilation debug="true" targetFramework="4.0" />
+    </system.web>
+  <appSettings>
+    
+    <!--数据库服务名-->    
+    <add key="strSQLServer" value="dev-db"/>
+    
+    <!--数据库登录用户-->
+    <add key="strUser" value="sa"/>
+    
+    <!--数据库登录密码1-->
+    <add key="strPassword" value="sqlserver"/>
+
+    <!--数据库名称-->
+    <add key="strDatabaseName" value="ServiceDirectDB"/>
+    
+    <add key="UTPPath" value="C:\Program Files (x86)\Able Software\Utility Star Platinum\Utility.exe"/>
+  </appSettings>
+</configuration>

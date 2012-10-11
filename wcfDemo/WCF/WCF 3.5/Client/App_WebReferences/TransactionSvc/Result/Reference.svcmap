@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5b514288-8b97-4806-82d4-1c8e4a836055" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3502/ServiceHost/Transaction/Result.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Result.disco" MetadataType="Disco" ID="a6d476d2-ac14-4079-85ac-d7f4bce60447" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Transaction/Result.svc?disco" />
+    <MetadataFile FileName="Result.xsd" MetadataType="Schema" ID="5b6036a5-1338-4f2b-a3e0-4ed8480fe710" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Transaction/Result.svc?xsd=xsd2" />
+    <MetadataFile FileName="Result1.xsd" MetadataType="Schema" ID="d5a06656-4198-482b-ac9d-dcef2de8c096" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Transaction/Result.svc?xsd=xsd0" />
+    <MetadataFile FileName="Result.wsdl" MetadataType="Wsdl" ID="b740812c-72e0-40c9-a8d3-679310943393" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Transaction/Result.svc?wsdl" />
+    <MetadataFile FileName="Result2.xsd" MetadataType="Schema" ID="58334e5e-e6cb-471b-9faf-a13a5374450b" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Transaction/Result.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BackupSettingForm_lblBackupFolder_text" xml:space="preserve">
+    <value>Backup folder :</value>
+    <comment>数据库备份存储位置</comment>
+  </data>
+  <data name="BackupSettingForm_lblDatabase_text" xml:space="preserve">
+    <value>Database name:</value>
+    <comment>数据库名</comment>
+  </data>
+  <data name="BackupSettingForm_lblServer_text" xml:space="preserve">
+    <value>Database server :</value>
+    <comment>数据库服务器名</comment>
+  </data>
+  <data name="BillingForm_lblAllCycles_text" xml:space="preserve">
+    <value>All cycles</value>
+    <comment>所有区域</comment>
+  </data>
+  <data name="BillingForm_lblCompany_text" xml:space="preserve">
+    <value>Company</value>
+    <comment>收费模式</comment>
+  </data>
+  <data name="BillingForm_lblEndingCycle_text" xml:space="preserve">
+    <value>Ending cycle</value>
+    <comment>结束区域</comment>
+  </data>
+  <data name="BillingForm_lblStartingCycle_text" xml:space="preserve">
+    <value>Starting cycle</value>
+    <comment>开始区域</comment>
+  </data>
+  <data name="BillingForm_lblStatusCode_text" xml:space="preserve">
+    <value>Status code</value>
+    <comment>状态代号</comment>
+  </data>
+  <data name="EmailSettingForm_lblFrom_text" xml:space="preserve">
+    <value>From :</value>
+    <comment>发件人</comment>
+  </data>
+  <data name="EmailSettingForm_lblSMTPName_text" xml:space="preserve">
+    <value>Username :</value>
+    <comment>邮箱登录用户名</comment>
+  </data>
+  <data name="EmailSettingForm_lblSMTPPwd_text" xml:space="preserve">
+    <value>Password :</value>
+    <comment>邮箱登录密码</comment>
+  </data>
+  <data name="EmailSettingForm_lblSSL_text" xml:space="preserve">
+    <value>SSL/TLS :</value>
+    <comment>邮件加密形式</comment>
+  </data>
+  <data name="EmailSettingForm_lblTo_text" xml:space="preserve">
+    <value>To :</value>
+    <comment>收件人</comment>
+  </data>
+  <data name="ProjectName" xml:space="preserve">
+    <value>Schedule Billing</value>
+    <comment>Project's name.</comment>
+  </data>
+  <data name="TaskDetailForm_lblAction_text" xml:space="preserve">
+    <value>Action :</value>
+    <comment>动作</comment>
+  </data>
+  <data name="TaskDetailForm_lblPostAction_text" xml:space="preserve">
+    <value>Alert Action :</value>
+    <comment>异常警告</comment>
+  </data>
+  <data name="TaskDetailForm_lblROBTT_text" xml:space="preserve">
+    <value>End date :</value>
+    <comment>运行间隙</comment>
+  </data>
+  <data name="TaskDetailForm_lblROOTD_text" xml:space="preserve">
+    <value>Run only on these days :</value>
+    <comment>运行日期</comment>
+  </data>
+  <data name="TaskDetailForm_lblScheduleType_text" xml:space="preserve">
+    <value>Schedule type :</value>
+    <comment>任务类型</comment>
+  </data>
+  <data name="TaskDetailForm_lblStartTime_text" xml:space="preserve">
+    <value>Start date :</value>
+    <comment>运行开始时间</comment>
+  </data>
+  <data name="TaskDetailForm_lblTaskName_text" xml:space="preserve">
+    <value>Task name :</value>
+    <comment>任务名</comment>
+  </data>
+  <data name="EmailSettingForm_lblPorts_text" xml:space="preserve">
+    <value>Port :</value>
+    <comment>邮件发送接口</comment>
+  </data>
+  <data name="BackupSettingForm_btnCancel_text" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>取消按钮</comment>
+  </data>
+  <data name="BackupSettingForm_btnOK_text" xml:space="preserve">
+    <value>OK</value>
+    <comment>确认按钮</comment>
+  </data>
+  <data name="EmailSettingForm_btnCancel_text" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>取消按钮</comment>
+  </data>
+  <data name="EmailSettingForm_btnOK_text" xml:space="preserve">
+    <value>OK</value>
+    <comment>确认按钮</comment>
+  </data>
+  <data name="TaskDetailForm_btnCancel_text" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>取消按钮</comment>
+  </data>
+  <data name="TaskDetailForm_btnOK_text" xml:space="preserve">
+    <value>OK</value>
+    <comment>确认按钮</comment>
+  </data>
+  <data name="BillingForm_rbtnCancel_text" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>取消按钮</comment>
+  </data>
+  <data name="BillingForm_rbtnOK_text" xml:space="preserve">
+    <value>OK</value>
+    <comment>确认按钮</comment>
+  </data>
+  <data name="ModuelIDForm_lblModuelId_text" xml:space="preserve">
+    <value>Module ID</value>
+    <comment>Moduel的ID</comment>
+  </data>
+  <data name="ModuelIDForm_lblURL_text" xml:space="preserve">
+    <value>URL</value>
+    <comment>Moduel的URL</comment>
+  </data>
+  <data name="ModuelIDForm_rbtnCancel_text" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>取消按钮</comment>
+  </data>
+  <data name="ModuelIDForm_rbtnOK_text" xml:space="preserve">
+    <value>OK</value>
+    <comment>确认按钮</comment>
+  </data>
+  <data name="TaskDetailForm_chkBDBB_text" xml:space="preserve">
+    <value>Backup database before billing</value>
+    <comment>billing前是否进行数据库备份</comment>
+  </data>
+  <data name="TaskDetailForm_rbtnBackupSetting_text" xml:space="preserve">
+    <value>Settings</value>
+    <comment>备份配置按钮</comment>
+  </data>
+  <data name="NoPermissionForm_lblNoPermission_text" xml:space="preserve">
+    <value>Access denied.</value>
+    <comment>你没有权限</comment>
+  </data>
+  <data name="TaskDetailForm_btnEdit_text" xml:space="preserve">
+    <value>Edit</value>
+    <comment>编辑按钮</comment>
+  </data>
+  <data name="TaskDetailForm_rbtnBillingSetting_text" xml:space="preserve">
+    <value>Settings</value>
+    <comment>billing配置按钮</comment>
+  </data>
+  <data name="TaskDetailForm_rbtnMailSetting_text" xml:space="preserve">
+    <value>Settings</value>
+    <comment>邮件配置按钮</comment>
+  </data>
+  <data name="BillingForm_lblCalc_text" xml:space="preserve">
+    <value>Calc usage before billing register</value>
+    <comment>Calc</comment>
+  </data>
+  <data name="BillingForm_lblcopy_text" xml:space="preserve">
+    <value>Billing shadow copies</value>
+    <comment>copy</comment>
+  </data>
+  <data name="ScheduleTasksForm_rbtnInsert_text" xml:space="preserve">
+    <value>New Task</value>
+    <comment>插入按钮</comment>
+  </data>
+  <data name="EmailSettingForm_revRegularFrom_ErrorMessage" xml:space="preserve">
+    <value>Invalid email address.</value>
+    <comment>邮件提示信息</comment>
+  </data>
+  <data name="EmailSettingForm_rfvRequiredFrom_ErrorMessage" xml:space="preserve">
+    <value>Please complete required field.</value>
+    <comment>提示信息，字段必填</comment>
+  </data>
+  <data name="TaskDetailForm_rfvRequiredFrom_ErrorMessage" xml:space="preserve">
+    <value>Please complete required field.</value>
+    <comment>提示信息，字段必填</comment>
+  </data>
+  <data name="BackupSettingForm_rfvServer_ErrorMessage" xml:space="preserve">
+    <value>Please complete required field.</value>
+    <comment>提示信息，字段必填</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridName_HeaderText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Task名称(RadGrid的标头名)</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridType_HeaderText" xml:space="preserve">
+    <value>Type</value>
+    <comment>Tasks类型</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridStartTime_HeaderText" xml:space="preserve">
+    <value>End time</value>
+    <comment>结束计划时间(RadGrid的标头名)</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridStatus_HeaderText" xml:space="preserve">
+    <value>Start time</value>
+    <comment>开始执行时间(RadGrid的标头名)</comment>
+  </data>
+  <data name="EmailSettingForm_lblServerName_Text" xml:space="preserve">
+    <value>Server name:</value>
+    <comment>邮箱服务器名</comment>
+  </data>
+  <data name="TaskDetailFormView_btnConfirm_text" xml:space="preserve">
+    <value>Confirm</value>
+    <comment>确认,创建job</comment>
+  </data>
+  <data name="TaskDetailForm_CookiesMessage_ErrorMessage" xml:space="preserve">
+    <value>Settings for Mail/Backup/Action must be completed.</value>
+    <comment>Setting没有设置</comment>
+  </data>
+  <data name="TaskDetailForm_lnkMessage_ErrorMessage" xml:space="preserve">
+    <value>This task already exists.</value>
+    <comment>Task的名称是否重复</comment>
+  </data>
+  <data name="TaskDetailFormView_btnCancel_text" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>取消按钮</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridDelete_ConfirmText" xml:space="preserve">
+    <value>Are you sure to delete this task?</value>
+    <comment>是否删除</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridDelete_Text" xml:space="preserve">
+    <value>Delete</value>
+    <comment>删除按钮</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridStatus_Create" xml:space="preserve">
+    <value />
+    <comment>创建job"暂时空白"</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridStatus_Disable" xml:space="preserve">
+    <value>Disable</value>
+    <comment>禁用job</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridStatus_Enable" xml:space="preserve">
+    <value>Enable</value>
+    <comment>启用job</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridUpdate_ConfirmText" xml:space="preserve">
+    <value>Are you sure to change current task status?</value>
+    <comment>更新job状态</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridView_Text" xml:space="preserve">
+    <value>View</value>
+    <comment>查看按钮</comment>
+  </data>
+  <data name="BillingForm_SaveMessage_ErrorMessage" xml:space="preserve">
+    <value>Save data failed!</value>
+    <comment>保存数据失败！</comment>
+  </data>
+  <data name="TaskDetailFormView_ConfirmMessage_ErrorMessage" xml:space="preserve">
+    <value>Create job failed.</value>
+    <comment>创建job失败</comment>
+  </data>
+  <data name="ScheduleTasksForm_CreateJobMessage_ErrorMessage" xml:space="preserve">
+    <value>Create job failed.</value>
+    <comment>创建job失败</comment>
+  </data>
+  <data name="ScheduleTasksForm_DeleteJobMessage_ErrorMessage" xml:space="preserve">
+    <value>Delete job failed.</value>
+    <comment>删除job失败</comment>
+  </data>
+  <data name="ScheduleTasksForm_DeleteTasksMessage_ErrorMessage" xml:space="preserve">
+    <value>Delete task failed.</value>
+    <comment>删除Task失败</comment>
+  </data>
+  <data name="ScheduleTasksForm_JobMessage_ErrorMessage" xml:space="preserve">
+    <value>The job does not exist.</value>
+    <comment>Job不存在</comment>
+  </data>
+  <data name="ScheduleTasksForm_DeleteTasksMessage_RightMessage" xml:space="preserve">
+    <value>Job deleted successfully.</value>
+    <comment>删除job成功</comment>
+  </data>
+  <data name="ScheduleTasksForm_EbleDisableTasksMessage_RightMessage" xml:space="preserve">
+    <value>Task status was updated successfully.</value>
+    <comment>改变job状态成功</comment>
+  </data>
+  <data name="ScheduleTasksForm_JobExcepeciton_Message" xml:space="preserve">
+    <value>can no longer be managed by SD. </value>
+    <comment>job异常提示</comment>
+  </data>
+  <data name="ScheduleTasksForm_CreateJob_Message" xml:space="preserve">
+    <value>Job created successfully.</value>
+    <comment>创建job成功</comment>
+  </data>
+  <data name="ScheduleTasksForm_CustomerMessage_Message" xml:space="preserve">
+    <value>Change current job status</value>
+    <comment>提示用户是否修改job的状态</comment>
+  </data>
+  <data name="TaskDetailFormView_UpdateTask_ErrorMessage" xml:space="preserve">
+    <value>Update task failed.</value>
+    <comment>更新Task失败</comment>
+  </data>
+  <data name="ScheduleTasksForm_UpdateFailed_ErrorMessage" xml:space="preserve">
+    <value>Update task status failed.</value>
+    <comment>改变job状态失败</comment>
+  </data>
+  <data name="TaskDetailForm_SaveTasksMessage_ErrorMessage" xml:space="preserve">
+    <value>Create tasks failed.</value>
+    <comment>创建Task失败</comment>
+  </data>
+  <data name="TaskDetailForm_UpdateTasksMessage_ErrorMessage" xml:space="preserve">
+    <value>Update tasks failed.</value>
+    <comment>更新Task失败</comment>
+  </data>
+  <data name="BillingForm_SelectCycleMessage_Message" xml:space="preserve">
+    <value>Attention! Start Cycle must not be greater than End Cycle.</value>
+    <comment>所选区域，StartCycle大于EndCycle</comment>
+  </data>
+  <data name="BackupSettingForm_SaveBackupMessage_ErrorMessage" xml:space="preserve">
+    <value>Create backupSetting failed.</value>
+    <comment>备份数据保存失败</comment>
+  </data>
+  <data name="BackupSettingForm_UpdateBackupMessage_ErrorMessage" xml:space="preserve">
+    <value>Update backupSetting failed.</value>
+    <comment>备份数据更新失败</comment>
+  </data>
+  <data name="EmailSettingForm_SaveEmailSetting_ErrorMessage" xml:space="preserve">
+    <value>Create emailSetting failed.</value>
+    <comment>日志邮箱数据创建失败</comment>
+  </data>
+  <data name="EmailSettingForm_UpdateEmailSetting_ErrorMessage" xml:space="preserve">
+    <value>Update emailSetting failed.</value>
+    <comment>日志邮箱数据更新失败</comment>
+  </data>
+  <data name="TaskDetailForm_rdEndTime_Message" xml:space="preserve">
+    <value>The scheduled task period you selected has been occupied by other tasks, please check task summary page for available time slots.</value>
+    <comment>endTime或者startTime在其他Task的范围内</comment>
+  </data>
+  <data name="TaskDetailForm_TimeMessage_Message" xml:space="preserve">
+    <value>Warning: the scheduled task period you selected is less than 1 hour, are you sure to keep current settings?</value>
+    <comment>最小时间间隔为1小时</comment>
+  </data>
+  <data name="TaskDetailForm_AllowedTimeMessage_Message" xml:space="preserve">
+    <value>Warning: the scheduled task period you selected is greater than 24 hours, are you sure to keep current settings?</value>
+    <comment>时间间隔超过1天</comment>
+  </data>
+  <data name="TaskDetailForm_CookiesBackup_ErrorMessage" xml:space="preserve">
+    <value>Settings for Backup must be completed.</value>
+    <comment>Email-Setting没有设置</comment>
+  </data>
+  <data name="TaskDetailFormView_StartTime_ErrorMessage" xml:space="preserve">
+    <value>The Start Time cannot be earier than current time.</value>
+    <comment>StartTime小于系统时间，job创建无效</comment>
+  </data>
+  <data name="BillingForm_ConpanyCycle_Message" xml:space="preserve">
+    <value>The cycles you selected are invalid.</value>
+    <comment>Cycle的数据不能为N/A等无效数据</comment>
+  </data>
+  <data name="ScheduleTasksForm_JobResult_FailValue" xml:space="preserve">
+    <value>Fail</value>
+    <comment>Billing失败</comment>
+  </data>
+  <data name="ScheduleTasksForm_JobResult_SuccessValue" xml:space="preserve">
+    <value>Success</value>
+    <comment>Billing成功</comment>
+  </data>
+  <data name="ScheduleTasksForm_JobResult_value" xml:space="preserve">
+    <value>No Result</value>
+    <comment>Job没有结果</comment>
+  </data>
+  <data name="ScheduleLogForm_RadGridScheeduleDate_HeaderText" xml:space="preserve">
+    <value>Schedule Date</value>
+    <comment>Schedule的创建时间(RadGrid的标头名)</comment>
+  </data>
+  <data name="ScheduleTasksForm_RadGridSubject_HeaderText" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="ScheduleLogForm_lblTaskName_Text" xml:space="preserve">
+    <value>Task Name :</value>
+    <comment>任务名</comment>
+  </data>
+  <data name="ScheduleLogForm_lblUserName_Text" xml:space="preserve">
+    <value>User Name :</value>
+    <comment>用户名</comment>
+  </data>
+  <data name="ScheduleLogForm_RadGridLogDate_HeaderText" xml:space="preserve">
+    <value>Log Date</value>
+    <comment>日志日期(RadGrid的标头名)</comment>
+  </data>
+  <data name="ScheduleLogForm_RadGridMessage_HeaderText" xml:space="preserve">
+    <value>Message</value>
+    <comment>日志信息(RadGrid的标头名)</comment>
+  </data>
+  <data name="ScheduleLogForm_RadGridSubject_HeaderText" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="ScheduleTasksForm_RadGridViewStatus_HeaderText" xml:space="preserve">
+    <value>Result</value>
+    <comment>Job的结果</comment>
+  </data>
+  <data name="ScheduleLogForm_btnClose_text" xml:space="preserve">
+    <value>Close</value>
+    <comment>返回首页按钮</comment>
+  </data>
+  <data name="TaskDetailForm_rbtnNewTask_text" xml:space="preserve">
+    <value>New Task</value>
+    <comment>新建Task</comment>
+  </data>
+  <data name="EmailSettingForm_ConfirmPwd_ErrorMessage" xml:space="preserve">
+    <value>Do you want to save changes?</value>
+    <comment>是否确认修改配置信息</comment>
+  </data>
+  <data name="EmailSettingForm_lblSMTPConfirmPwd_text" xml:space="preserve">
+    <value>ConfirmPwd</value>
+    <comment>确认密码</comment>
+  </data>
+  <data name="EmailSettingForm_lblSMTPOldPwd_text" xml:space="preserve">
+    <value>OldPwd</value>
+    <comment>旧密码</comment>
+  </data>
+</root>

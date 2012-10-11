@@ -1,0 +1,1983 @@
+BODY
+{
+    font-size: 12px;
+    margin: 0px;
+    scrollbar-highlight-color: buttonface;
+    color: black;
+    scrollbar-3dlight-color: buttonhighlight;
+    scrollbar-track-color: #eeeeee;
+    font-family: 宋体;
+    scrollbar-darkshadow-color: #eeeeee;
+}
+TABLE
+{
+    font-size: 12px;
+    font-family: 宋体;
+}
+A:link
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+A:visited
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+A:active
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+A:hover
+{
+    color: #ff0000;
+    text-decoration: none;
+}
+HR
+{
+    padding-right: 0px;
+    border-top: #666666 1px solid;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    padding-top: 0px;
+    border-bottom: #ffffff 1px solid;
+    height: 2px;
+}
+.admin_topbg
+{
+    background-image: url(../image/top-right.gif);
+    background-repeat: repeat-x;
+}
+.search
+{
+    border: 1px solid #bed6e0;
+    background-color: ecf3f6;
+    padding: 4px;
+    height: 55px;
+}
+.tabTitle
+{
+    font-size: 12px;
+    font-family: 宋体,arial;
+    font-weight: bold;
+    color: #000000;
+}
+
+.left_topbg
+{
+    background-image: url(/images/content-bg.gif);
+    background-repeat: repeat-x;
+}
+.titlebt
+{
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    background-image: url(../image/top_bt.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: 15px;
+    padding-top: 5px;
+}
+
+.titlebt1
+{
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    background-image: url(../image/top_bt6.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: 15px;
+    padding-top: 5px;
+}
+.navbg
+{
+    height: 30px;
+    background: url(../Image/nav.jpg) left bottom no-repeat;
+    padding-left: 25px;
+}
+
+
+/* 页面布局 */
+.Function
+{
+    border: 1px solid #bed6e0;
+    width: 100%;
+    background-color: #ecf3f6;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+.TitleImage
+{
+    background: url(../Image/search.jpg) left bottom no-repeat;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    width: 200px;
+    height: 22px;
+    border: 0;
+}
+.ContentTitleImage
+{
+    background: url(../Image/list.jpg) left bottom no-repeat;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    width: 200px;
+    height: 22px;
+    border: 0;
+}
+.SearchArea
+{
+    border: 1px solid #bed6e0;
+    width: 100%;
+    background-color: #ecf3f6;
+    margin-left: 6px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.ContentArea
+{
+    margin-left: 6px;
+    margin-top: 2px;
+    overflow: auto;
+    width: 100%;
+}
+/* 表格样式 */
+.TabpanelTable
+{
+    background-color: #ffffff;
+    border: 1px soild #c5c6d3;
+    padding: 6px;
+}
+
+.StandardTable
+{
+    width: 100%;
+    background-color: #bed6e0;
+    border-spacing: 1px;
+    border-spacing: expression(this.cellSpacing=1);
+    border: 0px;
+}
+.StandardTable td
+{
+    height: 26px;
+    padding: 3px;
+}
+.StandardTable tbody tr
+{
+    /*background-color: expression((this.sectionRowIndex%2==0)?"#FFFFFF":"#f1f9fc");	*/ /* 悬停变色 */ /*onmouseover: expression(onmouseover=function(){ this.style.borderColor ='d5f4fe';this.style.backgroundColor ='d5f4fe'});         onmouseout: expression(onmouseout=function(){this.style.borderColor='';this.style.backgroundColor =''});*/
+}
+
+.number
+{
+    background-image: url(../Image/tableHead.gif);
+    background-color: #FFFFFF;
+    height: 24px;
+}
+.number2
+{
+    background-image: url(../Image/tableHead2.gif);
+    background-color: #FFFFFF;
+    height: 54px;
+}
+
+.number1
+{
+    background-color: #E6EFF6;
+    font-weight: bold;
+}
+
+
+.whitetd
+{
+    background-color: white;
+    
+}
+.bluetd
+{
+    background-color: #f1f9fc;
+}
+.graytd
+{
+    background-color: #ecf1f5;
+}
+
+
+
+.RowStyle
+{
+    height: 24px;
+    border-bottom-color: #B0E0E6;
+    border-left-color: #B0E0E6;
+    border-right-color: #B0E0E6;
+    border-top-color: #B0E0E6;
+    border-color: #B0E0E6;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    font-size: 12px;
+    font-family: 宋体;
+}
+
+.AlternateRowStyle
+{
+    background-color: #F7F8FA;
+    height: 24px;
+    border-bottom-color: #B0E0E6;
+    border-left-color: #B0E0E6;
+    border-right-color: #B0E0E6;
+    border-top-color: #B0E0E6;
+    border-color: #B0E0E6;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    font-size: 12px;
+    font-family: 宋体;
+}
+
+.SelectedRowStyle
+{
+    background-color: #d5f4fe;
+    height: 24px;
+    border-bottom-color: #B0E0E6;
+    border-left-color: #B0E0E6;
+    border-right-color: #B0E0E6;
+    border-top-color: #B0E0E6;
+    border-color: #B0E0E6;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: 宋体;
+}
+/* 树形样式*/
+.TreeStyle
+{
+    z-index: 101;
+    left: 7px;
+    top: 9px;
+    position: relative;
+    background-color: Transparent;
+    cursor: hand;
+    width: 100%;
+    height: 100%;
+}
+.SelectedNodeStyle
+{
+    border-color: #ECF3F6;
+    border-width: 1px;
+    background-color: #496896;
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: 宋体;
+    color: White;
+    text-align: center;
+}
+.SelectedNodeStyle a
+{
+    font-size: 12px;
+    color: White;
+    text-decoration: none;
+}
+.SelectedNodeStyle a:visited
+{
+    font-size: 12px;
+    color: White;
+    text-decoration: none;
+}
+.SelectedNodeStyle a:hover
+{
+    font-size: 12px;
+    color: White;
+    text-decoration: none;
+}
+
+/*分页样式*/
+.anpager
+{
+    font: 12px;
+    padding: 10px 20px 10px 0;
+    text-align: right;
+    vertical-align: bottom;
+    margin: 0px;
+}
+
+.anpager a
+{
+    padding: 1px 6px;
+    border: solid 1px #ddd;
+    background: #fff;
+    text-decoration: none;
+    margin-right: 2px;
+}
+.anpager a:visited
+{
+    padding: 1px 6px;
+    border: solid 1px #ddd;
+    background: #fff;
+    text-decoration: none;
+}
+.anpager .cpb
+{
+    padding: 1px 6px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+}
+.anpager a:hover
+{
+    color: #fff;
+    background: #1F3A87;
+    border-color: #1F3A87;
+    text-decoration: none;
+}
+.WinCloseBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/WinClose.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 15px;
+}
+.WinOpenBtn_Left
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/WinOpen_Left.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 15px;
+}
+.WinOpenBtn_Top
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/WinOpen_Top.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 15px;
+}
+.StandardBtn100
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank100.gif);
+    border-left: medium none;
+    width: 100px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.StandardBtn100_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank100b.gif);
+    border-left: medium none;
+    width: 100px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.UploadBtn
+{
+    border: 1px solid #496896;
+    width: 50px;
+    height: 18px;
+}
+
+.StandardBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank80.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.StandardBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank80b.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.StandardBtn18
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank18.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 18px;
+}
+.StandardBtn18_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank18b.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 18px;
+}
+.StandardBtn25
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank25.gif);
+    border-left: medium none;
+    width: 25px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.StandardBtn25_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank25b.gif);
+    border-left: medium none;
+    width: 25px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.StandardBtn35
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank35.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 18px;
+}
+.StandardBtn35_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank35b.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 18px;
+}
+.StandardBtn50
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank50.gif);
+    border-left: medium none;
+    width: 50px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.StandardBtn50_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank50b.gif);
+    border-left: medium none;
+    width: 50px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+
+.StandardBtn80
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/blank80.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.UpScrollBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/scrollup.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.UpScrollBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/scrollup.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.DownScrollBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/scrolldown.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.DownScrollBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/scrolldown.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.ClickedUpScrollBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/scrollup_2.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.ClickedDownScrollBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/scrolldown_2.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.ComboDownBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/pic_arrow_down_b.gif);
+    border-left: medium none;
+    width: 18px;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.ComboDownBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/pic_arrow_down_bb.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.ToRightBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/ToRight.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.ToRightBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/ToRightb.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.ToLeftBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/ToLeft.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.ToLeftBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/ToLeftb.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.AllToRightBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/AllToRight.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.AllToRightBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/AllToRightb.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.AllToLeftBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/AllToLeft.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.AllToLeftBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/AllToLeftb.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.SelKmBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/SelKm_c.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.SelKmBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 12px;
+    background-image: url(../image/SelKm_cb.gif);
+    border-left: medium none;
+    width: 18px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 18px;
+}
+.QueryBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/serach.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.QueryBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/serachb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.PrintBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/print.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.PrintBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/printb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 20px;
+}
+.BackBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/goback.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.BackBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/gobackb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SaveBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/save.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SaveBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/saveb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.PlusBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/plus1.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.PlusBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/plus1b.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.MinusBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/minus1.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.MinusBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/minus1b.gif);
+    border-left: medium none;
+    width: 15px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 15px;
+}
+.OKBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/ok.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.OKBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/okb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.CancelBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/cancel.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.CancelBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/cancelb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ClearBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/allclear.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ClearBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/allclearb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.CloseBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/close.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.CloseBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/closeb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SelectAllBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/all.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SelectAllBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/allb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SwitchBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/switch.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SwitchBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/switchb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SetBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/setup.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SetBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/setupb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SubmitBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/submit.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SubmitBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/submitb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.AddBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/add.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.AddBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/addb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ModBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/mod.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ModBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/modb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.AuditBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/Auditing.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.AuditBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/Auditingb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ConfirmBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/Confirm.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ConfirmBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/Confirmb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.DzBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/Dz.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.DzBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/Dzb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.UndoBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/Undo.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.UndoBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/Undob.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.WithDrawBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/WithDraw.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.WithDrawBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/WithDrawb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ReselectBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/reselect.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ReselectBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/reselectb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.RefuseBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/refuse.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.RefuseBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/refuseb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SignBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/write.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.SignBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/writeb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.FilterBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/leach.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.FilterBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/leachb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ExportBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/export.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ExportBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/exportb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.DelBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/del.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.DelBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/delb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ConsignBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/consign.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.ConsignBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/consignb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.CleanBtn
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/clean.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.CleanBtn_b
+{
+    border-right: medium none;
+    border-top: medium none;
+    background-image: url(../image/cleanb.gif);
+    border-left: medium none;
+    width: 80px;
+    cursor: hand;
+    padding-top: 3px;
+    border-bottom: medium none;
+    height: 20px;
+}
+.LoginInfoBk
+{
+    font-size: 9pt;
+    background-image: url(../image/LoginInfoBk.gif);
+    width: 100%;
+    color: black;
+    font-family: 宋体;
+    height: 24px;
+}
+.LeftBanner
+{
+    border-right: medium none;
+    padding-right: 0px;
+    background-position: center bottom;
+    border-top: medium none;
+    padding-left: 0px;
+    font-size: 9pt;
+    background-image: url(../image/PIC_LEFT_LOGO_b.gif);
+    padding-bottom: 0px;
+    margin: 0px;
+    border-left: medium none;
+    width: 100%;
+    color: white;
+    padding-top: 0px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 100%;
+    text-align: center;
+}
+.LeftMenuBk
+{
+    border-right: 1px outset;
+    padding-right: 0px;
+    border-top: 1px outset;
+    padding-left: 0px;
+    font-size: 9pt;
+    padding-bottom: 0px;
+    margin: 0px;
+    border-left: 1px outset;
+    color: black;
+    padding-top: 0px;
+    border-bottom: 1px outset;
+    font-family: 宋体;
+    height: 100%;
+    background-image: url(../image/bg_blank.gif);
+}
+.BottomLeftMenu
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 9pt;
+    padding-bottom: 0px;
+    margin: 0px;
+    width: 100%;
+    color: black;
+    padding-top: 0px;
+    font-family: 宋体;
+    background-color: #aad3ff;
+    text-align: center;
+}
+.UnSelectMenu
+{
+    border-right: medium none;
+    padding-right: 0px;
+    border-top: medium none;
+    padding-left: 0px;
+    font-size: 9pt;
+    background-image: url(../image/pic_button.gif);
+    padding-bottom: 0px;
+    margin: 0px;
+    border-left: medium none;
+    width: 100%;
+    color: black;
+    padding-top: 0px;
+    border-bottom: medium none;
+    font-family: 宋体;
+    height: 26px;
+    text-align: center;
+}
+.SelectMenu
+{
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size: 9pt;
+    background-image: url(../image/pic_buttonb.gif);
+    padding-bottom: 0px;
+    margin: 0px;
+    width: 100%;
+    cursor: hand;
+    color: black;
+    padding-top: 0px;
+    font-family: 宋体;
+    height: 26px;
+    text-align: center;
+}
+.SubMenuBk
+{
+    border-right: thin inset;
+    padding-right: 0px;
+    border-top: thin inset;
+    padding-left: 0px;
+    font-size: 9pt;
+    background-image: url(../image/pic_search_bg.gif);
+    padding-bottom: 0px;
+    margin: 0px;
+    border-left: thin inset;
+    width: 100%;
+    color: black;
+    padding-top: 0px;
+    border-bottom: thin inset;
+    font-family: 宋体;
+    height: 100%;
+}
+.SubMenus
+{
+    font-size: 9pt;
+    width: 100%;
+    color: black;
+    font-family: 宋体;
+}
+.ELogoBk
+{
+    background-image: url(../image/ELogoBk.gif);
+    background-repeat: repeat-x;
+    background-color: white;
+}
+.ELogoTable
+{
+    border-right: 1px inset;
+    border-top: 1px inset;
+    margin: 0px;
+    border-left: 1px inset;
+    width: 100%;
+    border-bottom: 1px inset;
+    height: 100%;
+}
+.TopBanner
+{
+    font-size: 9pt;
+    width: 100%;
+    color: white;
+    font-family: 宋体;
+    height: 25px;
+    background-color: #6075c6;
+    background-image: url(../image/titleBar.gif);
+    border-bottom: 1px inset black;
+}
+.TopBanner2
+{
+    font-size: 9pt;
+    width: 100%;
+    color: white;
+    font-family: 宋体;
+    height: 25px;
+    background-color: #6075c6;
+    background-image: url(../image/titleBar2.gif);
+    border-bottom: 1px inset black;
+}
+.MainTable
+{
+    border-right: thin;
+    border-top: thin;
+    border-left: thin;
+    width: 100%;
+    border-bottom: thin;
+    height: 100%;
+}
+.QueryPanel
+{
+    border-right: 1px outset;
+    padding-right: 0px;
+    border-top: 1px outset;
+    padding-left: 0px;
+    font-size: 9pt;
+    background-image: url(../image/pic_search_bg_B.gif);
+    padding-bottom: 0px;
+    margin: 0px;
+    border-left: 1px outset;
+    width: 100%;
+    color: black;
+    padding-top: 0px;
+    border-bottom: 1px outset;
+    font-family: 宋体;
+    height: 100%;
+}
+.Sel_Standard
+{
+    font-size: 9pt;
+    width: 200px;
+    color: black;
+    font-family: 宋体;
+}
+.Text_Standard
+{
+    border: 1px solid #496896;
+    font-size: 9pt;
+    color: black;
+    font-family: 宋体;
+}
+
+.Text_Standard1
+{
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 1px solid #496896;
+    font-size: 9pt;
+    color: black;
+    font-family: 宋体;
+}
+
+.MultiSel_Standard
+{
+    border: 1px solid #496896;
+    width: 100%;
+}
+
+.Legend_Standard
+{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.ResultHead
+{
+    border-right: white 1px;
+    border-top: 1px;
+    font-size: 9pt;
+    border-left: 1px;
+    color: white;
+    border-bottom: 1px;
+    background-repeat: repeat-x;
+    font-family: 宋体;
+    height: 25px;
+    background-color: #4C99ED;
+    text-align: center;
+}
+.ResultHeadB
+{
+    font-size: 9pt;
+    color: white;
+    background-color: #8c9ed6;
+}
+.ResultTable
+{
+    border-collapse: collapse;
+    border-right: 1px outset;
+    border-top: 1px outset;
+    font-size: 9pt;
+    border-left: 1px outset;
+    color: black;
+    border-bottom: 1px outset;
+    font-family: 宋体;
+    background-color: #f7f7ff;
+}
+.SimpleRightFrame
+{
+    font-size: 9pt;
+    background-image: url(../image/bg_blank.gif);
+    scrollbar-highlight-color: buttonface;
+    scrollbar-shadow-color: buttonface;
+    color: black;
+    scrollbar-3dlight-color: buttonhighlight;
+    scrollbar-track-color: #eeeeee;
+    font-family: 宋体;
+    scrollbar-darkshadow-color: buttonshadow;
+}
+.ResultFrame
+{
+    border-right: 1px inset;
+    border-top: 1px inset;
+    font-size: 9pt;
+    background-image: url(../image/bg_blank.gif);
+    margin: 5px;
+    scrollbar-highlight-color: buttonface;
+    border-left: 1px inset;
+    scrollbar-shadow-color: buttonface;
+    color: black;
+    scrollbar-3dlight-color: buttonhighlight;
+    scrollbar-track-color: #eeeeee;
+    border-bottom: 1px inset;
+    font-family: 宋体;
+    scrollbar-darkshadow-color: buttonshadow;
+}
+.BlankFrame
+{
+    background-position: center center;
+    font-size: 9pt;
+    background-image: url(../image/bg_blank.gif);
+    scrollbar-highlight-color: buttonface;
+    scrollbar-shadow-color: buttonface;
+    color: black;
+    scrollbar-3dlight-color: buttonhighlight;
+    scrollbar-track-color: #eeeeee;
+    font-family: 宋体;
+    scrollbar-darkshadow-color: buttonshadow;
+}
+.ComboEdit
+{
+    border-right: 1px;
+    border-top: 1px solid #496896;
+    font-size: 9pt;
+    border-left: 1px solid #496896;
+    cursor: hand;
+    color: black;
+    border-bottom: 1px solid #496896;
+    font-family: 宋体;
+    text-align: left;
+}
+.AdvancedHead
+{
+    border-right: medium none;
+    border-top: medium none;
+    font-size: 9pt;
+    background-image: url(../image/pic_result_bg.gif);
+    border-left: medium none;
+    color: white;
+    border-bottom: medium none;
+    background-repeat: repeat-x;
+    font-family: 宋体;
+    height: 25px;
+    text-align: left;
+}
+.AdvancedPanel
+{
+    border-right: black 1px solid;
+    border-top: black 1px solid;
+    border-left: black 1px solid;
+    border-bottom: black 1px solid;
+}
+.KmBlock
+{
+    font-size: 9pt;
+    font-family: 宋体;
+    background-color: #f2f6ff;
+}
+.Div_NoBorder
+{
+    font-size: 9pt;
+    scrollbar-highlight-color: buttonface;
+    scrollbar-shadow-color: buttonface;
+    color: black;
+    scrollbar-3dlight-color: buttonhighlight;
+    scrollbar-track-color: #eeeeee;
+    font-family: 宋体;
+    scrollbar-darkshadow-color: buttonshadow;
+    background-color: whitesmoke;
+}
+TD.DropDownNormalItem
+{
+    font-size: 9pt;
+    color: black;
+    font-family: 宋体;
+    height: 17px;
+    background-color: white;
+    text-align: left;
+}
+TD.DropDownHighLightItem
+{
+    font-size: 9pt;
+    color: white;
+    font-family: 宋体;
+    height: 17px;
+    background-color: royalblue;
+    text-align: left;
+}
+.MainComboTable
+{
+    font-size: 9pt;
+    overflow: scroll;
+    width: 100%;
+    cursor: hand;
+    color: black;
+    font-family: 宋体;
+}
+.DropDownDiv
+{
+    border-right: 1px solid;
+    padding-right: 0px;
+    border-top: 1px solid;
+    padding-left: 0px;
+    scrollbar-face-color: #b5d0ff;
+    padding-bottom: 0px;
+    margin: 0px;
+    scrollbar-highlight-color: #b5d0ff;
+    border-left: 1px solid;
+    cursor: default;
+    scrollbar-3dlight-color: black;
+    padding-top: 0px;
+    scrollbar-track-color: #b9e2fc;
+    border-bottom: 1px solid;
+    scrollbar-darkshadow-color: #b5d0ff;
+    background-color: white;
+}
+.DropDownFilterDiv
+{
+    border-right: 1px solid;
+    padding-right: 0px;
+    border-top: 1px solid;
+    padding-left: 0px;
+    scrollbar-face-color: #b5d0ff;
+    padding-bottom: 0px;
+    margin: 0px;
+    scrollbar-highlight-color: #b5d0ff;
+    border-left: 1px solid;
+    cursor: default;
+    scrollbar-3dlight-color: black;
+    padding-top: 2px;
+    scrollbar-track-color: #b9e2fc;
+    border-bottom: 1px solid;
+    scrollbar-darkshadow-color: #b5d0ff;
+    background-color: #bde3ff;
+}
+.TDUnderLine
+{
+    border-bottom: 1px solid;
+    border-color: black;
+    color: blue;
+}
+.TDUnderLine1
+{
+    border-bottom: 1px solid;
+    border-color: black;
+    color: black;
+}
+.TDHeader
+{
+    color: white;
+    border-bottom: gray 1px solid;
+}
+.CompanyTreeTable
+{
+    border-left: black 1px solid;
+    width: 100%;
+    border-bottom: black 1px solid;
+    height: 100%;
+}
+
+.AbsoluteBottomUnderLine
+{
+    vertical-align: bottom;
+    height: 2px;
+    border-right: gray 1px groove;
+    border-bottom: gray 1px groove;
+}
+.TDBlackLine
+{
+    border-left-color: black;
+    border-top-color: black;
+    border-bottom: black 1px solid;
+    border-right-color: black;
+}
+.TableSelectedRow
+{
+    background-color: #0A75F0;
+    color: White;
+}
+.TD_Title_Com
+{
+    width: 20%;
+}
+.TD_Content_Com
+{
+    width: 30%;
+}
+
+.ItemTitle
+{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 12pt;
+    font-family: 宋体;
+    font-weight: bold;
+}
+
+.trLeft
+{
+    background-image: url( "../../image/mail_leftbg.gif");
+}
+
+.trRight
+{
+    background-image: url( "../../image/mail_rightbg.gif");
+}

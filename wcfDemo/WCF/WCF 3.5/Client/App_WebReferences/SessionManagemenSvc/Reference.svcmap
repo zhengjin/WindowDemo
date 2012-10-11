@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e4a66d5a-f7e4-4496-973b-4ab3ad26bc51" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3502/ServiceHost/SessionManagement/Hello.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Hello.wsdl" MetadataType="Wsdl" ID="e50fcc10-86f9-4855-aed6-15f4388d5c78" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/SessionManagement/Hello.svc?wsdl" />
+    <MetadataFile FileName="Hello.xsd" MetadataType="Schema" ID="c4d9a2cf-22fc-4809-ab77-e5493c573f5d" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/SessionManagement/Hello.svc?xsd=xsd1" />
+    <MetadataFile FileName="Hello1.xsd" MetadataType="Schema" ID="8b4c3601-4d96-466d-9826-093179d26caa" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/SessionManagement/Hello.svc?xsd=xsd0" />
+    <MetadataFile FileName="Hello.disco" MetadataType="Disco" ID="9009a4e8-08de-421d-af6c-dd4c21ab2b18" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/SessionManagement/Hello.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

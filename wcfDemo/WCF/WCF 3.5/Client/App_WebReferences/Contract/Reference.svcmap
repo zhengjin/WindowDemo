@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a10b4062-d732-4b4e-81ea-cab3dbd7c505" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3502/ServiceHost/Contract/PersonManager.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PersonManager.wsdl" MetadataType="Wsdl" ID="fba581a9-e908-4ab5-a53e-cc7efb4f16a0" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Contract/PersonManager.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="PersonManager.disco" MetadataType="Disco" ID="0431dff4-72cd-49cb-908b-70cd465fbd9f" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Contract/PersonManager.svc?disco" />
+    <MetadataFile FileName="PersonManager1.wsdl" MetadataType="Wsdl" ID="18fe5dcc-173c-44aa-a082-2f842915563a" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Contract/PersonManager.svc?wsdl" />
+    <MetadataFile FileName="PersonManager.xsd" MetadataType="Schema" ID="5ab36838-c01a-4298-9fc0-747ea7b5c9b6" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Contract/PersonManager.svc?xsd=xsd2" />
+    <MetadataFile FileName="PersonManager1.xsd" MetadataType="Schema" ID="c22cd615-8d7e-4ad3-acd4-c8fb16565bea" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Contract/PersonManager.svc?xsd=xsd1" />
+    <MetadataFile FileName="PersonManager2.xsd" MetadataType="Schema" ID="a3cc456b-e7d9-4bd8-b66a-8ad9559be366" SourceId="1" SourceUrl="http://localhost:3502/ServiceHost/Contract/PersonManager.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

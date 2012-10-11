@@ -1,0 +1,21 @@
+USE [CDService]
+GO
+IF OBJECT_ID('AccountInfo','U') IS NULL
+BEGIN
+	CREATE TABLE [dbo].[AccountInfo] (
+		[ID] NVARCHAR(255) NOT NULL, 
+		[CustomerID] NVARCHAR(255) NOT NULL, 
+		[AcctNum] NVARCHAR(255) NOT NULL, 
+		[PremiseID] NVARCHAR(255) NULL, 
+		[TotalDue] MONEY NULL, 
+		CONSTRAINT [PK_AccountInfo] PRIMARY KEY CLUSTERED
+		(
+			[ID] ASC
+		) ON [PRIMARY]
+	) ON [PRIMARY]
+	ALTER TABLE [dbo].[AccountInfo] ADD CONSTRAINT [DF_AccountInfo_ID] DEFAULT (NEWID()) FOR [ID]
+END
+GO
+
+SELECT * FROM [dbo].[AccountInfo]
+GO

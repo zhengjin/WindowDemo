@@ -1,0 +1,220 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.BODY
+{
+    background: url(../Image/qsfBodyBack.png) repeat-x scroll left top #000;
+    color: #001119;
+    font-size: 62.5%;
+    line-height: 1.2;
+    font-family: "segoe ui" ,arial,sans-serif;
+}
+        
+/*居中*/
+.center
+{
+    margin: 0px auto;
+    width: 990px;
+}
+        
+#LogCss
+{
+    width: 80%;
+    height: 100%;
+}
+.bottom .box_outer
+{
+    border-bottom: #FFFFFFb 1px solid;
+    border-left: #FFFFFFb 1px solid;
+    padding-bottom: 2px;
+    background-color: #FFFFFF;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-top: #FFFFFFb 1px solid; /*上边线*/
+    border-right: #FFFFFFb 1px solid; /*右边线*/
+    padding-top: 2px;
+}
+.divcenter
+{
+    width: 200px;
+    height: 200px;
+}
+/*超链接默认颜色*/
+a.a1
+{
+    color: #FFFFFF;
+}
+/*超链接鼠标放上时的颜色*/
+a.a1:hover
+{
+    color: #FFFFFF;
+}
+
+#bodycontent
+{
+    margin: auto;
+    width: 990px;
+}
+.rightcontent-top
+{
+    line-height: 0;
+    background: no-repeat;
+    height: 6px;
+    font-size: 0px;
+}
+.rightcontent-top
+{
+    background-position: -140px top;
+}
+.rightcontent-top
+{
+    background: url(http://img.baidu.com/hi/img/ihome/sysappborder.gif) no-repeat 0px -15px;
+}
+        
+.rightcontent-middle
+{
+    border-bottom: #e0e0e0 0px solid;
+    border-left: #e0e0e0 1px solid;
+    padding-bottom: 4px;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    zoom: 1;
+    border-top: #e0e0e0 0px solid;
+    border-right: #e0e0e0 1px solid;
+    padding-top: 4px;
+}
+        
+        
+        
+.rightcontent-middle .r-r-top
+{
+    background-position: left top;
+}
+.rightcontent-middle .r-r-bottom
+{
+    background-position: left bottom;
+}
+.rightcontent-middle .r-r-middle
+{
+    padding-bottom: 4px;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+}
+/*左右边框*/
+.rightcontent-middle
+{
+    border-bottom-color: #2aa8de;
+    border-top-color: #2aa8de;
+    border-right-color: #2aa8de;
+    border-left-color: #2aa8de;
+}
+        
+.rightcontent-bottom
+{
+    line-height: 0;
+    background: no-repeat;
+    height: 6px;
+    font-size: 0px;
+}
+.rightcontent-bottom
+{
+    background-position: -140px bottom;
+}
+.rightcontent-bottom
+{
+    background: url(http://img.baidu.com/hi/img/ihome/sysappborder.gif) 0px -24px;
+}
+        
+/*div 的宽度*/
+.grid-85
+{
+    /*width: 850px;*/
+    width: 850px;
+}
+        
+
+.test
+{
+    /*渐变*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#CCCCCC,endColorStr=#FFFFFF); /*IE6*/
+    background: -moz-linear-gradient(top,#CCCCCC,#FFFFFF); /*非IE6的其它*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 80%, from(#CCCCCC), to(#FFFFFF)); /*非IE6的其它*/
+    height: 100%;
+}
+.style2
+{
+    color: #FFFFFF;
+    font-size: small;
+}
+.style3
+{
+    font-size: x-large;
+}
+/* Logon
+----------------------------------------------------------*/
+#loginMain
+{
+        
+}
+
+.tForm select
+{
+    width: 347px;
+    font-size: 1.1em;
+}
+.tForm textarea
+{
+    padding: 4px 5px 2px 5px;
+    width: 335px;
+    height: 200px;
+    border: 1px solid #afd1ff;
+    font-size: 1.1em;
+    font-family: arial,sans-serif;
+}
+.tForm input.txt
+{
+    padding: 4px 5px 2px 5px;
+    width: 335px;
+    height: 20px;
+    border: 1px solid #afd1ff;
+    font-size: 1.1em;
+}
+
+.tFormAddDeveloper .fError input.txt, .tForm .fError input.txt
+{
+    border-color: #ff6702;
+    display: block;
+}
+
+.tForm select
+{
+    margin-top: 8px;
+    font-size: 12px;
+    width: 248px;
+}
+.tForm .txtWrapper
+{
+    display: block;
+    padding: 0 6px 6px;
+    float: left;
+    background-color: #e2eeff;
+}
+
+.tForm .fFirstInGroup .txtWrapper
+{
+    padding-top: 6px;
+}
+
+
+
+/* Other
+----------------------------------------------------------*/

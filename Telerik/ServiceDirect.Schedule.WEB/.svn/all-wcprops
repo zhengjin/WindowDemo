@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/service_direct_project/!svn/ver/701/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB
+END
+Web.config
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/service_direct_project/!svn/ver/619/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Web.config
+END
+NoPermissionForm.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn/service_direct_project/!svn/ver/297/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/NoPermissionForm.aspx
+END
+About.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/service_direct_project/!svn/ver/46/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/About.aspx
+END
+NoPermissionForm.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/svn/service_direct_project/!svn/ver/297/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/NoPermissionForm.aspx.designer.cs
+END
+About.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/svn/service_direct_project/!svn/ver/46/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/About.aspx.designer.cs
+END
+NoPermissionForm.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/service_direct_project/!svn/ver/77/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/NoPermissionForm.aspx.cs
+END
+About.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn/service_direct_project/!svn/ver/46/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/About.aspx.cs
+END
+Global.asax
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/svn/service_direct_project/!svn/ver/119/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Global.asax
+END
+Site.Master
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/svn/service_direct_project/!svn/ver/307/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Site.Master
+END
+Default.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/svn/service_direct_project/!svn/ver/337/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Default.aspx
+END
+Global.asax.cs
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/service_direct_project/!svn/ver/578/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Global.asax.cs
+END
+Web.Release.config
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/svn/service_direct_project/!svn/ver/619/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Web.Release.config
+END
+Default.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/svn/service_direct_project/!svn/ver/284/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Default.aspx.designer.cs
+END
+ServiceDirect.Schedule.WEB.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/svn/service_direct_project/!svn/ver/555/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/ServiceDirect.Schedule.WEB.csproj
+END
+Site.Master.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/svn/service_direct_project/!svn/ver/120/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Site.Master.designer.cs
+END
+Site.Master.cs
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/service_direct_project/!svn/ver/120/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Site.Master.cs
+END
+Default.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/svn/service_direct_project/!svn/ver/554/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Default.aspx.cs
+END
+Web.Debug.config
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/svn/service_direct_project/!svn/ver/619/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/Web.Debug.config
+END
+LoginForm.aspx
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/svn/service_direct_project/!svn/ver/555/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/LoginForm.aspx
+END
+LoginForm.aspx.designer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/svn/service_direct_project/!svn/ver/546/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/LoginForm.aspx.designer.cs
+END
+LoginForm.aspx.cs
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/svn/service_direct_project/!svn/ver/558/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/LoginForm.aspx.cs
+END
+ServiceDirect.Schedule.WEB.csproj.user
+K 25
+svn:wc:ra_dav:version-url
+V 214
+/svn/service_direct_project/!svn/ver/46/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/ServiceDirect.Schedule.WEB.csproj.user
+END
+AddInManager.config
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/svn/service_direct_project/!svn/ver/604/Schedule%20Billing/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/%E6%BA%90%E4%BB%A3%E7%A0%81/Schedule%20Billing/trunk/ServiceDirect.Schedule.WEB/AddInManager.config
+END

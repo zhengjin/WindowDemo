@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDirect.Schedule.WEB", "ServiceDirect.Schedule.WEB\ServiceDirect.Schedule.WEB.csproj", "{8D04D628-A30B-4200-BFEC-746A65020872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDirect.Schedule.DAL", "ServiceDirect.Schedule.DAL\ServiceDirect.Schedule.DAL.csproj", "{5EE9E9B3-338E-4EEE-A713-A9D376629498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDirect.Schedule.Billing.BLL", "ServiceDirect.Schedule.Billing.BLL\ServiceDirect.Schedule.Billing.BLL.csproj", "{068FEDA2-7EF9-4F2A-9813-0ED2E7A84186}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDirect.Schedule.Billing.JOB", "ServiceDirect.Schedule.Billing.JOB\ServiceDirect.Schedule.Billing.JOB.csproj", "{96BE781B-5119-4193-9E83-C8B1F1D1DFF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDirect.Membership", "ServiceDirect.Membership\ServiceDirect.Membership.csproj", "{E3733531-65F4-47D1-9666-09BABCB29795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDirect.Membership.DAL", "ServiceDirect.Membership.DAL\ServiceDirect.Membership.DAL.csproj", "{EB826410-C8B2-4589-AFBC-7B6FEDC8D46E}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D04D628-A30B-4200-BFEC-746A65020872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D04D628-A30B-4200-BFEC-746A65020872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D04D628-A30B-4200-BFEC-746A65020872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D04D628-A30B-4200-BFEC-746A65020872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE9E9B3-338E-4EEE-A713-A9D376629498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE9E9B3-338E-4EEE-A713-A9D376629498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE9E9B3-338E-4EEE-A713-A9D376629498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE9E9B3-338E-4EEE-A713-A9D376629498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068FEDA2-7EF9-4F2A-9813-0ED2E7A84186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068FEDA2-7EF9-4F2A-9813-0ED2E7A84186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068FEDA2-7EF9-4F2A-9813-0ED2E7A84186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068FEDA2-7EF9-4F2A-9813-0ED2E7A84186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96BE781B-5119-4193-9E83-C8B1F1D1DFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96BE781B-5119-4193-9E83-C8B1F1D1DFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96BE781B-5119-4193-9E83-C8B1F1D1DFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96BE781B-5119-4193-9E83-C8B1F1D1DFF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3733531-65F4-47D1-9666-09BABCB29795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3733531-65F4-47D1-9666-09BABCB29795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3733531-65F4-47D1-9666-09BABCB29795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3733531-65F4-47D1-9666-09BABCB29795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB826410-C8B2-4589-AFBC-7B6FEDC8D46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB826410-C8B2-4589-AFBC-7B6FEDC8D46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB826410-C8B2-4589-AFBC-7B6FEDC8D46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB826410-C8B2-4589-AFBC-7B6FEDC8D46E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

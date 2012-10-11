@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF.ServiceLib.ConcurrencyLock" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF.ServiceLib.ConcurrencyLock" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="LockType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="Mutex" />
+      <xs:enumeration value="Semaphore" />
+      <xs:enumeration value="Monitor" />
+      <xs:enumeration value="Lock" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LockType" nillable="true" type="tns:LockType" />
+</xs:schema>
