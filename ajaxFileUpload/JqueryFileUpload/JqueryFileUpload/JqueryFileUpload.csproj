@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{840AD6F4-341C-47D5-AC0B-7474AAF7A326}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JqueryFileUpload</RootNamespace>
+    <AssemblyName>JqueryFileUpload</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\jquery.fileupload-ui-noscript.css" />
+    <Content Include="css\jquery.fileupload-ui.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\progressbar.gif" />
+    <Content Include="jquery.uploadify-v2.1.0\cancel.png" />
+    <Content Include="jquery.uploadify-v2.1.0\example\cancel.png" />
+    <Content Include="jquery.uploadify-v2.1.0\example\css\default.css" />
+    <Content Include="jquery.uploadify-v2.1.0\example\css\uploadify.css" />
+    <Content Include="jquery.uploadify-v2.1.0\example\css\_notes\dwsync.xml" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\expressInstall.swf" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\jquery-1.3.2.min.js" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\jquery.uploadify.v2.1.0.min.js" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\swfobject.js" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\uploadify.swf" />
+    <Content Include="jquery.uploadify-v2.1.0\example\scripts\_notes\dwsync.xml" />
+    <Content Include="jquery.uploadify-v2.1.0\example\_notes\dwsync.xml" />
+    <Content Include="jquery.uploadify-v2.1.0\expressInstall.swf" />
+    <Content Include="jquery.uploadify-v2.1.0\jquery-1.3.2.min.js" />
+    <Content Include="jquery.uploadify-v2.1.0\jquery.uploadify.v2.1.0.js" />
+    <Content Include="jquery.uploadify-v2.1.0\jquery.uploadify.v2.1.0.min.js" />
+    <Content Include="jquery.uploadify-v2.1.0\swfobject.js" />
+    <Content Include="jquery.uploadify-v2.1.0\uploadify.allglyphs.swf" />
+    <Content Include="jquery.uploadify-v2.1.0\uploadify.css" />
+    <Content Include="jquery.uploadify-v2.1.0\uploadify.swf" />
+    <Content Include="Scripts\cors\jquery.postmessage-transport.js" />
+    <Content Include="Scripts\cors\jquery.xdr-transport.js" />
+    <Content Include="Scripts\jquery.fileupload-fp.js" />
+    <Content Include="Scripts\jquery.fileupload-ui.js" />
+    <Content Include="Scripts\jquery.fileupload.js" />
+    <Content Include="Scripts\jquery.iframe-transport.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\vendor\jquery.ui.widget.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="uploadify\btn.png" />
+    <Content Include="uploadify\Change Log.txt" />
+    <Content Include="uploadify\jquery.uploadify.js" />
+    <Content Include="uploadify\jquery.uploadify.min.js" />
+    <Content Include="uploadify\uploadify-cancel.png" />
+    <Content Include="uploadify\uploadify.css" />
+    <Content Include="uploadify\uploadify.swf" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajax\CheckExists.ashx.cs">
+      <DependentUpon>CheckExists.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ajax\UploadHandler.ashx.cs">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="jquery.uploadify-v2.1.0\example\uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ajax\CheckExists.ashx" />
+    <None Include="jquery.uploadify-v2.1.0\check.php" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\air\logging\FileTarget.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\HMAC.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\MD5.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\MD5Stream.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\SHA1.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\SHA224.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\SHA256.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\crypto\WSSEUsernameToken.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\errors\IllegalStateError.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\Address.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\Email.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\Phone.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\VCard.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\fileformats\vcard\VCardParser.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\images\BitString.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\images\JPGEncoder.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\images\PNGEncoder.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\DynamicURLLoader.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\IURIResolver.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\MimeTypeMap.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\proxies\RFC2817Socket.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\URI.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\net\URIEncodingBitmap.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\Database.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\Definition.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\Dict.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\DictionaryServer.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\ConnectedEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DatabaseEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DefinitionEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DefinitionHeaderEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DictionaryServerEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\DisconnectedEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\ErrorEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\MatchEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\MatchStrategiesEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\events\NoMatchEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\MatchStrategy.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\Response.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\util\CompleteResponseEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\protocols\dict\util\SocketHelper.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSON.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONDecoder.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONEncoder.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONParseError.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONToken.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONTokenizer.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\serialization\json\JSONTokenType.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\ArrayUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\DateUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\DictionaryUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\IntUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\NumberFormatter.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\StringUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\utils\XMLUtil.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\webapis\events\ServiceEvent.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\webapis\ServiceBase.as" />
+    <None Include="jquery.uploadify-v2.1.0\com\adobe\webapis\URLLoaderBase.as" />
+    <None Include="jquery.uploadify-v2.1.0\example\index.php" />
+    <None Include="jquery.uploadify-v2.1.0\example\scripts\check.php" />
+    <None Include="jquery.uploadify-v2.1.0\example\scripts\uploadify.php" />
+    <None Include="jquery.uploadify-v2.1.0\uploadify.fla" />
+    <None Include="jquery.uploadify-v2.1.0\uploadify.php" />
+    <Content Include="Ajax\UploadHandler.ashx" />
+    <None Include="uploadify\check-exists.php" />
+    <None Include="uploadify\index.php" />
+    <None Include="uploadify\uploadify.php" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11499</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
