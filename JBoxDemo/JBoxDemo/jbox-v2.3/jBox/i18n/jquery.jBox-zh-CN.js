@@ -11,8 +11,8 @@ jBoxConfig.defaults = {
     showType: 'fade', /* 窗口显示的类型,可选值有:show、fade、slide */
     showSpeed: 'fast', /* 窗口显示的速度,可选值有:'slow'、'fast'、表示毫秒的整数 */
     showIcon: true, /* 是否显示窗口标题的图标，true显示，false不显示，或自定义的CSS样式类名（以为图标为背景） */
-    showClose: false, /* 是否显示窗口右上角的关闭按钮 */
-    draggable: false, /* 是否可以拖动窗口 */
+    showClose: true, /* 是否显示窗口右上角的关闭按钮 */
+    draggable: true, /* 是否可以拖动窗口 */
     dragLimit: true, /* 在可以拖动窗口的情况下，是否限制在可视范围 */
     dragClone: false, /* 在可以拖动窗口的情况下，鼠标按下时窗口是否克隆窗口 */
     persistent: true, /* 在显示隔离层的情况下，点击隔离层时，是否坚持窗口不关闭 */

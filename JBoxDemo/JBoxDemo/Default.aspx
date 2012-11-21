@@ -6,7 +6,7 @@
     <title></title>
     <link id="skin" rel="stylesheet" href="jbox-v2.3/jBox/Skins2/Green/jbox.css" />
 
-    <script type="text/javascript" src="jbox-v2.3/jBox/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script type="text/javascript" src="jbox-v2.3/jBox/jquery.jBox-2.3.min.js"></script>
     <script type="text/javascript" src="jbox-v2.3/jBox/i18n/jquery.jBox-zh-CN.js"></script>
 
