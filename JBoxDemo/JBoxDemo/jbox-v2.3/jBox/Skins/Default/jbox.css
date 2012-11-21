@@ -6,7 +6,7 @@
 /* fade */
 .jbox-fade{background-color:#000000;}
 /* drag */
-.jbox-drag{border:1px dashed #A5C11B;}
+.jbox-drag{border:1px dashed #376EA5;}
 /* jbox */
 div.jbox {padding:0px;border:none;font-size:12px;}
 /* border */
@@ -14,7 +14,7 @@ div.jbox .jbox-border{background: none repeat scroll 0 0 #000000;filter:alpha(op
 /* container */
 div.jbox .jbox-container{background-color:#ffffff;border:1px solid #999999;}
 /* title-panel */
-div.jbox .jbox-title-panel{background:#A5C11B;border-bottom:1px solid #CCCCCC;}
+div.jbox .jbox-title-panel{background:#376EA5;border-bottom:1px solid #CCCCCC;}
 div.jbox .jbox-title{font-weight:bold;color:#ffffff;}
 div.jbox .jbox-title-icon{background:url(images/jbox-title-icon.gif) no-repeat scroll 3px 5px transparent;}
 div.jbox .jbox-close,div.jbox .jbox-close-hover{background:url(images/jbox-close1.gif) no-repeat scroll 0px 0px transparent;}
@@ -31,7 +31,7 @@ div.jbox .jbox-button-hover{background-position:0px -20px;color:#666666;}
 div.jbox .jbox-button-active{background-position:0px -40px;}
 div.jbox-warning .jbox .jbox-button-panel{background-color: #FFFFFF;}
 /* tip-color */
-div.jbox .jbox-tip-color{background-color:#A5C11B;border-color:#A5C11B;border-radius:3px 3px 3px 3px;color:#ffffff;}
+div.jbox .jbox-tip-color{background-color:#376EA5;border-color:#376EA5;border-radius:3px 3px 3px 3px;color:#ffffff;}
 /* icons */
 div.jbox span.jbox-icon{background:url(images/jbox-icons.png) no-repeat scroll 0 0 transparent;_background:url(images/jbox-icons-ie6.gif) no-repeat scroll 0 0 transparent;}
 div.jbox span.jbox-icon-info {background-position:0 0;}
