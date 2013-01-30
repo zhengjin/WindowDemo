@@ -1,0 +1,80 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="SchedulerDBModel" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="Appointments">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Subject" Type="Edm.String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" MaxLength="1024" Unicode="true" FixedLength="false" />
+        <Property Name="Start" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="End" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="RoomID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="UserID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="RecurrenceRule" Type="Edm.String" Nullable="true" MaxLength="1024" Unicode="true" FixedLength="false" />
+        <Property Name="RecurrenceParentID" Type="Edm.Int32" Nullable="true" />
+        <Property Name="Reminder" Type="Edm.String" Nullable="true" MaxLength="255" Unicode="true" FixedLength="false" />
+        <Property Name="Annotations" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="ID2" Type="Edm.Int64" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <NavigationProperty Name="Rooms" Relationship="SchedulerDBModel.FK_Appointments_Rooms" FromRole="Appointments" ToRole="Rooms" />
+        <NavigationProperty Name="Users" Relationship="SchedulerDBModel.FK_Appointments_Users" FromRole="Appointments" ToRole="Users" />
+      </EntityType>
+      <EntityType Name="Rooms">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="RoomName" Type="Edm.String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="Appointments" Relationship="SchedulerDBModel.FK_Appointments_Rooms" FromRole="Rooms" ToRole="Appointments" />
+      </EntityType>
+      <EntityType Name="Users">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.Int32" Nullable="false" />
+        <Property Name="UserName" Type="Edm.String" Nullable="false" MaxLength="255" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="Appointments" Relationship="SchedulerDBModel.FK_Appointments_Users" FromRole="Users" ToRole="Appointments" />
+      </EntityType>
+      <Association Name="FK_Appointments_Rooms">
+        <End Role="Rooms" Type="SchedulerDBModel.Rooms" Multiplicity="0..1" />
+        <End Role="Appointments" Type="SchedulerDBModel.Appointments" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="Rooms">
+            <PropertyRef Name="ID" />
+          </Principal>
+          <Dependent Role="Appointments">
+            <PropertyRef Name="RoomID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+      <Association Name="FK_Appointments_Users">
+        <End Role="Users" Type="SchedulerDBModel.Users" Multiplicity="0..1" />
+        <End Role="Appointments" Type="SchedulerDBModel.Appointments" Multiplicity="*" />
+        <ReferentialConstraint>
+          <Principal Role="Users">
+            <PropertyRef Name="ID" />
+          </Principal>
+          <Dependent Role="Appointments">
+            <PropertyRef Name="UserID" />
+          </Dependent>
+        </ReferentialConstraint>
+      </Association>
+    </Schema>
+    <Schema Namespace="Telerik_Demo" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="SchedulerDBEntities" p7:LazyLoadingEnabled="true" m:IsDefaultEntityContainer="true" xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntitySet Name="Appointments" EntityType="SchedulerDBModel.Appointments" />
+        <EntitySet Name="Rooms" EntityType="SchedulerDBModel.Rooms" />
+        <EntitySet Name="Users" EntityType="SchedulerDBModel.Users" />
+        <AssociationSet Name="FK_Appointments_Rooms" Association="SchedulerDBModel.FK_Appointments_Rooms">
+          <End Role="Rooms" EntitySet="Rooms" />
+          <End Role="Appointments" EntitySet="Appointments" />
+        </AssociationSet>
+        <AssociationSet Name="FK_Appointments_Users" Association="SchedulerDBModel.FK_Appointments_Users">
+          <End Role="Users" EntitySet="Users" />
+          <End Role="Appointments" EntitySet="Appointments" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
