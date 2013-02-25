@@ -1,0 +1,186 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+										xmlns:System="clr-namespace:System;assembly=mscorlib" 
+										xmlns:localWindows="clr-namespace:Stema.Windows"
+										xmlns:localConverters="clr-namespace:Stema.Controls.Converters"
+										xmlns:local="clr-namespace:Stema.Controls" 
+										xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+										xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d">
+
+	<System:Boolean x:Key="{ComponentResourceKey ResourceId=IsSimpleThumbStyle, TypeInTargetAssembly={x:Type local:NavigationPane}}">False</System:Boolean>
+	<System:Boolean x:Key="{ComponentResourceKey ResourceId=IsCloseButtonVisible, TypeInTargetAssembly={x:Type local:NavigationPane}}">False</System:Boolean>
+
+	<System:Boolean x:Key="{ComponentResourceKey ResourceId=IsHeaderVisible, TypeInTargetAssembly={x:Type local:NavigationPane}}">False</System:Boolean>
+	<System:Boolean x:Key="{ComponentResourceKey ResourceId=IsSelectedActiveTitleActive, TypeInTargetAssembly={x:Type local:NavigationPane}}">False</System:Boolean>
+
+	<System:String x:Key="{ComponentResourceKey ResourceId=ActiveTheme, TypeInTargetAssembly={x:Type local:NavigationPane}}">Metro</System:String>
+
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ForeColorInactive, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="White"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ForeColorActive, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="White"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ForeColorOver, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FFC2DDF1"/>
+
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=Background, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF0072C6" />
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBackground, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF0072C6" />
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundVer, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF0072C6" />
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundSelected, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF3D94D4"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundSelectedVer, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF3D94D4"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundOver, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF3D94D4" />
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundOverVer, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF3D94D4" />
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundPressed, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF0072C6" />
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundPressedVer, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF0072C6" />
+
+	<Thickness x:Key="{ComponentResourceKey ResourceId=BorderThickness, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+	<Thickness x:Key="{ComponentResourceKey ResourceId=ButtonBorderThickness, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+	<Thickness x:Key="{ComponentResourceKey ResourceId=ButtonBorderInnerThickness, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+	<Thickness x:Key="{ComponentResourceKey ResourceId=ButtonSmallBorderThickness, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+	<Thickness x:Key="{ComponentResourceKey ResourceId=ButtonSmallBorderInnerThickness, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+
+	<Thickness x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=LargeItemsMargin}" Bottom="4" />
+	<Thickness x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=LargeItemsPadding}" Right="2" Left="2" />
+
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBorder, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+	<x:Null x:Key="{ComponentResourceKey ResourceId=ButtonShadow, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonShineBrush, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ButtonBorderInnerSelected, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF0072C6" />
+	<x:Null x:Key="{ComponentResourceKey ResourceId=ButtonBorderInnerOver, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+	<x:Null x:Key="{ComponentResourceKey ResourceId=ButtonBorderInnerPressed, TypeInTargetAssembly={x:Type local:NavigationPane}}" />
+
+<!-- TITLE -->
+	<Thickness x:Key="{ComponentResourceKey ResourceId=TitleBorder, TypeInTargetAssembly={x:Type local:NavigationPane}}"/>
+	<Thickness x:Key="{ComponentResourceKey ResourceId=TitleInnerLeft, TypeInTargetAssembly={x:Type local:NavigationPane}}"/>
+	<Thickness x:Key="{ComponentResourceKey ResourceId=TitleInnerRight, TypeInTargetAssembly={x:Type local:NavigationPane}}"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=TitleBackground, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF0072C6" />
+	<SolidColorBrush x:Key="{ComponentResourceKey ResourceId=TitleInnerBrush, TypeInTargetAssembly={x:Type local:NavigationPane}}" Color="#FF0072C6" />
+
+<!-- GLIPHS -->
+<DrawingBrush x:Key="{ComponentResourceKey ResourceId=ArrowLeft, TypeInTargetAssembly={x:Type local:NavigationPane}}" Stretch="None">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<GeometryDrawing Geometry="F1 M 55.0817,60.5001L 52.0817,57.5017L 55.0817,54.5001">
+				<GeometryDrawing.Pen>
+					<Pen Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorActive, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>
+<DrawingBrush x:Key="{ComponentResourceKey ResourceId=ArrowLeftOver, TypeInTargetAssembly={x:Type local:NavigationPane}}" Stretch="None">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<GeometryDrawing Geometry="F1 M 55.0817,60.5001L 52.0817,57.5017L 55.0817,54.5001">
+				<GeometryDrawing.Pen>
+					<Pen Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorOver, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>
+<DrawingBrush x:Key="{ComponentResourceKey ResourceId=ArrowRight, TypeInTargetAssembly={x:Type local:NavigationPane}}" Stretch="None">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<GeometryDrawing Geometry="F1 M 29.9139,54.4583L 32.9139,57.4567L 29.9139,60.4583">
+				<GeometryDrawing.Pen>
+					<Pen Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorActive, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>
+<DrawingBrush x:Key="{ComponentResourceKey ResourceId=ArrowRightOver, TypeInTargetAssembly={x:Type local:NavigationPane}}" Stretch="None">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<GeometryDrawing Geometry="F1 M 29.9139,54.4583L 32.9139,57.4567L 29.9139,60.4583">
+				<GeometryDrawing.Pen>
+					<Pen Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorOver, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>
+<DrawingBrush x:Key="{ComponentResourceKey ResourceId=Close, TypeInTargetAssembly={x:Type local:NavigationPane}}" Stretch="None">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<GeometryDrawing Geometry="F1 M 33.1412,27.9999L 27.1412,22">
+				<GeometryDrawing.Pen>
+					<Pen Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorActive, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+			<GeometryDrawing Geometry="F1 M 27.1412,27.9999L 33.1412,22">
+				<GeometryDrawing.Pen>
+					<Pen Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorActive, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>
+<DrawingBrush x:Key="{ComponentResourceKey ResourceId=CloseOver, TypeInTargetAssembly={x:Type local:NavigationPane}}" Stretch="None">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<GeometryDrawing Geometry="F1 M 33.1412,27.9999L 27.1412,22">
+				<GeometryDrawing.Pen>
+					<Pen Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorOver, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+			<GeometryDrawing Geometry="F1 M 27.1412,27.9999L 33.1412,22">
+				<GeometryDrawing.Pen>
+					<Pen Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorOver, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>
+<DrawingBrush x:Key="{ComponentResourceKey ResourceId=ArrowDown, TypeInTargetAssembly={x:Type local:NavigationPane}}" Stretch="None">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<GeometryDrawing Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorInactive, TypeInTargetAssembly={x:Type local:NavigationPane}}}"
+				Geometry="F1 M 32,9.66759L 30,11.6686L 28,9.6676L 31.9291,9.6676">
+				<GeometryDrawing.Pen>
+					<Pen StartLineCap="Round" EndLineCap="Round" LineJoin="Round" 
+						Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorInactive, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>
+<DrawingBrush x:Key="{ComponentResourceKey ResourceId=ArrowDownOver, TypeInTargetAssembly={x:Type local:NavigationPane}}" Stretch="None">
+	<DrawingBrush.Drawing>
+		<DrawingGroup>
+			<GeometryDrawing Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorInactive, TypeInTargetAssembly={x:Type local:NavigationPane}}}"
+				Geometry="F1 M 32,9.66759L 30,11.6686L 28,9.6676L 31.9291,9.6676">
+				<GeometryDrawing.Pen>
+					<Pen StartLineCap="Round" EndLineCap="Round" LineJoin="Round" 
+						Brush="{DynamicResource {ComponentResourceKey ResourceId=ForeColorInactive, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+				</GeometryDrawing.Pen>
+			</GeometryDrawing>
+		</DrawingGroup>
+	</DrawingBrush.Drawing>
+</DrawingBrush>	
+
+	<Style x:Key="ThumbStyle" TargetType="{x:Type Thumb}">
+		<Setter Property="Cursor" Value="{x:Static localWindows:Cursors.SizeNS}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type Thumb}">
+					<Border BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Background="{DynamicResource {ComponentResourceKey ResourceId=ButtonBackgroundOver, TypeInTargetAssembly={x:Type local:NavigationPane}}}" BorderBrush="{DynamicResource {ComponentResourceKey ResourceId=Background, TypeInTargetAssembly={x:Type local:NavigationPane}}}" />
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="Height" Value="5"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="SnapsToDevicePixels" Value="True"/>
+	</Style>
+
+	<Style TargetType="{x:Type local:NavigationPaneSplitter}">
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="{x:Type local:NavigationPaneSplitter}">
+					<Thumb x:Name="PART_Thumb" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Style="{StaticResource ThumbStyle}" Margin="0,2,0,2" />
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+		<Setter Property="BorderThickness" Value="{DynamicResource {ComponentResourceKey ResourceId=ButtonBorderThickness, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+		<Setter Property="BorderBrush" Value="{DynamicResource {ComponentResourceKey ResourceId=Background, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+		<Setter Property="Background" Value="{DynamicResource {ComponentResourceKey ResourceId=ButtonBorder, TypeInTargetAssembly={x:Type local:NavigationPane}}}"/>
+	</Style>
+</ResourceDictionary>

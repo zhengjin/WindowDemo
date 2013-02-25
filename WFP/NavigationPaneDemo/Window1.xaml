@@ -1,0 +1,55 @@
+﻿<Fluent:RibbonWindow xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+				xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+				
+				   xmlns:s="NavigationPane"
+				xmlns:demo="clr-namespace:NavigationPaneDemo"
+				
+				xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
+				
+				mc:Ignorable="d"
+				x:Class="NavigationPaneDemo.MainWindow"
+				Title="Navigation Pane v1.0" WindowStartupLocation="CenterScreen"
+				Icon="Resources/folderopen.ico" 
+				Background="{Binding Background, ElementName=navigationPaneExpander}" ResizeMode="CanResizeWithGrip" >
+
+    <Fluent:RibbonWindow.Resources>
+        <!--
+			
+			THEMES
+			
+			The theme can be canged in two ways
+			By statically merging the theme Dictionary resource in the app.xaml o by code behind
+			- to see the exact dictionary path for each theme and have futher informations, see ths application app.xaml file
+		  - to see how to change the theme in code behind see the implementation in the "Themes" item
+			
+		-->
+        <ResourceDictionary>
+            <s:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter1"/>
+            <s:BooleanNegateConverter x:Key="BooleanNegateConverter"/>
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            <ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+                <DockPanel IsItemsHost="True"/>
+            </ItemsPanelTemplate>
+        </ResourceDictionary>
+    </Fluent:RibbonWindow.Resources>
+
+    <DockPanel>
+        <Fluent:Ribbon AutomaticStateManagement="True" x:Name="ribbon" Grid.Row="0"  IsEnabled="False" Height="20"
+                       IsQuickAccessToolBarVisible="False" CanCustomizeRibbon="False"  IsMinimized="True"  >
+        </Fluent:Ribbon>
+        <Fluent:Button Size="Small" Icon="/Icons/Help.png" Margin="0,5,40,0" VerticalAlignment="Center"  HorizontalAlignment="Right">
+            <Fluent:Button.ToolTip>
+                <Fluent:ScreenTip
+                Title="Insert Chart"
+                Text="Insert a chart to illustarate and compare data. &#xa;&#xa;Bar, Pie, Line, Area and Surface are same of the available types."
+             
+                HelpTopic="http:\\fluent.codeplex.com"
+                DisableReason="Disable reason reason."
+                Width="190"
+                IsRibbonAligned ="True"/>
+            </Fluent:Button.ToolTip>
+        </Fluent:Button>
+    </DockPanel>
+</Fluent:RibbonWindow>
