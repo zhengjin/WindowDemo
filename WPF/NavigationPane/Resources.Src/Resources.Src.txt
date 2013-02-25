@@ -1,0 +1,19 @@
+﻿
+This Directory contains the source files used to create the resources
+You may need ExpressionDesign to open some of this files
+And Eventually a Image Editing software to edit Images
+
+Files in this direcotory are not compiled or included as output of compiation
+the folder is included in the project just because this is 
+the easiest way to put them in the SourceControl and let you know 
+they are they too if you want to edit some of the resources 
+
+Files:
+
+Buttons.design
+  used to generate \Resources\Buttons.xaml
+  open it with ExpressionDesign and from file menu select Export
+  use:
+    Format = "XAML WPF Resource Dictionary"
+	Group By = "Object"
+  ...and then Export !

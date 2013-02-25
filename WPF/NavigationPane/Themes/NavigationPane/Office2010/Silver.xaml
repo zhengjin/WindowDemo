@@ -1,0 +1,36 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+										xmlns:System="clr-namespace:System;assembly=mscorlib" 
+										xmlns:local="clr-namespace:Stema.Controls">
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="/NavigationPane;Component/Themes/NavigationPane/Office2010/Common.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+
+	<System:String x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ActiveTheme}">Office2010Silver</System:String>
+
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ForeColorInactive}" Color="#FF3F3F3F"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ForeColorActive}" Color="Black"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ForeColorOver}" Color="Black"/>
+
+	<Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=BackgroundC1}">#FFE8ECF0</Color>
+	<Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=BackgroundC2}">#FFDADEE3</Color>
+	
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBorder}" Color="#FFA1A9B3"/>
+	
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBorderInnerSelected}" Color="#FFEFF1F5"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBorderInnerOver}" Color="White"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBorderInnerPressed}" Color="#FFB3B9C1"/>
+
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBackgroundPressed}" Color="#FFC0C7CF"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBackgroundPressedVer}" Color="#FFC0C7CF"/>
+
+	<Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBackgroundSelectedC1}">#FFDEE3EA</Color>
+	<Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBackgroundSelectedC2}">#FFE1E6ED</Color>
+	<Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBackgroundSelectedC3}">#FFCFD6DE</Color>
+
+	<Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBackgroundOverC1}">#FFF4F6F9</Color>
+	<Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBackgroundOverC2}">#FFE1E7ED</Color>
+	<Color x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBackgroundOverC3}">#FFEAEEF2</Color>
+		
+</ResourceDictionary>

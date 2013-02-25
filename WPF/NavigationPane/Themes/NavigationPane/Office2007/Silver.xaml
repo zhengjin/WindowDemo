@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+										xmlns:System="clr-namespace:System;assembly=mscorlib" 
+										xmlns:local="clr-namespace:Stema.Controls">
+
+	<ResourceDictionary.MergedDictionaries>
+		<ResourceDictionary Source="/NavigationPane;Component/Themes/NavigationPane/Office2007/Common.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+
+	<System:String x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ActiveTheme}">Office2007Silver</System:String>
+
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ForeColorInactive}" Color="#FF313C42"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ForeColorActive}" Color="Black"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ForeColorOver}" Color="Black"/>
+
+	<Color x:Key="{ComponentResourceKey ResourceId=BackgroundC1, TypeInTargetAssembly={x:Type local:NavigationPane}}">#FFF7F7FF</Color>
+	<Color x:Key="{ComponentResourceKey ResourceId=BackgroundC2, TypeInTargetAssembly={x:Type local:NavigationPane}}">#FFDEDFE7</Color>
+
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBorder}" Color="#FF6B7173"/>
+	<SolidColorBrush x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type local:NavigationPane}, ResourceId=ButtonBorderInactive}" Color="#FF6B7173"/>
+
+	<Color x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundC1, TypeInTargetAssembly={x:Type local:NavigationPane}}">#FFFFFBFF</Color>
+	<Color x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundC2, TypeInTargetAssembly={x:Type local:NavigationPane}}">#FFCECFD6</Color>
+	<Color x:Key="{ComponentResourceKey ResourceId=ButtonBackgroundC3, TypeInTargetAssembly={x:Type local:NavigationPane}}">#FFDEDFE7</Color>
+
+</ResourceDictionary>

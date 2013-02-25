@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+										xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+										xmlns:local="clr-namespace:Stema.Controls">
+	<DrawingBrush x:Key="SizeGrip" Stretch="None">
+		<DrawingBrush.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing Geometry="M 11,1L 0.999989,11M 11,7.62955L 7.69443,11M 11,4.34262L 4.33302,11">
+						<GeometryDrawing.Pen>
+							<Pen LineJoin="Round" Brush="#FFFFFFFF"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+					<GeometryDrawing Brush="#FFFFFFFF" Geometry="M 10.5,0.5L 0.5,10.5M 10.5,7.12955L 7.19444,10.5M 10.5,3.84262L 3.83303,10.5">
+						<GeometryDrawing.Pen>
+							<Pen LineJoin="Round" Brush="#FF91A4A7"/>
+						</GeometryDrawing.Pen>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingBrush.Drawing>
+	</DrawingBrush>
+</ResourceDictionary>
